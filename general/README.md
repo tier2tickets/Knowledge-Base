@@ -1,4 +1,4 @@
 # General
 
-[billing.md]()
+[billing.md](billing.md)
 
