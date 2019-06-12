@@ -16,4 +16,4 @@ integrations - we have a lot of integrations, here you will find how to set up y
 
 privacy - we work hard to keep private data private, want to learn how?
 
-[security](security) - last but not least. learn what features we have to protect you and your account from bad guys.
+security - last but not least. learn what features we have to protect you and your account from bad guys.
