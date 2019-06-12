@@ -8,9 +8,9 @@ If you have something specific in mind, use the github search search feature at 
 
 
 
-[general](general] ) - general information, like how to contact us, billing, how to perform basic tasks
+[general](general) - general information, like how to contact us, billing, how to perform basic tasks
 
-[customization](customization] ) - how you can make our software fit you
+[customization](customization) - how you can make our software fit you
 
 [integrations](integrations) - we have a lot of integrations, here you will find how to set up yours.
 

@@ -1,4 +1,4 @@
 # Customization
 
-[custom-scripts.md](custom-scripts.md)
+[How do I use custom scripts?](custom-scripts.md)
 

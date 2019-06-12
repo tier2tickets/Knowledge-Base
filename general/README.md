@@ -1,4 +1,4 @@
 # General
 
-[billing.md](billing.md)
+[How does billing work?](billing.md)
 
