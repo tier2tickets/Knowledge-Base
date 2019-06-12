@@ -8,12 +8,13 @@ If you have something specific in mind, use the github search search feature at 
 
 
 
-general - general information, like how to contact us, billing, how to perform basic tasks
+[general]() - general information, like how to contact us, billing, how to perform basic tasks
 
-customization - how you can make our software fit you
+[customization]() - how you can make our software fit you
 
-integrations - we have a lot of integrations, here you will find how to set up yours.
+[integrations]() - we have a lot of integrations, here you will find how to set up yours.
 
-privacy - we work hard to keep private data private, want to learn how?
+[privacy]() - we work hard to keep private data private, want to learn how?
 
 [security](security) - last but not least. learn what features we have to protect you and your account from bad guys.
+
