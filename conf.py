@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'tier2tickets'
-copyright = '2019, Alex Permenter, Chris Wheeler, Elizabeth Copeland, Eric Rodighiero, Daryl Ebanks, Sam Schoen'
+copyright = '2019, tier2tickets'
 author = 'Alex Permenter, Chris Wheeler, Elizabeth Copeland, Eric Rodighiero, Daryl Ebanks, Sam Schoen'
 
 # The full version, including alpha/beta/rc tags
@@ -54,5 +54,5 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 
-master_doc = 'index'
-
+master_doc = 'contents'
+html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html', 'index.html', 'contents.html'] }

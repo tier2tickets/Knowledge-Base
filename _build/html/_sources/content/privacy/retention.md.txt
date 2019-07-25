@@ -1,3 +1,0 @@
-# How long is the data stored?
-
-When the software is triggered, basic metadata about the computer that comes into our system so that we can alert you about the incoming ticket and populate the heat map has a TTL of 60 minutes. After that, if it does not become an actual ticket, the data is dropped. If the data becomes an actual ticket from the user actually submitting the data, it will be stored for 90 days by default. This number can be adjusted on a per-account basis. If you need shorter or longer data retention please contact support.
