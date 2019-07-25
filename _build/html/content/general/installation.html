@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Software Installation Guide &mdash; tier2tickets 0.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> tier2tickets
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Software Installation Guide</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">tier2tickets</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Software Installation Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/content/general/installation.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-installation-guide">
+<h1>Software Installation Guide<a class="headerlink" href="#software-installation-guide" title="Permalink to this headline">¶</a></h1>
+<p>The software is packaged as an MSI which you build on the custom builds page. It supports all the typical command line options of an MSI for example:</p>
+<p>The following command would install the software with minimal user interface visible to the user and no cancel button and then reboot the computer.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">msiexec</span> <span class="o">/</span><span class="n">i</span> <span class="n">buttonInst</span><span class="o">.</span><span class="n">msi</span> <span class="o">/</span><span class="n">passive</span>
+</pre></div>
+</div>
+<p>The following would install the software with no user interface and would not reboot the computer.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">msiexec</span> <span class="o">/</span><span class="n">i</span> <span class="n">buttonInst</span><span class="o">.</span><span class="n">msi</span> <span class="o">/</span><span class="n">quiet</span> <span class="o">/</span><span class="n">norestart</span>
+</pre></div>
+</div>
+<p>We have some command line options that would allow you to customize settings specific to our software. If you install the software the GUI way, but just running it with no options you will see that we offer the ability to bind the software to a F-Key so that pressing that key launches the app. We also have command line options to allow the same. If you wanted to bind the program to F4, for example, you would use use the following command line param.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WRAPPED_ARGUMENTS</span><span class="o">=</span><span class="s2">&quot;/launchkey=4&quot;</span>
+</pre></div>
+</div>
+<p>You can also customize the name of the desktop icon. By default, it is named “Helpdesk Button” but if you wanted to have the icon named “PC Solutions Support”, this would get you there.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WRAPPED_ARGUMENTS</span><span class="o">=</span><span class="s2">&quot;/iconname=&quot;&quot;PC Solutions Support&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Putting those things together, you would end up with a command like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">msiexec</span> <span class="o">/</span><span class="n">i</span> <span class="s2">&quot;buttonInst.msi&quot;</span> <span class="n">WRAPPED_ARGUMENTS</span><span class="o">=</span><span class="s2">&quot;/launchkey=4 /iconname=&quot;&quot;PC Solutions Support&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Make sure you are aware that this reboots the computer! Don’t push out that command en mass during business hours. A better option during business hours is as follows.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">msiexec</span> <span class="o">/</span><span class="n">i</span> <span class="s2">&quot;buttonInst.msi&quot;</span> <span class="o">/</span><span class="n">norestart</span> <span class="n">WRAPPED_ARGUMENTS</span><span class="o">=</span><span class="s2">&quot;/launchkey=4 /iconname=&quot;&quot;PC Solutions Support&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>You would still need to reboot after hours though, the software does actually need a reboot most of the time.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Alex Permenter, Chris Wheeler, Elizabeth Copeland, Eric Rodighiero, Daryl Ebanks, Sam Schoen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

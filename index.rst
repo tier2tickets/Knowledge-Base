@@ -1,20 +1,21 @@
-.. tier2tickets documentation master file, created by
-   sphinx-quickstart on Thu Jul 25 08:54:46 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to tier2tickets's documentation!
-========================================
+.. include:: README.rst
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+	:caption: General
+	:maxdepth: 3
+
+	content/general/billing
+	content/general/installation
 
 
+.. toctree::
+	:caption: Customization
+	:maxdepth: 3
 
-Indices and tables
-==================
+	content/customization/custom-scripts
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+	:caption: Privacy
+	:maxdepth: 3
+
+	content/privacy/retention
