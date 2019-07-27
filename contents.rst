@@ -13,6 +13,14 @@ Table Of Contents
 	content/general/billing
 	content/general/installation
 
+.. toctree::
+	:caption: Integration
+	:maxdepth: 0
+
+	content/integration/autotask
+	content/integration/connectwise
+	content/integration/freshdesk
+	content/integration/repairshopr
 
 .. toctree::
 	:caption: Customization
