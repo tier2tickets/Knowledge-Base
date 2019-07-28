@@ -2,11 +2,11 @@ Freshdesk Integration
 ======================
 This guide will show you how to set up FreshDesk to work with your new Helpdesk Buttons. The first step is to sign into your  
 
-First, we suggest making a user specifically for this purpose.  
+To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. in our system it’s “Mystery Human”.
 
 On the left of your screen, click the admin button. 
 
-.. image:: images/fd-image-2.png
+.. image:: images/fd-image-1.png
 Scroll down and select Agents 
 
 .. image:: images/fd-image-2.png
