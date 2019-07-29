@@ -1,8 +1,12 @@
-Repairshopr Integration
-========================
+Repairshopr / Syncro Integration
+================================
 Setting up Helpdesk Buttons with Repairshopr is easy. 
 
-To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. in our system it’s “Mystery Human”
+To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users. 
+
+You can name the account whatever you want. In our system it’s “Mystery Human”.
+
+This user must also be a Contact and a Portal User.
 
 You will need your Repairshopr API key.
 
