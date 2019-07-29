@@ -1,6 +1,6 @@
 Repairshopr / Syncro Integration
 ================================
-Setting up Helpdesk Buttons with Repairshopr is easy. 
+Setting up Helpdesk Buttons with Repairshopr or Syncro is easy. 
 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users. 
 
@@ -8,7 +8,7 @@ You can name the account whatever you want. In our system it’s “Mystery Huma
 
 This user must also be a Contact and a Portal User.
 
-You will need your Repairshopr API key.
+You will need your Repairshopr or Syncro API key.
 
 You can go get your API key on your profile page.
 
@@ -22,7 +22,7 @@ And scroll down to the backend information part.
 
 .. image:: images/rs-image-2.png
 
-Select ‘RepairShopr’ for the Ticket System 
+Select ‘RepairShopr / Syncro’ for the Ticket System 
 
 Enter the register URL that you use. 
 
@@ -30,7 +30,9 @@ The Ticket System API endpoint is
 
 https://example.repairshopr.com/api/v1/customers?api_key=
 
-Or if you use a customer domain it would be
+Or the equivalent for Syncro.
+
+If you use a customer domain it would be
 
 https://example.com/api/v1/customers?api_key=
 
