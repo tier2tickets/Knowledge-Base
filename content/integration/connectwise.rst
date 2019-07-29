@@ -61,7 +61,7 @@ Substitute the /v4_6_release part for your version
 
 The Ticket System API Key format is as follows
 
-Companyid+publickey:privatekey:board_name
+Companyid+publickey:privatekey
 
 For example
 
