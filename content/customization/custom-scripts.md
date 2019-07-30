@@ -14,4 +14,6 @@ echo "Hello World" > $Env:_uploadDir\example_append.txt
 
 You should find that this appends the "Hello World" text to your report. Now replace the "Hello World" with whatever data you want to collect and you should be good to go.
 
+You can also customize the appearance of the software by adding a banner (400 x 125 pixel PNG) and an icon (256 x 256 pixel PNG) to payload.zip.
+
 I think general file uploads will be accessible to download through the report page in a few weeks. But let me know if that works for you, and what you think about the system.
