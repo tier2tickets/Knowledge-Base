@@ -32,7 +32,7 @@ Contributing
 ============
 
 If you would like to help improve our products by submitting a bug report or feature request, please 
-file them on our official github page_ 
+file them on our official github page_.
 
 
 
