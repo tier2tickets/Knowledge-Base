@@ -1,10 +1,10 @@
 Autotask Integration
 =====================
-This guide will show you how to set up your new Helpdesk Buttons with Autotask. This process is quick and easy. You will need an administrative login for AutoTask. 
+This guide will show you how to set up your new Helpdesk Buttons with Autotask. This process is quick and easy. You will need an administrative login for Autotask. 
 
-The first step involves configuring a Manager user in AutoTask. 
+The first step involves configuring a Manager user in Autotask. 
 
-In the main AutoTask menu, select Admin and then Resources. 
+In the main Autotask menu, select Admin and then Resources. 
 
 .. image:: images/at-image-9.png
 Click the ‘New’ button to open the new user window. 
@@ -31,7 +31,7 @@ With that finished, now you will need to configure your information on the Helpd
 
 Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/settings.php 
 
-Under the Ticket System dropdown, select AutoTask 
+Under the Ticket System dropdown, select Autotask 
 
 .. image:: images/at-image-13.png
 Enter your Ticket System API endpoint as shown (it will automatically add https:// and the path after the url) 
