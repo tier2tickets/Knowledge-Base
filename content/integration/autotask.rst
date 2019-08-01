@@ -1,6 +1,5 @@
 Autotask Integration
 =====================
-sdfjbhfkjbsdfiusd
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. This process is quick and easy. You will need an administrative login for Autotask. 
 
 The first step involves configuring a Manager user in Autotask. 
