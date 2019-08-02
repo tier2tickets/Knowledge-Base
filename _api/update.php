@@ -6,7 +6,7 @@ window.open('/', '_blank');
 </head>
 <body>
 <pre>
-<?php print(shell_exec( '/var/www/kb/pull_kb.sh 2>&1; echo $?')) ?>
+<?php print(shell_exec( '/var/www/kb/_api/pull_kb.sh 2>&1; echo $?')) ?>
 <pre>
 </body>
 </html>
