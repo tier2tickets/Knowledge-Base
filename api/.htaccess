@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /var/www/kb/api/.htpasswd
+Require valid-user
+
+Options -Indexes
