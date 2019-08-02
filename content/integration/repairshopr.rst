@@ -28,12 +28,8 @@ Enter the register URL that you use.
 
 The Ticket System API endpoint is  
 
-https://example.repairshopr.com/api/v1/customers?api_key=
+example.repairshopr.com
 
 Or the equivalent for Syncro.
-
-If you use a customer domain it would be
-
-https://example.com/api/v1/customers?api_key=
 
 Under Ticket System API Key, enter the API key that you used earlier. Once you have entered that information, click Update and it will save the information.
