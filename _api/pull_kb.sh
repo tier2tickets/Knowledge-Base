@@ -6,6 +6,4 @@ git pull
 rm -r _build
 sphinx-build -M dirhtml . _build > /dev/null 2>&1
 sphinx-build -M dirhtml . _build
-echo RewriteEngine on > _build/dirhtml/.htaccess
-echo RewriteCond %{REQUEST_FILENAME} !-f  >> _build/dirhtml/.htaccess
-echo RewriteRule . / [L,R=302] >> _build/dirhtml/.htaccess
+echo ErrorDocument 404 https://docs.tier2tickets.com > _build/dirhtml/.htaccess
