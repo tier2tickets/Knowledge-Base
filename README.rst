@@ -31,7 +31,7 @@ We have official support by email and phone:
 Contributing
 ============
 
-If you would like to help improve our products by submitting a bug report or feature request, please 
+If you would like to help improve our products by submitting a bug report, please 
 file them on our official github page_.
 
 
