@@ -1,4 +1,4 @@
-# How do I use custom scripts?
+# Adding a Custom Logo and Scripts
 
 The payload.zip that you upload your logos with is where you also upload your scripts. You need to put all your scripts in that zip file as well as any exe's that your scripts need to run. When the software is launched, it looks for anything matching the name *exec**.ps1. Whatever matches that name will be run asynchronously.
 
