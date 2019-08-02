@@ -1,5 +1,5 @@
 @echo off
 git pull
-rd /s /q _build\html
-sphinx-build -M html . _build html
+rd /s /q _build
+sphinx-build -M html . _build
 start _build\html\index.html
