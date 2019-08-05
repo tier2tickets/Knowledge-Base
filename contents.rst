@@ -12,6 +12,7 @@ Table Of Contents
 
 	content/general/billing
 	content/general/installation
+	content/general/firewall
 
 .. toctree::
 	:caption: Integration
