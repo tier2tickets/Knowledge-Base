@@ -1,5 +1,5 @@
 @echo off
-git pull
+git pull -X theirs
 git add .
 git commit
 git push
