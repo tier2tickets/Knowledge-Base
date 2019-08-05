@@ -4,7 +4,6 @@ What Should My Firewall Settings Be?
 There are two different scenarios where you might need to adjust settings on your firewall. One is for the inbound traffic to your ticket system, if your ticket system is hosted onsite. And the other is for outbound traffic coming from the button software on your client's PC
 
 
-
 Inbound Ticket System Settings
 ------------------------------
 
