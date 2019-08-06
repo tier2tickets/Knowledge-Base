@@ -57,7 +57,7 @@ For the Ticket System API endpoint you would use
 
 yourconnectwiseinstance.com/v4_6_release
 
-Substitute the /v4_6_release part for your version
+Do not Substitute the /v4_6_release part for your ConnectWise version, this is the API version, and should always be se to v4_6_release.
 
 The Ticket System API Key format is as follows
 
