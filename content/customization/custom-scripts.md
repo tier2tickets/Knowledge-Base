@@ -1,6 +1,6 @@
 # Adding a Custom Logo and Scripts
 
-The payload.zip that you upload your logos with is where you also upload your scripts. You need to put all your scripts in that zip file as well as any exe's that your scripts need to run. When the software is launched, it looks for anything matching the name \*exec.ps1. Whatever matches that name will be run asynchronously.
+The payload.zip that you upload your logos with is where you also upload your scripts. You need to put all your scripts in that zip file as well as any exe's that your scripts need to run. When the software is launched, it looks for anything matching the name \_exec_*.ps1. Whatever matches that name will be run asynchronously.
 
 Each script will start with a working directory of the extracted payload, so any helper exe's you have in your payload zip file will be sitting right there with it. There is an "upload" folder which is where the output of your scripts need to go. The location of this upload folder is stored in an environment variable named "_uploadDir". You can save any log files or script output into that upload folder and it will get sent in, but right now general file uploads are not yet accessible in the report.
 
