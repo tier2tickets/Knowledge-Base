@@ -1,4 +1,4 @@
-Freshdesk Integration
+Freshservice Integration
 ======================
 This guide will show you how to set up FreshDesk to work with your new Helpdesk Buttons. The first step is to sign into your  
 
