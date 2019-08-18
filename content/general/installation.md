@@ -42,7 +42,11 @@ Putting those things together, you would end up with a command like this:
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"""
 ```
 
+NOTE FOR POWERSHELL USERS: powershell requires an extra single quote around the WRAPPED_ARGUMENTS value. So the powershell equivalent command looks like this:
 
+```
+msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS='"/launchkey=4 /iconname=""PC Solutions Support"""'
+```
 
 Make sure you are aware that this reboots the computer! Don't push out that command en mass during business hours. A better option during business hours is as follows.
 
