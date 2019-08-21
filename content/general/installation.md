@@ -42,7 +42,7 @@ Putting those things together, you would end up with a command like this:
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"""
 ```
 
-NOTE FOR POWERSHELL USERS: powershell requires an extra single quote around the WRAPPED_ARGUMENTS value. So the powershell equivalent command looks like this:
+**Note to powershell users**: powershell requires an extra single quote around the WRAPPED_ARGUMENTS value. So the powershell equivalent command looks like this:
 
 ```
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS='"/launchkey=4 /iconname=""PC Solutions Support"""'
