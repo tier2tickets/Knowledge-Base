@@ -37,7 +37,11 @@ Select the ‘API Members’ tab.
 Click on the ‘New’ button and set up the new API member
 
 .. image:: images/cw-image-2.png
-Enter a member ID and name which fits your organization. Select the appropriate System options according to how your ConnectWise Manage system is configured. Be sure to click ‘Save’ when everything looks correct.
+Enter a member ID and name which fits your organization. Select the appropriate System options according to how your ConnectWise Manage system is configured. 
+
+**Take note of the Service Defaults as they can effect the way tickets come into the system.**
+
+Be sure to click ‘Save’ when everything looks correct.
 
 Next, browse to the ‘API Keys’ tab.
 
