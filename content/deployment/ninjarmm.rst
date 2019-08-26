@@ -24,6 +24,8 @@ The script should look something like this:
 
 	msiexec /i "buttonInst.msi" /passive /norestart WRAPPED_ARGUMENTS='"/launchkey=4 /iconname=""PC Solutions Support"""'
 	
+Feel free to put in your own url in place of buttonInst.msi, in addition to a custom launchkey, and iconname.
+	
 **Use passive instead of quiet if you dont want a gui to appear.**
 
 For more information about the parameters, check out our `Installation Guide <https://docs.tier2tickets.com/content/general/installation/>`_
