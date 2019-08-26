@@ -23,6 +23,12 @@ Table Of Contents
 	content/integration/freshdesk
 	content/integration/freshservice
 	content/integration/repairshopr
+	
+.. toctree::
+	:caption: Deployment
+	:maxdepth: 0
+
+	content/deployment/ninjarmm
 
 .. toctree::
 	:caption: Customization
