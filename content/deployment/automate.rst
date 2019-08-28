@@ -20,7 +20,7 @@ Name the script, add a note if you like, make sure the target is Computer, set t
 
 .. image:: images/CW03-NewScript.png
 
-The next couple of conditions in this script is to make sure we cover both 32bit and 64bit installs of the software as both are supported, but the registry keys are stored in different places.
+The next couple of conditions in this script are to make sure we cover both 32bit and 64bit installs of the software as both are supported since the registry keys location depends on the architecture.
 
 Let's look at the 64bit version first.
 
@@ -34,7 +34,7 @@ Select IF Registry Check as the function, put in this key:
 	
 Compare should be set to Exists, To should be blank, and we will add a jump to label :EXIT (We will be adding this label near the end of the script)
 
-**Make sure to check continue on failure** and click Save
+Check continue on failure and click Save
 
 .. image:: images/CW04-Registry.png
 
