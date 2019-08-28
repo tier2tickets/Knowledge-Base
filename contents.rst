@@ -29,6 +29,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/deployment/ninjarmm
+	content/deployment/automate
 
 .. toctree::
 	:caption: Customization

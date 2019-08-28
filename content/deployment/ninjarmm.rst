@@ -26,7 +26,6 @@ The script need only be a single line like this:
 	
 Put in your own url in place of buttonInst.msi, in addition to a custom launchkey, and iconname.
 
-
 For more information about the parameters, check out our `Installation Guide <https://docs.tier2tickets.com/content/general/installation/>`_
 
 Save the script. 
