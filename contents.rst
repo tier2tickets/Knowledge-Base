@@ -21,7 +21,6 @@ Table Of Contents
 	content/integration/autotask
 	content/integration/connectwise
 	content/integration/freshdesk
-	content/integration/freshservice
 	content/integration/repairshopr
 	
 .. toctree::

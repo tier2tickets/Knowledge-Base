@@ -1,3 +1,0 @@
-Freshservice Integration
-======================
-Coming soon!

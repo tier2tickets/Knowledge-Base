@@ -1,8 +1,8 @@
-Freshdesk Integration
-======================
-This guide will show you how to set up FreshDesk to work with your new Helpdesk Buttons. The first step is to sign into your  
+Freshdesk / Freshservice Integration
+=====================================
+This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons. 
 
-To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. in our system it’s “Mystery Human”.
+To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. In our system it’s “Mystery Human”.
 
 On the left of your screen, click the admin button. 
 
@@ -25,7 +25,7 @@ Please take note of this API Key, you will need it in a little bit.
 The next step is to sign into your Helpdeskbuttons.com account and enter this information under Settings->Backend Information 
 
 .. image:: images/fd-image-3.png
-Enter your Ticket System API endpoint and the Ticket System API Key. Your Ticket System API endpoint is the main URL that you use to log into FreshDesk. In this instance 
+Enter your Ticket System API endpoint and the Ticket System API Key. Your Ticket System API endpoint is the main URL that you use to log into FreshDesk / FreshService. In this instance 
 
 .. image:: images/fd-image-6.png
-Click update once you are done. At this point, your Freshdesk instance will be ready to go with your Helpdesk Buttons. 
+Click update once you are done. At this point, your Freshdesk / FreshService instance will be ready to go with your Helpdesk Buttons. 
