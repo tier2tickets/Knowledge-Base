@@ -2,7 +2,7 @@
 
 The software is packaged as an MSI which you build on the custom builds page. It supports all the typical command line options of an MSI for example:
 
-
+## Installing
 
 The following command would install the software with minimal user interface visible to the user and no cancel button and then reboot the computer. 
 
@@ -57,3 +57,11 @@ msiexec /i "buttonInst.msi" /norestart WRAPPED_ARGUMENTS="/launchkey=4 /iconname
 
 
 You would still need to reboot after hours though, the software does actually need a reboot most of the time.
+
+## Uninstalling
+
+Since the package is an MSI, you can use WMI to uninstall it. Here is an example command to uninstall it silently: 
+
+`wmic product where (name="Helpdesk Button") call uninstall /nointeractive`
+
+NOTE: if you get back "ReturnValue = 1603;" from this command, then the removal failed because you are not in an elevated command prompt.
