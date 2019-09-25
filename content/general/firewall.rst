@@ -21,16 +21,19 @@ Outbound Client Software Settings
 
 In order for the client software to function, it makes outbound TCP connections to various servers. Many of these are servers which are edge optimized and therefore have multiple IP addresses per region, so make sure not to just whitelist the IP for the server because this changes based on region and server load. You must whitelist the hostname.
 
-
-+-----------------------------------+------------------------------------------------+-----------+
-| Role                              | Hostname                                       | Port(s)   |
-+===================================+================================================+===========+
-| getconf, submit basic ticket data | cfjex255ag.execute-api.us-east-1.amazonaws.com | 443       |
-+-----------------------------------+------------------------------------------------+-----------+
-| upload diagnostic data/Images     | apc-button.s3.amazonaws.com                    | 443       |
-+-----------------------------------+------------------------------------------------+-----------+
-| request slot for TechConnect      | connect.helpdeskbuttons.com                    | 443       |
-+-----------------------------------+------------------------------------------------+-----------+
-| establish TechConnect session     | connect.helpdeskbuttons.com                    | 2001-2500 |
-+-----------------------------------+------------------------------------------------+-----------+
++----------------------------------------+------------------------------------------------+-----------+
+| Role                                   | Hostname                                       | Port(s)   |
++========================================+================================================+===========+
+| getconf, submit basic ticket data (v3) | cfjex255ag.execute-api.us-east-1.amazonaws.com | 443       |
++----------------------------------------+------------------------------------------------+-----------+
+| getconf, submit basic ticket data (v4) | flu1pjyrr2.execute-api.us-east-1.amazonaws.com | 443       |
++----------------------------------------+------------------------------------------------+-----------+
+| If not self-hosting; our gatekeeper    | kdwq222yo3.execute-api.us-east-1.amazonaws.com | 443       |
++----------------------------------------+------------------------------------------------+-----------+
+| upload diagnostic data/Images          | apc-button.s3.amazonaws.com                    | 443       |
++----------------------------------------+------------------------------------------------+-----------+
+| request slot for TechConnect           | connect.helpdeskbuttons.com                    | 443       |
++----------------------------------------+------------------------------------------------+-----------+
+| establish TechConnect session          | connect.helpdeskbuttons.com                    | 2001-2500 |
++----------------------------------------+------------------------------------------------+-----------+
 
