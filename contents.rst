@@ -36,6 +36,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/customization/custom-scripts
+	content/customization/version-numbers
 
 .. toctree::
 	:caption: Privacy
