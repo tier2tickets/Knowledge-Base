@@ -101,7 +101,7 @@ Set :EXIT as the Remark and Save
 Click save and we should have a functioning script that will install to a single endpoint.
 
 Deployment of the script
----------------------
+------------------------
 
 Select Browse from the main bar on the left, then the Groups tab.
 

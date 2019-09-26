@@ -18,7 +18,7 @@ Website
 
 
 Software
--------
+--------
 
 
 
@@ -30,7 +30,7 @@ Software
 0.4.x.4
 ~~~~~~~
 
-* Added support for auto-update.
+* Added support for :ref:`auto update <content/deployment/auto-update:Auto Update>`.
 
 
 
@@ -43,7 +43,7 @@ Software
 ~~~~~~~
 
 * Added support international phone number validation
-* Added support for self-hosted AWS buckets
+* Added support for :ref:`content/privacy/customer-owned:Customer-Owned AWS Buckets`.
 
 
 
@@ -53,7 +53,7 @@ Software
    <a name="0.3.x.28">&nbsp;</a>
 
 0.3.x.28
-~~~~~~~
+~~~~~~~~
 
 * bug fixes
 

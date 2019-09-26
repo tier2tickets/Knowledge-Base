@@ -28,6 +28,8 @@ Table Of Contents
 	:caption: Deployment
 	:maxdepth: 0
 
+	content/deployment/scripts
+	content/deployment/auto-update
 	content/deployment/ninjarmm
 	content/deployment/automate
 
@@ -43,6 +45,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/privacy/retention
+	content/privacy/customer-owned
 	
 .. toctree::
 	:hidden:
