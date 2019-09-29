@@ -13,7 +13,7 @@ Website
 
 2019-09-17
 ~~~~~~~~~~
-* Added an anti-virus scanner for payload uploads
+* Added support for :ref:`auto update <content/deployment/auto-update:Auto Update>`.
 
 
 
