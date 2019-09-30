@@ -30,7 +30,9 @@ In order for the client software to function, it makes outbound TCP connections 
 +----------------------------------------+------------------------------------------------+-----------+
 | If not self-hosting; our gatekeeper    | kdwq222yo3.execute-api.us-east-1.amazonaws.com | 443       |
 +----------------------------------------+------------------------------------------------+-----------+
-| upload diagnostic data/Images          | apc-button.s3.amazonaws.com                    | 443       |
+| upload diagnostic data/Images (v3)     | apc-button.s3.amazonaws.com                    | 443       |
++----------------------------------------+------------------------------------------------+-----------+
+| upload diagnostic data/Images (v4)     | hdb-stuff.s3.amazonaws.com                     | 443       |
 +----------------------------------------+------------------------------------------------+-----------+
 | request slot for TechConnect           | connect.helpdeskbuttons.com                    | 443       |
 +----------------------------------------+------------------------------------------------+-----------+
