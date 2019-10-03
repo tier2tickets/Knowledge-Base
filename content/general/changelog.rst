@@ -7,6 +7,10 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2019-10-02
+~~~~~~~~~~
+* Added support for arbitrary file uploads by custom scripts.
+
 2019-09-18
 ~~~~~~~~~~
 * Added an anti-virus scanner for payload uploads
