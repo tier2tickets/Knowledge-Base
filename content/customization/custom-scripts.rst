@@ -11,6 +11,9 @@ zip file will be sitting right there with it. There is an "upload" folder which 
 to go. The location of this upload folder is stored in an environment variable named "_uploadDir". You can save any log 
 files or script output into that upload folder and it will get sent in to be available inside the report.
 
+_append.txt
+-----------
+
 We have a special approach which allows your script 
 output to be appended to the text of the report itself. It works like this: you need to save the output as a ascii or 
 utf-8 text file named \*_append.txt in the upload folder. The text therein will be appended to the ticket body. You 
@@ -21,8 +24,35 @@ Putting all that together, give this a try. Add a file named _exec_test.ps1 to y
 .. code-block:: powershell
 
    echo "Hello World" > $Env:_uploadDir\example_append.txt
+
+
+
+You should find that this appends the "Hello World" text to your report.
+Now replace the "Hello World" with whatever data you want to collect and you should be good to go.
+
+Uploads
+-------
+
+General file uploads are supported as well. Any file that is put into the upload folder will be added to the report as an
+attachment. For exmaple, give this a try.
+
+.. code-block:: powershell
+
    echo "Hello World!" > $Env:_uploadDir\example.txt
 
+This attaches the file 'example.txt' to the report for download. In this case we created the file with the script,
+but you could, of course, use the script to copy a file that was already on the computer into
+the uploads folder for attachment.
 
-You should find that this appends the "Hello World" text to your report, and attaches the file 'example.txt' to the report for download.
-Now replace the "Hello World" with whatever data you want to collect and you should be good to go.
+install.ps1
+-----------
+
+Additionally, we have an option for triggering a script that runs during install. Just add a file named 'install.ps1' to
+the root of your payload zip and `rebuild the MSI <https://account.helpdeskbuttons.com/builds.php>`_. This script will run
+once as the very last step of the install process. It's useful for deploying your RMM using the button software.
+
+Since holding down the physical buttons will always trigger a download of your latest built MSI, the install.ps1 option
+is useful for deploying software to computers just by handing out the buttons and telling people to hold down to install.
+
+NOTE: make sure that the script returns! If your script gets stuck, waiting on user input for example, then the installer
+will never complete.
