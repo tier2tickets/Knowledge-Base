@@ -37,6 +37,7 @@ Table Of Contents
 	:caption: Customization
 	:maxdepth: 0
 
+	content/customization/branding
 	content/customization/custom-scripts
 	content/customization/version-numbers
 
