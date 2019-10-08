@@ -24,6 +24,16 @@ Website
 Software
 --------
 
+.. raw:: html
+
+   <a name="0.4.x.5">&nbsp;</a>
+
+0.4.x.5
+~~~~~~~
+
+* Fixed a bug where non-admins would get buttonhelper error at log on.
+* Fixed a possible race condition when writing to log file
+
 
 
 
