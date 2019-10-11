@@ -21,8 +21,22 @@ Website
 
 
 
+
 Software
 --------
+
+.. raw:: html
+
+   <a name="0.4.x.6">&nbsp;</a>
+
+0.4.x.6
+~~~~~~~
+
+* Fixed a bug where Unicode-only string would crash the GUI. Thanks `@litigationjackson <https://github.com/tier2tickets/Feedback/issues/48>`_
+
+
+
+
 
 .. raw:: html
 
