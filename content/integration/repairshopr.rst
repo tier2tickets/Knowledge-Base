@@ -24,12 +24,12 @@ And scroll down to the backend information part.
 
 Select ‘RepairShopr / Syncro’ for the Ticket System 
 
-Enter the register URL that you use. 
+Enter the register URL that you use.
 
 The Ticket System API endpoint is  
 
 example.repairshopr.com
 
-Or the equivalent for Syncro.
+Or the equivalent for Syncro. Be sure to *omit* the prefix (i.e. `https://`) and *omit* the suffix (i.e. `/customers?api_key=`)
 
 Under Ticket System API Key, enter the API key that you used earlier. Once you have entered that information, click Update and it will save the information.

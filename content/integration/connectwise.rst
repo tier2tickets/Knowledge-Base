@@ -19,6 +19,7 @@ Set the newly created company to ‘Active’ and click ‘Save’.
 Create an ‘Unregistered’ contact This must have the email address unregistered@helpdeskbuttons.com
 
 .. image:: images/cw-image-9.png
+
 This is the user which any Button Press tickets appear to come from if the user is unregistered. Remember to click save.
 
 You are now done setting up your company and contact.
@@ -28,16 +29,20 @@ Next step is to create an API key.
 First you need your company name. This appears on the login screen.
 
 .. image:: images/cw-image-5.png
+
 Log into ConnectWise Manage and then select System and then Members
 
 .. image:: images/cw-image-7.png
+
 Select the ‘API Members’ tab.
 
 .. image:: images/cw-image-6.png
+
 Click on the ‘New’ button and set up the new API member
 
 .. image:: images/cw-image-2.png
-Enter a member ID and name which fits your organization. Select the appropriate System options according to how your ConnectWise Manage system is configured. 
+
+Enter a member ID and name which fits your organization. Select the appropriate System options according to how your ConnectWise Manage system is configured.
 
 **Take note of the Service Defaults as they can effect the way tickets come into the system.**
 
@@ -50,11 +55,13 @@ Click ‘New’ and set an appropriate description.
 Be sure to copy both the Public and Private Keys
 
 .. image:: images/cw-image-3.png
+
 Once this has been set up, you will have all the information required.
 
 Log into your Helpdeskbuttons.com account. Select settings and then Backend Information
 
 .. image:: images/cw-image-1.png
+
 Select ‘Connectwise manage’ for the ticket system
 
 For the Ticket System API endpoint you would use

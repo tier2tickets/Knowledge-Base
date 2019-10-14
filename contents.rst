@@ -13,6 +13,7 @@ Table Of Contents
 	content/general/billing
 	content/general/installation
 	content/general/firewall
+	content/general/changelog
 
 .. toctree::
 	:caption: Integration
@@ -27,6 +28,8 @@ Table Of Contents
 	:caption: Deployment
 	:maxdepth: 0
 
+	content/deployment/scripts
+	content/deployment/auto-update
 	content/deployment/ninjarmm
 	content/deployment/automate
 
@@ -34,13 +37,16 @@ Table Of Contents
 	:caption: Customization
 	:maxdepth: 0
 
+	content/customization/branding
 	content/customization/custom-scripts
+	content/customization/version-numbers
 
 .. toctree::
 	:caption: Privacy
 	:maxdepth: 0
 
 	content/privacy/retention
+	content/privacy/customer-owned
 	
 .. toctree::
 	:hidden:
