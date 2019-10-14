@@ -96,11 +96,8 @@ API Access Settings
 For those of you who want to restrict the access the API user has, here is the security access we need: (a custom role will need to be created and assigned to us with these permissions):
 
 - Companies/Company Maintenance/Inquire Level - All (For gathering company data like street addresses)
-
 - Companies/Contacts/Inquire Level - All (For gathering contact data like email addresses)
-
 - Service Desk/Service Ticket - Dependencies/ Add, Edit, Inquire Level - All (Adding/editing/reading notes and attachments on tickets)
-
 - Service Desk/Service Ticket/ Add, Edit, Inquire Level - All (Adding/editing/reading tickets)
 
 
