@@ -54,3 +54,13 @@ Once you have entered this information, click Update.
 At this point, the integration should be working. You can test this by pressing the button and submitting a ticket.
 
 If you have trouble, give us a call and we can remote in you (833) 328-8866
+
+API Access Settings
+--------------------
+
+For those of you who want to restrict the access the API user has, here is the security access we need: (a custom security level will need to be created and assigned to us with these permissions):
+
+- CRM/Customer & Cancelations/Permission - All (For checking user and company data like address and email addresses)
+- Service Desk/Tickets/View 	- All 
+- Service Desk/Tickets/Add 	- Yes (Creating tickets)
+- Service Desk/Tickets/Edit 	- Yes (Adding Notes to tickets)
