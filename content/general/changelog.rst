@@ -28,7 +28,7 @@ Software
 
 .. raw:: html
 
-   <a name="0.4.x.7">&nbsp;</a>
+   <a name="0.4.7">&nbsp;</a>
 
 0.4.x.7
 ~~~~~~~
@@ -43,7 +43,7 @@ Software
 
 .. raw:: html
 
-   <a name="0.4.x.6">&nbsp;</a>
+   <a name="0.4.6">&nbsp;</a>
 
 0.4.x.6
 ~~~~~~~
@@ -56,7 +56,7 @@ Software
 
 .. raw:: html
 
-   <a name="0.4.x.5">&nbsp;</a>
+   <a name="0.4.5">&nbsp;</a>
 
 0.4.x.5
 ~~~~~~~
@@ -69,7 +69,7 @@ Software
 
 .. raw:: html
 
-   <a name="0.4.x.4">&nbsp;</a>
+   <a name="0.4.4">&nbsp;</a>
 
 0.4.x.4
 ~~~~~~~
@@ -81,7 +81,7 @@ Software
 
 .. raw:: html
 
-   <a name="0.4.x.3">&nbsp;</a>
+   <a name="0.4.3">&nbsp;</a>
 
 0.4.x.3
 ~~~~~~~
@@ -94,7 +94,7 @@ Software
 
 .. raw:: html
 
-   <a name="0.3.x.28">&nbsp;</a>
+   <a name="0.3.28">&nbsp;</a>
 
 0.3.x.28
 ~~~~~~~~
