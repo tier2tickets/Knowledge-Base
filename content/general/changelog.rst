@@ -25,6 +25,22 @@ Website
 Software
 --------
 
+
+.. raw:: html
+
+   <a name="0.4.x.7">&nbsp;</a>
+
+0.4.x.7
+~~~~~~~
+
+* Made uploads more robust by handling situations where the files to be uploaded are in use by an AV scan.
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="0.4.x.6">&nbsp;</a>
