@@ -14,6 +14,7 @@ Table Of Contents
 	content/general/installation
 	content/general/firewall
 	content/general/changelog
+	content/general/subaccounts
 
 .. toctree::
 	:caption: Integration

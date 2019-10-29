@@ -1,5 +1,5 @@
-What Should My Firewall Settings Be?
-====================================
+Security Software & Firewall Settings
+======================================
 
 There are two different scenarios where you might need to adjust settings on your firewall. One is for the inbound traffic to your ticket system, if your ticket system is hosted onsite. And the other is for outbound traffic coming from the button software on your client's PC
 
@@ -39,3 +39,18 @@ In order for the client software to function, it makes outbound TCP connections 
 | establish TechConnect session          | connect.helpdeskbuttons.com                    | 2001-2500 |
 +----------------------------------------+------------------------------------------------+-----------+
 
+
+Webroot
+--------
+
+Webroot will blank most programs from taking screenshots. Here is thier `documentation on how to allow a program to take screenshots.
+<https://docs.webroot.com/us/en/home/wsa_pc_userguide/wsa_pc_userguide.htm#UsingIdentityProtection/ManagingProtectedApplications.htm%3FTocPath%3DUsing%2520Identity%2520Protection%7C_____2/>`_.
+
+
+It may be necessary to allow applications to take screenshots without confirmation if you recieve popups about allowing screenshots.
+
+.. image:: images/1-webroot.png
+
+.. image:: images/2-webroot.png
+
+.. image:: images/3-webroot.png
