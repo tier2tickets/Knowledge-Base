@@ -8,7 +8,21 @@ You can name the account whatever you want. In our system it’s “Mystery Huma
 
 This user must also be a Contact and a Portal User.
 
-You will need your Repairshopr or Syncro API key.
+In case you done have contacts enabled this is how you do it: 
+
+Click Admin on the top bar
+
+.. image:: images/rs-admin.png
+
+Click General Preferences on the left
+
+.. image:: images/rs-admin2.png
+
+Click Customer Settings and check the box labeled, enable multiple contacts on customers.
+
+.. image:: images/rs-admin3.png
+
+Next you will need your Repairshopr or Syncro API key.
 
 You can go get your API key on your profile page.
 
