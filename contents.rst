@@ -23,6 +23,7 @@ Table Of Contents
 	content/integration/connectwise
 	content/integration/freshdesk
 	content/integration/repairshopr
+	content/integration/advanced
 	
 .. toctree::
 	:caption: Deployment
