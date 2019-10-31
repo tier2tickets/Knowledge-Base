@@ -14,7 +14,6 @@ Table Of Contents
 	content/general/installation
 	content/general/firewall
 	content/general/changelog
-	content/general/subaccounts
 
 .. toctree::
 	:caption: Integration
@@ -43,11 +42,13 @@ Table Of Contents
 	content/customization/version-numbers
 
 .. toctree::
-	:caption: Privacy
+	:caption: Security & Privacy
 	:maxdepth: 0
 
 	content/privacy/retention
 	content/privacy/customer-owned
+	content/privacy/trust
+	content/privacy/subaccounts 
 	
 .. toctree::
 	:hidden:
