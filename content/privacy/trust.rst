@@ -19,5 +19,5 @@ This is what the User Trust Factor looks like in the report.
 
 All users will start out as untrusted until they are toggled. Once they are toggled, all ticket reports with that signature will reflect the setting. Once the setting has been changed, a line giveing details about who and when the setting was changed will be shown, regardless of the current state of the User Trust Factor. The entire history of the changes to this setting is available at request.
  
-
+We considered putting this information in the ticket itself, but we decided against it.  Without a means of updating this in real time, situations may emerge that are problematic or confusing. We also didn't think that spamming ticket systems/email addresses with notes as people toggle this settings was desirable either.
  
