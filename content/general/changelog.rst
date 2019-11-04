@@ -26,6 +26,20 @@ Software
 --------
 
 
+
+.. raw:: html
+
+   <a name="0.4.8">&nbsp;</a>
+
+0.4.x.8
+~~~~~~~
+
+* Made uploads more robust by handling situations where the files to be uploaded are in use by an AV scan.
+* Made the software clear the upload folder on program exit. This should help address permissions issues
+
+
+
+
 .. raw:: html
 
    <a name="0.4.7">&nbsp;</a>
@@ -33,7 +47,6 @@ Software
 0.4.x.7
 ~~~~~~~
 
-* Made uploads more robust by handling situations where the files to be uploaded are in use by an AV scan.
 * Changed "Problem Description" page to say "Problem/Request Description"
 
 
