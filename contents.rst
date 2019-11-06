@@ -3,7 +3,7 @@ Table Of Contents
 **************************
 
 .. toctree::
-	
+
 	index
 
 .. toctree::
@@ -25,7 +25,7 @@ Table Of Contents
 	content/integration/repairshopr
 	content/integration/kaseya
 	content/integration/advanced
-	
+
 .. toctree::
 	:caption: Deployment
 	:maxdepth: 0
@@ -50,11 +50,17 @@ Table Of Contents
 	content/privacy/retention
 	content/privacy/customer-owned
 	content/privacy/trust
-	content/privacy/subaccounts 
-	
+	content/privacy/subaccounts
+
+.. toctree::
+	:caption: Marketing
+	:maxdepth: 0
+
+	content/marketing/how-to
+
 .. toctree::
 	:hidden:
 	:caption: Site Map
 	:maxdepth: 9
-	
+
 	self
