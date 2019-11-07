@@ -1,6 +1,12 @@
 Kaseya Integration
 ================================
 
+First we need to make a contact in a catch all company, this contact will put tickets in on behalf of users that are not currently in the system.
+
+.. image:: images/ka-image0.png
+
+This is our contact. Feel free to use whatever data you would like, but make sure the email address is *unregistered@helpdeskbuttons.com*
+
 Navigate to the Employee window:
 
 .. image:: images/ka-image1.png
