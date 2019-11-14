@@ -27,6 +27,20 @@ Software
 
 
 
+
+
+.. raw:: html
+
+   <a name="0.4.9">&nbsp;</a>
+
+0.4.x.9
+~~~~~~~
+
+* Fixed issue where scrolling up and down quickly would cause very high CPU spike in buttonhelper.exe
+
+
+
+
 .. raw:: html
 
    <a name="0.4.8">&nbsp;</a>
