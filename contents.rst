@@ -10,6 +10,7 @@ Table Of Contents
 	:caption: General
 	:maxdepth: 0
 
+	content/general/slides
 	content/general/billing
 	content/general/installation
 	content/general/firewall
