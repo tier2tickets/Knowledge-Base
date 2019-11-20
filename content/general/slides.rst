@@ -5,7 +5,7 @@ Website
 --------
 
 Billing
-https://docs.google.com/presentation/d/1amETlA965uKbOyrPzxqwEC8RvdELTKbaTvlbLiRXiLQ/edit?usp=sharing
+https://docs.google.com/presentation/d/e/2PACX-1vRDfsbbeN3ESWURY5BjfN7dvrwNYUFo7BzL-MTr15dCjYbQrUb3pYLNUz21hoAE1LPWWMmxUFaN2_74/pub?start=true&loop=false&delayms=10000
 
 Builds
-https://docs.google.com/presentation/d/1kFLCOdvqy4FG8TFQLNuF0aKeLYVNjPhHzACDxvZ7Qgo/edit?usp=sharing
+https://docs.google.com/presentation/d/e/2PACX-1vQ3-jZy2jjJaggGO7636AOtXTw8P0Bk89FCW84Nqgo1wk14DhsQtZOXPUVoX-f6A0BA8b30q2neFXLk/pub?start=true&loop=false&delayms=10000
