@@ -7,6 +7,10 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2019-11-25
+~~~~~~~~~~
+* Added support for custom rules in the advanced integration configuration
+
 2019-10-02
 ~~~~~~~~~~
 * Added support for arbitrary file uploads by custom scripts.
@@ -24,6 +28,21 @@ Website
 
 Software
 --------
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.5.2">&nbsp;</a>
+
+0.5.x.2
+~~~~~~~
+
+* CPU and memory improvements for screen captures
+* Auto-Skipping of company info screen if name/email is the same as last time
+* The error page gives detailed error information
 
 
 
