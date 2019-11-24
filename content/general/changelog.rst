@@ -10,6 +10,7 @@ Website
 2019-11-25
 ~~~~~~~~~~
 * Added support for custom rules in the advanced integration configuration
+* Added the ability to test integration against each of dev/beta/stable branch
 
 2019-10-02
 ~~~~~~~~~~
