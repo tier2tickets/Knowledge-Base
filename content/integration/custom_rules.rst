@@ -123,7 +123,7 @@ has not been following protocol and contacting internal IT first. Here is what t
 
 as you can see, using very simple Python syntax you can make very powerful and practical rules. But don't let these simple
 examples fool you. As mentioned, you have the full power of Python at your disposal. You can take that as far as you would
-like to go. Here is an example rule that sets the priority of a ticket high if the ticket message is more than 75% capitol 
+like to go. Here is an example rule that sets the priority of a ticket high if the ticket message is more than 75% capital 
 letters.
 
 
