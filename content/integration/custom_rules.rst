@@ -45,7 +45,7 @@ would look like:
 
 .. code-block:: python
 
-	if 'emergency' in selections: priority = 0
+	if 'This is an emergency' in selections: priority = 0
 
 As another example, let's assume you want to draw extra attention to emergency tickets by prepending the text "\*\*EMERGENCY\*\*"
 to the front of any emergency tickets. Here is what that rule would look like:
