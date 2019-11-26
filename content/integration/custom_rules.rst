@@ -135,7 +135,7 @@ Putting it all together, here is what those rules look like when put into the :r
 
 .. image:: images/custom_rules1.png
 
-To learn which tickets you have at your disposal for your specific ticket system, visit the integration guide for that system
+To learn which variables you have at your disposal for your specific ticket system, visit the integration guide for that system
 
 
 
