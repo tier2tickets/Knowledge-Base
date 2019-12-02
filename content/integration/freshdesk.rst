@@ -35,3 +35,8 @@ Enter your Ticket System API endpoint and the Ticket System API Key. Your Ticket
 .. image:: images/fd-image-6.png
 
 Click update once you are done. At this point, your Freshdesk / FreshService instance will be ready to go with your Helpdesk Buttons.
+
+Access Restrictions
+--------------------
+
+As of 0.5.x: The agent needs to have Administrator and Agent Roles.

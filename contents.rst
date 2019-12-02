@@ -25,7 +25,7 @@ Table Of Contents
 	content/integration/freshdesk
 	content/integration/repairshopr
 	content/integration/kaseya
-	content/integration/advanced
+	content/integration/osticket
 	content/integration/custom_rules
 
 .. toctree::

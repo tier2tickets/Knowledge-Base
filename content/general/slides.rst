@@ -11,3 +11,5 @@ Website
 `Device List <https://docs.google.com/presentation/d/e/2PACX-1vTXRk_q3XoOWK_zrIZuE4wh-go0lmdZwZdLC9pzfb2lCT6LavNY9eo9qYfLoalQqgcDC4sAdRXIQyZT/pub?start=true&loop=false&delayms=10000>`_
 
 `Report Dashboard <https://docs.google.com/presentation/d/e/2PACX-1vTlY-316LMxM9rF8nx22N0W8oPPfD2zVi1UCl8xHUGvGECQyJnZF9wNaosyEmGSyqotl3NUv5L-glJu/pub?start=true&loop=false&delayms=10000>`_
+
+`Settings <https://docs.google.com/presentation/d/e/2PACX-1vQK4DzlrxXQAO8zOOc1gWB_Hg96IlPUxAqrF4Fj5cP61I_kFvoWqFqvoE4FLva0AhHs1358lnFDiN6c/pub?start=true&loop=false&delayms=10000>`_
