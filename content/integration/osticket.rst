@@ -2,6 +2,8 @@ osTicket Integration
 =====================
 This guide will show you how to set up osTicket to work with your new Helpdesk Buttons.
 
+Create Your API Keys
+-----------------------
 
 Once you are logged in as an Admin. Click on Admin Panel in the top-right. 
 
@@ -23,6 +25,9 @@ osTicket requires API Keys be paired with IP addresses. Helpdesk Buttons servers
 - 3.209.57.193
 
 Let's Label these as Key1 (34.202.14.153) and Key2 (3.209.57.193)
+
+Helpdeskbutton.com Settings
+------------------------------
 
 .. image:: images/os-image-5.png
 

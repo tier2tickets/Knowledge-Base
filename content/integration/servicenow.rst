@@ -1,6 +1,14 @@
 ServiceNow Integration
 ========================
 
+Unregistered User
+------------------
+
+Coming Soon!
+
+Helpdeskbuttons.com Settings
+-------------------------------
+
 On the Settings page of helpdeskbuttons, put in the endpoint and a username:password combo as the API Key.
 
 Click update and the Integration Test button. 

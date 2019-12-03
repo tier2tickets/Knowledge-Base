@@ -2,11 +2,17 @@ Repairshopr / Syncro Integration
 ================================
 Setting up Helpdesk Buttons with Repairshopr or Syncro is easy. 
 
+Unregistered User
+--------------------
+
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users. 
 
 You can name the account whatever you want. In our system it’s “Mystery Human”.
 
 This user must also be a Contact and a Portal User.
+
+Multiple Contacts per client
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In case you done have contacts enabled this is how you do it: 
 
@@ -22,11 +28,17 @@ Click Customer Settings and check the box labeled, enable multiple contacts on c
 
 .. image:: images/rs-admin3.png
 
+Get your API Key
+----------------------
+
 Next you will need your Repairshopr or Syncro API key.
 
 You can go get your API key on your profile page.
 
 .. image:: images/rs-image-1.png
+
+Helpdeskbuttons.com Settings
+------------------------------
 
 Once you have the API key, you will need to adjust your settings in the Helpdeskbutton website.
 

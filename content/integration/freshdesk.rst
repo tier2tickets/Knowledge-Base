@@ -2,8 +2,16 @@ Freshdesk / Freshservice Integration
 =====================================
 This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons.
 
+Unregistered User
+-------------------
+By default, our software attempts to pair users with their contact information by checking with Freshdesk/Freshservice. If the user is not already found in the system
+a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Advanced Integration Options <content/integration/freshdesk:Advanced Integration Options>` below.
+
+This guide assumes you want to use the catch all contact: 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. In our system it’s “Mystery Human”.
 
+Getting an API Key
+--------------------
 On the left of your screen, click the admin button.
 
 .. image:: images/fd-image-1.png
@@ -16,7 +24,7 @@ Click ‘New Agent
 
 .. image:: images/fd-image-4.png
 
-And then fill out the information needed. This account just needs the ‘Agent’ role for it to work.
+And then fill out the information needed. This account needs the Administrator and Agent Roles roles.
 
 After you have created that account, sign into it and go to the profile.  You can get there by clicking your account picture and then selecting profile.
 
@@ -25,6 +33,9 @@ In the upper right, you will see ‘Your API Key’
 .. image:: images/fd-image-5.png
 
 Please take note of this API Key, you will need it in a little bit.
+
+Helpdeskbuttons.com Setup 
+---------------------------
 
 The next step is to sign into your Helpdeskbuttons.com account and enter this information under Settings->Backend Information
 
@@ -43,6 +54,8 @@ As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 
 Advanced Integration Options
 ------------------------------
+
+The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. 
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
@@ -70,7 +83,6 @@ FreshDesk
 +-----------------+---------------+
 | agent           |               | 
 +-----------------+---------------+
-
 
 Freshservice
 

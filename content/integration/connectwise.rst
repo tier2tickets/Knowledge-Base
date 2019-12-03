@@ -2,7 +2,10 @@ Connectwise Integration
 ========================
 Setting up Connectwise Manage to work with Helpdesk Buttons is very easy. You will have to do some basic setup in your ConnectWise Manage system first though.
 
-You will start off by logging into your ConnectWise Manage instance. The first step is to create a dummy company to catch tickets from unregistered users. Fill out the required fields with your companies information and remember to click save.  You might name the company “unregistered users” or something to that effect.
+Unregistered User
+-------------------
+
+You will start off by logging into your ConnectWise Manage instance. The first step is to create a dummy company to catch tickets from unregistered users (If you already have a catch all that can submit tickets feel free to use that company). Fill out the required fields with your companies information and remember to click save.  You might name the company “unregistered users” or something to that effect.
 
 .. image:: images/cw-image-10.png
   :width: 400
@@ -23,6 +26,9 @@ Create an ‘Unregistered’ contact This must have the email address unregister
 This is the user which any Button Press tickets appear to come from if the user is unregistered. Remember to click save.
 
 You are now done setting up your company and contact.
+
+Get an API Key
+------------------
 
 Next step is to create an API key.
 
@@ -57,6 +63,9 @@ Be sure to copy both the Public and Private Keys
 .. image:: images/cw-image-3.png
 
 Once this has been set up, you will have all the information required.
+
+Helpdeskbuttons.com Settings
+------------------------------
 
 Log into your Helpdeskbuttons.com account. Select settings and then Backend Information
 

@@ -2,6 +2,8 @@ Autotask Integration
 =====================
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. You will need an administrative login for Autotask. 
 
+API User
+----------
 The first step involves configuring an API user in Autotask. 
 
 In the main Autotask menu, select Admin and then Resources. 
@@ -13,6 +15,9 @@ Click the ‘New’ button to open the new user window.
 Set up the account as normal. Make sure that the Security Level is set to 'API User (System)', and the Integration Vendor in the API Tracking Identifier section is set to 'Helpdesk Buttons - Tier2Tickets'. Also take note of the username and the password since you will need them later.
 
 .. image:: images/at-image-04.png
+
+Unregistered User
+------------------
 
 You will also have to create a contact for any unregistered users to show up as when they submit a ticket.
 
@@ -32,6 +37,9 @@ Also set the Email Address for this contact to be ‘unregistered@helpdeskbutton
 When you are finished, click ‘Save and Close’.
 
 With that finished, now you will need to configure your information on the Helpdesk Button website. 
+
+Helpdeskbuttons.com Settings
+-----------------------------
 
 Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/settings.php 
 
