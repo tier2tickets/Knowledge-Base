@@ -1,7 +1,7 @@
 ServiceNow Integration
 ========================
 
-Let us know how to get in touch with your development team! We are happy to get you set up wit our software.
+Let us know how to get in touch with your development team! We are happy to get you set up with our software.
 
 
 Advanced Integration Options
