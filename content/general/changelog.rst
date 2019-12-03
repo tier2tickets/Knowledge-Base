@@ -34,6 +34,28 @@ Software
 
 
 
+
+
+
+.. raw:: html
+
+   <a name="0.5.3">&nbsp;</a>
+
+0.5.x.3
+~~~~~~~
+
+* Fixed phone number validation for the UK
+* Made phone number validation less bad for the rest of the world
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="0.5.2">&nbsp;</a>
