@@ -64,3 +64,24 @@ For those of you who want to restrict the access the API user has, here is the s
 - Service Desk/Tickets/View 	- All 
 - Service Desk/Tickets/Add 	- Yes (Creating tickets)
 - Service Desk/Tickets/Edit 	- Yes (Adding Notes to tickets)
+
+Advanced Integration Options
+------------------------------
+
++-----------------+---------------+
+| Read/Write      | Read Only     |
++=================+===============+
+| priority        | selections    |
++-----------------+---------------+
+| ticketStatus    | contactName   |
++-----------------+---------------+
+| queue           | email         |
++-----------------+---------------+
+| type            | ip            |
++-----------------+---------------+
+| message         | append        |
++-----------------+---------------+
+| subject         | hostname      | 
++-----------------+---------------+
+| source          | mac           | 
++-----------------+---------------+

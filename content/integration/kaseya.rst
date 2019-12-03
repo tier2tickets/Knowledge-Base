@@ -37,3 +37,28 @@ For those of you who want to restrict the access the API user has, here is the s
 - CRM/Accounts					View			- For gathering location data (addresses)
 - CRM/Contacts					View			- For Matching tickets with contacts
 - Admin/Special Features: Has API Access		- To access the API
+
+Advanced Integration Options
+------------------------------
+
++-----------------+---------------+
+| Read/Write      | Read Only     |
++=================+===============+
+| Priority        | selections    |
++-----------------+---------------+
+| Status          | name          |
++-----------------+---------------+
+| queue           | email         |
++-----------------+---------------+
+| TicketType      | ip            |
++-----------------+---------------+
+| Details         | append        |
++-----------------+---------------+
+| Title           | hostname      | 
++-----------------+---------------+
+| TicketSource    | mac           | 
++-----------------+---------------+
+| assignee        | OpenDate      | 
++-----------------+---------------+
+
+Please note that either queue, assignee, or both must be set for this integration to work properly.

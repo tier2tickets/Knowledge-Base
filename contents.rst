@@ -26,8 +26,8 @@ Table Of Contents
 	content/integration/repairshopr
 	content/integration/kaseya
 	content/integration/osticket
+	content/integration/servicenow
 	content/integration/advanced
-	content/integration/custom_rules
 
 .. toctree::
 	:caption: Deployment

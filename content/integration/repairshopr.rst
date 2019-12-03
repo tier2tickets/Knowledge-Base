@@ -60,3 +60,24 @@ For those of you who want to restrict the access the API user has, here is the s
 - Tickets Edit: For adding private notes
 
 Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future.
+
+Advanced Integration Options
+------------------------------
+
++-----------------+---------------+
+| Read/Write      | Read Only     |
++=================+===============+
+| priority        | selections    |
++-----------------+---------------+
+| status          | name          |
++-----------------+---------------+
+| comment_subject | email         |
++-----------------+---------------+
+| problem_type    | business_name |
++-----------------+---------------+
+| message         | ip            |
++-----------------+---------------+
+| subject         | mac           | 
++-----------------+---------------+
+| append          | hostname      | 
++-----------------+---------------+
