@@ -108,6 +108,8 @@ Keep in mind that this list is based on the current feature set. With the expans
 Advanced Integration Options
 ------------------------------
 
+This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
@@ -133,3 +135,6 @@ Advanced Integration Options
 +-----------------+---------------+
 | board           |               | 
 +-----------------+---------------+
+
+Note: State, Team and Type are all related to the Board. For any customizations to those fields 
+do not use the "__default__" Board. Please provide the Board by name.

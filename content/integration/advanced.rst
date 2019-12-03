@@ -9,6 +9,8 @@ Once opened, your options will look something like this:
 
 .. image:: images/advanced-open.png
 
+You can reset this field to default by submitting a blank field. 
+
 Defaults
 ------------
 

@@ -44,6 +44,8 @@ As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 Advanced Integration Options
 ------------------------------
 
+This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+
 FreshDesk
 +-----------------+---------------+
 | Read/Write      | Read Only     |

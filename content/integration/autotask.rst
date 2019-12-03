@@ -68,6 +68,8 @@ For those of you who want to restrict the access the API user has, here is the s
 Advanced Integration Options
 ------------------------------
 
+This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+

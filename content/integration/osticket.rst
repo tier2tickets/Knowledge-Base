@@ -37,6 +37,8 @@ That should be it. Hit update and test the integration with the Integration Test
 Advanced Integration Options
 -----------------------------
 
+This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+

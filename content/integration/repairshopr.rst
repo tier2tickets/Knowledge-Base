@@ -64,6 +64,8 @@ Keep in mind that this list is based on the current feature set. With the expans
 Advanced Integration Options
 ------------------------------
 
+This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
