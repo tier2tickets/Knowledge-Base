@@ -3,8 +3,6 @@ osTicket Integration
 This guide will show you how to set up osTicket to work with your new Helpdesk Buttons.
 
 
-Navigate to the API Keys section in the Admin Panel.
-
 Once you are logged in as an Admin. Click on Admin Panel in the top-right. 
 
 .. image:: images/os-image-1.png
@@ -34,3 +32,25 @@ Once you have your API Keys and you put in the url for osTicket put the keys int
 Key1:Key2
 
 That should be it. Hit update and test the integration with the Integration Test button.
+
+
+Advanced Integration Options
+-----------------------------
+
++-----------------+---------------+
+| Read/Write      | Read Only     |
++=================+===============+
+| priority        | selections    |
++-----------------+---------------+
+| alert           | name          |
++-----------------+---------------+
+| auto_respond    | email         |
++-----------------+---------------+
+| message         | append        |
++-----------------+---------------+
+| subject         | mac           | 
++-----------------+---------------+
+|                 | ip            | 
++-----------------+---------------+
+|                 | hostname      | 
++-----------------+---------------+
