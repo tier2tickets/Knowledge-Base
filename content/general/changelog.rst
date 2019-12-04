@@ -32,6 +32,26 @@ Software
 
 
 
+deviceErrors
+updateList
+diskErrors
+bsodList
+OS_Version
+
+
+
+.. raw:: html
+
+   <a name="0.5.4">&nbsp;</a>
+
+0.5.x.4
+~~~~~~~
+
+* Added support for the following new information in the report: device errors, windows update list, disk smart errors, recent BSOD info, OS build number
+
+
+
+
 
 
 
