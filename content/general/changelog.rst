@@ -83,6 +83,7 @@ OS_Version
 0.5.x.2
 ~~~~~~~
 
+* Added support for very large monitor configs (up to 5 4k monitors)
 * CPU and memory improvements for screen captures
 * Auto-Skipping of company info screen if name/email is the same as last time
 * The error page gives detailed error information
