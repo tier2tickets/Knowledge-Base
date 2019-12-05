@@ -9,12 +9,14 @@ To start you will need to set up a contact that uses the email address of “unr
 
 You can name the account whatever you want. In our system it’s “Mystery Human”.
 
-This user must also be a Contact and a Portal User.
+This can be a customer or a contact under a customer.
 
 Multiple Contacts per client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In case you done have contacts enabled this is how you do it: 
+Note: This is no longer strictly necessary, but users will have to put in the email address of the customer instead of thier own address.
+
+In case you don't have contacts enabled and you want individuals to be able to put in tickets, this is how you do it: 
 
 Click Admin on the top bar
 
@@ -27,6 +29,7 @@ Click General Preferences on the left
 Click Customer Settings and check the box labeled, enable multiple contacts on customers.
 
 .. image:: images/rs-admin3.png
+
 
 Get your API Key
 ----------------------
