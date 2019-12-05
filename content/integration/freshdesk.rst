@@ -55,11 +55,17 @@ As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 Advanced Integration Options
 ------------------------------
 
-The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. 
+Defaults
+^^^^^^^^^
+The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+
+Rules
+^^^^^^
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
 FreshDesk
+
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
