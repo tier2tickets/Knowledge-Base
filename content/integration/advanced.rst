@@ -14,7 +14,7 @@ You can reset this field to default by submitting a blank field.
 Defaults
 ------------
 
-As of version :ref:`0.5.x.2 <content/general/changelog:0.5.x.2>` of the helpdesk buttons software, we support defaults for fields. 
+As of version :ref:`0.4.x.4 <content/general/changelog:0.4.x.4>` of the helpdesk buttons software, we support defaults for fields. 
 As new integration features are added, this section will be filled with default data. These defaults allow you to set the normal operation of 
 the integration and will depend on your PSA. 
 
