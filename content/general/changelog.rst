@@ -7,6 +7,12 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+
+2019-12-09
+~~~~~~~~~~
+* Added better documentation throughout the site
+* Added helpful links to the ticket report page
+
 2019-11-25
 ~~~~~~~~~~
 * Added support for custom rules in the advanced integration configuration
@@ -32,11 +38,27 @@ Software
 
 
 
-deviceErrors
-updateList
-diskErrors
-bsodList
-OS_Version
+
+
+.. raw:: html
+
+   <a name="0.5.5">&nbsp;</a>
+
+0.5.x.5
+~~~~~~~
+
+* Added the ability to put in a ticket using a QR code on internet outage.
+
+* Optimized the GUI to launch a little faster on button press.
+
+* Bug fixes
+
+
+
+
+
+
+
 
 
 
