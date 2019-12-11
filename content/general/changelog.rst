@@ -40,6 +40,42 @@ Software
 
 
 
+
+
+
+.. raw:: html
+
+   <a name="0.5.7">&nbsp;</a>
+
+0.5.x.7
+~~~~~~~
+
+* Added more customizable text on main gui page
+
+* Added the ability to remove button and text from the left side of the gui page
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.5.6">&nbsp;</a>
+
+0.5.x.6
+~~~~~~~
+
+* Added button to do stuff on the the left side of the GUI main page.
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="0.5.5">&nbsp;</a>
