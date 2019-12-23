@@ -24,7 +24,7 @@ A word on billing
 : We bill according to the number of devices that check in with our servers, so you don't have to worry with buying licenses, that's all managed automagically through our escrow system on the [Billing Page](https://beta.helpdeskbuttons.com/billing.php).
 
 ## 4) Further customize and enjoy the extensibility of Helpdesk Buttons
-We know that your business flow is going to differ from our hundreds of other clients, so we're constantly building out better methods for you to take the reins on what information is being collected and how close of an integration you'd like with your PSA. With each ticket submitted to you, you will receive the same excellent baseline of real-time diagnostics and annotated screenshots, but with our :ref:`Custom Scripts <content/customization/custom-scripts>` and :ref:`Custom Rules <content/integration/advanced:Custom Rules>`, you can better gather pertinent information, triage and process tickets before they've even hit your system.
+We know that your business flow is going to differ from our hundreds of other clients, so we're constantly building out better methods for you to take the reins on what information is being collected and how close of an integration you'd like with your PSA. With each ticket submitted to you, you will receive the same excellent baseline of real-time diagnostics and annotated screenshots, but with our [Custom Scripts](/content/customization/custom-scripts) and [Custom Rules](/content/integration/advanced:Custom Rules), you can better gather pertinent information, triage and process tickets before they've even hit your system.
 
 Learn more and connect with the Helpdesk Buttons community here:
 - Our Support [Knowledge Base](https://docs.tier2tickets.com/) (You're here, now.)
