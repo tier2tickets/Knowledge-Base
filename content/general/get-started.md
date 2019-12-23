@@ -1,7 +1,7 @@
 # Getting Started with Helpdesk Buttons
 From the beginning, our goal was to make the start-up process for Helpdesk Buttons accessible to anyone who wants to try it. We didn't want any features or abilities stuck behind paywalls or shrouded in smoke and mirrors. If something is unclear or seems inaccessible, it's probably because we just haven't written instructions down yet or maybe we forgot to. So let us know and we'll fix it.
 
-Regardless, all you need to do is login, download, and install the custom Helpdesk Buttons software you've built on the devices you'd like to employ our software.
+All you need to do is log in to your account, download, and install the custom Helpdesk Buttons software you've built on the devices you'd like to employ our software.
 
 If you'd like more direction, here's how we envision it working for you:
 
@@ -20,12 +20,14 @@ If you want custom buttons, we work with art you send us (we request a 2-color S
 ## 3) Deploy to all of your endpoints
 We have a link to that aforementioned MSI as well as custom Powershell and Batch scripts for deploying on your [Builds page](https://beta.helpdeskbuttons.com/builds.php), and if you need assistance, we offer our welcome and service packages during which our development team can assist and complete all of this for you. These are also linked through the buy page, but you can visit the shop directly, here: [Welcome Packs](https://cms.helpdeskbuttons.com/product-category/starter-pack/).
 
-*A word on billing*
-We bill according to the number of devices that check in with our servers, so you don't have to worry with buying licenses, that's all managed automagically through our escrow system on the [Billing Page](https://beta.helpdeskbuttons.com/billing.php).
+A word on billing
+: We bill according to the number of devices that check in with our servers, so you don't have to worry with buying licenses, that's all managed automagically through our escrow system on the [Billing Page](https://beta.helpdeskbuttons.com/billing.php).
 
 ## 4) Further customize and enjoy the extensibility of Helpdesk Buttons
-We know that your business flow is going to differ from our hundreds of other clients, so we're constantly building out better methods for you to take the reins on what information is being collected and how close of an integration you'd like with your PSA. With each ticket submitted to you, you will receive the same excellent baseline of real-time diagnostics and annotated screenshots, but with our Custom Scripts and Advanced Integration options, you can better gather pertinent information, triage and process tickets before they've even hit your system. Learn more and connect with the Helpdesk Buttons community here:
-- Our Support [Knowledge Base](https://docs.tier2tickets.com/)
+We know that your business flow is going to differ from our hundreds of other clients, so we're constantly building out better methods for you to take the reins on what information is being collected and how close of an integration you'd like with your PSA. With each ticket submitted to you, you will receive the same excellent baseline of real-time diagnostics and annotated screenshots, but with our :ref:`Custom Scripts <content/customization/custom-scripts>` and :ref:`Custom Rules <content/integration/advanced:Custom Rules>`, you can better gather pertinent information, triage and process tickets before they've even hit your system.
+
+Learn more and connect with the Helpdesk Buttons community here:
+- Our Support [Knowledge Base](https://docs.tier2tickets.com/) (You're here, now.)
 - Our [Community Forum](https://community.tier2tickets.com/)
 - Our [Bug Reports Github](https://github.com/tier2tickets/feedback/issues)
 - Our [Public Roadmap](https://trello.com/b/wSlyA6vW/phase-2-roadmap)
