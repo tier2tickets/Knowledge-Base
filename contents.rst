@@ -10,7 +10,7 @@ Table Of Contents
 	:caption: General
 	:maxdepth: 0
 
-	contend/general/get-started
+	content/general/get-started
 	content/general/slides
 	content/general/billing
 	content/general/installation
