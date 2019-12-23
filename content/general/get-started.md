@@ -4,11 +4,11 @@ From the beginning, our goal was to make the start-up process for Helpdesk Butto
 If you'd like more direction, here's how we envision it working for you:
 
 ## 1) Install and test your software
-**1. Login to your account.**
+1. Login to your account.
 The first time you log in to your account, we create a basic version of your software as an MSI that you can download and test out right away with the email connector and Helpdesk Buttons branding active.
-**2. Navigate to the Builds Page.**
+2. Navigate to the Builds Page.
 Here's the link: https://beta.helpdeskbuttons.com/builds.php.
-**3. Download and Install your Custom Software**
+3. Download and Install your Custom Software
 Check it out. Envision how much your customers will enjoy it. Set up your PSA integration and customize the text throughout the user form on the settings page: https://beta.helpdeskbuttons.com/settings.php. Add your custom branding and create another build. Download. Test. Customize. Rinse. Repeat.
 
 ## 2) Order buttons
