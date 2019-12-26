@@ -11,6 +11,8 @@ zip file will be sitting right there with it. There is an "upload" folder which 
 to go. The location of this upload folder is stored in an environment variable named "_uploadDir". You can save any log 
 files or script output into that upload folder and it will get sent in to be available inside the report.
 
+Be advised: The upload folder is cleared as software is started to make sure the data in there is specific to the current ticket.
+
 _append.txt
 -----------
 
