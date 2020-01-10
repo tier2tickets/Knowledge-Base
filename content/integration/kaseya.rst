@@ -57,7 +57,7 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +=================+===============+
 | priority        | selections    |
 +-----------------+---------------+
-| status          | name          |
+| ticketStatus    | name          |
 +-----------------+---------------+
 | queue           | email         |
 +-----------------+---------------+
