@@ -55,21 +55,21 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| Priority        | selections    |
+| priority        | selections    |
 +-----------------+---------------+
-| Status          | name          |
+| status          | name          |
 +-----------------+---------------+
 | queue           | email         |
 +-----------------+---------------+
-| TicketType      | ip            |
+| ticketType      | ip            |
 +-----------------+---------------+
-| Details         | append        |
+| message         | append        |
 +-----------------+---------------+
-| Title           | hostname      | 
+| title           | hostname      | 
 +-----------------+---------------+
-| TicketSource    | mac           | 
+| ticketSource    | mac           | 
 +-----------------+---------------+
-| assignee        | OpenDate      | 
+| assignee        | openDate      | 
 +-----------------+---------------+
 
 Please note that either queue, assignee, or both must be set for this integration to work properly.
