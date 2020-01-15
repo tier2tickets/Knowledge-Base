@@ -45,7 +45,9 @@ Helpdeskbuttons.com Settings
 
 Once you have the API key, you will need to adjust your settings in the Helpdeskbutton website.
 
-http://www.helpdeskbuttons.com/account/settings.php
+http://www.helpdeskbuttons.com
+
+On the navigation bar on the left select Settings, then Backend Information. 
 
 And scroll down to the backend information part. 
 
