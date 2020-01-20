@@ -114,8 +114,23 @@ The group is based on your company, but it can be tricky. We recommend leaving t
 
 Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future.
 
+Anti-Virus and AntiMalware
+-----------------------------
+It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
+
 Advanced Integration Options
 ------------------------------
+
+Defaults
+^^^^^^^^^
+
+Many of the fields can be set to "__default__"
+
+Note: State, Team and Type are all related to the Board. For any customizations to those fields 
+do not use the "__default__" Board. Please provide the Board by name (This also applies to Custom Rules).
+
+Custom Rules
+^^^^^^^^^^^^^
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
@@ -130,11 +145,11 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | type            | ip            |
 +-----------------+---------------+
-| message         | append        |
+| message         | mac           |
 +-----------------+---------------+
 | subject         | hostname      | 
 +-----------------+---------------+
-| source          | mac           | 
+| source          |               | 
 +-----------------+---------------+
 | impact          |               | 
 +-----------------+---------------+
@@ -144,6 +159,27 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | board           |               | 
 +-----------------+---------------+
+| append          |               | 
++-----------------+---------------+
 
-Note: State, Team and Type are all related to the Board. For any customizations to those fields 
-do not use the "__default__" Board. Please provide the Board by name.
+Field Definitions
+^^^^^^^^^^^^^^^^^
+
+* *priority* refers to the ticket priority (Urgent, Low, ect)
+* *impact* and *urgency* can set priority via the SLA priority matrix
+* *state* refers to the ticket status (New, In Progress, etc)
+* *team* refers to the queue the ticket will be put in
+* *type* refers to the issue type (Service Request, Incident, Problem, Alert)
+* *message* refers to the message the client typed when making the ticket
+* *subject* refers to the ticket title
+* *append* refers to the information appended to the HDB report
+* *owner* refers to the agent that will be assigned this ticket
+* *source* refers to the ticket source (Web Portal, P, )
+* *board* refers to the board the ticket will be put under 
+* *priv_append* allows you to append information to the internal ticket note
+* *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
+* *name* refers to the client's name
+* *email* refers to the client's email
+* *ip* refers to the client's external ip address
+* *mac* refers to the client's MAC address
+* *hostname* refers to the client's hostname 

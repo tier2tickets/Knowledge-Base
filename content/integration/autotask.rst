@@ -73,6 +73,11 @@ For those of you who want to restrict the access the API user has, here is the s
 - Service Desk/Tickets/Add 	- Yes (Creating tickets)
 - Service Desk/Tickets/Edit 	- Yes (Adding Notes to tickets)
 
+
+Anti-Virus and AntiMalware
+-----------------------------
+It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.  
+
 Advanced Integration Options
 ------------------------------
 
@@ -89,9 +94,38 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | type            | ip            |
 +-----------------+---------------+
-| message         | append        |
+| message         | mac           |
 +-----------------+---------------+
 | subject         | hostname      | 
 +-----------------+---------------+
-| source          | mac           | 
+| append          |               | 
 +-----------------+---------------+
+| priv_append     |               | 
++-----------------+---------------+
+| source          |               | 
++-----------------+---------------+
+| issue           |               | 
++-----------------+---------------+
+| subIssue        |               | 
++-----------------+---------------+
+
+Field Definitions
+^^^^^^^^^^^^^^^^^
+
+- *priority* refers to the ticket priority (Urgent, Low, ect)
+- *ticketStatus* refers to the ticket status (New, In Progress, etc)
+- *queue* refers to the queue the ticket will be put in
+- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
+- *message* refers to the message the client typed when making the ticket
+- *subject* refers to the ticket title
+- *append* refers to the information appended to the HDB report
+- *source* refers to the ticket source (Web Portal, P, )
+- *priv_append* allows you to append information to the internal ticket note
+- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
+- *contactName* refers to the client's name
+- *email* refers to the client's email
+- *ip* refers to the client's external ip address
+- *mac* refers to the client's MAC address
+- *hostname* refers to the client's hostname 
+- *issue* refers to the primary ticket issue
+- *subissue* refers ro the secondary ticket issue

@@ -38,6 +38,10 @@ Key1:Key2
 
 That should be it. Hit update and test the integration with the Integration Test button.
 
+Anti-Virus and AntiMalware
+-----------------------------
+It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
+
 
 Advanced Integration Options
 -----------------------------
@@ -53,11 +57,24 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | auto_respond    | email         |
 +-----------------+---------------+
-| message         | append        |
+| message         | hostname      |
 +-----------------+---------------+
 | subject         | mac           | 
 +-----------------+---------------+
-|                 | ip            | 
+| append          | ip            | 
 +-----------------+---------------+
-|                 | hostname      | 
-+-----------------+---------------+
+
+Field Definitions
+^^^^^^^^^^^^^^^^^
+
+- *priority* refers to the ticket priority (Urgent, Low, ect) 
+- *alert* alerts staff to ticket creation or not 
+- *message* refers to the message the client typed when making the ticket
+- *subject* refers to the ticket title
+- *append* refers to the information appended to the HDB report
+- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
+- *name* refers to the client's name
+- *email* refers to the client's email
+- *ip* refers to the client's external ip address
+- *mac* refers to the client's MAC address
+- *hostname* refers to the client's hostname 

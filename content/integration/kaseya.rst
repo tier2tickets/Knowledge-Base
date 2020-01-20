@@ -47,8 +47,20 @@ For those of you who want to restrict the access the API user has, here is the s
 - CRM/Contacts					View			- For Matching tickets with contacts
 - Admin/Special Features: Has API Access		- To access the API
 
+Anti-Virus and AntiMalware
+-----------------------------
+It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
+
 Advanced Integration Options
 ------------------------------
+
+Defaults
+^^^^^^^^^
+
+Please note that either queue, assignee, or both must be set for this integration to work properly.
+
+Custom Rules
+^^^^^^^^^^^^^
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
@@ -63,13 +75,35 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | ticketType      | ip            |
 +-----------------+---------------+
-| message         | append        |
+| message         | openDate      |
 +-----------------+---------------+
 | title           | hostname      | 
 +-----------------+---------------+
 | ticketSource    | mac           | 
 +-----------------+---------------+
-| assignee        | openDate      | 
+| assignee        |               | 
++-----------------+---------------+
+| append          |               | 
 +-----------------+---------------+
 
-Please note that either queue, assignee, or both must be set for this integration to work properly.
+Field Definitions
+^^^^^^^^^^^^^^^^^
+
+- *priority* refers to the ticket priority (Urgent, Low, ect) 
+- *ticketStatus* refers to the ticket status (New, In Progress, etc) 
+- *comment_subject* refers to the subject line of the first comment
+- *ticketType* refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
+- *queue* refers to the queue the ticket will be assigned to
+- *assignee* refers to the agent the ticket will be assigned to
+- *message* refers to the message the client typed when making the ticket
+- *title* refers to the ticket title
+- *append* refers to the information appended to the HDB report
+- *ticketSource* refers to the source of the ticket (Client portal, Phone, Other)
+- *priv_append* allows you to append information to the internal ticket note
+- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
+- *name* refers to the client's name
+- *email* refers to the client's email
+- *ip* refers to the client's external ip address
+- *mac* refers to the client's MAC address
+- *hostname* refers to the client's hostname 
+- *openDate* refers to the date the ticket was created
