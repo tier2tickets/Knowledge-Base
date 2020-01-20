@@ -28,6 +28,7 @@ Table Of Contents
 	content/integration/kaseya
 	content/integration/osticket
 	content/integration/servicenow
+	content/integration/zendesk
 	content/integration/advanced
 
 .. toctree::
