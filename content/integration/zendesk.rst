@@ -74,15 +74,15 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-------------------+---------------+
 | subject           | mac           | 
 +-------------------+---------------+
-| append            | input_cell    | 
+| append            |*input_cell*   | 
 +-------------------+---------------+
-|                   | input_phone   | 
+|                   |*input_phone*  | 
 +-------------------+---------------+
-|                   | input_company | 
+|                   |*input_company*| 
 +-------------------+---------------+
-|                   | input_email   | 
+|                   |*input_email*  | 
 +-------------------+---------------+
-|                   | input_name    | 
+|                   |*input_name*   | 
 +-------------------+---------------+
 
 Field Definitions
