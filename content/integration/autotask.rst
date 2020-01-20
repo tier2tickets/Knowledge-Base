@@ -119,7 +119,7 @@ Field Definitions
 - *message* refers to the message the client typed when making the ticket
 - *subject* refers to the ticket title
 - *append* refers to the information appended to the HDB report
-- *source* refers to the ticket source (Web Portal, P, )
+- *source* refers to the ticket source (Web Portal, Phone, Other)
 - *priv_append* allows you to append information to the internal ticket note
 - *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
 - *contactName* refers to the client's name
