@@ -6,7 +6,8 @@ This guide will show you how to set up deployment for a build of Helpdesk Button
 Create a Script
 ----------------
 
-This script will be run on individual machines as that gives the most flexibility. It will check a registry key to make sure the software is not installed before it attempts to install it. 
+This script will be run on individual machines as that gives the most flexibility. Our custom generated Powershell script can be downloaded from the site directly on the Builds page.
+This guide assumes it has beed downloaded and placed somewhere in the LTShare\Transfer directory.
 
 Click New -> Script
 
@@ -16,89 +17,58 @@ Select the Location to add the script and click next.
 
 .. image:: images/CW02-Location.png
 
-Name the script, add a note if you like, make sure the target is Computer, set the forst condition to true. (This will make sense later)
+Name the script, add a note if you like, make sure the target is Computer, set the first condition to true.
 
 .. image:: images/CW03-NewScript.png
 
-The next couple of conditions in this script are to make sure we cover both 32bit and 64bit installs of the software as both are supported since the registry keys location depends on the architecture.
+Add a new command and select File Download. Set the Local File line to the location of the script and the destination to wherever you like on the endpoint machine. 
 
-Let's look at the 64bit version first.
+we use:
 
-Right click in the Then window and select Add.
+.. code-block:: bash
+ 
+	%tempdir%\HelpdeskButton-deploy.ps1
 
-Select IF Registry Check as the function, put in this key:
+.. image:: images/CW04-Download.png
+
+Add a Process Execute command.
+
+We are using the PowerShell deployment script so we will execute it with PowerShell.
 
 .. code-block:: bash
 
-	HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\helpDeskButtons.com_main_is1\
-	
-Compare should be set to Exists, To should be blank, and we will add a jump to label :EXIT (We will be adding this label near the end of the script)
+	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
-Check continue on failure and click Save
+we use the arguments:
 
-.. image:: images/CW04-Registry.png
+.. code-block:: bash 
 
-Now lets handle the 32bit Registry check.
+	-ExecutionPolicy bypass "%tempdir%\HelpdeskButton-deploy.ps1"
 
-Right click in the Then window and select Add.
+make sure to put the directory you specified in the destination above.
 
-Select IF Registry Check as the function, put in this key:
-	
-.. code-block:: bash
-	
-	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\helpDeskButtons.com_main_is1\
-	
-Compare should be set to Exists, To should be blank, and we will add a jump to label :EXIT
+.. image:: images/CW05-Execute.png
 
-**Make sure to check continue on failure** and click Save
-
-.. image:: images/CW05-Registry.png
-
-The next line will download the msi.
-
-Right click in the Then window and select Add.
-
-Select File Download URL (Forced) as the function
-
-Replace the url with a path to the installer, and specify the local location to save.
-
-Select Wait Until Finished and Save. **Keep that local path in mind for the next step** 
-
-.. image:: images/CW06-Download.png
-
-The next line will execute the file that was just downloaded.
-
-Right click in the Then window and select Add.
-
-Select Process Execute as the function and set the File to be:
+We add like to check on these from time to time so we have the script log its actions.
 
 .. code-block:: bash
+ 
+	%shellresult%
 
-	%windir%\System32\msiexec.exe
-	
-and the Arguments to be something like:
+.. image:: images/CW06-AddLog.png
+
+To enable the log you need to add this Global Variable
 
 .. code-block:: bash
+ 
+	@ScriptEngineEnableLogger@   True
 
-	/i %windir%\ltsvc\tools\buttonInst.msi /quiet /norestart WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"""
-	
-For more information about the parameters, check out our `Installation Guide <https://docs.tier2tickets.com/content/general/installation/>`_
+.. image:: images/CW07-EnableLog.png
 
-Select Return Immediately and check Continue on Failure and Save
+Finally Save the Script and you are done! Here is what it looks like completed.
 
-.. image:: images/CW07-Execute.png
+.. image:: images/CW08-Done.png
 
-The final line is where we add the label that allows us to skip the download and execute steps if the software is installed. 
-
-Right click in the Then window and select Add.
-
-Select Script Note as the Function
-
-Set :EXIT as the Remark and Save
-
-.. image:: images/CW08-Exit.png
-
-Click save and we should have a functioning script that will install to a single endpoint.
 
 Deployment of the script
 ------------------------
