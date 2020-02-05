@@ -15,6 +15,7 @@ Table Of Contents
 	content/general/billing
 	content/general/installation
 	content/general/firewall
+	content/general/ordering-buttons
 	content/general/changelog
 
 .. toctree::
