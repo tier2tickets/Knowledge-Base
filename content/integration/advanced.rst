@@ -158,7 +158,55 @@ Putting it all together, here is what those rules look like when put into the :r
 
 To learn which variables you have at your disposal for your specific ticket system, visit the integration guide for that system
 
+Practical Example 1: Impact/Urgency Priority Matrix
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Here is a larger example that showcases some of the power of this system.
+
+This example will assume your PSA does not already have a functional impact/urgency correlation to priority.
+
+These choices represent a 3x3 matrix. This means we have 4-5 priority levels. In my example, I will use 5 levels  and number them like so
+Critical = 0, High = 1, Medium = 2, Low = 3 and Very Low = 4
+
+When the grid is filled out with these numbers it looks like this:
+
+.. image:: images/impact-urgency.png
+
+If we assign a number to each impact and urgency (High =0, Medium = 1, Low = 2)
+
+We can simply use the sum of impact and urgency to find the priority.  For example High Impact (0) + High Urgency (0) =  Critical Priority (0)
+and Low Urgency (2) + Medium Impact (1) = Low Priority (3)
+
+Now to code it up. Let's use these values for the selection text on the GUI.
+
+.. image:: images/impact-urgency-2.png
+
+For each impact and urgency phrase, we want to set the numerical value so we can sum them at the end.
+
+We will need a line of code for each option:
+
+.. code-block:: python
+
+	'if "Low - More of an irritation than a stoppage" in selections: I = 2',
+	'if "Medium - Departments or large group of users are affected" in selections: I = 1',
+	'if "High - Whole company is affected: I = 0',
+	'if "Low - One user or a small group of users is affected" in selections: U = 2',
+	'if "Medium - Business is degraded, but there is a reasonable workaround" in selections: U = 1',
+	'if "High - Critical - Major business processes are stopped" in selections: U = 0',
+
+Once we have all six lines set we can make our list of priorities:
+
+This names of each vary based on your PSA, but we will go with the 5 listed above for this example.
+
+.. code-block:: python
+
+	'pri_names = ['Critical', 'High', 'Medium', 'Low', "Very Low"]',
+
+Now all we have to do is set the variable for the priority, (priority) to be equal the correct entry in the priorities list.
+
+.. code-block:: python
+
+	'priority = pri_names[I+U]'
 
 
 
