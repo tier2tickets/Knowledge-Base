@@ -187,12 +187,12 @@ We will need a line of code for each option:
 
 .. code-block:: python
 
-	"if 'Low - More of an irritation than a stoppage' in selections: I = 2",
-	"if 'Medium - Departments or large group of users are affected' in selections: I = 1",
-	"if 'High - Whole company is affected': I = 0",
-	"if 'Low - One user or a small group of users is affected' in selections: U = 2",
-	"if 'Medium - Business is degraded, but there is a reasonable workaround' in selections: U = 1",
-	"if 'High - Critical - Major business processes are stopped' in selections: U = 0",
+	if 'Low - More of an irritation than a stoppage' in selections: I = 2
+	if 'Medium - Departments or large group of users are affected' in selections: I = 1
+	if 'High - Whole company is affected': I = 0
+	if 'Low - One user or a small group of users is affected' in selections: U = 2
+	if 'Medium - Business is degraded, but there is a reasonable workaround' in selections: U = 1
+	if 'High - Critical - Major business processes are stopped' in selections: U = 0
 
 Once we have all six lines set we can make our list of priorities:
 
@@ -200,15 +200,17 @@ This names of each vary based on your PSA, but we will go with the 5 listed abov
 
 .. code-block:: python
 
-	"pri_names = ['Critical', 'High', 'Medium', 'Low', 'Very Low']",
+	pri_names = ['Critical', 'High', 'Medium', 'Low', 'Very Low']
 
 Now all we have to do is set the variable for the priority, (priority) to be equal the correct entry in the priorities list.
 
 .. code-block:: python
 
-	"priority = pri_names[I+U]"
+	priority = pri_names[I+U]
+	
+Here is what it would look like all together:
 
-
+.. image:: images/impact-urgency-3.png
 
 
 
