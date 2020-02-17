@@ -3,7 +3,7 @@
 Tier2Tickets Official Documentation
 ************************************
 
-This_ is the official knowledge base of tier2tickets_ and helpdeskbuttons_. We are building it out as we go and we may not have the information you are looking for here yet. If you are having problems figuring something out, and you can't find it here, let us know and we will get get it figured out together. 
+This_ is the official knowledge base of tier2tickets_ and helpdeskbuttons_. We are building it out as we go and we may not have the information you are looking for here yet. If you are having problems figuring something out, and you can't find it here, let us know and we will get get it figured out together.
 
 
 .. _This: http://docs.tier2tickets.com
@@ -41,7 +41,7 @@ Here is a list of our phone numbers by region where we can be reached 7AM_ - 9PM
 +------------------------+---------------------+------------------------------+
 | Ireland                | +353 1800-945-302   | +353 1800-945-301            |
 +------------------------+---------------------+------------------------------+
-| Netherlands            | +31 800-0202758     | +31 800-4890489              |
+| Netherlands            | +31 800-4890489     | +31 800-0202758              |
 +------------------------+---------------------+------------------------------+
 
 .. _9PM: https://www.google.com/search?q=9PM+local+time+in+EST
@@ -53,10 +53,9 @@ Here is a list of our phone numbers by region where we can be reached 7AM_ - 9PM
 Contributing
 ============
 
-If you would like to help improve our products by submitting a bug report, please 
+If you would like to help improve our products by submitting a bug report, please
 file them on our official github page_. For feature requests, please post here_.
 
 .. _here: https://community.tier2tickets.com/categories/feature-requests
 
 .. _page: https://github.com/tier2tickets/feedback/issues
-
