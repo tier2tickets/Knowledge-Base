@@ -8,6 +8,24 @@ Website
 -------
 
 
+
+2020-02-07
+~~~~~~~~~~
+* Implemented new 99.99% uptime guarantee `SLA <https://github.com/tier2tickets/Feedback/issues/48>`_
+* Added Geo IP Whitelisting
+* Added Anonymous IP login Blocking
+* Added Breached Password Protection
+* Device list is now sortable and searchable
+* Added an Account Settings widget to Settings and Home pages
+* Added Copy MSI URL to Builds page.
+* Improvements to 2fa new user registration process
+* Added "Remember This Computer" on the 2fa login
+* Added Get started documentation
+* Building a new installer has been sped up by a factor of 20
+* Append to Private Note through our update to Advanced Options / :ref:`Custom Rules <content/integration/advanced:custom rules>`.
+
+
+
 2019-12-09
 ~~~~~~~~~~
 * Added better documentation throughout the site
@@ -37,6 +55,46 @@ Software
 --------
 
 
+
+
+.. raw:: html
+
+   <a name="0.6.3">&nbsp;</a>
+
+0.6.x.3
+~~~~~~~
+
+* Fixed more issues with windows scaling
+* Fixed bug where business name validation error message would trigger before the user even entered business name
+* Fixed issue where webroot would cause strite not to upload
+* Improved debug logging on failed diag data collection.
+* increased performance of the remote access tool.
+
+
+
+
+.. raw:: html
+
+   <a name="0.6.2">&nbsp;</a>
+
+0.6.x.2
+~~~~~~~
+
+* Added support accepting push commands
+* Fixed UI issues with windows scaling
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.6.1">&nbsp;</a>
+
+0.6.x.1
+~~~~~~~
+
+* Added support for remote command prompt
 
 
 
