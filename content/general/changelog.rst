@@ -64,9 +64,9 @@ Software
 0.6.x.3
 ~~~~~~~
 
-* Fixed more issues with windows scaling
+* Fixed more issues with windows scaling Thanks `@chavousc <https://github.com/tier2tickets/Feedback/issues/56>`_
 * Fixed bug where business name validation error message would trigger before the user even entered business name
-* Fixed issue where webroot would cause strite not to upload
+* Fixed issue where webroot would cause animation not to upload
 * Improved debug logging on failed diag data collection.
 * increased performance of the remote access tool.
 
