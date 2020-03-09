@@ -44,11 +44,15 @@ Helpdeskbuttons.com Settings
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
-Yout API key is formatted as shown 
+*business_name.api.accelo.com*
 
-api_username:api_secret
+Your API key is formatted as shown 
 
-Click update and the Integration Test button. 
+*client_id:client_secret*
+
+Click Update and the Integration Test button to send a test ticket. 
+
+Some additional setup may be necessary in the :ref:`Advanced Integration Options <content/integration/advanced:Defaults>`.
 
 Anti-Virus and AntiMalware
 -----------------------------
@@ -56,6 +60,11 @@ It is not always necessary, but we recommend whitelisting the helpdeskbuttons in
 
 Advanced Integration Options
 ------------------------------
+
+Defaults
+^^^^^^^^
+
+Please note that defaults for priority, type, and standing must be set for this integration to work properly.
 
 Custom Rules
 ^^^^^^^^^^^^^
