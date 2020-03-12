@@ -23,6 +23,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/integration/accelo
+	content/integration/atera
 	content/integration/autotask
 	content/integration/connectwise
 	content/integration/freshdesk
