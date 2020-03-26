@@ -187,10 +187,10 @@ We will need a line of code for each option:
 
 .. code-block:: python
 
-	if 'Low - More of an irritation than a stoppage' in selections: I = 2
+	I = 2
+	U = 2
 	if 'Medium - Departments or large group of users are affected' in selections: I = 1
 	if 'High - Whole company is affected': I = 0
-	if 'Low - One user or a small group of users is affected' in selections: U = 2
 	if 'Medium - Business is degraded, but there is a reasonable workaround' in selections: U = 1
 	if 'High - Critical - Major business processes are stopped' in selections: U = 0
 
