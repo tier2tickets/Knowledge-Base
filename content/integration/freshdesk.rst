@@ -121,6 +121,8 @@ Freshservice
 +-----------------+---------------+
 | append          |               |
 +-----------------+---------------+
+| group           |               |
++-----------------+---------------+
 | priv_append     |               |
 +-----------------+---------------+
 
@@ -130,7 +132,8 @@ Field Definitions
 * *priority* refers to the ticket priority (Urgent, Low, ect)
 * *impact* and *urgency* can set priority via the SLA priority matrix
 * *status* refers to the ticket status (New, In Progress, etc)
-* *department/group* refers to the department/group the ticket will be put in
+* *group* refers to the group the ticket will be put in
+* *department* refers to the department the ticket will be put in
 * *message* refers to the message the client typed when making the ticket
 * *subject* refers to the ticket title
 * *append* refers to the information appended to the HDB report
