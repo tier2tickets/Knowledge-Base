@@ -1,5 +1,5 @@
 # Getting Started with Helpdesk Buttons
-From the beginning, our goal was to make the start-up process for Helpdesk Buttons accessible to anyone who wants to try it. We didn't want any features or abilities stuck behind paywalls or shrouded in smoke and mirrors. If something is unclear or seems inaccessible, it's probably because we just haven't written instructions down yet or maybe we forgot to. So let us know and we'll fix it.
+From the beginning, our goal was to make the start-up process for Helpdesk Buttons accessible to anyone who wants to try it. It takes most people 15 minutes or less to configure and deploy their first batch of agents. We didn't want any features or abilities stuck behind paywalls or shrouded in smoke and mirrors. If something is unclear or seems inaccessible, it's probably because we just haven't written instructions down yet or maybe we forgot to. So let us know on the forums or by calling and we'll fix it.
 
 All you need to do is log in to your account, download, and install the custom Helpdesk Buttons software you've built on the devices you'd like to employ our software.
 
@@ -18,10 +18,9 @@ To order physical buttons, you can visit our [Buy Page](https://beta.helpdeskbut
 If you want custom buttons, we work with art you send us (we request a 2-color SVG) and we get that set up for print and production as well as preprogramming with a link to your most recent software build, which can be installed with a long (10s) button press. We also preprogram the Helpdesk Button-branded buttons with your build as well.
 
 ## 3) Deploy to all of your endpoints
-We have a link to that aforementioned MSI as well as custom Powershell and Batch scripts for deploying on your [Builds page](https://beta.helpdeskbuttons.com/builds.php), and if you need assistance, we offer our welcome and service packages during which our development team can assist and complete all of this for you. These are also linked through the buy page, but you can visit the shop directly, here: [Welcome Packs](https://cms.helpdeskbuttons.com/product-category/starter-pack/).
+We have a link to that aforementioned MSI as well as custom Powershell and Batch scripts for deploying on your [Builds page](https://beta.helpdeskbuttons.com/builds.php), Additionally we have some guides on how to deploy with some of the more popular RMM tools in the deployment section of the documents.  If you want additional assistance, we offer our welcome and service packages during which our development team can assist and complete all of this for you. These are also linked through the buy page, but you can visit the shop directly, here: [Welcome Packs](https://cms.helpdeskbuttons.com/product-category/starter-pack/).
 
-A word on billing
-: We bill according to the number of devices that check in with our servers, so you don't have to worry with buying licenses, that's all managed automagically through our escrow system on the [Billing Page](https://beta.helpdeskbuttons.com/billing.php).
+
 
 ## 4) Further customize and enjoy the extensibility of Helpdesk Buttons
 We know that your business flow is going to differ from our hundreds of other clients, so we're constantly building out better methods for you to take the reins on what information is being collected and how close of an integration you'd like with your PSA. With each ticket submitted to you, you will receive the same excellent baseline of real-time diagnostics and annotated screenshots, but with our [Custom Scripts](/content/customization/custom-scripts) and [Custom Rules](/content/integration/advanced#custom-rules), you can better gather pertinent information, triage and process tickets before they've even hit your system.
