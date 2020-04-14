@@ -1,5 +1,9 @@
 # Software Installation Guide
 
+**We recommend that you use one of our Custom-built-for-you  Batch files or Powershell files that you will find on your Software and deployment builds page or follow one of our RMM deployment guides.  But if you need to build a custom installation we have included this page for reference.** 
+
+
+
 The software is packaged as an MSI which you build on the custom builds page. It supports all the typical command line options of an MSI for example:
 
 ## Installing

@@ -11,6 +11,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/general/get-started
+	content/general/bestpractices
 	content/general/slides
 	content/general/billing
 	content/general/installation
