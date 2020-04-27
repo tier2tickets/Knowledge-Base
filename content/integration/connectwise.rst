@@ -99,6 +99,13 @@ Once you have entered the correct information on the Helpdeskbutton page, make t
 
 Test by submitting a ticket using the button.
 
+Manage Configurations (BETA)
+----------------------------
+
+Our Software will attempt to attach configurations from the users company whose device id's match the hostname of the computer submitting the ticket.
+
+
+
 API Access Settings
 --------------------
 
@@ -108,6 +115,10 @@ For those of you who want to restrict the access the API user has, here is the s
 - Companies/Contacts/Inquire Level - All (For gathering contact data like email addresses)
 - Service Desk/Service Ticket - Dependencies/ Add, Edit, Inquire Level - All (Adding/editing/reading notes and attachments on tickets)
 - Service Desk/Service Ticket/ Add, Edit, Inquire Level - All (Adding/editing/reading tickets)
+
+*New in version 6 (BETA)*
+
+- Companies/Configurations/Inquire Level - All (For including configurations pertaining to the ticket)
 
 
 The group is based on your company, but it can be tricky. We recommend leaving this as Admin as it the integration will require access to view contact information based on the clients input. To avoid errors, your staff would need to make sure that no one puts in an email address that corresponds to a contact that is not covered by the group to which this API user belongs. To be clear, the permissions don't need to be Admin, but the group does. This will allow us access to all of your customers, but only limited access to each.
