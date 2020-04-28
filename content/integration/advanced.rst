@@ -1,5 +1,5 @@
 Advanced Options
-================================
+==================
 
 If you want finer control over integrations you can use the advanced options button on the Settings page beside your integration dropdown.
 
@@ -9,7 +9,8 @@ Once opened, your options will look something like this:
 
 .. image:: images/advanced-open.png
 
-You can reset this field to default by submitting a blank field. 
+You can reset this field to default by submitting is as blank.
+
 
 Defaults
 ------------
@@ -213,6 +214,10 @@ Here is what it would look like all together:
 .. image:: images/impact-urgency-3.png
 
 
+Submission Errors
+-----------------
 
+If you make a mistake and a rule or default changes a value to something invalid, the ticket will probably still be submitted. 
+In these cases, a section will be added to the internal note of the ticket, displaying the Submission Errors.
 
-
+.. image:: images/suberror.png
