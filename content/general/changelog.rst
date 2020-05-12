@@ -56,6 +56,21 @@ Software
 
 
 
+.. raw:: html
+
+   <a name="0.6.7">&nbsp;</a>
+
+0.6.x.7
+~~~~~~~
+
+* Fixed bug in which getting the last logged in user caused high CPU load on domain controllers
+* Fixed bug in which duplicate macs were created when the software is installed on hyper-v
+* Fixed bug in which the software would launch twice on a single button press on terminal servers in which there are two open sessions of the same username
+* Added GUI support for client-side custom rules
+
+
+
+
 
 .. raw:: html
 
@@ -69,6 +84,7 @@ Software
 * Fixed issue where webroot would cause animation not to upload
 * Improved debug logging on failed diag data collection.
 * increased performance of the remote access tool.
+
 
 
 
