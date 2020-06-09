@@ -66,6 +66,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/marketing/how-to
+	content/marketing/image-library
 
 .. toctree::
 	:hidden:
