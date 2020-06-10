@@ -67,15 +67,24 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority
-- *impact* refers to the ticket impact (No impact, Site Down, Crisis)
-- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-- *message* refers to the message the client typed when making the ticket
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name (according to the PSA)
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname
+*priority*
+""""""""""
+
+refers to the ticket priority
+
+*impact*
+"""""""""
+
+refers to the ticket impact (No impact, Site Down, Crisis)
+
+*type*
+"""""""
+refers to the issue type (Service Request, Incident, Problem, Alert)
+
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
+
+The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA

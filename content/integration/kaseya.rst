@@ -89,21 +89,54 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority (Urgent, Low, ect) 
-- *ticketStatus* refers to the ticket status (New, In Progress, etc) 
-- *comment_subject* refers to the subject line of the first comment
-- *ticketType* refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
-- *queue* refers to the queue the ticket will be assigned to
-- *assignee* refers to the agent the ticket will be assigned to
-- *message* refers to the message the client typed when making the ticket
-- *title* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *ticketSource* refers to the source of the ticket (Client portal, Phone, Other)
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
-- *openDate* refers to the date the ticket was created
+*priority*
+""""""""""
+
+refers to the ticket priority (Urgent, Low, ect)
+
+*ticketStatus*
+""""""""""""""
+
+refers to the ticket status (New, In Progress, etc) 
+
+*comment_subject*
+"""""""""""""""""
+
+refers to the subject line of the first comment
+
+*ticketType*
+""""""""""""
+
+refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
+
+*queue*
+"""""""
+
+refers to the queue the ticket will be assigned to
+
+*assignee*
+""""""""""
+
+refers to the agent the ticket will be assigned to
+
+*ticketSource*
+""""""""""""""
+
+refers to the source of the ticket (Client portal, Phone, Other)
+
+*priv_append*
+"""""""""""""
+
+allows you to append information to the internal ticket note
+
+*openDate*
+""""""""""
+
+refers to the date the ticket was created
+
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
+

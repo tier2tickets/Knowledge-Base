@@ -55,19 +55,47 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *impact* and *urgency* set priority via the SLA priority matrix
-- *incidentState* refers to the ticket status (New, In Progress, etc)
-- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-- *message* refers to the message the client typed when making the ticket
-- *short_description* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *source* refers to the ticket source (Web Portal, P, )
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *contactName* refers to the client's name
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
-- *issue* refers to the primary ticket issue
-- *subissue* refers ro the secondary ticket issue
+*impact* and *urgency*
+""""""""""""""""""""""
+
+set priority via the SLA priority matrix
+
+*incidentState*
+"""""""""""""""
+
+refers to the ticket status (New, In Progress, etc)
+
+*type*
+""""""
+
+refers to the issue type (Service Request, Incident, Problem, Alert)
+
+*source*
+""""""""
+
+refers to the ticket source (Web Portal, Etc)
+
+*priv_append*
+"""""""""""""
+
+allows you to append information to the internal ticket note
+
+*contactName*
+"""""""""""""
+
+refers to the client's name
+
+*issue*
+"""""""
+
+refers to the primary ticket issue
+
+*subissue*
+""""""""""
+
+refers to the secondary ticket issue
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`

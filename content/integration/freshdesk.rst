@@ -125,20 +125,47 @@ Freshservice
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-* *priority* refers to the ticket priority (Urgent, Low, ect)
-* *impact* and *urgency* can set priority via the SLA priority matrix
-* *status* refers to the ticket status (New, In Progress, etc)
-* *group* refers to the group the ticket will be put in
-* *department* refers to the department the ticket will be put in
-* *message* refers to the message the client typed when making the ticket
-* *subject* refers to the ticket title
-* *append* refers to the information appended to the HDB report
-* *agent* refers to the agent that will be assigned this ticket
-* *source* refers to the ticket source (Web Portal, P, )
-* *priv_append* allows you to append information to the internal ticket note
-* *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-* *name* refers to the client's name
-* *email* refers to the client's email
-* *ip* refers to the client's external ip address
-* *mac* refers to the client's MAC address
-* *hostname* refers to the client's hostname 
+*priority*
+""""""""""
+
+refers to the ticket priority (Urgent, Low, ect)
+
+*impact* and *urgency*
+""""""""""""""""""""""
+
+can set priority via the SLA priority matrix
+
+*status*
+""""""""
+
+refers to the ticket status (New, In Progress, etc)
+
+*group*
+"""""""
+
+refers to the group the ticket will be put in
+
+*department*
+""""""""""""
+
+refers to the department the ticket will be put in
+
+*agent*
+"""""""
+
+refers to the agent that will be assigned this ticket
+
+*source*
+""""""""
+
+refers to the ticket source (Web Portal, P, )
+
+*priv_append*
+"""""""""""""
+
+allows you to append information to the internal ticket note
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`

@@ -100,20 +100,42 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority
-- *standing* refers to the ticket status (New, In Progress, etc)
-- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-- *message* refers to the message the client typed when making the ticket
-- *assignee* refers to the agent that will be assigned this ticket
-- *class* refers to the tickets class (Accounts/Renewals, E-commerce)
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name (according to the PSA)
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname
+*priority*
+""""""""""
+
+refers to the ticket priority
+
+*standing*
+"""""""""""
+
+refers to the ticket status (New, In Progress, etc)
+
+*type*
+""""""""
+
+refers to the issue type (Service Request, Incident, Problem, Alert)
+
+
+*assignee*
+""""""""""
+
+refers to the agent that will be assigned this ticket
+
+*class*
+"""""""""
+
+refers to the tickets class (Accounts/Renewals, E-commerce)
+
+
+*priv_append*
+"""""""""""""
+
+allows you to append information to the internal ticket note
+
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
 
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA

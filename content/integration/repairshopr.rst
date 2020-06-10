@@ -110,18 +110,37 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority (Urgent, Low, ect)
-- *status* refers to the ticket status (New, In Progress, etc)
-- *comment_subject* refers to the subject line of the first comment
-- *issue_type* refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
-- *message* refers to the message the client typed when making the ticket
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name
-- *email* refers to the client's email
-- *business_name* refers to the clients business name
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
+*priority*
+""""""""""
+
+refers to the ticket priority (Urgent, Low, ect)
+
+*status*
+""""""""
+
+refers to the ticket status (New, In Progress, etc)
+
+*comment_subject*
+"""""""""""""""""
+
+refers to the subject line of the first comment
+
+*issue_type*
+""""""""""""
+
+refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
+
+*priv_append*
+"""""""""""""
+
+allows you to append information to the internal ticket note
+
+*business_name*
+"""""""""""""""
+
+refers to the clients business name
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`

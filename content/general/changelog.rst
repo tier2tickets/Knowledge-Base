@@ -11,7 +11,7 @@ Website
 
 2020-02-07
 ~~~~~~~~~~
-* Implemented new 99.99% uptime guarantee `SLA <https://github.com/tier2tickets/Feedback/issues/48>`_
+* Implemented new 99.99% uptime guarantee `SLA <https://www.helpdeskbuttons.com/sla/>`_
 * Added Geo IP Whitelisting
 * Added Anonymous IP login Blocking
 * Added Breached Password Protection
