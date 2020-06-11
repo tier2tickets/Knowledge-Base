@@ -72,6 +72,9 @@ Field Definitions
 
 refers to the ticket priority (Urgent, Low, ect) 
 
+.. image:: images/os-priority.png
+   :target: https://docs.tier2tickets.com/_images/os-priority.png
+
 *alert*
 """""""
 
