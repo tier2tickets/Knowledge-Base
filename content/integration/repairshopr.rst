@@ -115,30 +115,48 @@ Field Definitions
 
 refers to the ticket priority (Urgent, Low, ect)
 
+.. image:: images/rs-priority.png
+   :target: https://docs.tier2tickets.com/_images/rs-priority.png
+
 *status*
 """"""""
 
 refers to the ticket status (New, In Progress, etc)
+
+.. image:: images/rs-status.png
+   :target: https://docs.tier2tickets.com/_images/rs-status.png
 
 *comment_subject*
 """""""""""""""""
 
 refers to the subject line of the first comment
 
+.. image:: images/rs-comment_subject.png
+   :target: https://docs.tier2tickets.com/_images/rs-comment_subject.png
+
 *issue_type*
 """"""""""""
 
 refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
+
+.. image:: images/rs-issue_type.png
+   :target: https://docs.tier2tickets.com/_images/rs-issue_type.png
 
 *priv_append*
 """""""""""""
 
 allows you to append information to the internal ticket note
 
+.. image:: images/rs-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/rs-priv_append.png
+
 *business_name*
 """""""""""""""
 
 refers to the clients business name
+
+.. image:: images/rs-business_name.png
+   :target: https://docs.tier2tickets.com/_images/rs-business_name.png
 
 *other*
 """""""
