@@ -72,8 +72,12 @@ Field Definitions
 
 refers to the ticket priority
 
-.. image:: images/atera-priority.png
+.. image:: images/atera-priority.png 
+   :target: |location_link|
+   
+.. |location_link| raw:: html
 
+   <a href="https://docs.tier2tickets.com/_images/atera-priority.png" target="_blank"></a>
 
 *impact*
 """""""""
@@ -81,6 +85,7 @@ refers to the ticket priority
 refers to the ticket impact (No impact, Site Down, Crisis)
 
 .. image:: images/atera-impact.png
+   :target: https://docs.tier2tickets.com/_images/atera-impact.png
 
 *type*
 """""""
@@ -88,7 +93,7 @@ refers to the ticket impact (No impact, Site Down, Crisis)
 refers to the issue type (Service Request, Incident, Problem, Alert)
 
 .. image:: images/atera-type.png
-
+   :target: https://docs.tier2tickets.com/_images/atera-type.png
 
 *other*
 """""""
