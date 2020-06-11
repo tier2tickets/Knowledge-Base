@@ -114,6 +114,7 @@ refers to the ticket priority
 refers to the ticket status (New, In Progress, etc)
 
 .. image:: images/accelo-standing.png
+   :target: https://docs.tier2tickets.com/_images/accelo-standing.png
 
 *type*
 """"""""
@@ -121,6 +122,7 @@ refers to the ticket status (New, In Progress, etc)
 refers to the issue type (Service Request, Incident, Problem, Alert)
 
 .. image:: images/accelo-type.png
+   :target: https://docs.tier2tickets.com/_images/accelo-type.png
 
 *assignee*
 """"""""""
@@ -128,6 +130,7 @@ refers to the issue type (Service Request, Incident, Problem, Alert)
 refers to the agent that will be assigned this ticket
 
 .. image:: images/accelo-assignee.png
+   :target: https://docs.tier2tickets.com/_images/accelo-assignee.png
 
 *class*
 """""""""
@@ -135,18 +138,21 @@ refers to the agent that will be assigned this ticket
 refers to the tickets class (Accounts/Renewals, E-commerce)
 
 .. image:: images/accelo-class.png
-
+   :target: https://docs.tier2tickets.com/_images/accelo-class.png
 
 *priv_append*
 """""""""""""
 
 allows you to append information to the internal ticket note
 
+.. image:: images/accelo-priv_append.png
+
 
 *other*
 """""""
 
 .. image:: images/accelo-inputs.png
+   :target: https://docs.tier2tickets.com/_images/accelo-inputs.png
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
 
