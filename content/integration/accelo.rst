@@ -108,7 +108,7 @@ refers to the ticket priority
 .. image:: pageflip-200.png
    
 .. image:: images/accelo-priority.png
-   :target: _images/accelo-priority.png
+   :target: https://docs.tier2tickets.com/_images/accelo-priority.png
 
 *standing*
 """""""""""
