@@ -72,12 +72,8 @@ Field Definitions
 
 refers to the ticket priority
 
-.. image:: images/atera-priority.png 
-   :target: |location_link|
-   
-.. |location_link| raw:: html
-
-   <a href="https://docs.tier2tickets.com/_images/atera-priority.png" target="_blank"></a>
+.. image:: images/atera-priority.png
+   :target: https://docs.tier2tickets.com/_images/atera-priority.png
 
 *impact*
 """""""""
