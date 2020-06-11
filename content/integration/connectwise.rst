@@ -248,7 +248,6 @@ allows you to append information to the internal ticket note
 .. image:: images/cw-priv_append.png
    :target: https://docs.tier2tickets.com/_images/cw-priv_append.png
 
-
 *other*
 """""""
 

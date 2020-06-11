@@ -130,40 +130,85 @@ Field Definitions
 
 refers to the ticket priority (Urgent, Low, ect)
 
+.. image:: images/fd-priority.png
+   :target: https://docs.tier2tickets.com/_images/fd-priority.png
+
+.. image:: images/fs-priority.png
+   :target: https://docs.tier2tickets.com/_images/fs-priority.png
+   
 *impact* and *urgency*
 """"""""""""""""""""""
 
 can set priority via the SLA priority matrix
+
+.. image:: images/fs-impact.png
+   :target: https://docs.tier2tickets.com/_images/fs-impact.png
+
+.. image:: images/fs-urgency.png
+   :target: https://docs.tier2tickets.com/_images/fs-urgency.png
 
 *status*
 """"""""
 
 refers to the ticket status (New, In Progress, etc)
 
+.. image:: images/fd-status.png
+   :target: https://docs.tier2tickets.com/_images/fd-status.png
+
+.. image:: images/fs-status.png
+   :target: https://docs.tier2tickets.com/_images/fs-status.png
+
 *group*
 """""""
 
 refers to the group the ticket will be put in
+
+.. image:: images/fd-group.png
+   :target: https://docs.tier2tickets.com/_images/fd-group.png
+
+.. image:: images/fs-group.png
+   :target: https://docs.tier2tickets.com/_images/fs-group.png
 
 *department*
 """"""""""""
 
 refers to the department the ticket will be put in
 
+.. image:: images/fs-department.png
+   :target: https://docs.tier2tickets.com/_images/fs-department.png
+
 *agent*
 """""""
 
 refers to the agent that will be assigned this ticket
+
+.. image:: images/fd-agent.png
+   :target: https://docs.tier2tickets.com/_images/fd-agent.png
+
+.. image:: images/fs-agent.png
+   :target: https://docs.tier2tickets.com/_images/fs-agent.png
 
 *source*
 """"""""
 
 refers to the ticket source (Web Portal, P, )
 
+.. image:: images/fd-source.png
+   :target: https://docs.tier2tickets.com/_images/fd-source.png
+
+.. image:: images/fs-source.png
+   :target: https://docs.tier2tickets.com/_images/fs-source.png
+
 *priv_append*
 """""""""""""
 
 allows you to append information to the internal ticket note
+
+.. image:: images/fd-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/fd-priv_append.png
+
+.. image:: images/fs-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/fs-priv_append.png
 
 *other*
 """""""
