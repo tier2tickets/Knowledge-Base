@@ -72,14 +72,22 @@ Field Definitions
 
 refers to the ticket priority
 
+.. image:: images/atera-priority.png
+
+
 *impact*
 """""""""
 
 refers to the ticket impact (No impact, Site Down, Crisis)
 
+.. image:: images/atera-impact.png
+
 *type*
 """""""
+
 refers to the issue type (Service Request, Incident, Problem, Alert)
+
+.. image:: images/atera-type.png
 
 
 *other*

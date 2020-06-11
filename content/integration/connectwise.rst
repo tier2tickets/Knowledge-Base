@@ -182,7 +182,7 @@ Field Definitions
 refers to the ticket priority (Urgent, Low, ect)
 
 *impact* and *urgency*
-"""""""""""""""""""""
+""""""""""""""""""""""
 
 can set priority via the SLA priority matrix
 
