@@ -181,45 +181,72 @@ Field Definitions
 
 refers to the ticket priority (Urgent, Low, ect)
 
+.. image:: images/cw-priority.png
+   :target: https://docs.tier2tickets.com/_images/cw-priority.png
+
 *impact* and *urgency*
 """"""""""""""""""""""
 
 can set priority via the SLA priority matrix
+
+.. image:: images/cw-impact+urgency.png
+   :target: https://docs.tier2tickets.com/_images/cw-impact+urgency.png
 
 *state*
 """""""
 
 refers to the ticket status (New, In Progress, etc)
 
+.. image:: images/cw-state.png
+   :target: https://docs.tier2tickets.com/_images/cw-state.png
+
 *team*
 """"""
 
 refers to the queue the ticket will be put in
+
+.. image:: images/cw-team.png
+   :target: https://docs.tier2tickets.com/_images/cw-team.png
 
 *type*
 """"""
 
 refers to the issue type (Service Request, Incident, Problem, Alert)
 
+.. image:: images/cw-type.png
+   :target: https://docs.tier2tickets.com/_images/cw-type.png
+
 *owner*
 """""""
 
 refers to the agent that will be assigned this ticket
+
+.. image:: images/cw-owner.png
+   :target: https://docs.tier2tickets.com/_images/cw-owner.png
 
 *source*
 """"""""
 
 refers to the ticket source (Web Portal, Etc)
 
+.. image:: images/cw-source.png
+   :target: https://docs.tier2tickets.com/_images/cw-source.png
+
 *board*
 """"""""
 
 refers to the board the ticket will be put under 
 
+.. image:: images/cw-board.png
+   :target: https://docs.tier2tickets.com/_images/cw-board.png
+
 *priv_append*
 """""""""""""
 
 allows you to append information to the internal ticket note
+
+.. image:: images/cw-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/cw-priv_append.png
 
 
 *other*
