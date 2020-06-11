@@ -146,7 +146,7 @@ refers to the tickets class (Accounts/Renewals, E-commerce)
 allows you to append information to the internal ticket note
 
 .. image:: images/accelo-priv_append.png
-
+   :target: https://docs.tier2tickets.com/_images/accelo-priv_append.png
 
 *other*
 """""""
