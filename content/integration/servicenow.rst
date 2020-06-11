@@ -60,10 +60,19 @@ Field Definitions
 
 set priority via the SLA priority matrix
 
+.. image:: images/sn-impact.png
+   :target: https://docs.tier2tickets.com/_images/sn-impact.png
+
+.. image:: images/sn-urgency.png
+   :target: https://docs.tier2tickets.com/_images/sn-urgency.png
+
 *incidentState*
 """""""""""""""
 
 refers to the ticket status (New, In Progress, etc)
+
+.. image:: images/sn-incidentState.png
+   :target: https://docs.tier2tickets.com/_images/sn-incidentState.png
 
 *type*
 """"""
@@ -80,20 +89,32 @@ refers to the ticket source (Web Portal, Etc)
 
 allows you to append information to the internal ticket note
 
+.. image:: images/sn-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/sn-priv_append.png
+
 *contactName*
 """""""""""""
 
 refers to the client's name
+
+.. image:: images/sn-contactName.png
+   :target: https://docs.tier2tickets.com/_images/sn-contactName.png
 
 *issue*
 """""""
 
 refers to the primary ticket issue
 
+.. image:: images/sn-issue.png
+   :target: https://docs.tier2tickets.com/_images/sn-issue.png
+
 *subissue*
 """"""""""
 
 refers to the secondary ticket issue
+
+.. image:: images/sn-subissue.png
+   :target: https://docs.tier2tickets.com/_images/sn-subissue.png
 
 *other*
 """""""

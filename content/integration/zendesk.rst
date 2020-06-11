@@ -93,15 +93,24 @@ Field Definitions
 
 refers to the ticket priority
 
+.. image:: images/zd-priority.png
+   :target: https://docs.tier2tickets.com/_images/zd-priority.png
+
 *status*
 """"""""
 
 refers to the ticket status (New, In Progress, etc)
 
+.. image:: images/zd-status.png
+   :target: https://docs.tier2tickets.com/_images/zd-status.png
+
 *type*
 """"""
 
 refers to the issue type (Service Request, Incident, Problem, Alert)
+
+.. image:: images/zd-type.png
+   :target: https://docs.tier2tickets.com/_images/zd-type.png
 
 
 *priv_append*
@@ -109,8 +118,14 @@ refers to the issue type (Service Request, Incident, Problem, Alert)
 
 allows you to append information to the internal ticket note
 
+.. image:: images/zd-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/zd-priv_append.png
+
 *other*
 """""""
+
+.. image:: images/zd-inputs.png
+   :target: https://docs.tier2tickets.com/_images/zd-inputs.png
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
 
