@@ -103,56 +103,77 @@ Field Definitions
 *priority*
 """"""""""
 
-refers to the ticket priority
+	**The ticket priority level:**
    
 .. image:: images/accelo-priority.png
    :target: https://docs.tier2tickets.com/_images/accelo-priority.png
+   
+|
+|
 
 *standing*
 """""""""""
 
-refers to the ticket status (New, In Progress, etc)
+	**Refers to the ticket status (New, In Progress, etc):**
 
 .. image:: images/accelo-standing.png
    :target: https://docs.tier2tickets.com/_images/accelo-standing.png
 
+|
+|
+
 *type*
 """"""""
 
-refers to the issue type (Service Request, Incident, Problem, Alert)
+	**The issue type (Service Request, Incident, Problem, Alert):**
 
 .. image:: images/accelo-type.png
    :target: https://docs.tier2tickets.com/_images/accelo-type.png
 
+|
+|
+
 *assignee*
 """"""""""
 
-refers to the agent that will be assigned this ticket
+	**The agent that will be assigned this ticket:**
 
 .. image:: images/accelo-assignee.png
    :target: https://docs.tier2tickets.com/_images/accelo-assignee.png
 
+|
+|
+
 *class*
 """""""""
 
-refers to the tickets class (Accounts/Renewals, E-commerce)
+	**The tickets class (Accounts/Renewals, E-commerce):**
 
 .. image:: images/accelo-class.png
    :target: https://docs.tier2tickets.com/_images/accelo-class.png
 
+|
+|
+
 *priv_append*
 """""""""""""
 
-allows you to append information to the internal ticket note
+	**Allows you to append information to the internal ticket note:**
 
 .. image:: images/accelo-priv_append.png
    :target: https://docs.tier2tickets.com/_images/accelo-priv_append.png
+
+|
+|
 
 *input_**
 """""""""
 
 .. image:: images/accelo-inputs.png
    :target: https://docs.tier2tickets.com/_images/accelo-inputs.png
+
+|
+|
 
 *other*
 """""""

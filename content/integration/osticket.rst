@@ -75,11 +75,11 @@ refers to the ticket priority (Urgent, Low, ect)
 .. image:: images/os-priority.png
    :target: https://docs.tier2tickets.com/_images/os-priority.png
 
-*alert*
-"""""""
+*alert & auto_respond*
+""""""""""""""""""""""
 
-alerts staff to ticket creation or not
-
+.. image:: images/os-alert+auto.png
+   :target: https://docs.tier2tickets.com/_images/os-alert+auto.png
 
 *other*
 """""""
