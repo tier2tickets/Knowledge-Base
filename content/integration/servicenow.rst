@@ -60,8 +60,12 @@ Field Definitions
 
 set priority via the SLA priority matrix
 
+Impact:
+
 .. image:: images/sn-impact.png
    :target: https://docs.tier2tickets.com/_images/sn-impact.png
+
+Urgency:
 
 .. image:: images/sn-urgency.png
    :target: https://docs.tier2tickets.com/_images/sn-urgency.png
