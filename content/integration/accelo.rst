@@ -148,11 +148,14 @@ allows you to append information to the internal ticket note
 .. image:: images/accelo-priv_append.png
    :target: https://docs.tier2tickets.com/_images/accelo-priv_append.png
 
-*other*
-"""""""
+*input_**
+"""""""""
 
 .. image:: images/accelo-inputs.png
    :target: https://docs.tier2tickets.com/_images/accelo-inputs.png
+
+*other*
+"""""""
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
 

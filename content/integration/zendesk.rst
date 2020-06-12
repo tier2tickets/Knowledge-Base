@@ -121,11 +121,14 @@ allows you to append information to the internal ticket note
 .. image:: images/zd-priv_append.png
    :target: https://docs.tier2tickets.com/_images/zd-priv_append.png
 
-*other*
-"""""""
+*input_**
+"""""""""
 
 .. image:: images/zd-inputs.png
    :target: https://docs.tier2tickets.com/_images/zd-inputs.png
+
+*other*
+"""""""
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
 
