@@ -78,16 +78,6 @@ refers to the ticket status (New, In Progress, etc)
 .. image:: images/sn-incidentState.png
    :target: https://docs.tier2tickets.com/_images/sn-incidentState.png
 
-*type*
-""""""
-
-refers to the issue type (Service Request, Incident, Problem, Alert)
-
-*source*
-""""""""
-
-refers to the ticket source (Web Portal, Etc)
-
 *priv_append*
 """""""""""""
 

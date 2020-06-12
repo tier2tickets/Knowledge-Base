@@ -105,10 +105,13 @@ refers to the ticket status (New, In Progress, etc)
 .. image:: images/ka-ticketStatus.png
    :target: https://docs.tier2tickets.com/_images/ka-ticketStatus.png
 
-*comment_subject*
-"""""""""""""""""
+*title*
+"""""""
 
-refers to the subject line of the first comment
+A short description of the ticket issue
+
+.. image:: images/ka-title.png
+   :target: https://docs.tier2tickets.com/_images/ka-title.png
 
 *ticketType*
 """"""""""""
