@@ -130,8 +130,12 @@ Field Definitions
 
 refers to the ticket priority (Urgent, Low, ect)
 
+FreshDesk:
+
 .. image:: images/fd-priority.png
    :target: https://docs.tier2tickets.com/_images/fd-priority.png
+
+FreshService:
 
 .. image:: images/fs-priority.png
    :target: https://docs.tier2tickets.com/_images/fs-priority.png
@@ -141,8 +145,14 @@ refers to the ticket priority (Urgent, Low, ect)
 
 can set priority via the SLA priority matrix
 
+FreshService:
+
+Impact:
+
 .. image:: images/fs-impact.png
    :target: https://docs.tier2tickets.com/_images/fs-impact.png
+   
+Urgency:
 
 .. image:: images/fs-urgency.png
    :target: https://docs.tier2tickets.com/_images/fs-urgency.png
@@ -152,8 +162,12 @@ can set priority via the SLA priority matrix
 
 refers to the ticket status (New, In Progress, etc)
 
+FreshDesk:
+
 .. image:: images/fd-status.png
    :target: https://docs.tier2tickets.com/_images/fd-status.png
+
+FreshService:
 
 .. image:: images/fs-status.png
    :target: https://docs.tier2tickets.com/_images/fs-status.png
@@ -163,8 +177,12 @@ refers to the ticket status (New, In Progress, etc)
 
 refers to the group the ticket will be put in
 
+FreshDesk:
+
 .. image:: images/fd-group.png
    :target: https://docs.tier2tickets.com/_images/fd-group.png
+   
+FreshService:
 
 .. image:: images/fs-group.png
    :target: https://docs.tier2tickets.com/_images/fs-group.png
@@ -174,6 +192,8 @@ refers to the group the ticket will be put in
 
 refers to the department the ticket will be put in
 
+FreshService:
+
 .. image:: images/fs-department.png
    :target: https://docs.tier2tickets.com/_images/fs-department.png
 
@@ -182,8 +202,12 @@ refers to the department the ticket will be put in
 
 refers to the agent that will be assigned this ticket
 
+FreshDesk:
+
 .. image:: images/fd-agent.png
    :target: https://docs.tier2tickets.com/_images/fd-agent.png
+   
+FreshService:
 
 .. image:: images/fs-agent.png
    :target: https://docs.tier2tickets.com/_images/fs-agent.png
@@ -193,8 +217,12 @@ refers to the agent that will be assigned this ticket
 
 refers to the ticket source (Web Portal, P, )
 
+FreshDesk:
+
 .. image:: images/fd-source.png
    :target: https://docs.tier2tickets.com/_images/fd-source.png
+   
+FreshService:
 
 .. image:: images/fs-source.png
    :target: https://docs.tier2tickets.com/_images/fs-source.png
@@ -204,8 +232,12 @@ refers to the ticket source (Web Portal, P, )
 
 allows you to append information to the internal ticket note
 
+FreshDesk:
+
 .. image:: images/fd-priv_append.png
    :target: https://docs.tier2tickets.com/_images/fd-priv_append.png
+
+FreshService:
 
 .. image:: images/fs-priv_append.png
    :target: https://docs.tier2tickets.com/_images/fs-priv_append.png
