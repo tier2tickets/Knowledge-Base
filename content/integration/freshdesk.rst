@@ -128,119 +128,157 @@ Field Definitions
 *priority*
 """"""""""
 
-refers to the ticket priority (Urgent, Low, ect)
+	**The ticket priority level (Urgent, Low, ect):**
 
 FreshDesk:
 
 .. image:: images/fd-priority.png
    :target: https://docs.tier2tickets.com/_images/fd-priority.png
 
+|
+
 FreshService:
 
 .. image:: images/fs-priority.png
    :target: https://docs.tier2tickets.com/_images/fs-priority.png
-   
+
+|
+|
+
 *impact* and *urgency*
 """"""""""""""""""""""
 
-can set priority via the SLA priority matrix
+	**Can set priority via the SLA priority matrix:**
 
 FreshService:
 
-Impact:
+	Impact:
 
 .. image:: images/fs-impact.png
    :target: https://docs.tier2tickets.com/_images/fs-impact.png
+
+|
    
-Urgency:
+	Urgency:
 
 .. image:: images/fs-urgency.png
    :target: https://docs.tier2tickets.com/_images/fs-urgency.png
 
+|
+|
+
 *status*
 """"""""
 
-refers to the ticket status (New, In Progress, etc)
+	**The ticket status (New, In Progress, etc):**
 
 FreshDesk:
 
 .. image:: images/fd-status.png
    :target: https://docs.tier2tickets.com/_images/fd-status.png
 
+|
+
 FreshService:
 
 .. image:: images/fs-status.png
    :target: https://docs.tier2tickets.com/_images/fs-status.png
 
+|
+|
+
 *group*
 """""""
 
-refers to the group the ticket will be put in
+	**The group the ticket will be put in:**
 
 FreshDesk:
 
 .. image:: images/fd-group.png
    :target: https://docs.tier2tickets.com/_images/fd-group.png
+
+|
    
 FreshService:
 
 .. image:: images/fs-group.png
    :target: https://docs.tier2tickets.com/_images/fs-group.png
 
+|
+|
+
 *department*
 """"""""""""
 
-refers to the department the ticket will be put in
+	**The department the ticket will be put in:**
 
 FreshService:
 
 .. image:: images/fs-department.png
    :target: https://docs.tier2tickets.com/_images/fs-department.png
 
+|
+|
+
 *agent*
 """""""
 
-refers to the agent that will be assigned this ticket
+	**The agent that will be assigned this ticket:**
 
 FreshDesk:
 
 .. image:: images/fd-agent.png
    :target: https://docs.tier2tickets.com/_images/fd-agent.png
+
+|
    
 FreshService:
 
 .. image:: images/fs-agent.png
    :target: https://docs.tier2tickets.com/_images/fs-agent.png
 
+|
+|
+
 *source*
 """"""""
 
-refers to the ticket source (Web Portal, P, )
+	**The ticket source (Web Portal, Etc):**
 
 FreshDesk:
 
 .. image:: images/fd-source.png
    :target: https://docs.tier2tickets.com/_images/fd-source.png
+
+|
    
 FreshService:
 
 .. image:: images/fs-source.png
    :target: https://docs.tier2tickets.com/_images/fs-source.png
 
+|
+|
+
 *priv_append*
 """""""""""""
 
-allows you to append information to the internal ticket note
+	**Allows you to append information to the internal ticket note:**
 
 FreshDesk:
 
 .. image:: images/fd-priv_append.png
    :target: https://docs.tier2tickets.com/_images/fd-priv_append.png
 
+|
+
 FreshService:
 
 .. image:: images/fs-priv_append.png
    :target: https://docs.tier2tickets.com/_images/fs-priv_append.png
+
+|
+|
 
 *other*
 """""""

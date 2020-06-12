@@ -70,26 +70,35 @@ Field Definitions
 *priority*
 """"""""""
 
-refers to the ticket priority
+	**The ticket priority level (Urgent, Low, ect):**
 
 .. image:: images/atera-priority.png
    :target: https://docs.tier2tickets.com/_images/atera-priority.png
 
+|
+|
+
 *impact*
 """""""""
 
-refers to the ticket impact (No impact, Site Down, Crisis)
+	**The ticket impact (No impact, Site Down, Crisis):**
 
 .. image:: images/atera-impact.png
    :target: https://docs.tier2tickets.com/_images/atera-impact.png
 
+|
+|
+
 *type*
 """""""
 
-refers to the issue type (Service Request, Incident, Problem, Alert)
+	**The issue type (Service Request, Incident, Problem, Alert):**
 
 .. image:: images/atera-type.png
    :target: https://docs.tier2tickets.com/_images/atera-type.png
+
+|
+|
 
 *other*
 """""""

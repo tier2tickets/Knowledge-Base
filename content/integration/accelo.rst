@@ -103,7 +103,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level:**
+	**The ticket priority level (Urgent, Low, ect):**
    
 .. image:: images/accelo-priority.png
    :target: https://docs.tier2tickets.com/_images/accelo-priority.png

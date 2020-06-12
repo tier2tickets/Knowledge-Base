@@ -115,75 +115,101 @@ Field Definitions
 *priority*
 """"""""""
 
-refers to the ticket priority (Urgent, Low, ect)
+	**The ticket priority level (Urgent, Low, ect):**
 
 .. image:: images/autotask-priority.png
    :target: https://docs.tier2tickets.com/_images/autotask-priority.png
 
+|
+|
+
 *ticketStatus*
 """"""""""""""""
 
-refers to the ticket status (New, In Progress, etc)
+	**The ticket status (New, In Progress, etc):**
 
 .. image:: images/autotask-ticketStatus.png
    :target: https://docs.tier2tickets.com/_images/autotask-ticketStatus.png
 
+|
+|
+
 *queue*
 """""""
 
-refers to the queue the ticket will be put in
+	**The queue the ticket will be put in:**
 
 .. image:: images/autotask-queue.png
    :target: https://docs.tier2tickets.com/_images/autotask-queue.png
 
+|
+|
+
 *type*
 """"""
 
-refers to the issue type (Service Request, Incident, Problem, Alert)
+	**The issue type (Service Request, Incident, Problem, Alert):**
 
 .. image:: images/autotask-type.png
    :target: https://docs.tier2tickets.com/_images/autotask-type.png
 
+|
+|
+
 *source*
 """"""""
 
-refers to the ticket source (Web Portal, Phone, Other)
+	**The ticket source (Web Portal, Phone, Other):**
 
 .. image:: images/autotask-source.png
    :target: https://docs.tier2tickets.com/_images/autotask-source.png
 
+|
+|
+
 *priv_append*
 """""""""""""
 
-allows you to append information to the internal ticket note
+	**Allows you to append information to the internal ticket note:**
 
 .. image:: images/autotask-priv_append.png
    :target: https://docs.tier2tickets.com/_images/autotask-priv_append.png
 
+|
+|
+
 *contactName*
 """""""""""""
 
-refers to the client's name
+	**Refers to the client's name:**
 
 .. image:: images/autotask-contactName.png
    :target: https://docs.tier2tickets.com/_images/autotask-contactName.png
 
+|
+|
+
 *issue*
 """""""
 
-refers to the primary ticket issue
+	**The primary ticket issue:**
 
 .. image:: images/autotask-issue.png
    :target: https://docs.tier2tickets.com/_images/autotask-issue.png
 
+|
+|
+
 *subissue*
 """"""""""
 
-refers ro the secondary ticket issue
+	**The secondary ticket issue:**
 
 .. image:: images/autotask-subissue.png
    :target: https://docs.tier2tickets.com/_images/autotask-subissue.png
 
+|
+|
 
 *other*
 """""""

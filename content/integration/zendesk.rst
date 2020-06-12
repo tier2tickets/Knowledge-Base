@@ -91,41 +91,55 @@ Field Definitions
 *priority*
 """"""""""
 
-refers to the ticket priority
+	**The ticket priority level (Urgent, Low, ect):**
 
 .. image:: images/zd-priority.png
    :target: https://docs.tier2tickets.com/_images/zd-priority.png
 
+|
+|
+
 *status*
 """"""""
 
-refers to the ticket status (New, In Progress, etc)
+	**The ticket status (New, In Progress, etc):**
 
 .. image:: images/zd-status.png
    :target: https://docs.tier2tickets.com/_images/zd-status.png
 
+|
+|
+
 *type*
 """"""
 
-refers to the issue type (Service Request, Incident, Problem, Alert)
+	**Refers to the issue type (Service Request, Incident, Problem, Alert):**
 
 .. image:: images/zd-type.png
    :target: https://docs.tier2tickets.com/_images/zd-type.png
 
+|
+|
 
 *priv_append*
 """""""""""""
 
-allows you to append information to the internal ticket note
+	**Allows you to append information to the internal ticket note:**
 
 .. image:: images/zd-priv_append.png
    :target: https://docs.tier2tickets.com/_images/zd-priv_append.png
+
+|
+|
 
 *input_**
 """""""""
 
 .. image:: images/zd-inputs.png
    :target: https://docs.tier2tickets.com/_images/zd-inputs.png
+
+|
+|
 
 *other*
 """""""

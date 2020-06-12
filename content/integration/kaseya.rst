@@ -92,75 +92,101 @@ Field Definitions
 *priority*
 """"""""""
 
-refers to the ticket priority (Urgent, Low, ect)
+	**The ticket priority level (Urgent, Low, ect):**
 
 .. image:: images/ka-priority.png
    :target: https://docs.tier2tickets.com/_images/ka-priority.png
 
+|
+|
+
 *ticketStatus*
 """"""""""""""
 
-refers to the ticket status (New, In Progress, etc) 
+	**The ticket status (New, In Progress, etc):**
 
 .. image:: images/ka-ticketStatus.png
    :target: https://docs.tier2tickets.com/_images/ka-ticketStatus.png
 
+|
+|
+
 *title*
 """""""
 
-A short description of the ticket issue
+	**A short description of the ticket issue:**
 
 .. image:: images/ka-title.png
    :target: https://docs.tier2tickets.com/_images/ka-title.png
 
+|
+|
+
 *ticketType*
 """"""""""""
 
-refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
+	**The issue type  in RepairShopr (Helpdesk, Internal, etc):**
 
 .. image:: images/ka-ticketType.png
    :target: https://docs.tier2tickets.com/_images/ka-ticketType.png
 
+|
+|
+
 *queue*
 """""""
 
-refers to the queue the ticket will be assigned to
+	**The queue the ticket will be assigned to:**
 
 .. image:: images/ka-queue.png
    :target: https://docs.tier2tickets.com/_images/ka-queue.png
 
+|
+|
+
 *assignee*
 """"""""""
 
-refers to the agent the ticket will be assigned to
+	**The agent the ticket will be assigned to:**
 
 .. image:: images/ka-assignee.png
    :target: https://docs.tier2tickets.com/_images/ka-assignee.png
 
+|
+|
+
 *ticketSource*
 """"""""""""""
 
-refers to the source of the ticket (Client portal, Phone, Other)
+	**Tthe source of the ticket (Client portal, Phone, Other):**
 
 .. image:: images/ka-ticketSource.png
    :target: https://docs.tier2tickets.com/_images/ka-ticketSource.png
 
+|
+|
+
 *priv_append*
 """""""""""""
 
-allows you to append information to the internal ticket note
+	**Allows you to append information to the internal ticket note:**
 
 .. image:: images/ka-priv_append.png
    :target: https://docs.tier2tickets.com/_images/ka-priv_append.png
 
+|
+|
+
 *openDate*
 """"""""""
 
-refers to the date the ticket was created
+	**The date the ticket was created:**
 
 .. image:: images/ka-openDate.png
    :target: https://docs.tier2tickets.com/_images/ka-openDate.png
 
+|
+|
 
 *other*
 """""""
