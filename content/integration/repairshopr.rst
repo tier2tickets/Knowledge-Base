@@ -144,7 +144,7 @@ Field Definitions
 |
 
 *problem_type*
-""""""""""""
+""""""""""""""
 
 	**The problem type  in RepairShopr (Helpdesk, Internal, etc):**
 
