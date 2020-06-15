@@ -96,7 +96,7 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | comment_subject | email         |
 +-----------------+---------------+
-| issue_type      | business_name |
+| problem_type    | business_name |
 +-----------------+---------------+
 | message         | ip            |
 +-----------------+---------------+
@@ -143,10 +143,10 @@ Field Definitions
 |
 |
 
-*issue_type*
+*problem_type*
 """"""""""""
 
-	**The issue type  in RepairShopr (Helpdesk, Internal, etc):**
+	**The problem type  in RepairShopr (Helpdesk, Internal, etc):**
 
 .. image:: images/rs-issue_type.png
    :target: https://docs.tier2tickets.com/_images/rs-issue_type.png
