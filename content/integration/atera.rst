@@ -51,18 +51,31 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-------------------+---------------+
 | Read/Write        | Read Only     |
 +===================+===============+
-| priority          | selections    |
+| priority_         | selections_   |
 +-------------------+---------------+
-| type              | hostname      |
+| type_             | hostname_     |
 +-------------------+---------------+
-| impact            | name          |
+| impact_           | name_         |
 +-------------------+---------------+
-| append            | email         |
+| append_           | email_        |
 +-------------------+---------------+
-| message           | ip            |
+| message_          | ip_           |
 +-------------------+---------------+
-| subject           | mac           | 
+| subject_          | mac_          | 
 +-------------------+---------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/atera/#priority
+.. _type:  https://docs.tier2tickets.com/content/integration/atera/#type
+.. _impact:  https://docs.tier2tickets.com/content/integration/atera/#impact
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

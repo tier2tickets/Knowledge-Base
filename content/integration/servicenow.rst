@@ -37,20 +37,35 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-------------------+---------------+
 | Read/Write        | Read Only     |
 +===================+===============+
-| impact            | selections    |
+| impact_           | selections_   |
 +-------------------+---------------+
-| urgency           | hostname      |
+| urgency_          | hostname_     |
 +-------------------+---------------+
-| incidentState     | name          |
+| incidentState_    | name_         |
 +-------------------+---------------+
-| priv_append       | email         |
+| priv_append_      | email_        |
 +-------------------+---------------+
-| message           | ip            |
+| message_          | ip_           |
 +-------------------+---------------+
-| subject           | mac           | 
+| subject_          | mac_          | 
 +-------------------+---------------+
-| append            | callerID      | 
+| append_           | callerID_     | 
 +-------------------+---------------+
+
+.. _impact:  https://docs.tier2tickets.com/content/integration/servicenow/#impact-and-urgency
+.. _urgency:  https://docs.tier2tickets.com/content/integration/servicenow/#impact-and-urgency
+.. _incidentState:  https://docs.tier2tickets.com/content/integration/servicenow/#incidentstate
+.. _priv_append:  https://docs.tier2tickets.com/content/integration/servicenow/#priv-append
+.. _callerID:  https://docs.tier2tickets.com/content/integration/servicenow/#callerID
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
@@ -97,13 +112,13 @@ Urgency:
 |
 |
 
-*contactName*
-"""""""""""""
+*callerID*
+""""""""""
 
 	**Refers to the client's name:**
 
-.. image:: images/sn-contactName.png
-   :target: https://docs.tier2tickets.com/_images/sn-contactName.png
+.. image:: images/sn-callerID.png
+   :target: https://docs.tier2tickets.com/_images/sn-callerID.png
 
 |
 |

@@ -148,30 +148,49 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| priority        | selections    |
+| priority_       | selections_   |
 +-----------------+---------------+
-| state           | name          |
+| state_          | name_         |
 +-----------------+---------------+
-| team            | email         |
+| team_           | email_        |
 +-----------------+---------------+
-| type            | ip            |
+| type_           | ip_           |
 +-----------------+---------------+
-| message         | mac           |
+| message_        | mac_          |
 +-----------------+---------------+
-| subject         | hostname      | 
+| subject_        | hostname_     | 
 +-----------------+---------------+
-| source          |               | 
+| source_         |               | 
 +-----------------+---------------+
-| impact          |               | 
+| impact_         |               | 
 +-----------------+---------------+
-| urgency         |               |
+| urgency_        |               |
 +-----------------+---------------+
-| owner           |               | 
+| owner_          |               | 
 +-----------------+---------------+
-| board           |               | 
+| board_          |               | 
 +-----------------+---------------+
-| append          |               | 
+| append_         |               | 
 +-----------------+---------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/connectwise/#priority
+.. _state:  https://docs.tier2tickets.com/content/integration/connectwise/#state
+.. _team:  https://docs.tier2tickets.com/content/integration/connectwise/#team
+.. _type:  https://docs.tier2tickets.com/content/integration/connectwise/#type
+.. _source:  https://docs.tier2tickets.com/content/integration/connectwise/#source
+.. _impact:  https://docs.tier2tickets.com/content/integration/connectwise/#impact-and-urgency
+.. _urgency:  https://docs.tier2tickets.com/content/integration/connectwise/#impact-and-urgency
+.. _owner:  https://docs.tier2tickets.com/content/integration/connectwise/#owner
+.. _board:  https://docs.tier2tickets.com/content/integration/connectwise/#board
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

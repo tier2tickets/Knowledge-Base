@@ -90,22 +90,38 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| priority        | selections    |
+| priority_       | selections_   |
 +-----------------+---------------+
-| status          | name          |
+| status_         | name_         |
 +-----------------+---------------+
-| comment_subject | email         |
+| comment_subject_| email_        |
 +-----------------+---------------+
-| issue_type      | business_name |
+| issue_type_     | business_name_|
 +-----------------+---------------+
-| message         | ip            |
+| message_        | ip_           |
 +-----------------+---------------+
-| subject         | mac           | 
+| subject_        | mac_          | 
 +-----------------+---------------+
-| append          | hostname      | 
+| append_         | hostname_     | 
 +-----------------+---------------+
-| priv_append     |               | 
+| priv_append_    |               | 
 +-----------------+---------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/repairshopr/#priority
+.. _status:  https://docs.tier2tickets.com/content/integration/repairshopr/#status
+.. _comment_subject:  https://docs.tier2tickets.com/content/integration/repairshopr/#comment-subject
+.. _issue_type:  https://docs.tier2tickets.com/content/integration/repairshopr/#issue-type
+.. _priv_append:  https://docs.tier2tickets.com/content/integration/repairshopr/#priv-append
+.. _business_name:  https://docs.tier2tickets.com/content/integration/repairshopr/#business-name
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

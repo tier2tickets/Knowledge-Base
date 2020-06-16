@@ -86,28 +86,46 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| priority        | selections    |
+| priority_       | selections_   |
 +-----------------+---------------+
-| ticketStatus    | contactName   |
+| ticketStatus_   | contactName_  |
 +-----------------+---------------+
-| queue           | email         |
+| queue_          | email_        |
 +-----------------+---------------+
-| type            | ip            |
+| type_           | ip_           |
 +-----------------+---------------+
-| message         | mac           |
+| message_        | mac_          |
 +-----------------+---------------+
-| subject         | hostname      | 
+| subject_        | hostname_     | 
 +-----------------+---------------+
-| append          |               | 
+| append_         |               | 
 +-----------------+---------------+
-| priv_append     |               | 
+| priv_append_    |               | 
 +-----------------+---------------+
-| source          |               | 
+| source_         |               | 
 +-----------------+---------------+
-| issue           |               | 
+| issue_          |               | 
 +-----------------+---------------+
-| subIssue        |               | 
+| subIssue_       |               | 
 +-----------------+---------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/autotask/#priority
+.. _ticketStatus:  https://docs.tier2tickets.com/content/integration/autotask/#ticketstatus
+.. _queue:  https://docs.tier2tickets.com/content/integration/autotask/#queue
+.. _type:  https://docs.tier2tickets.com/content/integration/autotask/#type
+.. _priv_append:  https://docs.tier2tickets.com/content/integration/autotask/#priv-append
+.. _source:  https://docs.tier2tickets.com/content/integration/autotask/#source
+.. _issue:  https://docs.tier2tickets.com/content/integration/autotask/#issue
+.. _subIssue:  https://docs.tier2tickets.com/content/integration/autotask/#subissue
+.. _contactName:  https://docs.tier2tickets.com/content/integration/autotask/#contactname
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

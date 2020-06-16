@@ -71,31 +71,58 @@ Custom Rules
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-------------------+---------------+
-| Read/Write        | Read Only     |
-+===================+===============+
-| priority          | selections    |
-+-------------------+---------------+
-| type              | hostname      |
-+-------------------+---------------+
-| standing          | name          |
-+-------------------+---------------+
-| priv_append       | email         |
-+-------------------+---------------+
-| message           | ip            |
-+-------------------+---------------+
-| subject           | mac           | 
-+-------------------+---------------+
-| append            |*input_cell*   | 
-+-------------------+---------------+
-| assignee          |*input_phone*  | 
-+-------------------+---------------+
-| class             |*input_company*| 
-+-------------------+---------------+
-|                   |*input_email*  | 
-+-------------------+---------------+
-|                   |*input_name*   | 
-+-------------------+---------------+
++--------------------+----------------+
+| Read/Write         | Read Only      |
++====================+================+
+| priority_          | selections_    |
++--------------------+----------------+
+| type_              | hostname_      |
++--------------------+----------------+
+| standing_          | name_          |
++--------------------+----------------+
+| priv_append_       | email_         |
++--------------------+----------------+
+| message_           | ip_            |
++--------------------+----------------+
+| subject_           | mac_           | 
++--------------------+----------------+
+| append_            ||input_cell|_   | 
++--------------------+----------------+
+| assignee_          ||input_phone|_  | 
++--------------------+----------------+
+| class_             ||input_company|_| 
++--------------------+----------------+
+|                    ||input_email|_  | 
++--------------------+----------------+
+|                    ||input_name|_   | 
++--------------------+----------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/accelo/#priority
+.. _type:  https://docs.tier2tickets.com/content/integration/accelo/#type
+.. _standing:  https://docs.tier2tickets.com/content/integration/accelo/#standing
+.. _priv_append:  https://docs.tier2tickets.com/content/integration/accelo/#priv-append
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _assignee:  https://docs.tier2tickets.com/content/integration/accelo/#assignee
+.. _class:  https://docs.tier2tickets.com/content/integration/accelo/#class
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+.. _input_cell:  https://docs.tier2tickets.com/content/integration/accelo/#input
+.. _input_phone:  https://docs.tier2tickets.com/content/integration/accelo/#input
+.. _input_company:  https://docs.tier2tickets.com/content/integration/accelo/#input
+.. _input_email:  https://docs.tier2tickets.com/content/integration/accelo/#input
+.. _input_name:  https://docs.tier2tickets.com/content/integration/accelo/#input
+
+.. |input_cell| replace:: *input_cell*
+.. |input_phone| replace:: *input_phone*
+.. |input_company| replace:: *input_company*
+.. |input_email| replace:: *input_email*
+.. |input_name| replace:: *input_name*
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

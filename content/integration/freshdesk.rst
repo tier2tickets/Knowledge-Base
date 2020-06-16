@@ -73,23 +73,23 @@ FreshDesk
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| priority        | selections    |
+| priority_       | selections_   |
 +-----------------+---------------+
-| status          | name          |
+| status_         | name_         |
 +-----------------+---------------+
-| group           | email         |
+| group_          | email_        |
 +-----------------+---------------+
-| type            | ip            |
+| type_           | ip_           |
 +-----------------+---------------+
-| message         | mac           |
+| message_        | mac_          |
 +-----------------+---------------+
-| subject         | hostname      | 
+| subject_        | hostname_     | 
 +-----------------+---------------+
-| source          |               | 
+| source_         |               | 
 +-----------------+---------------+
-| agent           |               | 
+| agent_          |               | 
 +-----------------+---------------+
-| append          |               |
+| append_         |               |
 +-----------------+---------------+
 
 Freshservice
@@ -97,30 +97,50 @@ Freshservice
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| priority        | selections    |
+| priority_       | selections_   |
 +-----------------+---------------+
-| status          | name          |
+| status_         | name_         |
 +-----------------+---------------+
-| department      | email         |
+| department_     | email_        |
 +-----------------+---------------+
-| agent           | ip            |
+| agent_          | ip_           |
 +-----------------+---------------+
-| message         | mac           |
+| message_        | mac_          |
 +-----------------+---------------+
-| subject         | hostname      | 
+| subject_        | hostname_     | 
 +-----------------+---------------+
-| source          |               | 
+| source_         |               | 
 +-----------------+---------------+
-| impact          |               | 
+| impact_         |               | 
 +-----------------+---------------+
-| urgency         |               |
+| urgency_        |               |
 +-----------------+---------------+
-| append          |               |
+| append_         |               |
 +-----------------+---------------+
-| group           |               |
+| group_          |               |
 +-----------------+---------------+
-| priv_append     |               |
+| priv_append_    |               |
 +-----------------+---------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/freshdesk/#priority
+.. _status:  https://docs.tier2tickets.com/content/integration/freshdesk/#status
+.. _department:  https://docs.tier2tickets.com/content/integration/freshdesk/#department
+.. _agent:  https://docs.tier2tickets.com/content/integration/freshdesk/#agent
+.. _source:  https://docs.tier2tickets.com/content/integration/freshdesk/#source
+.. _impact:  https://docs.tier2tickets.com/content/integration/freshdesk/#impact-and-urgency
+.. _urgency:  https://docs.tier2tickets.com/content/integration/freshdesk/#impact-and-urgency
+.. _group:  https://docs.tier2tickets.com/content/integration/freshdesk/#group
+.. _type:  https://docs.tier2tickets.com/content/integration/freshdesk/#type
+.. _priv_append:  https://docs.tier2tickets.com/content/integration/freshdesk/#priv-append
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
@@ -203,6 +223,19 @@ FreshService:
 
 .. image:: images/fs-group.png
    :target: https://docs.tier2tickets.com/_images/fs-group.png
+
+|
+|
+
+*type*
+""""""
+
+	**Refers to the issue type (Service Request, Incident, Problem, Alert):**
+	
+FreshDesk:
+
+.. image:: images/fd-type.png
+   :target: https://docs.tier2tickets.com/_images/fd-type.png
 
 |
 |

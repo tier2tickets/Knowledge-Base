@@ -67,24 +67,42 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | Read/Write      | Read Only     |
 +=================+===============+
-| priority        | selections    |
+| priority_       | selections_   |
 +-----------------+---------------+
-| ticketStatus    | name          |
+| ticketStatus_   | name_         |
 +-----------------+---------------+
-| queue           | email         |
+| queue_          | email_        |
 +-----------------+---------------+
-| ticketType      | ip            |
+| ticketType_     | ip_           |
 +-----------------+---------------+
-| message         | openDate      |
+| message_        | openDate_     |
 +-----------------+---------------+
-| title           | hostname      | 
+| title_          | hostname_     | 
 +-----------------+---------------+
-| ticketSource    | mac           | 
+| ticketSource_   | mac_          | 
 +-----------------+---------------+
-| assignee        |               | 
+| assignee_       |               | 
 +-----------------+---------------+
-| append          |               | 
+| append_         |               | 
 +-----------------+---------------+
+
+.. _priority:  https://docs.tier2tickets.com/content/integration/kaseya/#priority
+.. _ticketStatus:  https://docs.tier2tickets.com/content/integration/kaseya/#ticketstatus
+.. _queue:  https://docs.tier2tickets.com/content/integration/kaseya/#queue
+.. _ticketType:  https://docs.tier2tickets.com/content/integration/kaseya/#tickettype
+.. _title:  https://docs.tier2tickets.com/content/integration/kaseya/#title
+.. _ticketSource:  https://docs.tier2tickets.com/content/integration/kaseya/#ticketsource
+.. _assignee:  https://docs.tier2tickets.com/content/integration/kaseya/#assignee
+.. _openDate:  https://docs.tier2tickets.com/content/integration/kaseya/#opendate
+.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
+.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
+.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
+.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
+.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
+.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
+.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
+.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
+.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
