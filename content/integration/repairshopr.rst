@@ -87,25 +87,25 @@ Advanced Integration Options
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| status_         | name_         |
-+-----------------+---------------+
-| comment_subject_| email_        |
-+-----------------+---------------+
-| problem_type_   | business_name_|
-+-----------------|---------------+
-| message_        | hostname_     |
-+-----------------+---------------+
-| subject_        | ip_           |
-+-----------------+---------------+
-| append_         | mac_          | 
-+-----------------+---------------+
-| priv_append_    |               | 
-+-----------------+---------------+
++------------------+----------------+
+| Read/Write       | Read Only      |
++==================+================+
+| priority_        | selections_    |
++------------------+----------------+
+| status_          | name_          |
++------------------+----------------+
+| comment_subject_ | email_         |
++------------------+----------------+
+| problem_type_    | business_name_ |
++------------------+----------------+
+| message_         | hostname_      |
++------------------+----------------+
+| subject_         | ip_            |
++------------------+----------------+
+| append_          | mac_           | 
++------------------+----------------+
+| priv_append_     |                | 
++------------------+----------------+
 
 .. _priority:  https://docs.tier2tickets.com/content/integration/repairshopr/#priority
 .. _status:  https://docs.tier2tickets.com/content/integration/repairshopr/#status

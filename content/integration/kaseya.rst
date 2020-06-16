@@ -86,14 +86,14 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 | append_         |               | 
 +-----------------+---------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/kaseya/#priority
-.. _ticketStatus:  https://docs.tier2tickets.com/content/integration/kaseya/#ticketstatus
-.. _queue:  https://docs.tier2tickets.com/content/integration/kaseya/#queue
-.. _ticketType:  https://docs.tier2tickets.com/content/integration/kaseya/#tickettype
-.. _title:  https://docs.tier2tickets.com/content/integration/kaseya/#title
-.. _ticketSource:  https://docs.tier2tickets.com/content/integration/kaseya/#ticketsource
-.. _assignee:  https://docs.tier2tickets.com/content/integration/kaseya/#assignee
-.. _openDate:  https://docs.tier2tickets.com/content/integration/kaseya/#opendate
+.. _priority:  https://docs.tier2tickets.com/content/integration/kaseya/#id1
+.. _ticketStatus:  https://docs.tier2tickets.com/content/integration/kaseya/#id2
+.. _queue:  https://docs.tier2tickets.com/content/integration/kaseya/#id5
+.. _ticketType:  https://docs.tier2tickets.com/content/integration/kaseya/#id4
+.. _title:  https://docs.tier2tickets.com/content/integration/kaseya/#id3
+.. _ticketSource:  https://docs.tier2tickets.com/content/integration/kaseya/#id7
+.. _assignee:  https://docs.tier2tickets.com/content/integration/kaseya/#id6
+.. _openDate:  https://docs.tier2tickets.com/content/integration/kaseya/#id8
 .. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
 .. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
 .. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
