@@ -98,7 +98,6 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +---------------------------------------------------+------------------------------------------------------------+
 
 
-
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
