@@ -98,11 +98,6 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +---------------------------------------------------+------------------------------------------------------------+
 
 
-.. |input_cell| replace:: *input_cell*
-.. |input_phone| replace:: *input_phone*
-.. |input_company| replace:: *input_company*
-.. |input_email| replace:: *input_email*
-.. |input_name| replace:: *input_name*
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
