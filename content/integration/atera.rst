@@ -48,34 +48,23 @@ Custom Rules
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-------------------+---------------+
-| Read/Write        | Read Only     |
-+===================+===============+
-| priority_         | selections_   |
-+-------------------+---------------+
-| type_             | hostname_     |
-+-------------------+---------------+
-| impact_           | name_         |
-+-------------------+---------------+
-| append_           | email_        |
-+-------------------+---------------+
-| message_          | ip_           |
-+-------------------+---------------+
-| subject_          | mac_          | 
-+-------------------+---------------+
++-----------------------------------------------+--------------------------------------------------+
+| Read/Write                                    | Read Only                                        |
++===============================================+==================================================+
+| :ref:`content/integration/atera:*priority*`   | :ref:`content/integration/advanced:*selections*` |
++-----------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/atera:*type*`       | :ref:`content/integration/advanced:*hostname*`   |
++-----------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/atera:*impact*`     | :ref:`content/integration/advanced:*name*`       |
++-----------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`  | :ref:`content/integration/advanced:*email*`      |
++-----------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*` | :ref:`content/integration/advanced:*ip*`         |
++-----------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*` | :ref:`content/integration/advanced:*mac*`        | 
++-----------------------------------------------+--------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/atera/#priority
-.. _type:  https://docs.tier2tickets.com/content/integration/atera/#type
-.. _impact:  https://docs.tier2tickets.com/content/integration/atera/#impact
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

@@ -48,34 +48,23 @@ Advanced Integration Options
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| alert_          | name_         |
-+-----------------+---------------+
-| auto_respond_   | email_        |
-+-----------------+---------------+
-| message_        | hostname_     |
-+-----------------+---------------+
-| subject_        | mac_          | 
-+-----------------+---------------+
-| append_         | ip_           | 
-+-----------------+---------------+
++--------------------------------------------------------------------------+--------------------------------------------------+
+| Read/Write                                                               | Read Only                                        |
++==========================================================================+==================================================+
+| :ref:`content/integration/osticket:*priority*`                           | :ref:`content/integration/advanced:*selections*` |
++--------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`alert<content/integration/osticket:*alert & auto_respond*>`        | :ref:`content/integration/advanced:*name*`       |
++--------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`auto_respond<content/integration/osticket:*alert & auto_respond*>` | :ref:`content/integration/advanced:*email*`      |
++--------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`                            | :ref:`content/integration/advanced:*hostname*`   |
++--------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`                            | :ref:`content/integration/advanced:*mac*`        | 
++--------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`                             | :ref:`content/integration/advanced:*ip*`         | 
++--------------------------------------------------------------------------+--------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/osticket/#priority
-.. _alert:  https://docs.tier2tickets.com/content/integration/osticket/#alert-auto-respond
-.. _auto_respond:  https://docs.tier2tickets.com/content/integration/osticket/#alert-auto-respond
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

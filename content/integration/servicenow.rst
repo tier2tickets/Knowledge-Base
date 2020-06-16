@@ -34,43 +34,30 @@ Advanced Integration Options
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
 
-+-------------------+---------------+
-| Read/Write        | Read Only     |
-+===================+===============+
-| impact_           | selections_   |
-+-------------------+---------------+
-| urgency_          | hostname_     |
-+-------------------+---------------+
-| incidentState_    | name_         |
-+-------------------+---------------+
-| priv_append_      | email_        |
-+-------------------+---------------+
-| message_          | ip_           |
-+-------------------+---------------+
-| subject_          | mac_          | 
-+-------------------+---------------+
-| append_           | callerID_     | 
-+-------------------+---------------+
++-------------------------------------------------------------------------+--------------------------------------------------+
+| Read/Write                                                              | Read Only                                        |
++=========================================================================+==================================================+
+| :ref:`impact<content/integration/servicenow:*impact & urgency*>`        | :ref:`content/integration/advanced:*selections*` |
++-------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`urgency<content/integration/servicenow:*impact & urgency*>`       | :ref:`content/integration/advanced:*hostname*`   |
++-------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/servicenow:*incidentState*`                   | :ref:`content/integration/advanced:*name*`       |
++-------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/servicenow:*priv_append*`                     | :ref:`content/integration/advanced:*email*`      |
++-------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`                           | :ref:`content/integration/advanced:*ip*`         |
++-------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`                           | :ref:`content/integration/advanced:*mac*`        | 
++-------------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`                            | :ref:`content/integration/servicenow:*callerID*` | 
++-------------------------------------------------------------------------+--------------------------------------------------+
 
-.. _impact:  https://docs.tier2tickets.com/content/integration/servicenow/#impact-and-urgency
-.. _urgency:  https://docs.tier2tickets.com/content/integration/servicenow/#impact-and-urgency
-.. _incidentState:  https://docs.tier2tickets.com/content/integration/servicenow/#incidentstate
-.. _priv_append:  https://docs.tier2tickets.com/content/integration/servicenow/#priv-append
-.. _callerID:  https://docs.tier2tickets.com/content/integration/servicenow/#callerID
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-*impact* and *urgency*
+*impact & urgency*
 """"""""""""""""""""""
 
 	**Set priority via the SLA priority matrix:**

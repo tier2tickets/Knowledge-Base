@@ -83,49 +83,33 @@ Advanced Integration Options
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| ticketStatus_   | contactName_  |
-+-----------------+---------------+
-| queue_          | email_        |
-+-----------------+---------------+
-| type_           | ip_           |
-+-----------------+---------------+
-| message_        | mac_          |
-+-----------------+---------------+
-| subject_        | hostname_     | 
-+-----------------+---------------+
-| append_         |               | 
-+-----------------+---------------+
-| priv_append_    |               | 
-+-----------------+---------------+
-| source_         |               | 
-+-----------------+---------------+
-| issue_          |               | 
-+-----------------+---------------+
-| subIssue_       |               | 
-+-----------------+---------------+
++----------------------------------------------------+---------------------------------------------------+
+| Read/Write                                         | Read Only                                         |
++====================================================+===================================================+
+| :ref:`content/integration/autotask:*priority*`     | :ref:`content/integration/advanced:*selections*`  |
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*ticketStatus*` | :ref:`content/integration/autotask:*contactName*` |
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*queue*`        | :ref:`content/integration/advanced:*email*`       |
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*type*`         | :ref:`content/integration/advanced:*ip*`          |
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`      | :ref:`content/integration/advanced:*mac*`         |
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`      | :ref:`content/integration/advanced:*hostname*`    | 
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`       |                                                   | 
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*priv_append*`  |                                                   | 
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*source*`       |                                                   | 
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*issue*`        |                                                   | 
++----------------------------------------------------+---------------------------------------------------+
+| :ref:`content/integration/autotask:*subIssue*`     |                                                   | 
++----------------------------------------------------+---------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/autotask/#priority
-.. _ticketStatus:  https://docs.tier2tickets.com/content/integration/autotask/#ticketstatus
-.. _queue:  https://docs.tier2tickets.com/content/integration/autotask/#queue
-.. _type:  https://docs.tier2tickets.com/content/integration/autotask/#type
-.. _priv_append:  https://docs.tier2tickets.com/content/integration/autotask/#priv-append
-.. _source:  https://docs.tier2tickets.com/content/integration/autotask/#source
-.. _issue:  https://docs.tier2tickets.com/content/integration/autotask/#issue
-.. _subIssue:  https://docs.tier2tickets.com/content/integration/autotask/#subissue
-.. _contactName:  https://docs.tier2tickets.com/content/integration/autotask/#contactname
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

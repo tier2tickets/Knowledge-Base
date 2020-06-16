@@ -87,41 +87,27 @@ Advanced Integration Options
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+------------------+----------------+
-| Read/Write       | Read Only      |
-+==================+================+
-| priority_        | selections_    |
-+------------------+----------------+
-| status_          | name_          |
-+------------------+----------------+
-| comment_subject_ | email_         |
-+------------------+----------------+
-| problem_type_    | business_name_ |
-+------------------+----------------+
-| message_         | hostname_      |
-+------------------+----------------+
-| subject_         | ip_            |
-+------------------+----------------+
-| append_          | mac_           | 
-+------------------+----------------+
-| priv_append_     |                | 
-+------------------+----------------+
++----------------------------------------------------------+--------------------------------------------------------+
+| Read/Write                                               | Read Only                                              |
++==========================================================+========================================================+
+| :ref:`content/integration/repairshopr:*priority*`        | :ref:`content/integration/advanced:*selections*`       |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*status*`          | :ref:`content/integration/advanced:*name*`             |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*comment_subject*` | :ref:`content/integration/advanced:*email*`            |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*problem_type*`    | :ref:`content/integration/repairshopr:*business_name*` |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`            | :ref:`content/integration/advanced:*hostname*`         |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`            | :ref:`content/integration/advanced:*ip*`               |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`             | :ref:`content/integration/advanced:*mac*`              | 
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*priv_append*`     |                                                        | 
++----------------------------------------------------------+--------------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/repairshopr/#priority
-.. _status:  https://docs.tier2tickets.com/content/integration/repairshopr/#status
-.. _comment_subject:  https://docs.tier2tickets.com/content/integration/repairshopr/#comment-subject
-.. _problem_type:  https://docs.tier2tickets.com/content/integration/repairshopr/#problem-type
-.. _priv_append:  https://docs.tier2tickets.com/content/integration/repairshopr/#priv-append
-.. _business_name:  https://docs.tier2tickets.com/content/integration/repairshopr/#business-name
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^

@@ -70,77 +70,59 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 
 FreshDesk
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| status_         | name_         |
-+-----------------+---------------+
-| group_          | email_        |
-+-----------------+---------------+
-| type_           | ip_           |
-+-----------------+---------------+
-| message_        | mac_          |
-+-----------------+---------------+
-| subject_        | hostname_     | 
-+-----------------+---------------+
-| source_         |               | 
-+-----------------+---------------+
-| agent_          |               | 
-+-----------------+---------------+
-| append_         |               |
-+-----------------+---------------+
++-------------------------------------------------+--------------------------------------------------+
+| Read/Write                                      | Read Only                                        |
++=================================================+==================================================+
+| :ref:`content/integration/freshdesk:*priority*` | :ref:`content/integration/advanced:*selections*` |
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/freshdesk:*status*`   | :ref:`content/integration/advanced:*name*`       |
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/freshdesk:*group*`    | :ref:`content/integration/advanced:*email*`      |
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/freshdesk:*type*`     | :ref:`content/integration/advanced:*ip*`         |
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`   | :ref:`content/integration/advanced:*mac*`        |
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`   | :ref:`content/integration/advanced:*hostname*`   | 
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/freshdesk:*source*`   |                                                  | 
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/freshdesk:*agent*`    |                                                  | 
++-------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`    |                                                  |
++-------------------------------------------------+--------------------------------------------------+
 
 Freshservice
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| status_         | name_         |
-+-----------------+---------------+
-| department_     | email_        |
-+-----------------+---------------+
-| agent_          | ip_           |
-+-----------------+---------------+
-| message_        | mac_          |
-+-----------------+---------------+
-| subject_        | hostname_     | 
-+-----------------+---------------+
-| source_         |               | 
-+-----------------+---------------+
-| impact_         |               | 
-+-----------------+---------------+
-| urgency_        |               |
-+-----------------+---------------+
-| append_         |               |
-+-----------------+---------------+
-| group_          |               |
-+-----------------+---------------+
-| priv_append_    |               |
-+-----------------+---------------+
++----------------------------------------------------------------------+----------------------------------------------------+
+| Read/Write                                                           | Read Only                                          |
++======================================================================+====================================================+
+| :ref:`content/integration/freshdesk:*priority*`                      | :ref:`content/integration/advanced:*selections*`   |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*status*`                        | :ref:`content/integration/advanced:*name*`         |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*department*`                    | :ref:`content/integration/advanced:*email*`        |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*agent*`                         | :ref:`content/integration/advanced:*ip*`           |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`                        | :ref:`content/integration/advanced:*mac*`          |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`                        | :ref:`content/integration/advanced:*hostname*`     | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*source*`                        |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`impact<content/integration/freshdesk:*impact & urgency*>`      |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`urgency<content/integration/freshdesk:*impact & urgency*>`     |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`                         |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*group*`                         |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*priv_append*`                   |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/freshdesk/#priority
-.. _status:  https://docs.tier2tickets.com/content/integration/freshdesk/#status
-.. _department:  https://docs.tier2tickets.com/content/integration/freshdesk/#department
-.. _agent:  https://docs.tier2tickets.com/content/integration/freshdesk/#agent
-.. _source:  https://docs.tier2tickets.com/content/integration/freshdesk/#source
-.. _impact:  https://docs.tier2tickets.com/content/integration/freshdesk/#impact-and-urgency
-.. _urgency:  https://docs.tier2tickets.com/content/integration/freshdesk/#impact-and-urgency
-.. _group:  https://docs.tier2tickets.com/content/integration/freshdesk/#group
-.. _type:  https://docs.tier2tickets.com/content/integration/freshdesk/#type
-.. _priv_append:  https://docs.tier2tickets.com/content/integration/freshdesk/#priv-append
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
@@ -165,7 +147,7 @@ FreshService:
 |
 |
 
-*impact* and *urgency*
+*impact & urgency*
 """"""""""""""""""""""
 
 	**Can set priority via the SLA priority matrix:**

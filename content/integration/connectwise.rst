@@ -145,52 +145,35 @@ Custom Rules
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| state_          | name_         |
-+-----------------+---------------+
-| team_           | email_        |
-+-----------------+---------------+
-| type_           | ip_           |
-+-----------------+---------------+
-| message_        | mac_          |
-+-----------------+---------------+
-| subject_        | hostname_     | 
-+-----------------+---------------+
-| source_         |               | 
-+-----------------+---------------+
-| impact_         |               | 
-+-----------------+---------------+
-| urgency_        |               |
-+-----------------+---------------+
-| owner_          |               | 
-+-----------------+---------------+
-| board_          |               | 
-+-----------------+---------------+
-| append_         |               | 
-+-----------------+---------------+
++----------------------------------------------------------------------+--------------------------------------------------+
+| Read/Write                                                           | Read Only                                        |
++======================================================================+==================================================+
+| :ref:`content/integration/connectwise:*priority*`                    | :ref:`content/integration/advanced:*selections*` |
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/connectwise:*state*`                       | :ref:`content/integration/advanced:*name*`       |
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/connectwise:*team*`                        | :ref:`content/integration/advanced:*email*`      |
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/connectwise:*type*`                        | :ref:`content/integration/advanced:*ip*`         |
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`                        | :ref:`content/integration/advanced:*mac*`        |
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`                        | :ref:`content/integration/advanced:*hostname*`   | 
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/connectwise:*source*`                      |                                                  | 
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`impact<content/integration/connectwise:*impact & urgency*>`    |                                                  | 
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`urgency<content/integration/connectwise:*impact & urgency*>`   |                                                  |
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/connectwise:*owner*`                       |                                                  | 
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/connectwise:*board*`                       |                                                  | 
++----------------------------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`                         |                                                  | 
++----------------------------------------------------------------------+--------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/connectwise/#priority
-.. _state:  https://docs.tier2tickets.com/content/integration/connectwise/#state
-.. _team:  https://docs.tier2tickets.com/content/integration/connectwise/#team
-.. _type:  https://docs.tier2tickets.com/content/integration/connectwise/#type
-.. _source:  https://docs.tier2tickets.com/content/integration/connectwise/#source
-.. _impact:  https://docs.tier2tickets.com/content/integration/connectwise/#impact-and-urgency
-.. _urgency:  https://docs.tier2tickets.com/content/integration/connectwise/#impact-and-urgency
-.. _owner:  https://docs.tier2tickets.com/content/integration/connectwise/#owner
-.. _board:  https://docs.tier2tickets.com/content/integration/connectwise/#board
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
@@ -206,8 +189,8 @@ Field Definitions
 |
 |
 
-*impact* and *urgency*
-""""""""""""""""""""""
+*impact & urgency*
+""""""""""""""""""""
 
 	**Can set priority via the SLA priority matrix:**
 

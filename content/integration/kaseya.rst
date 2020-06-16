@@ -64,45 +64,28 @@ Custom Rules
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority_       | selections_   |
-+-----------------+---------------+
-| ticketStatus_   | name_         |
-+-----------------+---------------+
-| queue_          | email_        |
-+-----------------+---------------+
-| ticketType_     | ip_           |
-+-----------------+---------------+
-| message_        | openDate_     |
-+-----------------+---------------+
-| title_          | hostname_     | 
-+-----------------+---------------+
-| ticketSource_   | mac_          | 
-+-----------------+---------------+
-| assignee_       |               | 
-+-----------------+---------------+
-| append_         |               | 
-+-----------------+---------------+
++--------------------------------------------------+--------------------------------------------------+
+| Read/Write                                       | Read Only                                        |
++==================================================+==================================================+
+| :ref:`content/integration/kaseya:*priority*`     | :ref:`content/integration/advanced:*selections*` |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketStatus*` | :ref:`content/integration/advanced:*name*`       |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*queue*`        | :ref:`content/integration/advanced:*email*`      |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketType*`   | :ref:`content/integration/advanced:*ip*`         |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`    | :ref:`content/integration/kaseya:*openDate*`     |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*title*`        | :ref:`content/integration/advanced:*hostname*`   | 
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketSource*` | :ref:`content/integration/advanced:*mac*`        | 
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*assignee*`     |                                                  | 
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`     |                                                  | 
++--------------------------------------------------+--------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/kaseya/#id1
-.. _ticketStatus:  https://docs.tier2tickets.com/content/integration/kaseya/#id2
-.. _queue:  https://docs.tier2tickets.com/content/integration/kaseya/#id5
-.. _ticketType:  https://docs.tier2tickets.com/content/integration/kaseya/#id4
-.. _title:  https://docs.tier2tickets.com/content/integration/kaseya/#id3
-.. _ticketSource:  https://docs.tier2tickets.com/content/integration/kaseya/#id7
-.. _assignee:  https://docs.tier2tickets.com/content/integration/kaseya/#id6
-.. _openDate:  https://docs.tier2tickets.com/content/integration/kaseya/#id8
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
