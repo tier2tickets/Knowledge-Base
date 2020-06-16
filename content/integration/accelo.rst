@@ -88,7 +88,12 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +---------------------------------------------------+------------------------------------------------------------+
 | :ref:`content/integration/advanced:*append*`      | :ref:`input_cell<content/integration/accelo:*input_**>`    | 
 +---------------------------------------------------+------------------------------------------------------------+
+|                                                   | .. raw:: html                                              |
+|                                                   |                                                            |
+|                                                   |    <i>                                                     |
+|                                                   |                                                            |
 | :ref:`content/integration/accelo:*assignee*`      | :ref:`input_phone<content/integration/accelo:*input_**>`   | 
+|                                                   |                                                            |
 +---------------------------------------------------+------------------------------------------------------------+
 | :ref:`content/integration/accelo:*class*`         | :ref:`input_company<content/integration/accelo:*input_**>` | 
 +---------------------------------------------------+------------------------------------------------------------+
