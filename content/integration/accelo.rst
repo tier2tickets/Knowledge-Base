@@ -71,52 +71,32 @@ Custom Rules
 
 This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
-+--------------------+----------------+
-| Read/Write         | Read Only      |
-+====================+================+
-| priority_          | selections_    |
-+--------------------+----------------+
-| type_              | hostname_      |
-+--------------------+----------------+
-| standing_          | name_          |
-+--------------------+----------------+
-| priv_append_       | email_         |
-+--------------------+----------------+
-| message_           | ip_            |
-+--------------------+----------------+
-| subject_           | mac_           | 
-+--------------------+----------------+
-| append_            ||input_cell|_   | 
-+--------------------+----------------+
-| assignee_          ||input_phone|_  | 
-+--------------------+----------------+
-| class_             ||input_company|_| 
-+--------------------+----------------+
-|                    ||input_email|_  | 
-+--------------------+----------------+
-|                    ||input_name|_   | 
-+--------------------+----------------+
++---------------------------------------------------+------------------------------------------------------------+
+| Read/Write                                        | Read Only                                                  |
++===================================================+============================================================+
+| :ref:`content/integration/accelo:*priority*`      | :ref:`content/integration/advanced:*selections*`           |
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/accelo:*type*`          | :ref:`content/integration/advanced:*hostname*`             |
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/accelo:*standing*`      | :ref:`content/integration/advanced:*name*`                 |
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/accelo:*priv_append*`   | :ref:`content/integration/advanced:*email*`                |
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`     | :ref:`content/integration/advanced:*ip*`                   |
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`     | :ref:`content/integration/advanced:*mac*`                  | 
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`      | :ref:`input_cell<content/integration/accelo:*input_**>`    | 
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/accelo:*assignee*`      | :ref:`input_phone<content/integration/accelo:*input_**>`   | 
++---------------------------------------------------+------------------------------------------------------------+
+| :ref:`content/integration/accelo:*class*`         | :ref:`input_company<content/integration/accelo:*input_**>` | 
++---------------------------------------------------+------------------------------------------------------------+
+|                                                   | :ref:`input_email<content/integration/accelo:*input_**>`   | 
++---------------------------------------------------+------------------------------------------------------------+
+|                                                   | :ref:`input_name<content/integration/accelo:*input_**>`    | 
++---------------------------------------------------+------------------------------------------------------------+
 
-.. _priority:  https://docs.tier2tickets.com/content/integration/accelo/#priority
-.. _type:  https://docs.tier2tickets.com/content/integration/accelo/#type
-.. _standing:  https://docs.tier2tickets.com/content/integration/accelo/#standing
-.. _priv_append:  https://docs.tier2tickets.com/content/integration/accelo/#priv-append
-.. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
-.. _subject:  https://docs.tier2tickets.com/content/integration/advanced/#subject
-.. _append:  https://docs.tier2tickets.com/content/integration/advanced/#append
-.. _assignee:  https://docs.tier2tickets.com/content/integration/accelo/#assignee
-.. _class:  https://docs.tier2tickets.com/content/integration/accelo/#class
-.. _selections:  https://docs.tier2tickets.com/content/integration/advanced/#selections
-.. _hostname:  https://docs.tier2tickets.com/content/integration/advanced/#hostname
-.. _name:  https://docs.tier2tickets.com/content/integration/advanced/#name
-.. _email:  https://docs.tier2tickets.com/content/integration/advanced/#email
-.. _ip:  https://docs.tier2tickets.com/content/integration/advanced/#ip
-.. _mac:  https://docs.tier2tickets.com/content/integration/advanced/#mac
-.. _input_cell:  https://docs.tier2tickets.com/content/integration/accelo/#input
-.. _input_phone:  https://docs.tier2tickets.com/content/integration/accelo/#input
-.. _input_company:  https://docs.tier2tickets.com/content/integration/accelo/#input
-.. _input_email:  https://docs.tier2tickets.com/content/integration/accelo/#input
-.. _input_name:  https://docs.tier2tickets.com/content/integration/accelo/#input
 
 .. |input_cell| replace:: *input_cell*
 .. |input_phone| replace:: *input_phone*
@@ -135,8 +115,9 @@ Field Definitions
 .. image:: images/accelo-priority.png
    :target: https://docs.tier2tickets.com/_images/accelo-priority.png
    
-|
-|
+
+
+
 
 *standing*
 """""""""""
@@ -146,8 +127,9 @@ Field Definitions
 .. image:: images/accelo-standing.png
    :target: https://docs.tier2tickets.com/_images/accelo-standing.png
 
-|
-|
+
+
+
 
 *type*
 """"""""
@@ -157,8 +139,9 @@ Field Definitions
 .. image:: images/accelo-type.png
    :target: https://docs.tier2tickets.com/_images/accelo-type.png
 
-|
-|
+
+
+
 
 *assignee*
 """"""""""
@@ -168,8 +151,9 @@ Field Definitions
 .. image:: images/accelo-assignee.png
    :target: https://docs.tier2tickets.com/_images/accelo-assignee.png
 
-|
-|
+
+
+
 
 *class*
 """""""""
@@ -179,8 +163,9 @@ Field Definitions
 .. image:: images/accelo-class.png
    :target: https://docs.tier2tickets.com/_images/accelo-class.png
 
-|
-|
+
+
+
 
 *priv_append*
 """""""""""""
@@ -190,8 +175,9 @@ Field Definitions
 .. image:: images/accelo-priv_append.png
    :target: https://docs.tier2tickets.com/_images/accelo-priv_append.png
 
-|
-|
+
+
+
 
 *input_**
 """""""""
@@ -199,8 +185,9 @@ Field Definitions
 .. image:: images/accelo-inputs.png
    :target: https://docs.tier2tickets.com/_images/accelo-inputs.png
 
-|
-|
+
+
+
 
 *other*
 """""""
