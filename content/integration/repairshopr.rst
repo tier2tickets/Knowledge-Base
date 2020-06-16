@@ -96,13 +96,13 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +-----------------+---------------+
 | comment_subject_| email_        |
 +-----------------+---------------+
-| issue_type_     | business_name_|
+| problem_type_   | business_name_|
++-----------------|---------------+
+| message_        | hostname_     |
 +-----------------+---------------+
-| message_        | ip_           |
+| subject_        | ip_           |
 +-----------------+---------------+
-| subject_        | mac_          | 
-+-----------------+---------------+
-| append_         | hostname_     | 
+| append_         | mac_          | 
 +-----------------+---------------+
 | priv_append_    |               | 
 +-----------------+---------------+
@@ -110,7 +110,7 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 .. _priority:  https://docs.tier2tickets.com/content/integration/repairshopr/#priority
 .. _status:  https://docs.tier2tickets.com/content/integration/repairshopr/#status
 .. _comment_subject:  https://docs.tier2tickets.com/content/integration/repairshopr/#comment-subject
-.. _issue_type:  https://docs.tier2tickets.com/content/integration/repairshopr/#issue-type
+.. _problem_type:  https://docs.tier2tickets.com/content/integration/repairshopr/#problem-type
 .. _priv_append:  https://docs.tier2tickets.com/content/integration/repairshopr/#priv-append
 .. _business_name:  https://docs.tier2tickets.com/content/integration/repairshopr/#business-name
 .. _message:  https://docs.tier2tickets.com/content/integration/advanced/#message
@@ -159,13 +159,13 @@ Field Definitions
 |
 |
 
-*issue_type*
-""""""""""""
+*problem_type*
+""""""""""""""
 
-	**The issue type  in RepairShopr (Helpdesk, Internal, etc):**
+	**The problem type  in RepairShopr (Helpdesk, Internal, etc):**
 
-.. image:: images/rs-issue_type.png
-   :target: https://docs.tier2tickets.com/_images/rs-issue_type.png
+.. image:: images/rs-problem_type.png
+   :target: https://docs.tier2tickets.com/_images/rs-problem_type.png
 
 |
 |
