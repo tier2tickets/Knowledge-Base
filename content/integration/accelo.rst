@@ -86,6 +86,10 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 +---------------------------------------------------+------------------------------------------------------------+
 | :ref:`content/integration/advanced:*subject*`     | :ref:`content/integration/advanced:*mac*`                  | 
 +---------------------------------------------------+------------------------------------------------------------+
+|                                                   | .. raw:: html                                              |
+|                                                   |                                                            |
+|                                                   |    <i>                                                     |
+|                                                   |                                                            |
 | :ref:`content/integration/advanced:*append*`      | :ref:`input_cell<content/integration/accelo:*input_**>`    | 
 +---------------------------------------------------+------------------------------------------------------------+
 |                                                   | .. raw:: html                                              |
@@ -95,10 +99,22 @@ This is the list of variables that can be accessed when using the :ref:`Custom R
 | :ref:`content/integration/accelo:*assignee*`      | :ref:`input_phone<content/integration/accelo:*input_**>`   | 
 |                                                   |                                                            |
 +---------------------------------------------------+------------------------------------------------------------+
+|                                                   | .. raw:: html                                              |
+|                                                   |                                                            |
+|                                                   |    <i>                                                     |
+|                                                   |                                                            |
 | :ref:`content/integration/accelo:*class*`         | :ref:`input_company<content/integration/accelo:*input_**>` | 
 +---------------------------------------------------+------------------------------------------------------------+
+|                                                   | .. raw:: html                                              |
+|                                                   |                                                            |
+|                                                   |    <i>                                                     |
+|                                                   |                                                            |
 |                                                   | :ref:`input_email<content/integration/accelo:*input_**>`   | 
 +---------------------------------------------------+------------------------------------------------------------+
+|                                                   | .. raw:: html                                              |
+|                                                   |                                                            |
+|                                                   |    <i>                                                     |
+|                                                   |                                                            |
 |                                                   | :ref:`input_name<content/integration/accelo:*input_**>`    | 
 +---------------------------------------------------+------------------------------------------------------------+
 
@@ -114,9 +130,8 @@ Field Definitions
 .. image:: images/accelo-priority.png
    :target: https://docs.tier2tickets.com/_images/accelo-priority.png
    
-
-
-
+|
+|
 
 *standing*
 """""""""""
@@ -126,9 +141,8 @@ Field Definitions
 .. image:: images/accelo-standing.png
    :target: https://docs.tier2tickets.com/_images/accelo-standing.png
 
-
-
-
+|
+|
 
 *type*
 """"""""
@@ -138,9 +152,8 @@ Field Definitions
 .. image:: images/accelo-type.png
    :target: https://docs.tier2tickets.com/_images/accelo-type.png
 
-
-
-
+|
+|
 
 *assignee*
 """"""""""
@@ -150,9 +163,8 @@ Field Definitions
 .. image:: images/accelo-assignee.png
    :target: https://docs.tier2tickets.com/_images/accelo-assignee.png
 
-
-
-
+|
+|
 
 *class*
 """""""""
@@ -162,9 +174,8 @@ Field Definitions
 .. image:: images/accelo-class.png
    :target: https://docs.tier2tickets.com/_images/accelo-class.png
 
-
-
-
+|
+|
 
 *priv_append*
 """""""""""""
@@ -174,9 +185,8 @@ Field Definitions
 .. image:: images/accelo-priv_append.png
    :target: https://docs.tier2tickets.com/_images/accelo-priv_append.png
 
-
-
-
+|
+|
 
 *input_**
 """""""""
@@ -184,9 +194,8 @@ Field Definitions
 .. image:: images/accelo-inputs.png
    :target: https://docs.tier2tickets.com/_images/accelo-inputs.png
 
-
-
-
+|
+|
 
 *other*
 """""""
