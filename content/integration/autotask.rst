@@ -213,6 +213,17 @@ Field Definitions
 |
 |
 
+*worktype*
+""""""""""
+
+	**The worktype associated with the ticket:**
+
+.. image:: images/autotask-worktype.png
+   :target: https://docs.tier2tickets.com/_images/autotask-worktype.png
+
+|
+|
+
 *other*
 """""""
 

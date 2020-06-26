@@ -14,7 +14,7 @@ The end result is that you can blacklist even OUR servers IPs and everything con
 
 
 
-We have open-sourced the gatekeeper codebase on our `GitHub page <https://github.com/tier2tickets/s3_gatekeeper>`_. because we want encourage peer-review of this vital piece of security software and we want the customers to know without a doubt that there are no loopholes and that their data is as safe as it should be.
+We have open-sourced the gatekeeper codebase on our `GitHub page <https://github.com/tier2tickets/s3_gatekeeper>`_  . because we want encourage peer-review of this vital piece of security software and we want the customers to know without a doubt that there are no loopholes and that their data is as safe as it should be.
 
 
 If you are interested in moving to your own bucket please contact support. support@helpdeskbuttons.com
