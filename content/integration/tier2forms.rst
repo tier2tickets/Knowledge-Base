@@ -56,8 +56,8 @@ the entire contents of the form and all corresponding responses are passed to ou
 What we are doing with the data.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The data is used solely to append additional information to a support ticket previously created by the form user, or to create a new support
-ticket if a previous support ticket cannot be located. The data may be stored for development debugging purposes or future features. 
-We will never sell, rent or share your personal information with a 3rd party, especially your email addresses and phone numbers,
+ticket if a previous support ticket cannot be located. The data is stored for as long as the ticket is in our system. 
+We will never sell, rent or share information submitted via Tier2Forms with a 3rd party, especially your email addresses and phone numbers,
 without your express permission, unless required by law.
 
 How customers can control their data.
@@ -68,14 +68,11 @@ by email to support@helpdeskbuttons.com, we will purge private/identifiable data
  
 How we protect the data.
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Personal data shall be subject to additional safeguards to ensure this data is processed securely. For example, we work hard to ensure data is encrypted when in transit and storage, and access to this data will be strictly limited to a minimum number of individuals and subject to confidentiality commitments.  
-
-
-We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Policy. Unfortunately,
-the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we
-cannot guarantee the security of your data transmitted to any of our websites; any transmission is at your own risk. Once we have received
-your information, we will use strict procedures and security features to try to prevent unauthorised access. When possible, encryption is
-used, both in transit and storage. Access controls within the organisation limit who may access information.
+Personal data shall be subject to additional safeguards to ensure this data is processed securely. For example, we ensure data is encrypted when in
+transit and storage inside of our platform. Although we will do our best to protect your personal data, we cannot guarantee the security of your
+data transmitted via third parties; any transmission is at your own risk. Once we have received your information, we will use strict procedures
+and security features to try to prevent unauthorized access. When possible, encryption is used, both in transit and storage. Access controls
+within the organization limit who may access information.
 
 
 
