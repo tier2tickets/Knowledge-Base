@@ -56,6 +56,22 @@ Software
 
 
 
+
+.. raw:: html
+
+   <a name="0.6.10">&nbsp;</a>
+
+0.6.x.10
+~~~~~~~
+
+* Added support for new Tier2Assist and Tier2Forms features
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="0.6.7">&nbsp;</a>
