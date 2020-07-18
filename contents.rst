@@ -54,6 +54,13 @@ Table Of Contents
 	content/customization/version-numbers
 
 .. toctree::
+	:caption: Automations
+	:maxdepth: 0
+	
+	content/automations/dispatcher
+	
+
+.. toctree::
 	:caption: Security & Privacy
 	:maxdepth: 0
 

@@ -1,4 +1,4 @@
-Tier2Forms
+*BETA* Tier2Forms
 ========================
 
 Tier2Forms is a special integration we designed to allow user-defined Google Forms to submit additional information into existing tickets
