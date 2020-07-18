@@ -177,7 +177,7 @@ has not been following protocol and contacting internal IT first. Here is what t
 	if business_name is 'Contoso Ltd.' and name is 'Karen': exception = 'Sorry Karen, you are not allowed to put in tickets anymore.'
 
 
-Let's Get Complicated
+A bit more complicated
 """""""""""""""""""""""""""""""""""""
 
 as you can see, using very simple Python syntax you can make very powerful and practical rules. But don't let these simple
