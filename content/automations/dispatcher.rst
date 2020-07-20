@@ -113,7 +113,7 @@ Dan Jump is the CEO of Contoso, So we want to make sure all his tickets are high
 	if name is 'Dan Jump': 
 		priority = 0
 
-Change Priority
+Exclamations
 """""""""""""""""""""""""""""""""""""
 
 Now lets say you want to increase the priority if people are yelling in their message to you. Here is a
@@ -131,7 +131,8 @@ at some point, which might cause the ticket to fail to go in altogether. To prev
 
 .. code-block:: python
 
-	if priority < 0: priority = 0
+	if priority < 0: 
+		priority = 0
 	
 Append
 """""""""""""""""""""""""""""""""""""
