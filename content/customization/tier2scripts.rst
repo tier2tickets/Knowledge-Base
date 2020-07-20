@@ -1,8 +1,7 @@
-Custom Scripts
+Tier2Scripts
 ==============
 
-The payload.zip that you upload your :ref:`branding <content/customization/branding:Branding>` with is where you also upload 
-your scripts. You need to put all your scripts in that zip file as well as any exe's that your scripts need to run. When the 
+All your scripts can be packaged into a zip file as well as any exe's that your scripts need to run. When the 
 software is launched, it looks for anything matching the name \_exec_*.ps1. Whatever matches that name will be run 
 asynchronously.
 
