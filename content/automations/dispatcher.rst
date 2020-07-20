@@ -67,7 +67,7 @@ Basic Examples
 
 To show how powerful this can be and give you an idea of how to use it, we came up with a few example rules here:
 
-in Selections
+Parse Selections
 """"""""""""""""""""""""""""""""""""
 
 First off, "selections" is the text that makes up which radio buttons and checkboxes were selected by the user in the GUI.
@@ -146,7 +146,8 @@ team at your company that manages MRI issues. Here is a rule for that:
 
 .. code-block:: python
 
-	if 'calibration_issue' in append: problem_type = 'MRI'
+	if 'calibration_issue' in append: 
+		problem_type = 'MRI'
 
 
 Custom Exceptions
@@ -166,7 +167,8 @@ Here is what that rule looks like:
 
 .. code-block:: python
 
-	if business_name is 'Fabrikam, Inc.': exception = 'Ticket submission disabled until payment.'
+	if business_name is 'Fabrikam, Inc.': 
+		exception = 'Ticket submission disabled until payment.'
 
 Now let's pretend that you have been instructed by management at Contoso to not accept tickets from Karen because she
 has not been following protocol and contacting internal IT first. Here is what that rule might look like:
@@ -174,10 +176,11 @@ has not been following protocol and contacting internal IT first. Here is what t
 
 .. code-block:: python
 
-	if business_name is 'Contoso Ltd.' and name is 'Karen': exception = 'Sorry Karen, you are not allowed to put in tickets anymore.'
+	if business_name is 'Contoso Ltd.' and name is 'Karen': 
+		exception = 'Sorry Karen, you are not allowed to put in tickets anymore.'
 
 
-A bit more complicated
+75% Caps
 """""""""""""""""""""""""""""""""""""
 
 as you can see, using very simple Python syntax you can make very powerful and practical rules. But don't let these simple
@@ -188,17 +191,11 @@ letters.
 
 .. code-block:: python
 
-	if sum(1 for c in message if c.isupper())/len(message) > 0.75: priority = 0
+	if sum(1 for c in message if c.isupper())/len(message) > 0.75: 
+		priority = 0
 
-Putting it all together, here is what those rules look like when put into the 
+Each of these examples should be viewable in the Visual Editor.
 
-Visual Editor:
-
-.. image:: images/visual2.png
-
-Code Editor:
-
-.. image:: images/code2.png
 
 Practical Example: Impact/Urgency Priority Matrix
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
