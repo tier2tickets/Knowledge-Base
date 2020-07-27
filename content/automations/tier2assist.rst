@@ -39,6 +39,9 @@ Test Rules
 You can also test these rules by imputting test data and running the rules against that data. All variables will be outputted so you can see how the rules change them.
 If there is a syntax error in the rules we will let you know where, you can also click the link to see the error in the Code Editor.
 
+The test shows everything in a raw format for people who want to know everything about what is happening.  You don't have to worry about things like repeating identical
+actions appearing on the clients side. 
+
 .. image:: images/test2.gif
 
 
@@ -101,14 +104,15 @@ As another example, let's assume you want to always show an option for the user 
 Forms
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keyword hiring appearing in the message,
+Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
 here is what that rule might look like:
 
 
 .. code-block:: python
 
-	if 'hiring' in msg:
-		tier2assist.append({'msg': 'You mentioned "hiring". Please fill out our new-hire request form.', 'action': 'https://docs.google.com/forms/d/e/1FAIpQLSddy14DSDl2MdCVXPT6ogcD_qmSEFzinGlQ9vWBqZG5tDhrWW/viewform?usp=pp_url&entry.1884265043=' + ticketID})
+for phrase in ['hiring', 'hire', 'new employee']:
+    if phrase in msg:
+        tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE'})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/integration/tier2forms:link forms with helpdesk buttons>` to allow the information from a submission of such a form to the ticket that was just created. 
 

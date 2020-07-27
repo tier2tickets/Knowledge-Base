@@ -93,7 +93,7 @@ Adjust the message to best direct people to your form.
 |
 
 Replace what is in the string to the left of the "+" with the Pre-filled Link URL.
-At the end of this URL is you pre-filled the Ticket ID answer to be, delete this part of the URL. (Everything after the last "=")
+**At the end of this URL is you pre-filled the Ticket ID answer to be, delete this part of the URL**. (Everything after the last "=")
 
 .. image:: images/FormURLstring.png
 
