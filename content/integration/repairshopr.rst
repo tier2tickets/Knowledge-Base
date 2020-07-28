@@ -34,11 +34,31 @@ Click Customer Settings and check the box labeled, enable multiple contacts on c
 Get your API Key
 ----------------------
 
-Next you will need your Repairshopr or Syncro API key.
+Next you will need to create a Repairshopr or Syncro API key.
 
-You can go get your API key on your profile page.
+You can do this in the Admin Menu > API > API Tokens
 
 .. image:: images/rs-image-1.png
+
+Once you are there, click on the New Token button and Custom Permissions
+
+Fill out the name as you like, and we reccomend leaving the expiration blank to make a key that does not have to be recreated/renewed.
+
+.. image:: images/rs-image-3.png
+
+You will have to add the permissions of the key explicitly. The permissions the key will need are as follows:
+
+API Access Settings
+--------------------
+
+- Customers List/Search: For gathering company data like street addresses from companies
+- Customers View Details: For gathering contact data like email addresses from contacts
+- Ticket Comments - New: For adding public notes to tickets
+- Tickets Create: For creating tickets
+- Tickets Edit: For adding private notes
+
+Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future. 
+
 
 Helpdeskbuttons.com Settings
 ------------------------------
@@ -65,18 +85,6 @@ Or the equivalent for Syncro. Be sure to *omit* the prefix (i.e. `https://`) and
 
 Under Ticket System API Key, enter the API key that you used earlier. Once you have entered that information, click Update and it will save the information.
 
-API Access Settings
---------------------
-
-For those of you who want to restrict the access the API user has, here is the security access we need: (a custom security group will need to be created and assigned to us with these permissions):
-
-- Customers List/Search: For gathering company data like street addresses from companies
-- Customers View Details: For gathering contact data like email addresses from contacts
-- Ticket Comments - New: For adding public notes to tickets
-- Tickets Create: For creating tickets
-- Tickets Edit: For adding private notes
-
-Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future.
 
 Anti-Virus and AntiMalware
 -----------------------------
