@@ -59,6 +59,7 @@ API Access Settings
 
 Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future. 
 
+Once you have created the key copy it for the next step.
 
 Helpdeskbuttons.com Settings
 ------------------------------
