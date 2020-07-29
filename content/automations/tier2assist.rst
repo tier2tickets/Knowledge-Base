@@ -114,7 +114,7 @@ here is what that rule might look like:
 		if phrase in msg.lower():
 			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
-Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/integration/tier2forms:link forms with helpdesk buttons>` to allow the information from a submission of such a form to the ticket that was just created. 
+Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:link forms with helpdesk buttons>` to allow the information from a submission of such a form to the ticket that was just created. 
 
 
 Password Reset

@@ -3,7 +3,8 @@
 
 Tier2Forms is a special integration we designed to allow user-defined Google Forms to submit additional information into existing tickets
 in your ticket system. Once a Google Form is connected to the Tier2Forms system, then any time that form is submitted, the data is posted
-to our API where we append it as a private note onto the existing ticket. Using the Tier2Assist automations, you can provide the Google Form
+to our API where we append it as a private note onto the existing ticket. If the submission does not include a valid ticket id, a new ticket will
+be created containing the submission data instead. Using the Tier2Assist automations, you can provide the Google Form
 to your end-user at the time of ticket creation to prompt for more details from the end-user.
 
 
@@ -22,7 +23,7 @@ Form must have a short answer question with "Ticket ID" in the question for exam
 Link form with your account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In your HDB account navigate to "Integration Settings", under "Software Management"
+In your HDB account navigate to "Tier2Forms", under "Automations"
 
 .. image:: images/NavToIntegrationSettings.png
 
@@ -39,6 +40,8 @@ You will be prompted to allow accesss to edit forms which you will need to allow
 A window will pop up to tell you if was successfully linked or not. 
 
 .. image:: images/SuccessfulLink.png
+
+The page should also display any currently linked forms.
 
 |
 |

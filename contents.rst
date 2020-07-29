@@ -34,7 +34,6 @@ Table Of Contents
 	content/integration/servicenow
 	content/integration/zendesk
 	content/integration/advanced
-	content/integration/tier2forms
 
 .. toctree::
 	:caption: Deployment
@@ -59,6 +58,7 @@ Table Of Contents
 	
 	content/automations/dispatcher
 	content/automations/tier2assist
+	content/automations/tier2forms
 	
 
 .. toctree::
