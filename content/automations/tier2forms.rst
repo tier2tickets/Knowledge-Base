@@ -25,7 +25,7 @@ Link form with your account
 
 In your HDB account navigate to "Tier2Forms", under "Automations"
 
-.. image:: images/NavToIntegrationSettings.png
+.. image:: images/NavToForms.png
 
 |
 
