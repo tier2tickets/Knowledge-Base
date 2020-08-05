@@ -35,34 +35,32 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
-
-Defaults
-^^^^^^^^
+Integration Defaults
+-----------------------------------
 
 Please note that defaults for priority, type, and standing must be set for this integration to work properly.
 
-Custom Rules
-^^^^^^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
 
-+-----------------------------------------------+--------------------------------------------------+
-| Read/Write                                    | Read Only                                        |
-+===============================================+==================================================+
-| :ref:`content/integration/atera:*priority*`   | :ref:`content/integration/advanced:*selections*` |
-+-----------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/atera:*type*`       | :ref:`content/integration/advanced:*hostname*`   |
-+-----------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/atera:*impact*`     | :ref:`content/integration/advanced:*name*`       |
-+-----------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*append*`  | :ref:`content/integration/advanced:*email*`      |
-+-----------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*message*` | :ref:`content/integration/advanced:*ip*`         |
-+-----------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*` | :ref:`content/integration/advanced:*mac*`        | 
-+-----------------------------------------------+--------------------------------------------------+
++-------------------------------------------------+----------------------------------------------------+
+| Read/Write                                      | Read Only                                          |
++=================================================+====================================================+
+| :ref:`content/integration/atera:*priority*`     | :ref:`content/automations/dispatcher:*selections*` |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/atera:*type*`         | :ref:`content/automations/dispatcher:*hostname*`   |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/atera:*impact*`       | :ref:`content/automations/dispatcher:*name*`       |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`  | :ref:`content/automations/dispatcher:*email*`      |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*` | :ref:`content/automations/dispatcher:*ip*`         |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*` | :ref:`content/automations/dispatcher:*mac*`        | 
++-------------------------------------------------+----------------------------------------------------+
+
 
 
 

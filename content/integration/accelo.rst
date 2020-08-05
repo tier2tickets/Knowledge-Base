@@ -79,15 +79,15 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 +---------------------------------------------------+-------------------------------------------------------------+
 | :ref:`content/integration/accelo:*priv_append*`   | :ref:`content/automations/dispatcher:*email*`               |
 +---------------------------------------------------+-------------------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`     | :ref:`content/automations/dispatcher:*ip*`                  |
+| :ref:`content/automations/dispatcher:*message*`   | :ref:`content/automations/dispatcher:*ip*`                  |
 +---------------------------------------------------+-------------------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*`     | :ref:`content/automations/dispatcher:*mac*`                 | 
+| :ref:`content/automations/dispatcher:*subject*`   | :ref:`content/automations/dispatcher:*mac*`                 | 
 +---------------------------------------------------+-------------------------------------------------------------+
 |                                                   | .. raw:: html                                               |
 |                                                   |                                                             |
 |                                                   |    <i>                                                      |
 |                                                   |                                                             |
-| :ref:`content/integration/advanced:*append*`      | :ref:`input_cell<content/integration/accelo:*input_**>`     | 
+| :ref:`content/automations/dispatcher:*append*`    | :ref:`input_cell<content/integration/accelo:*input_**>`     | 
 +---------------------------------------------------+-------------------------------------------------------------+
 |                                                   | .. raw:: html                                               |
 |                                                   |                                                             |

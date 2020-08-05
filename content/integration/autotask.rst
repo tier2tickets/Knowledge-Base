@@ -78,36 +78,37 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.  
 
-Advanced Integration Options
-------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+Dispatcher Rules
+-----------------------------------------------
 
-+----------------------------------------------------+---------------------------------------------------+
-| Read/Write                                         | Read Only                                         |
-+====================================================+===================================================+
-| :ref:`content/integration/autotask:*priority*`     | :ref:`content/integration/advanced:*selections*`  |
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*ticketStatus*` | :ref:`content/integration/autotask:*contactName*` |
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*queue*`        | :ref:`content/integration/advanced:*email*`       |
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*type*`         | :ref:`content/integration/advanced:*ip*`          |
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`      | :ref:`content/integration/advanced:*mac*`         |
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*`      | :ref:`content/integration/advanced:*hostname*`    | 
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/advanced:*append*`       |                                                   | 
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*priv_append*`  |                                                   | 
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*source*`       |                                                   | 
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*issue*`        |                                                   | 
-+----------------------------------------------------+---------------------------------------------------+
-| :ref:`content/integration/autotask:*subIssue*`     |                                                   | 
-+----------------------------------------------------+---------------------------------------------------+
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
+
++----------------------------------------------------+-----------------------------------------------------+
+| Read/Write                                         | Read Only                                           |
++====================================================+=====================================================+
+| :ref:`content/integration/autotask:*priority*`     | :ref:`content/automations/dispatcher:*selections*`  |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*ticketStatus*` | :ref:`content/integration/autotask:*contactName*`   |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*queue*`        | :ref:`content/automations/dispatcher:*email*`       |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*type*`         | :ref:`content/automations/dispatcher:*ip*`          |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`    | :ref:`content/automations/dispatcher:*mac*`         |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`    | :ref:`content/automations/dispatcher:*hostname*`    | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`     |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*priv_append*`  |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*source*`       |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*issue*`        |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*subIssue*`     |                                                     |
++----------------------------------------------------+-----------------------------------------------------+ 
 
 
 
