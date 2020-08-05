@@ -33,7 +33,12 @@ Company+username:password
 
 Once you click update you should be good to go. 
 
-Kaseya requires alot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. If additional customization is needed try using our :ref:`Advanced Options <content/integration/advanced:Advanced Options>` feature.
+Integration Defaults
+-----------------------------------
+
+Kaseya requires alot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. 
+
+Please note that either queue, assignee, or both must be set for this integration to work properly.
 
 API Access Settings
 --------------------
@@ -51,18 +56,12 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-Please note that either queue, assignee, or both must be set for this integration to work properly.
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-Custom Rules
-^^^^^^^^^^^^^
-
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
 
 +--------------------------------------------------+--------------------------------------------------+
 | Read/Write                                       | Read Only                                        |
@@ -192,5 +191,4 @@ Field Definitions
 *other*
 """""""
 
-There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
-
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

@@ -52,16 +52,16 @@ Your API key is formatted as shown
 
 Click Update and the Integration Test button to send a test ticket. 
 
-Some additional setup may be necessary in the :ref:`Advanced Integration Options <content/integration/advanced:Defaults>`.
+Integration Defaults
+-----------------------------------
+
+Please note that defaults for priority, type, and standing must be set for this integration to work properly.
+
 
 Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Integration Defaults
------------------------------------
-
-Please note that defaults for priority, type, and standing must be set for this integration to work properly.
 
 Dispatcher Rules
 -----------------------------------------------
@@ -197,6 +197,6 @@ Field Definitions
 *other*
 """""""
 
-There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA

@@ -5,7 +5,7 @@ This guide will show you how to set up FreshDesk / FreshService to work with you
 Unregistered User
 -------------------
 By default, our software attempts to pair users with their contact information by checking with Freshdesk/Freshservice. If the user is not already found in the system
-a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Advanced Integration Options <content/integration/freshdesk:Advanced Integration Options>` below.
+a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Integration Defaults <content/integration/freshdesk:Integration Defaults>` below.
 
 This guide assumes you want to use the catch all contact: 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. In our system it’s “Mystery Human”.
@@ -52,62 +52,60 @@ Access Restrictions
 
 As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 
+Integration Defaults
+-----------------------------------
+The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+
 Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^^
-The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+Dispatcher Rules
+-----------------------------------------------
 
-Rules
-^^^^^^
-
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
 FreshDesk
 
-+-------------------------------------------------+--------------------------------------------------+
-| Read/Write                                      | Read Only                                        |
-+=================================================+==================================================+
-| :ref:`content/integration/freshdesk:*priority*` | :ref:`content/integration/advanced:*selections*` |
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/freshdesk:*status*`   | :ref:`content/integration/advanced:*name*`       |
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/freshdesk:*group*`    | :ref:`content/integration/advanced:*email*`      |
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/freshdesk:*type*`     | :ref:`content/integration/advanced:*ip*`         |
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`   | :ref:`content/integration/advanced:*mac*`        |
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*`   | :ref:`content/integration/advanced:*hostname*`   | 
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/freshdesk:*source*`   |                                                  | 
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/freshdesk:*agent*`    |                                                  | 
-+-------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*append*`    |                                                  |
-+-------------------------------------------------+--------------------------------------------------+
++-------------------------------------------------+----------------------------------------------------+
+| Read/Write                                      | Read Only                                          |
++=================================================+====================================================+
+| :ref:`content/integration/freshdesk:*priority*` | :ref:`content/automations/dispatcher:*selections*` |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*status*`   | :ref:`content/automations/dispatcher:*name*`       |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*group*`    | :ref:`content/automations/dispatcher:*email*`      |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*type*`     | :ref:`content/automations/dispatcher:*ip*`         |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*` | :ref:`content/automations/dispatcher:*mac*`        |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*` | :ref:`content/automations/dispatcher:*hostname*`   | 
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*source*`   |                                                    | 
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*agent*`    |                                                    | 
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`  |                                                    |
++-------------------------------------------------+----------------------------------------------------+
 
 Freshservice
 
 +----------------------------------------------------------------------+----------------------------------------------------+
 | Read/Write                                                           | Read Only                                          |
 +======================================================================+====================================================+
-| :ref:`content/integration/freshdesk:*priority*`                      | :ref:`content/integration/advanced:*selections*`   |
+| :ref:`content/integration/freshdesk:*priority*`                      | :ref:`content/automations/dispatcher:*selections*` |
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*status*`                        | :ref:`content/integration/advanced:*name*`         |
+| :ref:`content/integration/freshdesk:*status*`                        | :ref:`content/automations/dispatcher:*name*`       |
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*department*`                    | :ref:`content/integration/advanced:*email*`        |
+| :ref:`content/integration/freshdesk:*department*`                    | :ref:`content/automations/dispatcher:*email*`      |
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*agent*`                         | :ref:`content/integration/advanced:*ip*`           |
+| :ref:`content/integration/freshdesk:*agent*`                         | :ref:`content/automations/dispatcher:*ip*`         |
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`                        | :ref:`content/integration/advanced:*mac*`          |
+| :ref:`content/automations/dispatcher:*message*`                      | :ref:`content/automations/dispatcher:*mac*`        |
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*`                        | :ref:`content/integration/advanced:*hostname*`     | 
+| :ref:`content/automations/dispatcher:*subject*`                      | :ref:`content/automations/dispatcher:*hostname*`   | 
 +----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`content/integration/freshdesk:*source*`                        |                                                    | 
 +----------------------------------------------------------------------+----------------------------------------------------+
@@ -115,7 +113,7 @@ Freshservice
 +----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`urgency<content/integration/freshdesk:*impact & urgency*>`     |                                                    |
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/advanced:*append*`                         |                                                    |
+| :ref:`content/automations/dispatcher:*append*`                       |                                                    |
 +----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`content/integration/freshdesk:*group*`                         |                                                    |
 +----------------------------------------------------------------------+----------------------------------------------------+
@@ -298,4 +296,4 @@ FreshService:
 *other*
 """""""
 
-There are additional variables which are common to all integrations. Those are documented :ref:`here <content/integration/advanced:Universally Available Variables>`
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
