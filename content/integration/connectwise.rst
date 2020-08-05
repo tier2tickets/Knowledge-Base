@@ -129,49 +129,48 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^^
+Inetegration Defaults
+-----------------------------------
 
 Many of the fields can be set to "__default__"
 
 Note: State, Team and Type are all related to the Board. For any customizations to those fields 
 do not use the "__default__" Board. Please provide the Board by name (This also applies to Custom Rules).
 
-Custom Rules
-^^^^^^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-+----------------------------------------------------------------------+--------------------------------------------------+
-| Read/Write                                                           | Read Only                                        |
-+======================================================================+==================================================+
-| :ref:`content/integration/connectwise:*priority*`                    | :ref:`content/integration/advanced:*selections*` |
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/connectwise:*state*`                       | :ref:`content/integration/advanced:*name*`       |
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/connectwise:*team*`                        | :ref:`content/integration/advanced:*email*`      |
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/connectwise:*type*`                        | :ref:`content/integration/advanced:*ip*`         |
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`                        | :ref:`content/integration/advanced:*mac*`        |
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*`                        | :ref:`content/integration/advanced:*hostname*`   | 
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/connectwise:*source*`                      |                                                  | 
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`impact<content/integration/connectwise:*impact & urgency*>`    |                                                  | 
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`urgency<content/integration/connectwise:*impact & urgency*>`   |                                                  |
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/connectwise:*owner*`                       |                                                  | 
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/connectwise:*board*`                       |                                                  | 
-+----------------------------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*append*`                         |                                                  | 
-+----------------------------------------------------------------------+--------------------------------------------------+
++----------------------------------------------------------------------+----------------------------------------------------+
+| Read/Write                                                           |  Read Only                                         |
++======================================================================+====================================================+
+| :ref:`content/integration/connectwise:*priority*`                    | :ref:`content/automations/dispatcher:*selections*` |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*state*`                       | :ref:`content/automations/dispatcher:*name*`       |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*team*`                        | :ref:`content/automations/dispatcher:*email*`      |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*type*`                        | :ref:`content/automations/dispatcher:*ip*`         |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`                        | :ref:`content/automations/dispatcher:*mac*`        |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`                        | :ref:`content/automations/dispatcher:*hostname*`   | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*source*`                      |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`impact<content/integration/connectwise:*impact & urgency*>`    |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`urgency<content/integration/connectwise:*impact & urgency*>`   |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*owner*`                       |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*board*`                       |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`                         |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+
 
 
 
