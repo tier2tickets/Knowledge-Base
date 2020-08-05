@@ -1,5 +1,7 @@
-Advanced Options
-==================
+-Depricated- Advanced Options
+=====================================
+
+This system has been replaced by :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
 
 If you want finer control over integrations you can use the advanced options button on the Settings page beside your integration dropdown.
 
@@ -25,7 +27,7 @@ Custom Rules
 
 As of version :ref:`0.5.x.2 <content/general/changelog:0.5.x.2>` of the helpdesk buttons software, we support custom
 rules on tickets; which can modify the behavior of the ticket system integrations at a fundamental level. Custom rules
-are part of the :ref:`Advanced Options <content/integration/advanced:Advanced Options>` and are added by using the *custom_rules*
+are part of the :ref:`Advanced Options <content/integration/advanced:-Depricated- Advanced Options>` and are added by using the *custom_rules*
 attribute
 
 The basic premise of the design is that before we submit the ticket to your PSA, we give you access to the information and 
@@ -153,7 +155,7 @@ letters.
 
 	if sum(1 for c in message if c.isupper())/len(message) > 0.75: priority = 0
 
-Putting it all together, here is what those rules look like when put into the :ref:`Advanced Options <content/integration/advanced:Advanced Options>` box as JSON:
+Putting it all together, here is what those rules look like when put into the :ref:`Advanced Options <content/integration/advanced:-Depricated- Advanced Options>` box as JSON:
 
 .. image:: images/custom_rules1.png
 
