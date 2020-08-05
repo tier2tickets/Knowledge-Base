@@ -136,7 +136,7 @@ Inetegration Defaults
 Many of the fields can be set to "__default__"
 
 Note: State, Team and Type are all related to the Board. For any customizations to those fields 
-do not use the "__default__" Board. Please provide the Board by name (This also applies to Custom Rules).
+do not use the "__default__" Board. Please provide the Board by name (This also applies to Dispatcher Rules).
 
 Dispatcher Rules
 -----------------------------------------------
