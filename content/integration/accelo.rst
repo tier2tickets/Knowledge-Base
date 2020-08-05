@@ -58,65 +58,62 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
-
-Defaults
-^^^^^^^^
+Integration Defaults
+-----------------------------------
 
 Please note that defaults for priority, type, and standing must be set for this integration to work properly.
 
-Custom Rules
-^^^^^^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-+---------------------------------------------------+------------------------------------------------------------+
-| Read/Write                                        | Read Only                                                  |
-+===================================================+============================================================+
-| :ref:`content/integration/accelo:*priority*`      | :ref:`content/integration/advanced:*selections*`           |
-+---------------------------------------------------+------------------------------------------------------------+
-| :ref:`content/integration/accelo:*type*`          | :ref:`content/integration/advanced:*hostname*`             |
-+---------------------------------------------------+------------------------------------------------------------+
-| :ref:`content/integration/accelo:*standing*`      | :ref:`content/integration/advanced:*name*`                 |
-+---------------------------------------------------+------------------------------------------------------------+
-| :ref:`content/integration/accelo:*priv_append*`   | :ref:`content/integration/advanced:*email*`                |
-+---------------------------------------------------+------------------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`     | :ref:`content/integration/advanced:*ip*`                   |
-+---------------------------------------------------+------------------------------------------------------------+
-| :ref:`content/integration/advanced:*subject*`     | :ref:`content/integration/advanced:*mac*`                  | 
-+---------------------------------------------------+------------------------------------------------------------+
-|                                                   | .. raw:: html                                              |
-|                                                   |                                                            |
-|                                                   |    <i>                                                     |
-|                                                   |                                                            |
-| :ref:`content/integration/advanced:*append*`      | :ref:`input_cell<content/integration/accelo:*input_**>`    | 
-+---------------------------------------------------+------------------------------------------------------------+
-|                                                   | .. raw:: html                                              |
-|                                                   |                                                            |
-|                                                   |    <i>                                                     |
-|                                                   |                                                            |
-| :ref:`content/integration/accelo:*assignee*`      | :ref:`input_phone<content/integration/accelo:*input_**>`   | 
-|                                                   |                                                            |
-+---------------------------------------------------+------------------------------------------------------------+
-|                                                   | .. raw:: html                                              |
-|                                                   |                                                            |
-|                                                   |    <i>                                                     |
-|                                                   |                                                            |
-| :ref:`content/integration/accelo:*class*`         | :ref:`input_company<content/integration/accelo:*input_**>` | 
-+---------------------------------------------------+------------------------------------------------------------+
-|                                                   | .. raw:: html                                              |
-|                                                   |                                                            |
-|                                                   |    <i>                                                     |
-|                                                   |                                                            |
-|                                                   | :ref:`input_email<content/integration/accelo:*input_**>`   | 
-+---------------------------------------------------+------------------------------------------------------------+
-|                                                   | .. raw:: html                                              |
-|                                                   |                                                            |
-|                                                   |    <i>                                                     |
-|                                                   |                                                            |
-|                                                   | :ref:`input_name<content/integration/accelo:*input_**>`    | 
-+---------------------------------------------------+------------------------------------------------------------+
++---------------------------------------------------+-------------------------------------------------------------+
+| Read/Write                                        | Read Only                                                   |
++===================================================+=============================================================+
+| :ref:`content/integration/accelo:*priority*`      | :ref:`content/automations/dispatcher:*selections*`          |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/accelo:*type*`          | :ref:`content/automations/dispatcher:*hostname*`            |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/accelo:*standing*`      | :ref:`content/automations/dispatcher:*name*`                |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/accelo:*priv_append*`   | :ref:`content/automations/dispatcher:*email*`               |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`     | :ref:`content/automations/dispatcher:*ip*`                  |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`     | :ref:`content/automations/dispatcher:*mac*`                 | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+| :ref:`content/integration/advanced:*append*`      | :ref:`input_cell<content/integration/accelo:*input_**>`     | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+| :ref:`content/integration/accelo:*assignee*`      | :ref:`input_phone<content/integration/accelo:*input_**>`    | 
+|                                                   |                                                             |
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+| :ref:`content/integration/accelo:*class*`         | :ref:`input_company<content/integration/accelo:*input_**>`  | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+|                                                   | :ref:`input_email<content/integration/accelo:*input_**>`    | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+|                                                   | :ref:`input_name<content/integration/accelo:*input_**>`     | 
++---------------------------------------------------+-------------------------------------------------------------+
 
 
 Field Definitions
