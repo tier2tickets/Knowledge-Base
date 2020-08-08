@@ -56,6 +56,45 @@ Software
 
 
 
+.. raw:: html
+
+   <a name="1.1.7">&nbsp;</a>
+
+1.1.x.7
+~~~~~~~~
+
+* improved the exponential backoff logic in the Tier2Service websocket connection
+* added support for the windows certificate store to all TLS requests so that security software whitelisting is not as necessary
+* switched API version to 1.0 branch.
+* patched the websocket library to tolerate additional headers added by proxy servers to the authentication request.
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.6.12">&nbsp;</a>
+
+0.6.x.12
+~~~~~~~~
+
+* fixed: pid lock was broken and two copies of the software could be opened causing conflict and sometimes crashing
+* added support for the 'random' and 're' modules for tier2assist
+
+
+
+
+
+
+
+
 
 .. raw:: html
 
