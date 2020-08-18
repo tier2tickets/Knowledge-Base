@@ -17,9 +17,10 @@ To enable a permission click on its text. You can hover over the choices to see 
 - TICKETS: Provides access to PressView Reports. 
 - TICKET DASH: Provides access to the Ticket Dashboard. 
 
+After changing permissions, sub-account users may need to log out and log back in to recieve the new access permissions.
+
 
 By default sub-accounts can only access the *account overview*, the *help and support* page, and of course everyone is allowed to buy our buttons. 
-
 
 Notice the configuration button in the top right corner of each page. 
 
