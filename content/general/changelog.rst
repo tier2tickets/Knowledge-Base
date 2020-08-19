@@ -56,6 +56,38 @@ Software
 
 
 
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.8">&nbsp;</a>
+
+1.1.x.8
+~~~~~~~~
+
+* fixed an edge case where a well-timed mouse-scroll during software startup would cause memory corruption and the buttonhelper process would stop responding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.7">&nbsp;</a>
