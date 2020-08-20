@@ -88,6 +88,6 @@ NOTE: if you get back "ReturnValue = 1603;" from this command, then the removal 
 
 ## Duplicate Endpoints
 
-There is a checkbox on the Device Management page that will filter the list of endpoints for duplicate hostnames. For the most part it is rare for a duplicate to appear, but fully uninstalling and reinstalling the software will create a duplicate endpoint.  
+There is a checkbox on the Device Management page that will filter the list of endpoints for duplicate hostnames. For the most part it is rare for a duplicate to appear, but fully uninstalling and reinstalling the software will create a duplicate endpoint. Replacing the hard drive or the motherboard in a PC running the software will also create a duplicate. Upgrading the software will not.
 
 ![](images/duplicate.png)
