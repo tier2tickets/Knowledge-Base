@@ -63,6 +63,54 @@ Software
 
 
 
+
+.. raw:: html
+
+   <a name="1.1.10">&nbsp;</a>
+
+1.1.x.10
+~~~~~~~~
+
+* version still in development. No release notes yet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.9">&nbsp;</a>
+
+1.1.x.9
+~~~~~~~~
+
+* fixed an edge case where the submission would hang forever if the t2tservice has never in the past been able to contact the server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.8">&nbsp;</a>
