@@ -1,5 +1,6 @@
 Accelo Integration
 ===================
+This guide will show you how to set up your new Helpdesk Buttons with Accelo.
 
 Accelo integration requires two main parts:
 
