@@ -1,6 +1,12 @@
 *BETA* Dispatcher Rules
 =========================
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PYqzBX2YuzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 The basic premise of the design is that before we submit the ticket to your PSA, we give you access to the information and 
 allow you to modify what actually gets submitted.
 
