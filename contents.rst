@@ -69,6 +69,7 @@ Table Of Contents
 	content/privacy/customer-owned
 	content/privacy/trust
 	content/privacy/subaccounts
+	content/privacy/ip-whitelist
 
 .. toctree::
 	:caption: Marketing

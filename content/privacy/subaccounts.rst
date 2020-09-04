@@ -1,6 +1,12 @@
 Sub-accounts
 ============
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7jQ1Od_BBCI?start=48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 The Sub-account option is under the Administraton tab. Once you add a new user to the list, they will receive an email notification with a link to set their password. If you have two factor authentication enabled on the account (as you should), then this will be enforced on all of the sub-accounts as well. 
 Each account, the main and all sub-accounts will have thier own 2FA code.   
 
