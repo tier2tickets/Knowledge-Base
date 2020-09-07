@@ -25,8 +25,13 @@ We have a link to that aforementioned MSI as well as custom Powershell and Batch
 ## 4) Further customize and enjoy the extensibility of Helpdesk Buttons
 We know that your business flow is going to differ from our hundreds of other clients, so we're constantly building out better methods for you to take the reins on what information is being collected and how close of an integration you'd like with your PSA. With each ticket submitted to you, you will receive the same excellent baseline of real-time diagnostics and annotated screenshots, but with our [Tier2Scripts](/content/customization/tier2scripts) and [Custom Rules](/content/integration/advanced#custom-rules), you can better gather pertinent information, triage and process tickets before they've even hit your system.
 
-Learn more and connect with the Helpdesk Buttons community here:
+## 5) Learn more and connect with the Helpdesk Buttons community
 - Our Support [Knowledge Base](https://docs.tier2tickets.com/) (You're here, now.)
 - Our [Community Forum](https://community.tier2tickets.com/)
 - Our [Bug Reports Github](https://github.com/tier2tickets/feedback/issues)
 - Our [Public Roadmap](https://trello.com/b/wSlyA6vW/phase-2-roadmap)
+- For a demo of our product, [view the playlist below](https://www.youtube.com/playlist?list=PLrMsnV96vXTHAXeK6D5Pd5HWebA11iSJz), or schedule your own demo call [here](https://calendly.com/tier2tech/hdb-demo)
+
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLrMsnV96vXTHAXeK6D5Pd5HWebA11iSJz" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
