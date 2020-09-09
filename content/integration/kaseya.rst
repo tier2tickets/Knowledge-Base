@@ -1,5 +1,19 @@
 Kaseya Integration
 ================================
+This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
+
+Accelo integration requires two main parts:
+
+:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/kaseya:Unregistered User>`
+
+:ref:`2) set up the API integration. <content/integration/kaseya:Create an API User>`
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rvc9DO60VBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 
 Unregistered User
 -------------------
