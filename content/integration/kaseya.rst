@@ -2,7 +2,7 @@ Kaseya Integration
 ================================
 This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
 
-Accelo integration requires two main parts:
+Kaseya integration requires two main parts:
 
 :ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/kaseya:Unregistered User>`
 
