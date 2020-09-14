@@ -10,4 +10,4 @@ Need a couple images of our Helpdesk Button for your marketing? Here are a few o
 - `USB Hub Helpdesk Button being pressed on a wooden desk <https://helpdeskbuttons.com/wp-content/uploads/2020/06/hdbHubPressed.jpg>`_
 
 
-Images updated 20200609
+Images updated 2020-06-09
