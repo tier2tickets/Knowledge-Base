@@ -65,9 +65,8 @@ Table Of Contents
 	:caption: Security & Privacy
 	:maxdepth: 0
 
-	content/privacy/retention
+	content/privacy/security-overview
 	content/privacy/customer-owned
-	content/privacy/trust
 	content/privacy/to-your-techs
 	content/privacy/bot-protection
 	content/privacy/passwords
@@ -75,6 +74,8 @@ Table Of Contents
 	content/privacy/subaccounts
 	content/privacy/ip-whitelist
 	content/privacy/compliance
+	content/privacy/retention
+	content/privacy/trust
 
 .. toctree::
 	:caption: Marketing
