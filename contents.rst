@@ -68,6 +68,10 @@ Table Of Contents
 	content/privacy/retention
 	content/privacy/customer-owned
 	content/privacy/trust
+	content/privacy/to-your-techs
+	content/privacy/bot-protection
+	content/privacy/passwords
+	content/privacy/suspicious-activity
 	content/privacy/subaccounts
 	content/privacy/ip-whitelist
 	content/privacy/compliance
