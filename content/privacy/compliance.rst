@@ -8,7 +8,7 @@ HIPAA
 
 We reached out to a HIPAA (Health Insurance Portability and Accountability Act) compliance attorney before we ever showed this software to anyone because our own MSP manages mostly medical practices. We knew that we needed to have certain, very specific features to comply with the strictest data security laws.
 
-To meet this requirement we are required to provide additional layers of protection. That was the birthplace of the Gatekeeper,  per-user access restrictions with audit logging, and consent-based data transmission. A Customer Controlled Amazon S3 account is required and we are prepared to sign a BAA (as well as have Amazon sign one.)
+To meet this requirement we are required to provide additional layers of protection. That was the birthplace of the :ref:`Gatekeeper <content/privacy/customer-owned:S3 Gatekeeper>`,  :ref:`per-user access restrictions <content/privacy/subaccounts:Sub-accounts>` with audit logging, and :ref:`consent-based data transmission <content/privacy/security-overview:ButtonHelper>`. A :ref:`Customer Controlled Amazon S3 <content/privacy/security-overview:Customer Controlled Amazon S3>` account is required and we are prepared to sign a BAA (as well as have Amazon sign one.)
 
 GDPR Compliance
 -----------------
