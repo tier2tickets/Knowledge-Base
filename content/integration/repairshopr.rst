@@ -1,6 +1,13 @@
 Repairshopr / Syncro Integration
 ================================
+
 Setting up Helpdesk Buttons with Repairshopr or Syncro is easy. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PA6yZ8b5Wec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 Unregistered User
 --------------------
