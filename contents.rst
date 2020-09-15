@@ -66,6 +66,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/privacy/security-overview
+	content/privacy/general-components
 	content/privacy/customer-owned
 	content/privacy/to-your-techs
 	content/privacy/bot-protection

@@ -444,7 +444,7 @@ Software
 ~~~~~~~
 
 * Added support international phone number validation
-* Added support for :ref:`content/privacy/customer-owned:Customer-Owned AWS Buckets`.
+* Added support for :ref:`content/privacy/customer-owned:Customer Controlled Amazon S3`.
 
 
 
