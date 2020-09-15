@@ -1,4 +1,4 @@
--Depricated- Advanced Options
+-Deprecated- Advanced Options
 =====================================
 
 This system has been replaced by :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
