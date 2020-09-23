@@ -71,9 +71,11 @@ Software
 1.1.x.10
 ~~~~~~~~
 
-* version still in development. No release notes yet.
-
-
+* Fixed the message on the last page "Thank you, {name}" where name would be incorrect in the case of unregistered user ticket submission
+* Fixed some formatting on the main landing page so that it better handles longer text.
+* Added support for GUI color customization by putting a "custom.css" file in the same place as the custom scripts
+* Made it impossible to start the software incorrectly by clicking the incorrect exe in the program installation directory
+* The software has been renamed to "Tier2Tickets" from "Helpdesk Buttons" (This applies retroactively to the entire 1.1 branch on new builds)
 
 
 
