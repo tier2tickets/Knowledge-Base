@@ -15,4 +15,4 @@ Need a couple images of our Helpdesk Button for your marketing? Here are a few o
 - `USB Hub Helpdesk Button with no logo <https://helpdeskbuttons.com/wp-content/uploads/2020/09/no-logo-hub-scaled.jpg>`_
 - `USB Hub Helpdesk Button with no logo and transparent background <https://helpdeskbuttons.com/wp-content/uploads/2020/09/transparent-bg-HUB.png>`_
 
-Images updated 2020 06 09
+Images updated 2020 09 25

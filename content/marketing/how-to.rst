@@ -10,4 +10,4 @@ We've created some basic sheets that explain how end users are expected to use t
 
 The fonts are Montserrat, which is a Google Font, available for free here: `fonts.google.com <https://fonts.google.com/specimen/Montserrat>`_
 
-Documents updated 2020 03 12
+Documents updated 2020 09 25
