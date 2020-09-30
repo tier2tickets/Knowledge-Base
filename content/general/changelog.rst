@@ -76,6 +76,7 @@ Software
 * Added support for GUI color customization by putting a "custom.css" file in the same place as the custom scripts
 * Made it impossible to start the software incorrectly by clicking the incorrect exe in the program installation directory
 * The software has been renamed to "Tier2Tickets" from "Helpdesk Buttons" (This applies retroactively to the entire 1.1 branch on new builds)
+* Changed the NTP server used for internal time-synchronization of t2t service from pool.ntp.org to time.google.com
 
 
 
