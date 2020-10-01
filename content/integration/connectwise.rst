@@ -120,6 +120,10 @@ For those of you who want to restrict the access the API user has, here is the s
 
 - Companies/Configurations/Inquire Level - All (For including configurations pertaining to the ticket)
 
+*As of version v2020_4 of ConnectWise Manage*
+
+- System/Table Setup/Inquire Level - All (For checking values like prority, board, etc)
+
 
 The group is based on your company, but it can be tricky. We recommend leaving this as Admin as it the integration will require access to view contact information based on the clients input. To avoid errors, your staff would need to make sure that no one puts in an email address that corresponds to a contact that is not covered by the group to which this API user belongs. To be clear, the permissions don't need to be Admin, but the group does. This will allow us access to all of your customers, but only limited access to each.
 
