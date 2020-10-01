@@ -115,6 +115,13 @@ Click the Save Rules and test the HDB software to make sure it works as intended
 |
 |
 
+
+Tier2Forms Limited Use Disclosure
+---------------------------
+
+Tier2Forms' use of information received from [Google APIs will adhere to the Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
+
 Tier2Forms Terms Of Service
 ---------------------------
 
