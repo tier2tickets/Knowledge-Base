@@ -8,6 +8,8 @@ The software is packaged as an MSI which you build on the custom builds page. It
 
 ## Installing
 
+### Using Command line Arguments
+
 The following command would install the software with minimal user interface visible to the user and no cancel button and then reboot the computer. 
 
 ```
@@ -61,6 +63,12 @@ msiexec /i "buttonInst.msi" /norestart WRAPPED_ARGUMENTS="/launchkey=4 /iconname
 
 
 You would still need to reboot after hours though, the software does actually need a reboot most of the time.
+
+### Without Command line Arguments 
+
+If installing the software by starting the MSI without any command line options you will get a default shortcut name: "Helpdesk Button" and the MSI will allow you to select the launch key. You can use our Tier2Scripts system to change this icon on install by using the script listed [here.](https://docs.tier2tickets.com/content/customization/tier2scripts/#update-shortcut-icons-on-install)
+
+
 
 ## Uninstalling
 

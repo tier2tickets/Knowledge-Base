@@ -59,6 +59,42 @@ NOTE: make sure that the script returns! If your script gets stuck, waiting on u
 will never complete.
 
 
+Example install.ps1 Scripts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We reccomend using inline parameters for customizing the name of the helpdesk buttons desktop shortcut, but if you want to 
+customize this shortcut for installs that come via helpdesk button extended press this would work.
+
+Update Shortcut Icons on Install
+""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: powershell
+
+	#########################install.ps1############################################
+	#
+	# This is an insall script that will allow you to change the default shortcut 
+	# name
+	# 
+	#
+	################################################################################
+
+	############################ EDIT YOUR SETTINGS HERE ###########################
+
+	$iconName = 'Poogle Prome.lnk'
+
+
+	############################# DONT EDIT BEYONE HERE ############################
+
+	[IO.FileInfo] $foo =  'C:\Users\Public\Desktop\Helpdesk Button.lnk'
+	if($foo.Exists){
+		Rename-Item 'C:\Users\Public\Desktop\Helpdesk Button.lnk' $iconName
+	}
+
+	exit 0
+	
+Make sure to change the iconName to something more fitting than *Poogle Prome.lnk*
+
+
 custom.css (alpha)
 ------------------
 
