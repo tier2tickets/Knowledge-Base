@@ -82,6 +82,7 @@ Table Of Contents
 	:caption: Marketing
 	:maxdepth: 0
 
+	content/marketing/marketing-collateral
 	content/marketing/how-to
 	content/marketing/image-library
 
