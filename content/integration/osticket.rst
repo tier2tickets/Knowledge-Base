@@ -2,6 +2,12 @@ osTicket Integration
 =====================
 This guide will show you how to set up osTicket to work with your new Helpdesk Buttons.
 
+.. raw:: html
+
+	<div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmFLvQ4fcjI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
 Create Your API Keys
 -----------------------
 
@@ -43,38 +49,55 @@ Anti-Virus and AntiMalware
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
-Advanced Integration Options
------------------------------
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| alert           | name          |
-+-----------------+---------------+
-| auto_respond    | email         |
-+-----------------+---------------+
-| message         | hostname      |
-+-----------------+---------------+
-| subject         | mac           | 
-+-----------------+---------------+
-| append          | ip            | 
-+-----------------+---------------+
++--------------------------------------------------------------------------+----------------------------------------------------+
+| Read/Write                                                               | Read Only                                          |
++==========================================================================+====================================================+
+| :ref:`content/integration/osticket:*priority*`                           | :ref:`content/automations/dispatcher:*selections*` |
++--------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`alert<content/integration/osticket:*alert & auto_respond*>`        | :ref:`content/automations/dispatcher:*name*`       |
++--------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`auto_respond<content/integration/osticket:*alert & auto_respond*>` | :ref:`content/automations/dispatcher:*email*`      |
++--------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`                          | :ref:`content/automations/dispatcher:*hostname*`   |
++--------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`                          | :ref:`content/automations/dispatcher:*mac*`        | 
++--------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`                           | :ref:`content/automations/dispatcher:*ip*`         | 
++--------------------------------------------------------------------------+----------------------------------------------------+
+
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority (Urgent, Low, ect) 
-- *alert* alerts staff to ticket creation or not 
-- *message* refers to the message the client typed when making the ticket
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+
+.. image:: images/os-priority.png
+   :target: https://docs.tier2tickets.com/_images/os-priority.png
+
+|
+|
+
+*alert & auto_respond*
+""""""""""""""""""""""
+
+.. image:: images/os-alert+auto.png
+   :target: https://docs.tier2tickets.com/_images/os-alert+auto.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
+
+

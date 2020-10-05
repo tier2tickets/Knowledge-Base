@@ -1,5 +1,19 @@
 Kaseya Integration
 ================================
+This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
+
+Kaseya integration requires two main parts:
+
+:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/kaseya:Unregistered User>`
+
+:ref:`2) set up the API integration. <content/integration/kaseya:Create an API User>`
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rvc9DO60VBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 
 Unregistered User
 -------------------
@@ -33,7 +47,12 @@ Company+username:password
 
 Once you click update you should be good to go. 
 
-Kaseya requires alot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. If additional customization is needed try using our :ref:`Advanced Options <content/integration/advanced:Advanced Options>` feature.
+Integration Defaults
+-----------------------------------
+
+Kaseya requires alot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. 
+
+Please note that either queue, assignee, or both must be set for this integration to work properly.
 
 API Access Settings
 --------------------
@@ -51,59 +70,139 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-Please note that either queue, assignee, or both must be set for this integration to work properly.
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-Custom Rules
-^^^^^^^^^^^^^
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
++--------------------------------------------------+--------------------------------------------------+
+| Read/Write                                       | Read Only                                        |
++==================================================+==================================================+
+| :ref:`content/integration/kaseya:*priority*`     | :ref:`content/integration/advanced:*selections*` |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketStatus*` | :ref:`content/integration/advanced:*name*`       |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*queue*`        | :ref:`content/integration/advanced:*email*`      |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketType*`   | :ref:`content/integration/advanced:*ip*`         |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`    | :ref:`content/integration/kaseya:*openDate*`     |
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*title*`        | :ref:`content/integration/advanced:*hostname*`   | 
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketSource*` | :ref:`content/integration/advanced:*mac*`        | 
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/kaseya:*assignee*`     |                                                  | 
++--------------------------------------------------+--------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`     |                                                  | 
++--------------------------------------------------+--------------------------------------------------+
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| ticketStatus    | name          |
-+-----------------+---------------+
-| queue           | email         |
-+-----------------+---------------+
-| ticketType      | ip            |
-+-----------------+---------------+
-| message         | openDate      |
-+-----------------+---------------+
-| title           | hostname      | 
-+-----------------+---------------+
-| ticketSource    | mac           | 
-+-----------------+---------------+
-| assignee        |               | 
-+-----------------+---------------+
-| append          |               | 
-+-----------------+---------------+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority (Urgent, Low, ect) 
-- *ticketStatus* refers to the ticket status (New, In Progress, etc) 
-- *comment_subject* refers to the subject line of the first comment
-- *ticketType* refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
-- *queue* refers to the queue the ticket will be assigned to
-- *assignee* refers to the agent the ticket will be assigned to
-- *message* refers to the message the client typed when making the ticket
-- *title* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *ticketSource* refers to the source of the ticket (Client portal, Phone, Other)
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
-- *openDate* refers to the date the ticket was created
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+
+.. image:: images/ka-priority.png
+   :target: https://docs.tier2tickets.com/_images/ka-priority.png
+
+|
+|
+
+*ticketStatus*
+""""""""""""""
+
+	**The ticket status (New, In Progress, etc):**
+
+.. image:: images/ka-ticketStatus.png
+   :target: https://docs.tier2tickets.com/_images/ka-ticketStatus.png
+
+|
+|
+
+*title*
+"""""""
+
+	**A short description of the ticket issue:**
+
+.. image:: images/ka-title.png
+   :target: https://docs.tier2tickets.com/_images/ka-title.png
+
+|
+|
+
+*ticketType*
+""""""""""""
+
+	**The issue type  in RepairShopr (Helpdesk, Internal, etc):**
+
+.. image:: images/ka-ticketType.png
+   :target: https://docs.tier2tickets.com/_images/ka-ticketType.png
+
+|
+|
+
+*queue*
+"""""""
+
+	**The queue the ticket will be assigned to:**
+
+.. image:: images/ka-queue.png
+   :target: https://docs.tier2tickets.com/_images/ka-queue.png
+
+|
+|
+
+*assignee*
+""""""""""
+
+	**The agent the ticket will be assigned to:**
+
+.. image:: images/ka-assignee.png
+   :target: https://docs.tier2tickets.com/_images/ka-assignee.png
+
+|
+|
+
+*ticketSource*
+""""""""""""""
+
+	**Tthe source of the ticket (Client portal, Phone, Other):**
+
+.. image:: images/ka-ticketSource.png
+   :target: https://docs.tier2tickets.com/_images/ka-ticketSource.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+.. image:: images/ka-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/ka-priv_append.png
+
+|
+|
+
+*openDate*
+""""""""""
+
+	**The date the ticket was created:**
+
+.. image:: images/ka-openDate.png
+   :target: https://docs.tier2tickets.com/_images/ka-openDate.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

@@ -2,10 +2,25 @@ Freshdesk / Freshservice Integration
 =====================================
 This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons.
 
+Freshdesk/FreshService integration requires two main parts:
+
+:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/freshdesk:Unregistered User>`
+
+:ref:`2) set up the API integration. <content/integration/freshdesk:Getting an API Key>`
+
+This video shows the Freshdesk integration, but Freshservice should be very similar.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/bDhWhLQswGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
 Unregistered User
 -------------------
 By default, our software attempts to pair users with their contact information by checking with Freshdesk/Freshservice. If the user is not already found in the system
-a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Advanced Integration Options <content/integration/freshdesk:Advanced Integration Options>` below.
+a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Integration Defaults <content/integration/freshdesk:Integration Defaults>` below.
 
 This guide assumes you want to use the catch all contact: 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. In our system it’s “Mystery Human”.
@@ -52,97 +67,248 @@ Access Restrictions
 
 As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 
+Integration Defaults
+-----------------------------------
+The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+
 Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^^
-The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+Dispatcher Rules
+-----------------------------------------------
 
-Rules
-^^^^^^
-
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
 FreshDesk
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| status          | name          |
-+-----------------+---------------+
-| group           | email         |
-+-----------------+---------------+
-| type            | ip            |
-+-----------------+---------------+
-| message         | mac           |
-+-----------------+---------------+
-| subject         | hostname      | 
-+-----------------+---------------+
-| source          |               | 
-+-----------------+---------------+
-| impact          |               | 
-+-----------------+---------------+
-| urgency         |               |
-+-----------------+---------------+
-| agent           |               | 
-+-----------------+---------------+
-| append          |               |
-+-----------------+---------------+
++-------------------------------------------------+----------------------------------------------------+
+| Read/Write                                      | Read Only                                          |
++=================================================+====================================================+
+| :ref:`content/integration/freshdesk:*priority*` | :ref:`content/automations/dispatcher:*selections*` |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*status*`   | :ref:`content/automations/dispatcher:*name*`       |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*group*`    | :ref:`content/automations/dispatcher:*email*`      |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*type*`     | :ref:`content/automations/dispatcher:*ip*`         |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*` | :ref:`content/automations/dispatcher:*mac*`        |
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*` | :ref:`content/automations/dispatcher:*hostname*`   | 
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*source*`   |                                                    | 
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*agent*`    |                                                    | 
++-------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`  |                                                    |
++-------------------------------------------------+----------------------------------------------------+
 
 Freshservice
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| status          | name          |
-+-----------------+---------------+
-| department      | email         |
-+-----------------+---------------+
-| agent           | ip            |
-+-----------------+---------------+
-| message         | mac           |
-+-----------------+---------------+
-| subject         | hostname      | 
-+-----------------+---------------+
-| source          |               | 
-+-----------------+---------------+
-| impact          |               | 
-+-----------------+---------------+
-| urgency         |               |
-+-----------------+---------------+
-| append          |               |
-+-----------------+---------------+
-| group           |               |
-+-----------------+---------------+
-| priv_append     |               |
-+-----------------+---------------+
++----------------------------------------------------------------------+----------------------------------------------------+
+| Read/Write                                                           | Read Only                                          |
++======================================================================+====================================================+
+| :ref:`content/integration/freshdesk:*priority*`                      | :ref:`content/automations/dispatcher:*selections*` |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*status*`                        | :ref:`content/automations/dispatcher:*name*`       |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*department*`                    | :ref:`content/automations/dispatcher:*email*`      |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*agent*`                         | :ref:`content/automations/dispatcher:*ip*`         |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`                      | :ref:`content/automations/dispatcher:*mac*`        |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`                      | :ref:`content/automations/dispatcher:*hostname*`   | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*source*`                        |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`impact<content/integration/freshdesk:*impact & urgency*>`      |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`urgency<content/integration/freshdesk:*impact & urgency*>`     |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`                       |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*group*`                         |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/freshdesk:*priv_append*`                   |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-* *priority* refers to the ticket priority (Urgent, Low, ect)
-* *impact* and *urgency* can set priority via the SLA priority matrix
-* *status* refers to the ticket status (New, In Progress, etc)
-* *group* refers to the group the ticket will be put in
-* *department* refers to the department the ticket will be put in
-* *message* refers to the message the client typed when making the ticket
-* *subject* refers to the ticket title
-* *append* refers to the information appended to the HDB report
-* *agent* refers to the agent that will be assigned this ticket
-* *source* refers to the ticket source (Web Portal, P, )
-* *priv_append* allows you to append information to the internal ticket note
-* *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-* *name* refers to the client's name
-* *email* refers to the client's email
-* *ip* refers to the client's external ip address
-* *mac* refers to the client's MAC address
-* *hostname* refers to the client's hostname 
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+
+FreshDesk:
+
+.. image:: images/fd-priority.png
+   :target: https://docs.tier2tickets.com/_images/fd-priority.png
+
+|
+
+FreshService:
+
+.. image:: images/fs-priority.png
+   :target: https://docs.tier2tickets.com/_images/fs-priority.png
+
+|
+|
+
+*impact & urgency*
+""""""""""""""""""""""
+
+	**Can set priority via the SLA priority matrix:**
+
+FreshService:
+
+	Impact:
+
+.. image:: images/fs-impact.png
+   :target: https://docs.tier2tickets.com/_images/fs-impact.png
+
+|
+   
+	Urgency:
+
+.. image:: images/fs-urgency.png
+   :target: https://docs.tier2tickets.com/_images/fs-urgency.png
+
+|
+|
+
+*status*
+""""""""
+
+	**The ticket status (New, In Progress, etc):**
+
+FreshDesk:
+
+.. image:: images/fd-status.png
+   :target: https://docs.tier2tickets.com/_images/fd-status.png
+
+|
+
+FreshService:
+
+.. image:: images/fs-status.png
+   :target: https://docs.tier2tickets.com/_images/fs-status.png
+
+|
+|
+
+*group*
+"""""""
+
+	**The group the ticket will be put in:**
+
+FreshDesk:
+
+.. image:: images/fd-group.png
+   :target: https://docs.tier2tickets.com/_images/fd-group.png
+
+|
+   
+FreshService:
+
+.. image:: images/fs-group.png
+   :target: https://docs.tier2tickets.com/_images/fs-group.png
+
+|
+|
+
+*type*
+""""""
+
+	**Refers to the issue type (Service Request, Incident, Problem, Alert):**
+	
+FreshDesk:
+
+.. image:: images/fd-type.png
+   :target: https://docs.tier2tickets.com/_images/fd-type.png
+
+|
+|
+
+*department*
+""""""""""""
+
+	**The department the ticket will be put in:**
+
+FreshService:
+
+.. image:: images/fs-department.png
+   :target: https://docs.tier2tickets.com/_images/fs-department.png
+
+|
+|
+
+*agent*
+"""""""
+
+	**The agent that will be assigned this ticket:**
+
+FreshDesk:
+
+.. image:: images/fd-agent.png
+   :target: https://docs.tier2tickets.com/_images/fd-agent.png
+
+|
+   
+FreshService:
+
+.. image:: images/fs-agent.png
+   :target: https://docs.tier2tickets.com/_images/fs-agent.png
+
+|
+|
+
+*source*
+""""""""
+
+	**The ticket source (Web Portal, Etc):**
+
+FreshDesk:
+
+.. image:: images/fd-source.png
+   :target: https://docs.tier2tickets.com/_images/fd-source.png
+
+|
+   
+FreshService:
+
+.. image:: images/fs-source.png
+   :target: https://docs.tier2tickets.com/_images/fs-source.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+FreshDesk:
+
+.. image:: images/fd-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/fd-priv_append.png
+
+|
+
+FreshService:
+
+.. image:: images/fs-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/fs-priv_append.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

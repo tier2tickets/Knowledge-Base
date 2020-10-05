@@ -1,6 +1,13 @@
 Repairshopr / Syncro Integration
 ================================
+
 Setting up Helpdesk Buttons with Repairshopr or Syncro is easy. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PA6yZ8b5Wec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 Unregistered User
 --------------------
@@ -34,11 +41,32 @@ Click Customer Settings and check the box labeled, enable multiple contacts on c
 Get your API Key
 ----------------------
 
-Next you will need your Repairshopr or Syncro API key.
+Next you will need to create a Repairshopr or Syncro API key.
 
-You can go get your API key on your profile page.
+You can do this in the Admin Menu > API > API Tokens
 
 .. image:: images/rs-image-1.png
+
+Once you are there, click on the New Token button and Custom Permissions
+
+Fill out the name as you like, and we reccomend leaving the expiration blank to make a key that does not have to be recreated/renewed.
+
+.. image:: images/rs-image-3.png
+
+You will have to add the permissions of the key explicitly. The permissions the key will need are as follows:
+
+API Access Settings
+--------------------
+
+- Customers List/Search: For gathering company data like street addresses from companies
+- Customers View Details: For gathering contact data like email addresses from contacts
+- Ticket Comments - New: For adding public notes to tickets
+- Tickets Create: For creating tickets
+- Tickets Edit: For adding private notes
+
+Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future. 
+
+Once you have created the key copy it for the next step.
 
 Helpdeskbuttons.com Settings
 ------------------------------
@@ -65,63 +93,108 @@ Or the equivalent for Syncro. Be sure to *omit* the prefix (i.e. `https://`) and
 
 Under Ticket System API Key, enter the API key that you used earlier. Once you have entered that information, click Update and it will save the information.
 
-API Access Settings
---------------------
-
-For those of you who want to restrict the access the API user has, here is the security access we need: (a custom security group will need to be created and assigned to us with these permissions):
-
-- Customers List/Search: For gathering company data like street addresses from companies
-- Customers View Details: For gathering contact data like email addresses from contacts
-- Ticket Comments - New: For adding public notes to tickets
-- Tickets Create: For creating tickets
-- Tickets Edit: For adding private notes
-
-Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future.
 
 Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <content/general/firewall:#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| status          | name          |
-+-----------------+---------------+
-| comment_subject | email         |
-+-----------------+---------------+
-| issue_type      | business_name |
-+-----------------+---------------+
-| message         | ip            |
-+-----------------+---------------+
-| subject         | mac           | 
-+-----------------+---------------+
-| append          | hostname      | 
-+-----------------+---------------+
-| priv_append     |               | 
-+-----------------+---------------+
++----------------------------------------------------------+--------------------------------------------------------+
+| Read/Write                                               | Read Only                                              |
++==========================================================+========================================================+
+| :ref:`content/integration/repairshopr:*priority*`        | :ref:`content/automations/dispatcher:*selections*`     |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*status*`          | :ref:`content/automations/dispatcher:*name*`           |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*comment_subject*` | :ref:`content/automations/dispatcher:*email*`          |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*problem_type*`    | :ref:`content/integration/repairshopr:*business_name*` |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`          | :ref:`content/automations/dispatcher:*hostname*`       |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`          | :ref:`content/automations/dispatcher:*ip*`             |
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`           | :ref:`content/automations/dispatcher:*mac*`            | 
++----------------------------------------------------------+--------------------------------------------------------+
+| :ref:`content/integration/repairshopr:*priv_append*`     |                                                        | 
++----------------------------------------------------------+--------------------------------------------------------+
+
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority (Urgent, Low, ect)
-- *status* refers to the ticket status (New, In Progress, etc)
-- *comment_subject* refers to the subject line of the first comment
-- *issue_type* refers to the issue type  in RepairShopr (Helpdesk, Internal, etc)
-- *message* refers to the message the client typed when making the ticket
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name
-- *email* refers to the client's email
-- *business_name* refers to the clients business name
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+
+.. image:: images/rs-priority.png
+   :target: https://docs.tier2tickets.com/_images/rs-priority.png
+
+|
+|
+
+*status*
+""""""""
+
+	**The ticket status (New, In Progress, etc):**
+
+.. image:: images/rs-status.png
+   :target: https://docs.tier2tickets.com/_images/rs-status.png
+
+|
+|
+
+*comment_subject*
+"""""""""""""""""
+
+	**Refers to the subject line of the first comment:**
+
+.. image:: images/rs-comment_subject.png
+   :target: https://docs.tier2tickets.com/_images/rs-comment_subject.png
+
+|
+|
+
+*problem_type*
+""""""""""""""
+
+	**The problem type  in RepairShopr (Helpdesk, Internal, etc):**
+
+.. image:: images/rs-problem_type.png
+   :target: https://docs.tier2tickets.com/_images/rs-problem_type.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+.. image:: images/rs-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/rs-priv_append.png
+
+|
+|
+
+*business_name*
+"""""""""""""""
+
+	**The clients business name:**
+
+.. image:: images/rs-business_name.png
+   :target: https://docs.tier2tickets.com/_images/rs-business_name.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

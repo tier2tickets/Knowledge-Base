@@ -1,5 +1,18 @@
 Accelo Integration
 ===================
+This guide will show you how to set up your new Helpdesk Buttons with Accelo.
+
+Accelo integration requires two main parts:
+
+:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/accelo:Unregistered User>`
+
+:ref:`2) set up the API integration. <content/integration/accelo:Create an Application User>`
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n7gDwhauMbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 Unregistered User
 ------------------
@@ -52,68 +65,151 @@ Your API key is formatted as shown
 
 Click Update and the Integration Test button to send a test ticket. 
 
-Some additional setup may be necessary in the :ref:`Advanced Integration Options <content/integration/advanced:Defaults>`.
+Integration Defaults
+-----------------------------------
+
+Please note that defaults for priority, type, and standing must be set for this integration to work properly.
+
 
 Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-Please note that defaults for priority, type, and standing must be set for this integration to work properly.
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-Custom Rules
-^^^^^^^^^^^^^
++---------------------------------------------------+-------------------------------------------------------------+
+| Read/Write                                        | Read Only                                                   |
++===================================================+=============================================================+
+| :ref:`content/integration/accelo:*priority*`      | :ref:`content/automations/dispatcher:*selections*`          |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/accelo:*type*`          | :ref:`content/automations/dispatcher:*hostname*`            |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/accelo:*standing*`      | :ref:`content/automations/dispatcher:*name*`                |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/integration/accelo:*priv_append*`   | :ref:`content/automations/dispatcher:*email*`               |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`   | :ref:`content/automations/dispatcher:*ip*`                  |
++---------------------------------------------------+-------------------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`   | :ref:`content/automations/dispatcher:*mac*`                 | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+| :ref:`content/automations/dispatcher:*append*`    | :ref:`input_cell<content/integration/accelo:*input_**>`     | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+| :ref:`content/integration/accelo:*assignee*`      | :ref:`input_phone<content/integration/accelo:*input_**>`    | 
+|                                                   |                                                             |
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+| :ref:`content/integration/accelo:*class*`         | :ref:`input_company<content/integration/accelo:*input_**>`  | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+|                                                   | :ref:`input_email<content/integration/accelo:*input_**>`    | 
++---------------------------------------------------+-------------------------------------------------------------+
+|                                                   | .. raw:: html                                               |
+|                                                   |                                                             |
+|                                                   |    <i>                                                      |
+|                                                   |                                                             |
+|                                                   | :ref:`input_name<content/integration/accelo:*input_**>`     | 
++---------------------------------------------------+-------------------------------------------------------------+
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
-
-+-------------------+---------------+
-| Read/Write        | Read Only     |
-+===================+===============+
-| priority          | selections    |
-+-------------------+---------------+
-| type              | hostname      |
-+-------------------+---------------+
-| standing          | name          |
-+-------------------+---------------+
-| priv_append       | email         |
-+-------------------+---------------+
-| message           | ip            |
-+-------------------+---------------+
-| subject           | mac           | 
-+-------------------+---------------+
-| append            |*input_cell*   | 
-+-------------------+---------------+
-| assignee          |*input_phone*  | 
-+-------------------+---------------+
-| class             |*input_company*| 
-+-------------------+---------------+
-|                   |*input_email*  | 
-+-------------------+---------------+
-|                   |*input_name*   | 
-+-------------------+---------------+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority
-- *standing* refers to the ticket status (New, In Progress, etc)
-- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-- *message* refers to the message the client typed when making the ticket
-- *assignee* refers to the agent that will be assigned this ticket
-- *class* refers to the tickets class (Accounts/Renewals, E-commerce)
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *name* refers to the client's name (according to the PSA)
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+   
+.. image:: images/accelo-priority.png
+   :target: https://docs.tier2tickets.com/_images/accelo-priority.png
+   
+|
+|
+
+*standing*
+"""""""""""
+
+	**Refers to the ticket status (New, In Progress, etc):**
+
+.. image:: images/accelo-standing.png
+   :target: https://docs.tier2tickets.com/_images/accelo-standing.png
+
+|
+|
+
+*type*
+""""""""
+
+	**The issue type (Service Request, Incident, Problem, Alert):**
+
+.. image:: images/accelo-type.png
+   :target: https://docs.tier2tickets.com/_images/accelo-type.png
+
+|
+|
+
+*assignee*
+""""""""""
+
+	**The agent that will be assigned this ticket:**
+
+.. image:: images/accelo-assignee.png
+   :target: https://docs.tier2tickets.com/_images/accelo-assignee.png
+
+|
+|
+
+*class*
+"""""""""
+
+	**The tickets class (Accounts/Renewals, E-commerce):**
+
+.. image:: images/accelo-class.png
+   :target: https://docs.tier2tickets.com/_images/accelo-class.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+.. image:: images/accelo-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/accelo-priv_append.png
+
+|
+|
+
+*input_**
+"""""""""
+
+.. image:: images/accelo-inputs.png
+   :target: https://docs.tier2tickets.com/_images/accelo-inputs.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA

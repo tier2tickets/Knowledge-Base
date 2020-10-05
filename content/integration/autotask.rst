@@ -2,6 +2,18 @@ Autotask Integration
 =====================
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. You will need an administrative login for Autotask. 
 
+Autotask integration requires two main parts:
+
+:ref:`1) set up the API integration. <content/integration/autotask:API User>`
+
+:ref:`2) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/autotask:Unregistered User>`
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/096i4ZVAThQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 API User
 ----------
 The first step involves configuring an API user in Autotask. 
@@ -78,54 +90,154 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.  
 
-Advanced Integration Options
-------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+Dispatcher Rules
+-----------------------------------------------
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| ticketStatus    | contactName   |
-+-----------------+---------------+
-| queue           | email         |
-+-----------------+---------------+
-| type            | ip            |
-+-----------------+---------------+
-| message         | mac           |
-+-----------------+---------------+
-| subject         | hostname      | 
-+-----------------+---------------+
-| append          |               | 
-+-----------------+---------------+
-| priv_append     |               | 
-+-----------------+---------------+
-| source          |               | 
-+-----------------+---------------+
-| issue           |               | 
-+-----------------+---------------+
-| subIssue        |               | 
-+-----------------+---------------+
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
+
++----------------------------------------------------+-----------------------------------------------------+
+| Read/Write                                         | Read Only                                           |
++====================================================+=====================================================+
+| :ref:`content/integration/autotask:*priority*`     | :ref:`content/automations/dispatcher:*selections*`  |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*ticketStatus*` | :ref:`content/integration/autotask:*contactName*`   |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*queue*`        | :ref:`content/automations/dispatcher:*email*`       |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*type*`         | :ref:`content/automations/dispatcher:*ip*`          |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`    | :ref:`content/automations/dispatcher:*mac*`         |
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`    | :ref:`content/automations/dispatcher:*hostname*`    | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`     |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*priv_append*`  |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*source*`       |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*issue*`        |                                                     | 
++----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*subIssue*`     |                                                     |
++----------------------------------------------------+-----------------------------------------------------+ 
+
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *priority* refers to the ticket priority (Urgent, Low, ect)
-- *ticketStatus* refers to the ticket status (New, In Progress, etc)
-- *queue* refers to the queue the ticket will be put in
-- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-- *message* refers to the message the client typed when making the ticket
-- *subject* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *source* refers to the ticket source (Web Portal, Phone, Other)
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *contactName* refers to the client's name
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
-- *issue* refers to the primary ticket issue
-- *subissue* refers ro the secondary ticket issue
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+
+.. image:: images/autotask-priority.png
+   :target: https://docs.tier2tickets.com/_images/autotask-priority.png
+
+|
+|
+
+*ticketStatus*
+""""""""""""""""
+
+	**The ticket status (New, In Progress, etc):**
+
+.. image:: images/autotask-ticketStatus.png
+   :target: https://docs.tier2tickets.com/_images/autotask-ticketStatus.png
+
+|
+|
+
+*queue*
+"""""""
+
+	**The queue the ticket will be put in:**
+
+.. image:: images/autotask-queue.png
+   :target: https://docs.tier2tickets.com/_images/autotask-queue.png
+
+|
+|
+
+*type*
+""""""
+
+	**The issue type (Service Request, Incident, Problem, Alert):**
+
+.. image:: images/autotask-type.png
+   :target: https://docs.tier2tickets.com/_images/autotask-type.png
+
+|
+|
+
+*source*
+""""""""
+
+	**The ticket source (Web Portal, Phone, Other):**
+
+.. image:: images/autotask-source.png
+   :target: https://docs.tier2tickets.com/_images/autotask-source.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+.. image:: images/autotask-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/autotask-priv_append.png
+
+|
+|
+
+*contactName*
+"""""""""""""
+
+	**Refers to the client's name:**
+
+.. image:: images/autotask-contactName.png
+   :target: https://docs.tier2tickets.com/_images/autotask-contactName.png
+
+|
+|
+
+*issue*
+"""""""
+
+	**The primary ticket issue:**
+
+.. image:: images/autotask-issue.png
+   :target: https://docs.tier2tickets.com/_images/autotask-issue.png
+
+|
+|
+
+*subissue*
+""""""""""
+
+	**The secondary ticket issue:**
+
+.. image:: images/autotask-subissue.png
+   :target: https://docs.tier2tickets.com/_images/autotask-subissue.png
+
+|
+|
+
+*worktype*
+""""""""""
+
+	**The worktype associated with the ticket:**
+
+.. image:: images/autotask-worktype.png
+   :target: https://docs.tier2tickets.com/_images/autotask-worktype.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

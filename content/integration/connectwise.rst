@@ -1,6 +1,18 @@
 Connectwise Integration
 ========================
-Setting up Connectwise Manage to work with Helpdesk Buttons is very easy. You will have to do some basic setup in your ConnectWise Manage system first though.
+This guide will show you how to set up your new Helpdesk Buttons with ConnectWise Manage.
+
+Connectwise integration requires two main parts:
+
+:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/connectwise:Unregistered User>`
+
+:ref:`2) set up the API integration. <content/integration/connectwise:Get an API Key>`
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ip2IhU8EqPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 Unregistered User
 -------------------
@@ -133,68 +145,154 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
 
-Defaults
-^^^^^^^^^
+Integration Defaults
+-----------------------------------
 
 Many of the fields can be set to "__default__"
 
 Note: State, Team and Type are all related to the Board. For any customizations to those fields 
-do not use the "__default__" Board. Please provide the Board by name (This also applies to Custom Rules).
+do not use the "__default__" Board. Please provide the Board by name (This also applies to Dispatcher Rules).
 
-Custom Rules
-^^^^^^^^^^^^^
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
-+-----------------+---------------+
-| Read/Write      | Read Only     |
-+=================+===============+
-| priority        | selections    |
-+-----------------+---------------+
-| state           | name          |
-+-----------------+---------------+
-| team            | email         |
-+-----------------+---------------+
-| type            | ip            |
-+-----------------+---------------+
-| message         | mac           |
-+-----------------+---------------+
-| subject         | hostname      | 
-+-----------------+---------------+
-| source          |               | 
-+-----------------+---------------+
-| impact          |               | 
-+-----------------+---------------+
-| urgency         |               |
-+-----------------+---------------+
-| owner           |               | 
-+-----------------+---------------+
-| board           |               | 
-+-----------------+---------------+
-| append          |               | 
-+-----------------+---------------+
++----------------------------------------------------------------------+----------------------------------------------------+
+| Read/Write                                                           |  Read Only                                         |
++======================================================================+====================================================+
+| :ref:`content/integration/connectwise:*priority*`                    | :ref:`content/automations/dispatcher:*selections*` |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*state*`                       | :ref:`content/automations/dispatcher:*name*`       |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*team*`                        | :ref:`content/automations/dispatcher:*email*`      |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*type*`                        | :ref:`content/automations/dispatcher:*ip*`         |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*message*`                        | :ref:`content/automations/dispatcher:*mac*`        |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*subject*`                        | :ref:`content/automations/dispatcher:*hostname*`   | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*source*`                      |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`impact<content/integration/connectwise:*impact & urgency*>`    |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`urgency<content/integration/connectwise:*impact & urgency*>`   |                                                    |
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*owner*`                       |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/connectwise:*board*`                       |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`                         |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+
+
+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-* *priority* refers to the ticket priority (Urgent, Low, ect)
-* *impact* and *urgency* can set priority via the SLA priority matrix
-* *state* refers to the ticket status (New, In Progress, etc)
-* *team* refers to the queue the ticket will be put in
-* *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-* *message* refers to the message the client typed when making the ticket
-* *subject* refers to the ticket title
-* *append* refers to the information appended to the HDB report
-* *owner* refers to the agent that will be assigned this ticket
-* *source* refers to the ticket source (Web Portal, P, )
-* *board* refers to the board the ticket will be put under 
-* *priv_append* allows you to append information to the internal ticket note
-* *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-* *name* refers to the client's name
-* *email* refers to the client's email
-* *ip* refers to the client's external ip address
-* *mac* refers to the client's MAC address
-* *hostname* refers to the client's hostname 
+*priority*
+""""""""""
+
+	**The ticket priority level (Urgent, Low, ect):**
+
+.. image:: images/cw-priority.png
+   :target: https://docs.tier2tickets.com/_images/cw-priority.png
+
+|
+|
+
+*impact & urgency*
+""""""""""""""""""""
+
+	**Can set priority via the SLA priority matrix:**
+
+.. image:: images/cw-impact+urgency.png
+   :target: https://docs.tier2tickets.com/_images/cw-impact+urgency.png
+
+|
+|
+
+*state*
+"""""""
+
+	**Refers to the ticket status (New, In Progress, etc):**
+
+.. image:: images/cw-state.png
+   :target: https://docs.tier2tickets.com/_images/cw-state.png
+
+|
+|
+
+*team*
+""""""
+
+	**Refers to the queue the ticket will be put in:**
+
+.. image:: images/cw-team.png
+   :target: https://docs.tier2tickets.com/_images/cw-team.png
+
+|
+|
+
+*type*
+""""""
+
+	**The issue type (Service Request, Incident, Problem, Alert):**
+
+.. image:: images/cw-type.png
+   :target: https://docs.tier2tickets.com/_images/cw-type.png
+
+|
+|
+
+*owner*
+"""""""
+
+	**Refers to the agent that will be assigned this ticket:**
+
+.. image:: images/cw-owner.png
+   :target: https://docs.tier2tickets.com/_images/cw-owner.png
+
+|
+|
+
+*source*
+""""""""
+
+	**The ticket source (Web Portal, Etc):**
+
+.. image:: images/cw-source.png
+   :target: https://docs.tier2tickets.com/_images/cw-source.png
+
+|
+|
+
+*board*
+""""""""
+
+	**The board the ticket will be put under :**
+
+.. image:: images/cw-board.png
+   :target: https://docs.tier2tickets.com/_images/cw-board.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+.. image:: images/cw-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/cw-priv_append.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

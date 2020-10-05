@@ -49,23 +49,42 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/customization/branding
-	content/customization/custom-scripts
+	content/customization/tier2scripts
 	content/customization/version-numbers
+
+.. toctree::
+	:caption: Automations
+	:maxdepth: 0
+	
+	content/automations/dispatcher
+	content/automations/tier2assist
+	content/automations/tier2forms
+	
 
 .. toctree::
 	:caption: Security & Privacy
 	:maxdepth: 0
 
-	content/privacy/retention
+	content/privacy/security-overview
+	content/privacy/general-components
 	content/privacy/customer-owned
-	content/privacy/trust
+	content/privacy/to-your-techs
+	content/privacy/bot-protection
+	content/privacy/passwords
+	content/privacy/suspicious-activity
 	content/privacy/subaccounts
+	content/privacy/ip-whitelist
+	content/privacy/compliance
+	content/privacy/retention
+	content/privacy/trust
 
 .. toctree::
 	:caption: Marketing
 	:maxdepth: 0
 
+	content/marketing/marketing-collateral
 	content/marketing/how-to
+	content/marketing/image-library
 
 .. toctree::
 	:hidden:

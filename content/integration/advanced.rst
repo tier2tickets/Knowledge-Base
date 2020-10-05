@@ -1,5 +1,7 @@
-Advanced Options
-==================
+-Deprecated- Advanced Options
+=====================================
+
+This system has been replaced by :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
 
 If you want finer control over integrations you can use the advanced options button on the Settings page beside your integration dropdown.
 
@@ -25,7 +27,7 @@ Custom Rules
 
 As of version :ref:`0.5.x.2 <content/general/changelog:0.5.x.2>` of the helpdesk buttons software, we support custom
 rules on tickets; which can modify the behavior of the ticket system integrations at a fundamental level. Custom rules
-are part of the :ref:`Advanced Options <content/integration/advanced:Advanced Options>` and are added by using the *custom_rules*
+are part of the :ref:`Advanced Options <content/integration/advanced:-Deprecated- Advanced Options>` and are added by using the *custom_rules*
 attribute
 
 The basic premise of the design is that before we submit the ticket to your PSA, we give you access to the information and 
@@ -153,13 +155,13 @@ letters.
 
 	if sum(1 for c in message if c.isupper())/len(message) > 0.75: priority = 0
 
-Putting it all together, here is what those rules look like when put into the :ref:`Advanced Options <content/integration/advanced:Advanced Options>` box as JSON:
+Putting it all together, here is what those rules look like when put into the :ref:`Advanced Options <content/integration/advanced:-Deprecated- Advanced Options>` box as JSON:
 
 .. image:: images/custom_rules1.png
 
 To learn which variables you have at your disposal for your specific ticket system, visit the integration guide for that system
 
-Practical Example 1: Impact/Urgency Priority Matrix
+Practical Example: Impact/Urgency Priority Matrix
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here is a larger example that showcases some of the power of this system.
@@ -187,13 +189,16 @@ For each impact and urgency phrase, we want to set the numerical value so we can
 We will need a line of code for each option:
 
 .. code-block:: python
-
-	I = 2
-	U = 2
-	if 'Medium - Departments or large group of users are affected' in selections: I = 1
-	if 'High - Whole company is affected': I = 0
-	if 'Medium - Business is degraded, but there is a reasonable workaround' in selections: U = 1
-	if 'High - Critical - Major business processes are stopped' in selections: U = 0
+	
+	# We set some default values for if there is no match
+	impact = 2
+	urgency = 2
+	# we change those values based on if there is a match
+	if 'Medium - Departments or large group of users are affected' in selections: impact = 1
+	if 'High - Whole company is affected' in selections: impact = 0
+	if 'Medium - Business is degraded, but there is a reasonable workaround' in selections: urgency = 1
+	if 'High - Critical - Major business processes are stopped' in selections: urgency = 0
+	
 
 Once we have all six lines set we can make our list of priorities:
 
@@ -201,18 +206,137 @@ This names of each vary based on your PSA, but we will go with the 5 listed abov
 
 .. code-block:: python
 
-	pri_names = ['Critical', 'High', 'Medium', 'Low', 'Very Low']
+	priority_names = ['Critical', 'High', 'Medium', 'Low', 'Very Low']
 
 Now all we have to do is set the variable for the priority, (priority) to be equal the correct entry in the priorities list.
 
 .. code-block:: python
 
-	priority = pri_names[I+U]
+	priority = priority_names[impact+urgency]
 	
 Here is what it would look like all together:
 
-.. image:: images/impact-urgency-3.png
+.. code-block:: python
+	
+	# We set some default values for if there is no match.
+	impact = 2
+	urgency = 2
+	# we change those values based on if there is a match
+	if 'Medium - Departments or large group of users are affected' in selections: impact = 1
+	if 'High - Whole company is affected' in selections: impact = 0
+	if 'Medium - Business is degraded, but there is a reasonable workaround' in selections: urgency = 1
+	if 'High - Critical - Major business processes are stopped' in selections: urgency = 0
+	# we map positions to strings that are meaningful to the ticket system
+	priority_names = ['Critical', 'High', 'Medium', 'Low', 'Very Low']
+	# we use the numerical value of the impact+urgency to get the string name from that position
+	priority = priority_names[impact+urgency]
+	# 'priority' is a special name in this integration, so that value will be passed to the ticket system
 
+
+Universally Available Variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When designing the custom rules, there are certain variables which will always be available to you because they correspond with input from
+our application and not from the ticket system integration being used. They are outlined as follows.
+
+*selections*
+""""""""""""
+
+	**Refers to the checkboxes/radio buttons the end-user chose when creating the ticket:**
+
+.. image:: images/advanced-selections.png
+   :target: https://docs.tier2tickets.com/_images/advanced-selections.png
+
+|
+|
+
+*hostname*
+""""""""""
+
+	**The hostname of the computer from which the end-user submitted the ticket:**
+
+.. image:: images/advanced-hostname.png
+   :target: https://docs.tier2tickets.com/_images/advanced-hostname.png
+
+|
+|
+
+*email*
+"""""""
+
+	**The email address the end-user entered to submit the ticket:**
+
+.. image:: images/advanced-email.png
+   :target: https://docs.tier2tickets.com/_images/advanced-email.png
+
+|
+|
+
+*name*
+""""""
+
+	**The end-user's name. This may be the name they entered into the input field or what the ticket system says is the name for that email address:**
+
+.. image:: images/advanced-name.png
+   :target: https://docs.tier2tickets.com/_images/advanced-name.png
+
+|
+|
+
+*ip*
+""""
+
+	**The IP address of the computer from which the end-user submitted the ticket:**
+
+.. image:: images/advanced-ip.png
+   :target: https://docs.tier2tickets.com/_images/advanced-ip.png
+
+|
+|
+
+*mac*
+"""""
+
+	**The MAC address of the computer from which the end-user submitted the ticket:**
+
+.. image:: images/advanced-mac.png
+   :target: https://docs.tier2tickets.com/_images/advanced-mac.png
+
+|
+|
+
+*message*
+"""""""""
+
+	**The message which the end-user typed to generate this ticket:**
+
+.. image:: images/advanced-message.png
+   :target: https://docs.tier2tickets.com/_images/advanced-message.png
+
+|
+|
+
+*subject*
+"""""""""
+
+	**Refers to what will become the ticket title. Since the GUI does not prompt for a subject, it generates one from the first few words of the message:**
+
+.. image:: images/advanced-subject.png
+   :target: https://docs.tier2tickets.com/_images/advanced-subject.png
+
+|
+|
+
+*append*
+""""""""
+
+	**Refers to some text that will be appended to the message. This typically will have been generated by a ** :ref:`Tier2Script <content/customization/tier2scripts:_append.txt>` **:**
+
+.. image:: images/advanced-append.png
+   :target: https://docs.tier2tickets.com/_images/advanced-append.png
+
+|
+|
 
 Submission Errors
 -----------------

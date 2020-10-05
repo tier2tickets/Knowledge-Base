@@ -1,6 +1,15 @@
 ServiceNow Integration
 ========================
 
+This guide will show you how to set up your new Helpdesk Buttons with Service Now.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TgebXvaQgjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
 Unregistered User
 ------------------
 
@@ -28,46 +37,110 @@ Anti-Virus and AntiMalware
 -----------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
-Advanced Integration Options
-------------------------------
+Dispatcher Rules
+-----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Custom Rules <content/integration/advanced:Custom Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
+
++-------------------------------------------------------------------------+----------------------------------------------------+
+| Read/Write                                                              | Read Only                                          |
++=========================================================================+====================================================+
+| :ref:`impact<content/integration/servicenow:*impact & urgency*>`        | :ref:`content/automations/dispatcher:*selections*` |
++-------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`urgency<content/integration/servicenow:*impact & urgency*>`       | :ref:`content/automations/dispatcher:*hostname*`   |
++-------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/servicenow:*incidentState*`                   | :ref:`content/automations/dispatcher:*name*`       |
++-------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/servicenow:*priv_append*`                     | :ref:`content/automations/dispatcher:*email*`      |
++-------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*message*`                         | :ref:`content/automations/dispatcher:*ip*`         |
++-------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*subject*`                         | :ref:`content/automations/dispatcher:*mac*`        | 
++-------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*append*`                          | :ref:`content/integration/servicenow:*callerID*`   | 
++-------------------------------------------------------------------------+----------------------------------------------------+
 
 
-+-------------------+---------------+
-| Read/Write        | Read Only     |
-+===================+===============+
-| impact            | selections    |
-+-------------------+---------------+
-| urgency           | hostname      |
-+-------------------+---------------+
-| incidentState     | name          |
-+-------------------+---------------+
-| priv_append       | email         |
-+-------------------+---------------+
-| message           | ip            |
-+-------------------+---------------+
-| subject           | mac           | 
-+-------------------+---------------+
-| append            | callerID      | 
-+-------------------+---------------+
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
 
-- *impact* and *urgency* set priority via the SLA priority matrix
-- *incidentState* refers to the ticket status (New, In Progress, etc)
-- *type* refers to the issue type (Service Request, Incident, Problem, Alert)
-- *message* refers to the message the client typed when making the ticket
-- *short_description* refers to the ticket title
-- *append* refers to the information appended to the HDB report
-- *source* refers to the ticket source (Web Portal, P, )
-- *priv_append* allows you to append information to the internal ticket note
-- *selections* refers to the checkboxes/radio buttons the client chose when creating the ticket
-- *contactName* refers to the client's name
-- *email* refers to the client's email
-- *ip* refers to the client's external ip address
-- *mac* refers to the client's MAC address
-- *hostname* refers to the client's hostname 
-- *issue* refers to the primary ticket issue
-- *subissue* refers ro the secondary ticket issue
+*impact & urgency*
+""""""""""""""""""""""
+
+	**Set priority via the SLA priority matrix:**
+
+Impact:
+
+.. image:: images/sn-impact.png
+   :target: https://docs.tier2tickets.com/_images/sn-impact.png
+
+|
+
+Urgency:
+
+.. image:: images/sn-urgency.png
+   :target: https://docs.tier2tickets.com/_images/sn-urgency.png
+
+|
+|
+
+*incidentState*
+"""""""""""""""
+
+	**Refers to the ticket status (New, In Progress, etc):**
+
+.. image:: images/sn-incidentState.png
+   :target: https://docs.tier2tickets.com/_images/sn-incidentState.png
+
+|
+|
+
+*priv_append*
+"""""""""""""
+
+	**Allows you to append information to the internal ticket note:**
+
+.. image:: images/sn-priv_append.png
+   :target: https://docs.tier2tickets.com/_images/sn-priv_append.png
+
+|
+|
+
+*callerID*
+""""""""""
+
+	**Refers to the client's name:**
+
+.. image:: images/sn-callerID.png
+   :target: https://docs.tier2tickets.com/_images/sn-callerID.png
+
+|
+|
+
+*issue*
+"""""""
+
+	**The primary ticket issue:**
+
+.. image:: images/sn-issue.png
+   :target: https://docs.tier2tickets.com/_images/sn-issue.png
+
+|
+|
+
+*subissue*
+""""""""""
+
+	**The secondary ticket issue:**
+
+.. image:: images/sn-subissue.png
+   :target: https://docs.tier2tickets.com/_images/sn-subissue.png
+
+|
+|
+
+*other*
+"""""""
+
+There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`

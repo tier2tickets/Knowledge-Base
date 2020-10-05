@@ -11,7 +11,7 @@ Website
 
 2020-02-07
 ~~~~~~~~~~
-* Implemented new 99.99% uptime guarantee `SLA <https://github.com/tier2tickets/Feedback/issues/48>`_
+* Implemented new 99.99% uptime guarantee `SLA <https://www.helpdeskbuttons.com/sla/>`_
 * Added Geo IP Whitelisting
 * Added Anonymous IP login Blocking
 * Added Breached Password Protection
@@ -57,6 +57,189 @@ Software
 
 
 
+
+.. raw:: html
+
+   <a name="1.1.12">&nbsp;</a>
+
+1.1.x.12
+~~~~~~~~
+
+* This version is still in development and has no release notes yet.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.11">&nbsp;</a>
+
+1.1.x.11
+~~~~~~~~
+
+* This version is still in development and has no release notes yet.
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.10">&nbsp;</a>
+
+1.1.x.10
+~~~~~~~~
+
+* Fixed the message on the last page "Thank you, {name}" where name would be incorrect in the case of unregistered user ticket submission
+* Fixed some formatting on the main landing page so that it better handles longer text.
+* Added support for GUI color customization by putting a "custom.css" file in the same place as the custom scripts
+* Made it impossible to start the software incorrectly by clicking the incorrect exe in the program installation directory
+* The software has been renamed to "Tier2Tickets" from "Helpdesk Buttons" (This applies retroactively to the entire 1.1 branch on new builds)
+* Changed the NTP server used for internal time-synchronization of t2t service from pool.ntp.org to time.google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.9">&nbsp;</a>
+
+1.1.x.9
+~~~~~~~~
+
+* fixed an edge case where the submission would hang forever if the t2tservice has never in the past been able to contact the server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.8">&nbsp;</a>
+
+1.1.x.8
+~~~~~~~~
+
+* fixed an edge case where a well-timed mouse-scroll during software startup would cause memory corruption and the buttonhelper process would stop responding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.7">&nbsp;</a>
+
+1.1.x.7
+~~~~~~~~
+
+* improved the exponential backoff logic in the Tier2Service websocket connection
+* added support for the windows certificate store to all TLS requests so that security software whitelisting is not as necessary
+* switched API version to 1.0 branch.
+* patched the websocket library to tolerate additional headers added by proxy servers to the authentication request.
+
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.6.12">&nbsp;</a>
+
+0.6.x.12
+~~~~~~~~
+
+* fixed: pid lock was broken and two copies of the software could be opened causing conflict and sometimes crashing
+* added support for the 'random' and 're' modules for tier2assist
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.6.10">&nbsp;</a>
+
+0.6.x.10
+~~~~~~~~
+
+* Added support for new Tier2Assist and Tier2Forms features
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="0.6.7">&nbsp;</a>
+
+0.6.x.7
+~~~~~~~
+
+* Fixed bug in which getting the last logged in user caused high CPU load on domain controllers
+* Fixed bug in which duplicate macs were created when the software is installed on hyper-v
+* Fixed bug in which the software would launch twice on a single button press on terminal servers in which there are two open sessions of the same username
+* Added GUI support for client-side custom rules
+
+
+
+
+
 .. raw:: html
 
    <a name="0.6.3">&nbsp;</a>
@@ -69,6 +252,7 @@ Software
 * Fixed issue where webroot would cause animation not to upload
 * Improved debug logging on failed diag data collection.
 * increased performance of the remote access tool.
+
 
 
 
@@ -293,7 +477,7 @@ Software
 ~~~~~~~
 
 * Added support international phone number validation
-* Added support for :ref:`content/privacy/customer-owned:Customer-Owned AWS Buckets`.
+* Added support for :ref:`content/privacy/customer-owned:Customer Controlled Amazon S3`.
 
 
 
