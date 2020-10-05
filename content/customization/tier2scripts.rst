@@ -63,7 +63,7 @@ custom.css (alpha)
 ------------------
 
 While CSS is not technically a scripting language, since it is `Turing Complete <https://stackoverflow.com/a/5239256/3238695>`_ then perhaps it belongs here too.
-The layout and colors in the GUI of the desktop application are dictated by CSS. The CSS which controls most of the look and feel of the GUI is located at "C:\Program Files (x86)\Tier2Tickets\resources\style.css" in most cases.
+The layout and colors in the GUI of the desktop application are dictated by CSS. The CSS which controls most of the look and feel of the GUI is located at "C:\\Program Files (x86)\\Tier2Tickets\\resources\\style.css" in most cases.
 The classes and variables in that file can be overridden by your own settings by putting them in a file named "custom.css" and uploading it as a script. As an example, here is a custom.css file which would make the GUI lime-green and terrible:
 
 Please note that the custom.css feature is considered to be an alpha release and the class names and variable names are subject to change without notice.
