@@ -27,6 +27,7 @@ Table Of Contents
 	content/integration/atera
 	content/integration/autotask
 	content/integration/connectwise
+	content/integration/erpnext
 	content/integration/freshdesk
 	content/integration/repairshopr
 	content/integration/kaseya
