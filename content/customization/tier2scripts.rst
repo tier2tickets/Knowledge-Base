@@ -101,7 +101,7 @@ As of version 1.1.12_ the fields in the gui are automatically populated by pulli
 (in the case of Microsoft Active Directory, Microsoft Exchange, or Novell Directory Services) or from Azure Active Directory.
 But this functionality can be extended or modified to make use of any data source by overriding the default identity provider with your own
 custom provider. To accomplish this, copy identity_provider.ps1 from the program installation directory
-(Typically "C:\Program Files (x86)\Tier2Tickets") and modify it to use your custom identity provider, and then upload it to the tier2scripts
+(Typically "C:\\Program Files (x86)\\Tier2Tickets") and modify it to use your custom identity provider, and then upload it to the tier2scripts
 portion of our account portal. (make sure to maintain the filename: identity_provider.ps1). A typical use-case for overriding the default 
 identity-provider is for integrating with Enterprise Single Sign On applications or 3rd-party LDAP solutions such as OpenLDAP.
 
