@@ -80,7 +80,7 @@ Update Shortcut Icons on Install
 
 	############################ EDIT YOUR SETTINGS HERE ###########################
 
-	$iconName = 'Poogle Prome.lnk'
+	$iconName = 'My Helpdesk.lnk'
 
 
 	############################# DONT EDIT BEYONE HERE ############################
@@ -92,27 +92,4 @@ Update Shortcut Icons on Install
 
 	exit 0
 	
-Make sure to change the iconName to something more fitting than *Poogle Prome.lnk*
-
-
-custom.css (alpha)
-------------------
-
-While CSS is not technically a scripting language, since it is `Turing Complete <https://stackoverflow.com/a/5239256/3238695>`_ then perhaps it belongs here too.
-The layout and colors in the GUI of the desktop application are dictated by CSS. The CSS which controls most of the look and feel of the GUI is located at "C:\\Program Files (x86)\\Tier2Tickets\\resources\\style.css" in most cases.
-The classes and variables in that file can be overridden by your own settings by putting them in a file named "custom.css" and uploading it as a script. As an example, here is a custom.css file which would make the GUI lime-green and terrible:
-
-Please note that the custom.css feature is considered to be an alpha release and the class names and variable names are subject to change without notice.
-If you rely on this feature, make sure to check that no breaking changes have been implemented before deploying new future versions to production.
-
-.. code-block:: css
-
-   @const hdb_green: #de69ac; 
-   @const hdb_greendark: #e591c1; 
-   @const hdb_black: #d8d8d8;
-   @const hdb_red: #14a8a8; 
-   @const hdb_teal: #f2804d; 
-   @const hdb_tealdark: #ffb38e;
-   @const hdb_grey: #0dfd0d;
-   @const hdb_greydark: #848484;
-   @const hdb_white: #00f000;
+Make sure to change the iconName to something more fitting than *My Helpdesk.lnk*
