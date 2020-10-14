@@ -56,6 +56,6 @@ Contributing
 If you would like to help improve our products by submitting a bug report, please
 file them on our official github page_. For feature requests, please post here_.
 
-.. _here: https://community.tier2tickets.com/categories/feature-requests
+.. _here: https://community.tier2tickets.com/
 
 .. _page: https://github.com/tier2tickets/feedback/issues

@@ -35,7 +35,7 @@ Uploads
 -------
 
 General file uploads are supported as well. Any file that is put into the upload folder will be added to the report as an
-attachment. For exmaple, give this a try.
+attachment. For example, give this a try.
 
 .. code-block:: powershell
 
@@ -62,7 +62,7 @@ will never complete.
 Example install.ps1 Scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We reccomend using inline parameters for customizing the name of the helpdesk buttons desktop shortcut, but if you want to 
+We recommend using inline parameters for customizing the name of the helpdesk buttons desktop shortcut, but if you want to 
 customize this shortcut for installs that come via helpdesk button extended press this would work.
 
 Update Shortcut Icons on Install
