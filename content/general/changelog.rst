@@ -65,7 +65,7 @@ Software
 1.1.x.12
 ~~~~~~~~
 
-* Added integration with Microsoft Active Directory, Azure Active Directory, Novell Directory Services, Microsoft Exchange, and :ref:`custom identity providers <content/customization/tier2scripts:identity_provider.ps1>`
+* Added integration with Microsoft Active Directory, Azure Active Directory, Novell Directory Services, Microsoft Exchange, and :ref:`Custom Identity Providers <content/customization/tier2scripts:identity_provider.ps1>`
 
 
 
