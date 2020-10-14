@@ -59,10 +59,10 @@ NOTE: make sure that the script returns! If your script gets stuck, waiting on u
 will never complete.
 
 
-Example install.ps1 Scripts
+Example install.ps1 Script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We recommend using inline parameters for customizing the name of the helpdesk buttons desktop shortcut, but if you want to 
+We recommend using inline parameters for customizing the name of the tier2tickets desktop shortcut, but if you want to 
 customize this shortcut for installs that come via helpdesk button extended press this would work.
 
 Update Shortcut Icons on Install
@@ -72,7 +72,7 @@ Update Shortcut Icons on Install
 
 	#########################install.ps1############################################
 	#
-	# This is an insall script that will allow you to change the default shortcut 
+	# This is an install script that will allow you to change the default shortcut 
 	# name
 	# 
 	#
@@ -93,3 +93,16 @@ Update Shortcut Icons on Install
 	exit 0
 	
 Make sure to change the iconName to something more fitting than *My Helpdesk.lnk*
+
+identity_provider.ps1
+---------------------
+
+As of version 1.1.12_ the fields in the gui are automatically populated by pulling the information from the computer root LDAP provider
+(in the case of Microsoft Active Directory, Microsoft Exchange, or Novell Directory Services) or from Azure Active Directory.
+But this functionality can be extended or modified to make use of any data source by overriding the default identity provider with your own
+custom provider. To accomplish this, copy identity_provider.ps1 from the program installation directory
+(Typically "C:\Program Files (x86)\Tier2Tickets") and modify it to use your custom identity provider, and then upload it to the tier2scripts
+portion of our account portal. (make sure to maintain the filename: identity_provider.ps1). A typical use-case for overriding the default 
+identity-provider is for integrating with Enterprise Single Sign On applications or 3rd-party LDAP solutions such as OpenLDAP.
+
+.. _1.1.12: https://docs.tier2tickets.com/content/general/changelog/#1.1.12

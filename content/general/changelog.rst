@@ -65,7 +65,7 @@ Software
 1.1.x.12
 ~~~~~~~~
 
-* This version is still in development and has no release notes yet.
+* Added Active Directory integration and support for :ref:`custom identity providers <content/customization/tier2scripts:identity_provider.ps1>`
 
 
 
@@ -82,7 +82,7 @@ Software
 1.1.x.11
 ~~~~~~~~
 
-* This version is still in development and has no release notes yet.
+* Phone number validation now supports the international number format so that all countries can use the software.
 
 
 
