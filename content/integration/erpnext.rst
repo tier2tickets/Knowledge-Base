@@ -4,9 +4,11 @@ This guide will show you how to set up your new Helpdesk Buttons with ERPNext.
 
 ERPNext integration requires two main parts:
 
-:ref:`1) Create API KEY. <content/integration/ERPNext:Create an API KEY>`
+ref:`1) Create API KEY. <content/integration/ERPNext:Create an Unregistered User>`
 
-:ref:`2) Add API Settings to Helpdesk Buttons Platform. <content/integration/ERPNext:Helpdeskbuttons.com Settings>`
+:ref:`2) Create API KEY. <content/integration/ERPNext:Create an API KEY and SECRET>`
+
+:ref:`3) Add API Settings to Helpdesk Buttons Platform. <content/integration/ERPNext:Helpdeskbuttons.com Settings>`
 
 .. raw:: html
 
@@ -15,13 +17,46 @@ ERPNext integration requires two main parts:
         <iframe width="560" height="315" src="https://www.youtube.com/embed/n7gDwhauMbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 	-->
+
+Video Walkthrough
+-----------------------------
 	
 .. image:: images/coming_soon.png
 
+Create an Unregistered User
+------------------------------------
 
-Create an API KEY
---------------------------
+Create a Customer to recieve 'Catch All' tickets and add a Contact to that Customer with the email address 
 
+*unregistered@helpdeskbuttons.com*
+
+.. image:: images/ERPNext-contact.png
+
+This is in case someone puts in an email that is not already in ERPNext, this will also prompt the GUI to ask for identifying information from the end user. 
+
+
+
+
+Create an API KEY and SECRET
+----------------------------------------------
+
+To create the API KEY for ERPNext:
+
+Click Settings -> My Settings -> API Access
+
+You can create a key by clicking the "Generate Keys" Button.
+
+Copy down the API Secret as it cannot be viewed again. 
+
+.. image:: images/ERPNext-secret.png
+
+If the API Key does not show up try logging out, then back in.
+
+You should see something like this when you have successfully created a key pair.
+
+.. image:: images/ERPNext-key.png
+
+Copy the API Key as you will need that to complete the integration. 
 
 
 Helpdeskbuttons.com Settings
@@ -29,7 +64,7 @@ Helpdeskbuttons.com Settings
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
-*business_name.erpnext.com*
+for cloudhosted instances: *business_name.erpnext.com*
 
 Your API key is formatted as shown 
 
