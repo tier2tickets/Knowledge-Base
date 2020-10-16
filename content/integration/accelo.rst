@@ -2,11 +2,8 @@ Accelo Integration
 ===================
 This guide will show you how to set up your new Helpdesk Buttons with Accelo.
 
-Accelo integration requires two main parts:
-
-:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/accelo:Unregistered User>`
-
-:ref:`2) set up the API integration. <content/integration/accelo:Create an Application User>`
+Video Walkthrough
+-----------------------------
 
 .. raw:: html
 

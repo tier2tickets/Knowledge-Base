@@ -34,7 +34,6 @@ Table Of Contents
 	content/integration/osticket
 	content/integration/servicenow
 	content/integration/zendesk
-	content/integration/advanced
 
 .. toctree::
 	:caption: Deployment

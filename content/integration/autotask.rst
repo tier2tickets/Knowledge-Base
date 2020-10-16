@@ -2,11 +2,8 @@ Autotask Integration
 =====================
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. You will need an administrative login for Autotask. 
 
-Autotask integration requires two main parts:
-
-:ref:`1) set up the API integration. <content/integration/autotask:API User>`
-
-:ref:`2) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/autotask:Unregistered User>`
+Video Walkthrough
+-----------------------------
 
 .. raw:: html
 

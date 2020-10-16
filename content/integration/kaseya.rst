@@ -2,11 +2,8 @@ Kaseya Integration
 ================================
 This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
 
-Kaseya integration requires two main parts:
-
-:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/kaseya:Unregistered User>`
-
-:ref:`2) set up the API integration. <content/integration/kaseya:Create an API User>`
+Video Walkthrough
+-----------------------------
 
 .. raw:: html
 

@@ -2,13 +2,8 @@ Freshdesk / Freshservice Integration
 =====================================
 This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons.
 
-Freshdesk/FreshService integration requires two main parts:
-
-:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/freshdesk:Unregistered User>`
-
-:ref:`2) set up the API integration. <content/integration/freshdesk:Getting an API Key>`
-
-This video shows the Freshdesk integration, but Freshservice should be very similar.
+Video Walkthrough
+-----------------------------
 
 .. raw:: html
 

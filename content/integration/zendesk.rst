@@ -2,13 +2,8 @@ Zendesk Integration
 ========================
 This guide will show you how to set up your new Helpdesk Buttons with Zendesk.
 
-Zendesk integration requires two main parts:
-
-:ref:`1) set up an unregistered user as a catchall account as a contact in your PSA <content/integration/zendesk:Unregistered User>`
-
-:ref:`2) set up the API integration. <content/integration/zendesk:Enable API Access and Create a new Key>`
-
-:ref:`3) configure helpdeskbuttons account. <content/integration/zendesk:Helpdeskbuttons.com Settings>`
+Video Walkthrough
+-----------------------------
 
 .. raw:: html
 

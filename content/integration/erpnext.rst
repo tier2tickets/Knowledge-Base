@@ -2,14 +2,6 @@ ERPNext Integration
 ===================
 This guide will show you how to set up your new Helpdesk Buttons with ERPNext.
 
-ERPNext integration requires two main parts:
-
-:ref:`1) Create Unregistered User. <content/integration/ERPNext:Create an Unregistered User>`
-
-:ref:`2) Create API KEY. <content/integration/ERPNext:Create an API KEY and SECRET>`
-
-:ref:`3) Add API Settings to Helpdesk Buttons Platform. <content/integration/ERPNext:Helpdeskbuttons.com Settings>`
-
 .. raw:: html
 
 	<!--
