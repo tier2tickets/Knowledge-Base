@@ -64,11 +64,6 @@ Your API key is formatted as shown
 
 Click Update and the Integration Test button to send a test ticket. 
 
-Integration Defaults
------------------------------------
-
-Please note that defaults for priority, type, and standing must be set for this integration to work properly.
-
 
 Anti-Virus and AntiMalware
 -----------------------------
