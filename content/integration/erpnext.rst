@@ -185,7 +185,7 @@ Field Definitions
 
 	**Additional information provided if the user is not found in ERPNext**
 	
-.. image:: images/coming_soon.png
+.. image:: images/ERPNext-input.png
 
 
 *other*
