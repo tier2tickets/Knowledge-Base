@@ -52,7 +52,7 @@ You can do this in the Admin Menu > API > API Tokens
 
 Once you are there, click on the New Token button and Custom Permissions
 
-Fill out the name as you like, and we reccomend leaving the expiration blank to make a key that does not have to be recreated/renewed.
+Fill out the name as you like, and we recommend leaving the expiration blank to make a key that does not have to be recreated/renewed.
 
 .. image:: images/rs-image-3.png
 
