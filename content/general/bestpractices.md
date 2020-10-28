@@ -1,7 +1,7 @@
 # Best Practices For Client Adoption
 Many users will start using Helpdesk Buttons and Tier2Tickets easily with no instruction at all. However, you may have some users who are used to putting in tickets in certain ways (or not at all!). In order to maximize adoption and get the biggest benefit from the Tier2Tickets software, we recommend the following:
 
-_**<span style="font-size:1.5em;">If Tier2Tickets is not a part of your process or your techs aren't used to looking at the link or it isn't consistent then it won't get a lot of use and you will be disappointed with the outcome. So we recommend a full deployment.  We offer a lot of specialty onboarding services to ensure a smooth launch.</span>**_
+_**<span style="font-size:1.5em;">If Tier2Tickets is not a part of your standard process or your techs aren't used to looking at the link or it isn't consistent then it won't get a lot of use and you will be disappointed with the outcome. So we recommend a full deployment.  We offer a lot of specialty onboarding services to ensure a smooth launch.</span>**_
 
 ## 1) Use Tier2Tickets/Helpdesk Buttons for User Verification and Immediate Diagnostic submission.
 While easy and requiring no training, the single best way to encourage user adoption is to give end users intentional practice using this new process. When a user calls to submit a ticket or attempts to grab a technician in the hallway, train your techs to guide the user to trigger the Tier2Tickets/Helpdesk Buttons software and walk them through the process. You will then have automatic documentation and diagnostics on the user's problem, and in the case of phone calls, it's a great way to affirm the user's identity and workstation.  
