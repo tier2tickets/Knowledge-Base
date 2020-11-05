@@ -23,6 +23,7 @@ Table Of Contents
 	:caption: Integration
 	:maxdepth: 0
 
+	content/integration/4me
 	content/integration/accelo
 	content/integration/atera
 	content/integration/autotask

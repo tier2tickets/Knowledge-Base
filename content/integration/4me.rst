@@ -1,0 +1,73 @@
+4me Integration
+===================
+This guide will show you how to set up your new Helpdesk Buttons with 4me.
+
+4me integration requires two main parts:
+
+Video Walkthrough
+-----------------------------
+.. raw:: html
+
+    <!--<div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n7gDwhauMbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>-->
+
+.. image:: images/coming_soon.png
+
+Create an Access Token
+--------------------------
+
+*Make sure to do this on an account that has access to all tickets* 
+To do this click the user icon in the top right corner and select My Profile: 
+
+.. image:: images/4me-1.png
+
+Next click on Personal Access Tokens
+
+.. image:: images/4me-2.png
+
+Click New and add a name and permissions to the key as shown:
+
+.. image:: images/4me-3.png
+
+-Account -> Read Only
+-Person -> Read Only
+-Requeest -> Create, Read, Update
+
+Now click generate. The final screen will show you the key needed for the integration. This cannot be recovered so keep it in a safe place
+
+.. image:: images/4me-4.png
+
+Helpdeskbuttons.com Settings
+-------------------------------
+
+Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
+
+*api.instancename.com*
+
+The api key will be of this form:
+
+*account:key*
+
+The account refers to the part of 4me with access to requests (in the demo this is "wdc" for widget data center). The key is what we generated in the steps above.
+
+the example we just made looks like this:
+
+wdc:tier2tickets-nJVcylD...
+
+Click Update to save your changes
+
+The Integration Test button can send in a test ticket to test to make sure everything works. 
+
+
+Anti-Virus and AntiMalware
+-----------------------------
+It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
+
+
+Dispatcher Rules
+-----------------------------------------------
+
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
+
+.. image:: images/coming_soon.png
