@@ -2,8 +2,6 @@
 ===================
 This guide will show you how to set up your new Helpdesk Buttons with 4me.
 
-4me integration requires two main parts:
-
 Video Walkthrough
 -----------------------------
 .. raw:: html
