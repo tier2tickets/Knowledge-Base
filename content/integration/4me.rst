@@ -14,6 +14,24 @@ Video Walkthrough
 
 .. image:: images/coming_soon.png
 
+Unregistered User
+----------------------------------
+
+To start you will need to set up a "Catch all" contact for users not aleady in your system.
+
+Click on the Third Icon and select People
+
+.. image:: images/4me_unregistered1.png
+
+and Click Add user in the top left corner and fill out the Name and email address of the users
+
+You can name the contact whatever you want, but the email address needs to be:
+
+unregistered@helpdeskbuttons.com
+
+.. image:: images/4me_unregistered2.png
+
+
 Create an Access Token
 --------------------------
 
