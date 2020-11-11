@@ -305,9 +305,10 @@ You will want to create a new one. We don't actualy need the credentials.
 
 On this screen make sure to fillout the fields as described: 
 
--Access Level: All Records
+- Access Level: All Records
 
--API Name: Service Ticket
+- API Name: Service Ticket
+
 	- Callback URL: The URL on the Notification Page in the Helpdeskbutton portal.
 
 	- Service Board: The board you want the Notifications to function on. 
