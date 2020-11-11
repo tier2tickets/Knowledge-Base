@@ -43,7 +43,7 @@ Note: *Some of these fields are not specified in the event by the ticket system 
 Set up a Webhook or Callback in your ticket system
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Each ticket system will be a bit different for how this is done, so check the individual integration pages for instructions for your PSA. 
+Each ticket system will be a bit different for how this is done, so check the individual integration documentation pages for instructions specific to your PSA. 
  
 
 

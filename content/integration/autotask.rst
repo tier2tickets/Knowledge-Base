@@ -2,8 +2,8 @@ Autotask Integration
 =====================
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. You will need an administrative login for Autotask. 
 
-Video Walkthrough
------------------------------
+Initial Setup Video Walkthrough
+-------------------------------------
 
 .. raw:: html
 
@@ -121,8 +121,8 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 
 
 
-Field Definitions
-^^^^^^^^^^^^^^^^^
+Rule Field Definitions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *priority*
 """"""""""
@@ -238,3 +238,64 @@ Field Definitions
 """""""
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
+
+Setting up Webhooks
+-----------------------------
+
+Autotask does not yet have webhooks for ticket events, but we can simulate this functionality (with a delay of 30 minutes or so) by integrating your Autotask instance with Zapier. This will require a premium Zapier account. Once webhooks are implemented by Autotask for ticket events, we will be able to use them instead of this workaround.
+
+These are Zaps you might need
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`New Ticket Event <https://zapier.com/app/editor/template/375374>`_
+
+`Ticket Update Event <https://zapier.com/app/editor/template/375403>`_
+
+`Ticket Note Event <https://zapier.com/app/editor/template/375427>`_
+
+For each of the Zaps you want to enable, you will have to perform simple steps. You will need access to our backend and Zapier.
+
+Step By Step Instructions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Connect Zapier to Autotask
+"""""""""""""""""""""""""""""""""""""""""
+This is the first screen you should see once you are logged in. 
+
+.. image:: images/autotask_zapier/first_screen.png
+
+If you already have a connection with your Autotask instance you can select it here. if not you will need to connect your Autotask instance to Zapier via a username and password.
+
+.. image:: images/autotask_zapier/add_credentials.png
+
+This is an optional step but it is recommended: Once you have chosen your connection, you can test that connection by clicking the test button and following the instructions, in this case they want you to put in a new test ticket. 
+
+.. image:: images/autotask_zapier/test_connection.png
+
+Give Zapier Your Webhook URL
+""""""""""""""""""""""""""""""""""""""""""""
+
+Next you want to go to our back end and get the URL for your webhooks to go to. This will be on the `Notification <https://account.helpdeskbuttons.com/notifications.php>`_ page under Automations
+
+It should be listed at the top of the page:
+
+.. image:: images/autotask_zapier/sample_url.png
+
+In Zapier, click on the second Action (Post), 
+
+Copy and paste this URL in URL field in the section called Customize Request, and make sure the Payload type it Json:
+
+.. image:: images/autotask_zapier/customize_request.gif
+
+This is an optional step but it is recommended: The Sent data section can test your setup by sending a hook to your url. Once you have made sure the request if set up, try sending the request to your url by clicking the test button.
+
+Hopefully you see a message indicating a successful test.
+
+.. image:: images/autotask_zapier/webhook_test.png
+
+Turn on your Zap
+"""""""""""""""""""""""""""""""
+
+Make sure to turn on your Zap by clicking either the toggle on the bottom of the screen or the one next to the share button at the top.
+
+.. image:: images/autotask_zapier/zap_on.png
