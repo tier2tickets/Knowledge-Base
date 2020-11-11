@@ -305,18 +305,16 @@ You will want to create a new one. We don't actualy need the credentials.
 
 On this screen make sure to fillout the fields as described: 
 
-Access Level: All Records
-API Name: Service Ticket
+-Access Level: All Records
+
+-API Name: Service Ticket
 	- Callback URL: The URL on the Notification Page in the Helpdeskbutton portal.
+
 	- Service Board: The board you want the Notifications to function on. 
 	
 Click Save and you are all done.
 
-.. raw:: html
-
-	<div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe width="560" height="315" src="https://docs.tier2tickets.com/content/integration/images/connectwise_callback.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
+.. image:: images/connectwise_callbacks.gif
 
 
 
