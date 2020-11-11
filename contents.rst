@@ -50,16 +50,18 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/customization/branding
-	content/customization/tier2scripts
 	content/customization/version-numbers
 
 .. toctree::
 	:caption: Automations
 	:maxdepth: 0
 	
+	content/automations/tier2scripts
 	content/automations/dispatcher
 	content/automations/tier2assist
 	content/automations/tier2forms
+	content/automations/notifications
+	
 	
 
 .. toctree::
