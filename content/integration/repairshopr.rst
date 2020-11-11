@@ -201,3 +201,24 @@ Field Definitions
 """""""
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
+
+
+Set Up a Webhook
+-----------------------------------
+
+To do this in Syncro/RepairShopr, go to Admin -> Notification Center
+
+You will want to create a new Notification set.
+
+Name it whatever you like and set the URL to the one on the Notification Page in the Helpdeskbutton portal.
+
+Scroll through the list of events and enable webhooks for:
+	
+	- Ticket : Someone replied to any ticket
+	- Ticket : Status was changed
+	
+*Status changes already include creating a new ticket and resolving a ticket.*
+
+Make sure you save your changes.
+
+.. image:: images/repairshopr_webhooks.gif
