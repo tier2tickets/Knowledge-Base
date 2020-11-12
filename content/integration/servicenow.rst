@@ -153,3 +153,9 @@ Urgency:
 """""""
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
+
+
+Webhook Walkthrough
+----------------------------------------------
+
+.. image:: images/coming_soon.png

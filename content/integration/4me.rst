@@ -89,3 +89,9 @@ Dispatcher Rules
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
 .. image:: images/coming_soon.png
+
+
+Webhook Walkthrough
+----------------------------------------------
+
+.. image:: images/coming_soon.png

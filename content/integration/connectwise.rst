@@ -295,7 +295,6 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 
-
 Setting up a Callback (Webhook)
 ------------------------------------------------
 
