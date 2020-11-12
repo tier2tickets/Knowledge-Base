@@ -2,6 +2,12 @@ osTicket Integration
 =====================
 This guide will show you how to set up osTicket to work with your new Helpdesk Buttons.
 
+osTicket integration requires two main parts:
+
+`1) set up the API integration. <https://docs.tier2tickets.com/content/integration/osticket/#create-your-api-keys>`_
+
+`2) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/osticket/#helpdeskbutton-com-settings>`_
+
 Video Walkthrough
 -----------------------------
 
