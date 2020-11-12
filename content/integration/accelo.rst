@@ -1,9 +1,13 @@
-Accelo Integration
-===================
+Accelo Documentaion
+==============================
 This guide will show you how to set up your new Helpdesk Buttons with Accelo.
 
+Integration
+--------------------------------------
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 .. raw:: html
 
@@ -11,8 +15,8 @@ Video Walkthrough
         <iframe width="560" height="315" src="https://www.youtube.com/embed/n7gDwhauMbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-Unregistered User
-------------------
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start you will need to set up a "Catch all" contact for users not aleady in your system.
 
@@ -30,8 +34,8 @@ unregistered@helpdeskbuttons.com
 
 .. image:: images/accelo7.png
 
-Create an Application User
---------------------------
+2) Create an Application User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To do this click the Configuration Gear in the botton left corner: 
 
@@ -49,8 +53,8 @@ The final screen will show you the API user and API secret for the integration. 
 
 .. image:: images/accelo4.png
 
-Helpdeskbuttons.com Settings
--------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
@@ -63,18 +67,18 @@ Your API key is formatted as shown
 Click Update and the Integration Test button to send a test ticket. 
 
 Integration Defaults
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Please note that defaults for priority, type, and standing must be set for this integration to work properly.
 
 
 Anti-Virus and AntiMalware
-========================================================================
+--------------------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 Dispatcher Rules
-========================================================================
+--------------------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -212,6 +216,6 @@ There are additional variables which are common to all integrations. Those are d
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA
 
 Webhook Walkthrough
-========================================================================
+--------------------------------------
 
 .. image:: images/coming_soon.png

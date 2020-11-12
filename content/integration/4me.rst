@@ -1,10 +1,13 @@
-4me Integration
-===================
+4me Documentaion
+=========================================================
 This guide will show you how to set up your new Helpdesk Buttons with 4me.
 
 
+Integration
+--------------------------
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. raw:: html
 
     <!--<div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
@@ -14,8 +17,9 @@ Video Walkthrough
 .. image:: images/coming_soon.png
 
 
-Unregistered User
-----------------------------------
+
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start you will need to set up a "Catch all" contact for users not aleady in your system.
 
@@ -32,8 +36,8 @@ unregistered@helpdeskbuttons.com
 .. image:: images/4me_unregistered2.png
 
 
-Create an Access Token
---------------------------
+2) Create an Access Token
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Make sure to do this on an account that has access to all tickets* 
 To do this click the user icon in the top right corner and select My Profile: 
@@ -56,8 +60,8 @@ Now click generate. The final screen will show you the key needed for the integr
 
 .. image:: images/4me-4.png
 
-Helpdeskbuttons.com Settings
--------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
@@ -79,12 +83,12 @@ The Integration Test button can send in a test ticket to test to make sure every
 
 
 Anti-Virus and AntiMalware
-========================================================================
+----------------------------------------------------------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 Dispatcher Rules
-========================================================================
+----------------------------------------------------------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -92,6 +96,6 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 
 
 Webhook Walkthrough
-========================================================================
+----------------------------------------------------------------------------
 
 .. image:: images/coming_soon.png

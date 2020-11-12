@@ -1,9 +1,12 @@
-Freshdesk / Freshservice Integration
-=====================================
+Freshdesk / Freshservice Documentaion
+=============================================
 This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons.
 
+Integration
+-------------------
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
@@ -12,8 +15,10 @@ Video Walkthrough
     </div>
 
 
+
+
 Unregistered User
--------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 By default, our software attempts to pair users with their contact information by checking with Freshdesk/Freshservice. If the user is not already found in the system
 a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Integration Defaults <content/integration/freshdesk:Integration Defaults>` below.
 
@@ -21,7 +26,7 @@ This guide assumes you want to use the catch all contact:
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. In our system it’s “Mystery Human”.
 
 Getting an API Key
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 On the left of your screen, click the admin button.
 
 .. image:: images/fd-image-1.png
@@ -45,7 +50,7 @@ In the upper right, you will see ‘Your API Key’
 Please take note of this API Key, you will need it in a little bit.
 
 Helpdeskbuttons.com Setup 
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The next step is to sign into your Helpdeskbuttons.com account and enter this information under Settings->Backend Information
 
@@ -58,21 +63,23 @@ Enter your Ticket System API endpoint and the Ticket System API Key. Your Ticket
 Click update once you are done. At this point, your Freshdesk / FreshService instance will be ready to go with your Helpdesk Buttons.
 
 Access Restrictions
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 
 Integration Defaults
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
 
 Anti-Virus and AntiMalware
-========================================================================
+--------------------------------------
+
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 Dispatcher Rules
-========================================================================
+----------------------------------------------------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -309,6 +316,6 @@ FreshService:
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 Webhook Walkthrough
-========================================================================
+----------------------------------------------------------------------
 
 .. image:: images/coming_soon.png

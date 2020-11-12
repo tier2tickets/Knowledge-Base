@@ -1,19 +1,23 @@
-Repairshopr / Syncro Integration
-================================
+Repairshopr / Syncro Documentation
+=========================================
 
 Setting up Helpdesk Buttons with Repairshopr or Syncro is easy. 
 
+Integration
+--------------------------
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PA6yZ8b5Wec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+	
 
-Unregistered User
---------------------
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users. 
 
@@ -22,7 +26,7 @@ You can name the account whatever you want. In our system it’s “Mystery Huma
 This can be a customer or a contact under a customer.
 
 Multiple Contacts per client
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Note: This is no longer strictly necessary, but users will have to put in the email address of the customer instead of thier own address.
 
@@ -41,8 +45,8 @@ Click Customer Settings and check the box labeled, enable multiple contacts on c
 .. image:: images/rs-admin3.png
 
 
-Get your API Key
-----------------------
+2) Get your API Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Next you will need to create a Repairshopr or Syncro API key.
 
@@ -59,7 +63,7 @@ Fill out the name as you like, and we recommend leaving the expiration blank to 
 You will have to add the permissions of the key explicitly. The permissions the key will need are as follows:
 
 API Access Settings
---------------------
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
 - Customers List/Search: For gathering company data like street addresses from companies
 - Customers View Details: For gathering contact data like email addresses from contacts
@@ -71,8 +75,8 @@ Keep in mind that this list is based on the current feature set. With the expans
 
 Once you have created the key copy it for the next step.
 
-Helpdeskbuttons.com Settings
-------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you have the API key, you will need to adjust your settings in the Helpdeskbutton website.
 

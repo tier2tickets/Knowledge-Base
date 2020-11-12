@@ -1,18 +1,22 @@
-Connectwise Manage Integration
-================================
+Connectwise Manage Documentation
+======================================
 
 This guide will show you how to set up your new Helpdesk Buttons with ConnectWise Manage.
 
+Integration
+--------------------------
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ip2IhU8EqPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-Unregistered User
--------------------
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will start off by logging into your ConnectWise Manage instance. The first step is to create a dummy company to catch tickets from unregistered users (If you already have a catch all that can submit tickets feel free to use that company). Fill out the required fields with your companies information and remember to click save.  You might name the company “unregistered users” or something to that effect.
 
@@ -36,8 +40,8 @@ This is the user which any Button Press tickets appear to come from if the user 
 
 You are now done setting up your company and contact.
 
-Get an API Key
-------------------
+2) Get an API Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Next step is to create an API key.
 
@@ -73,8 +77,8 @@ Be sure to copy both the Public and Private Keys
 
 Once this has been set up, you will have all the information required.
 
-Helpdeskbuttons.com Settings
-------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Log into your Helpdeskbuttons.com account. Select settings and then Backend Information
 
@@ -109,14 +113,14 @@ Once you have entered the correct information on the Helpdeskbutton page, make t
 Test by submitting a ticket using the button.
 
 Manage Configurations (BETA)
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Our Software will attempt to attach configurations from the users company whose device id's match the hostname of the computer submitting the ticket.
 
 
 
 API Access Settings
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For those of you who want to restrict the access the API user has, here is the security access we need: (a custom role will need to be created and assigned to us with these permissions):
 
@@ -139,7 +143,7 @@ The group is based on your company, but it can be tricky. We recommend leaving t
 Keep in mind that this list is based on the current feature set. With the expansion of the product, different security settings may need to be tweaked in the future.
 
 Integration Defaults
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Many of the fields can be set to "__default__"
 
@@ -148,13 +152,13 @@ do not use the "__default__" Board. Please provide the Board by name (This also 
 
 
 Anti-Virus and AntiMalware
-=====================================================================
+----------------------------------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 
 Dispatcher Rules
-========================================================================
+--------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -298,7 +302,7 @@ There are additional variables which are common to all integrations. Those are d
 
 
 Setting up a Callback (Webhook)
-========================================================================
+----------------------------------------------------
 
 To do this in Manage, go to System -> Setup Tables -> Integrator Login
 

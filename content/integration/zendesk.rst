@@ -1,6 +1,9 @@
-Zendesk Integration
+Zendesk Documentation
 ========================
 This guide will show you how to set up your new Helpdesk Buttons with Zendesk.
+
+Integration
+--------------------------
 
 Zendesk integration requires three main parts:
 
@@ -10,8 +13,9 @@ Zendesk integration requires three main parts:
 
 `3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/zendesk/#helpdeskbuttons-com-settings>`_
 
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
@@ -21,8 +25,8 @@ Video Walkthrough
 
 
 
-Unregistered User
-------------------
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start you will need to set up a "Catch all" contact for users not aleady in your system.
 
@@ -35,8 +39,8 @@ The only really important part is the email address. It needs to be “unregiste
 .. image:: images/zd-image4.png
 
 
-Enable API Access and Create a new Key
----------------------------------------
+2) Enable API Access and Create a new Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You may need to enable API access into users by API token.
 
@@ -54,8 +58,8 @@ Click the plus sign to add a new key.
 You can label it anything you want, but make sure to put that key somewhere safe, it only appears once. 
 
 
-Helpdeskbuttons.com Settings
--------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
@@ -68,11 +72,11 @@ Click update and the Integration Test button.
 Let us know how to get in touch with your development team for feature requests and additional customizations! We are happy to get you set up with customized software.
 
 Anti-Virus and AntiMalware
-================================================
+----------------------------------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 Dispatcher Rules
-========================================================================
+--------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -189,7 +193,7 @@ The fields labeled input_* contain information typed by the user only in the eve
 
 
 Webhook Walkthrough
-========================================================================
+----------------------------------------------------
 
 .. image:: images/coming_soon.png
 

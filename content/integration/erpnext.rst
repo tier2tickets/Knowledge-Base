@@ -1,10 +1,13 @@
-ERPNext Integration
-===================
+ERPNext Documentaion
+======================================
 This guide will show you how to set up your new Helpdesk Buttons with ERPNext.
 
 
+Integration
+--------------------------
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 	
 .. raw:: html
 
@@ -13,8 +16,8 @@ Video Walkthrough
     </div>
 
 
-Create an Unregistered User
-------------------------------------
+1) Create an Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a Customer to recieve 'Catch All' tickets and add a Contact to that Customer with the email address 
 
@@ -27,8 +30,8 @@ This is in case someone puts in an email that is not already in ERPNext, this wi
 
 
 
-Create an API KEY and SECRET
-----------------------------------------------
+2) Create an API KEY and SECRET
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To create the API KEY for ERPNext:
 
@@ -49,8 +52,8 @@ You should see something like this when you have successfully created a key pair
 Copy the API Key as you will need that to complete the integration. 
 
 
-Helpdeskbuttons.com Settings
--------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
@@ -64,12 +67,12 @@ Click Update and the Integration Test button to send a test ticket.
 
 
 Anti-Virus and AntiMalware
-========================================================================
+----------------------------------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 Dispatcher Rules
-========================================================================
+----------------------------------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -194,6 +197,6 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 Webhook Walkthrough
-========================================================================
+--------------------------
 
 .. image:: images/coming_soon.png

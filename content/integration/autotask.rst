@@ -2,8 +2,11 @@ Autotask Integration
 =====================
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. You will need an administrative login for Autotask. 
 
-Initial Setup Video Walkthrough
--------------------------------------
+Integration
+--------------------------
+
+Video Walkthrough
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
@@ -11,8 +14,8 @@ Initial Setup Video Walkthrough
         <iframe width="560" height="315" src="https://www.youtube.com/embed/096i4ZVAThQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-API User
-----------
+1) API User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The first step involves configuring an API user in Autotask. 
 
 In the main Autotask menu, select Admin and then Resources. 
@@ -25,8 +28,8 @@ Set up the account as normal. Make sure that the Security Level is set to 'API U
 
 .. image:: images/at-image-04.png
 
-Unregistered User
-------------------
+2) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will also have to create a contact for any unregistered users to show up as when they submit a ticket.
 
@@ -47,8 +50,8 @@ When you are finished, click ‘Save and Close’.
 
 With that finished, now you will need to configure your information on the Helpdesk Button website. 
 
-Helpdeskbuttons.com Settings
------------------------------
+3) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/settings.php 
 
@@ -70,10 +73,10 @@ Once you have entered this information, click Update.
 
 At this point, the integration should be working. You can test this by pressing the button and submitting a ticket.
 
-If you have trouble, give us a call and we can remote in you (833) 328-8866
+If you have trouble, give us a call and we can remote in and help you (833) 328-8866
 
 API Access Settings
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For those of you who want to restrict the access the API user has, here is the security access we need: (a custom security level will need to be created and assigned to us with these permissions):
 

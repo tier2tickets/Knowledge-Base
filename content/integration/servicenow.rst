@@ -1,5 +1,8 @@
-ServiceNow Integration
-========================
+ServiceNow Documentation
+============================
+
+Integration
+--------------------------
 
 This guide will show you how to set up your new Helpdesk Buttons with Service Now.
 
@@ -9,8 +12,9 @@ ServiceNow integration requires two main parts:
 
 `2) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/servicenow/#helpdeskbuttons-com-settings>`_
 
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
@@ -18,9 +22,8 @@ Video Walkthrough
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TgebXvaQgjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-
-Unregistered User
-------------------
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users.
 
@@ -33,9 +36,8 @@ The only really important part is the email address. Feel free to name it anythi
 .. image:: images/sn-image-2.png
 
 
-Helpdeskbuttons.com Settings
--------------------------------
-
+2) Helpdeskbuttons.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 On the Settings page of helpdeskbuttons, put in the endpoint and a username:password combo as the API Key.
 
 Click update and the Integration Test button. 
@@ -43,11 +45,13 @@ Click update and the Integration Test button.
 Let us know how to get in touch with your development team for feature requests and additional customizations! We are happy to get you set up with customized software.
 
 Anti-Virus and AntiMalware
-========================================================================
+----------------------------------------------------------
+
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 Dispatcher Rules
-========================================================================
+----------------------------------------------------------
+
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -156,6 +160,6 @@ There are additional variables which are common to all integrations. Those are d
 
 
 Webhook Walkthrough
-========================================================================
+----------------------------------------------------------
 
 .. image:: images/coming_soon.png

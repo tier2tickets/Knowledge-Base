@@ -1,6 +1,10 @@
-Kaseya Integration
+Kaseya Documentation
 ================================
 This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
+
+
+Integration
+--------------------------
 
 Kaseya integration requires three main parts:
 
@@ -10,8 +14,9 @@ Kaseya integration requires three main parts:
 
 `3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/kaseya/#helpdeskbutton-com-settings>`_
 
+
 Video Walkthrough
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
@@ -20,8 +25,8 @@ Video Walkthrough
     </div>
 
 
-Unregistered User
--------------------
+1) Unregistered User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First we need to make a contact in a catch all company, this contact will put tickets in on behalf of users that are not currently in the system.
 
@@ -29,8 +34,8 @@ First we need to make a contact in a catch all company, this contact will put ti
 
 This is our contact. Feel free to use whatever data you would like, but make sure the email address is *unregistered@helpdeskbuttons.com*
 
-Create an API User
----------------------
+2) Create an API User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Navigate to the Employee window:
 
@@ -43,8 +48,8 @@ It is probably best to create a new user, but an existing user with the correct 
 
 Click New and create the user with whatever data you may like. The Security Role is the only important part of this process. To start out put it as Administrator. You will need the email address to be something that can recieve the password. Once that is complete an email will be sent to the address specified with the login credentials we need.
 
-Helpdeskbutton.com Settings
-----------------------------
+3) Helpdeskbutton.com Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once we have that email, plug the info into the Settings page after selecting Kaseya BMS as the Ticket System. The format is:
 
@@ -53,14 +58,14 @@ Company+username:password
 Once you click update you should be good to go. 
 
 Integration Defaults
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Kaseya requires alot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. 
 
 Please note that either queue, assignee, or both must be set for this integration to work properly.
 
 API Access Settings
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For those of you who want to restrict the access the API user has, here is the security access we need: (a custom security role will need to be created and assigned to us with these permissions):
 
@@ -72,12 +77,12 @@ For those of you who want to restrict the access the API user has, here is the s
 - Admin/Special Features: Has API Access		- To access the API
 
 Anti-Virus and AntiMalware
-========================================================================
+----------------------------------------------------
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 Dispatcher Rules
-========================================================================
+----------------------------------------------------
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
@@ -213,6 +218,6 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 Webhook Walkthrough
-========================================================================
+----------------------------------------------------
 
 Kaseya BMS does not support webhooks. We are looking into another system for enabling notifications for this ticket system.
