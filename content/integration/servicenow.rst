@@ -3,6 +3,12 @@ ServiceNow Integration
 
 This guide will show you how to set up your new Helpdesk Buttons with Service Now.
 
+ServiceNow integration requires two main parts:
+
+`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/servicenow/#unregistered-user>`_
+
+`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/servicenow/#helpdeskbuttons-com-settings>`_
+
 Video Walkthrough
 -----------------------------
 
