@@ -1,5 +1,5 @@
-Autotask Integration
-=====================
+Autotask Documentation
+=========================
 This guide will show you how to set up your new Helpdesk Buttons with Autotask. You will need an administrative login for Autotask. 
 
 Integration
