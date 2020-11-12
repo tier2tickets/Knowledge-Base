@@ -1,7 +1,7 @@
 ERPNext Documentaion
 ======================================
-This guide will show you how to set up your new Helpdesk Buttons with ERPNext in as few as 15 minutes.
 
+This guide will show you how to set up your new Helpdesk Buttons with ERPNext in as few as 15 minutes.
 
 Integration
 --------------------------
