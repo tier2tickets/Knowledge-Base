@@ -2,6 +2,14 @@ Kaseya Integration
 ================================
 This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
 
+Kaseya integration requires three main parts:
+
+`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/kaseya/#unregistered-user>`_
+
+`2) set up the API integration. <https://docs.tier2tickets.com/content/integration/kaseya/#create-an-api-user>`_
+
+`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/kaseya/#helpdeskbutton-com-settings>`_
+
 Video Walkthrough
 -----------------------------
 
