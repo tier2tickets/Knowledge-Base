@@ -210,3 +210,8 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA
+
+Webhook Walkthrough
+----------------------------------------------
+
+.. image:: images/coming_soon.png

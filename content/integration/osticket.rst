@@ -110,3 +110,7 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 
+Webhook Walkthrough
+----------------------------------------------
+
+osTicket does not support webhooks. We are looking into another system for enabling notifications for this ticket system.

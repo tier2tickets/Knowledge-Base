@@ -115,3 +115,9 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA
+
+
+Webhook Walkthrough
+----------------------------------------------
+
+Atera does not support webhooks. We are looking into another system for enabling notifications for this ticket system.
