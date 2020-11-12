@@ -1,7 +1,7 @@
 Repairshopr / Syncro Documentation
 =========================================
 
-Setting up Helpdesk Buttons with Repairshopr or Syncro is easy. 
+Setting up Helpdesk Buttons with Repairshopr or Syncro is easy and can be done in as few as 15 minutes. 
 
 Integration
 --------------------------

@@ -1,7 +1,7 @@
 Connectwise Manage Documentation
 ======================================
 
-This guide will show you how to set up your new Helpdesk Buttons with ConnectWise Manage.
+This guide will show you how to set up your new Helpdesk Buttons with ConnectWise Manage in as few as 15 minutes.
 
 Integration
 --------------------------

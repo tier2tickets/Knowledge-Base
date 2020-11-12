@@ -1,6 +1,6 @@
 Atera Documentaion
 =======================
-This guide will show you how to set up your new Helpdesk Buttons with Atera.
+This guide will show you how to set up your new Helpdesk Buttons with Atera in as few as 15 minutes.
 
 Integration
 --------------------------

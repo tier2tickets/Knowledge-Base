@@ -1,6 +1,6 @@
 Freshdesk / Freshservice Documentaion
 =============================================
-This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons.
+This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons in as few as 15 minutes.
 
 Integration
 -------------------

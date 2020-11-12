@@ -1,6 +1,6 @@
 Kaseya Documentation
 ================================
-This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS.
+This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS in as few as 15 minutes.
 
 
 Integration

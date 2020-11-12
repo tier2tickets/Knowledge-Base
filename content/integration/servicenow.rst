@@ -1,10 +1,10 @@
 ServiceNow Documentation
 ============================
 
+This guide will show you how to set up your new Helpdesk Buttons with Service Now in as few as 15 minutes.
+
 Integration
 --------------------------
-
-This guide will show you how to set up your new Helpdesk Buttons with Service Now.
 
 ServiceNow integration requires two main parts:
 
