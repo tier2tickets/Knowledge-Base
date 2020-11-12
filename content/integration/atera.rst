@@ -46,11 +46,11 @@ Please note that defaults for priority, type, and standing must be set for this 
 
 
 Anti-Virus and AntiMalware
------------------------------
+========================================================================
 It is not always necessary, but we recommend whitelisting the helpdeskbuttons installation folder (C:\\Program Files(x86)\\Helpdesk Button). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 Dispatcher Rules
------------------------------------------------
+========================================================================
 
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
 
@@ -118,6 +118,6 @@ The fields labeled input_* contain information typed by the user only in the eve
 
 
 Webhook Walkthrough
-----------------------------------------------
+========================================================================
 
 Atera does not support webhooks. We are looking into another system for enabling notifications for this ticket system.
