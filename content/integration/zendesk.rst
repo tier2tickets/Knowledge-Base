@@ -2,6 +2,14 @@ Zendesk Integration
 ========================
 This guide will show you how to set up your new Helpdesk Buttons with Zendesk.
 
+Zendesk integration requires three main parts:
+
+`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/zendesk/#unregistered-user>`_
+
+`2) set up the API integration. <https://docs.tier2tickets.com/content/integration/zendesk/#enable-api-access-and-create-a-new-key>`_
+
+`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/zendesk/#helpdeskbuttons-com-settings>`_
+
 Video Walkthrough
 -----------------------------
 
