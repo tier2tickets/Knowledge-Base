@@ -6,6 +6,12 @@ This guide will show you how to set up your new Helpdesk Buttons with Atera in a
 Integration
 --------------------------
 
+Atera integration requires three main parts:
+
+`1) set up the API integration. <https://docs.tier2tickets.com/content/integration/atera/#get-api-key>`_
+
+`2) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/atera/#helpdeskbuttons-com-settings>`_
+
 Video Walkthrough
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
