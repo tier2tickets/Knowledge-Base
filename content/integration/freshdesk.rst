@@ -26,7 +26,7 @@ Video Walkthrough
 
 
 
-Unregistered User
+1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 By default, our software attempts to pair users with their contact information by checking with Freshdesk/Freshservice. If the user is not already found in the system
 a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Integration Defaults <content/integration/freshdesk:Integration Defaults>` below.
@@ -34,7 +34,7 @@ a catch all account submits the ticket instead. This can be disabled for PSA's t
 This guide assumes you want to use the catch all contact: 
 To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com”  for the purposes of catching any unregistered users.  You can name the account whatever you want. In our system it’s “Mystery Human”.
 
-Getting an API Key
+2) Getting an API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 On the left of your screen, click the admin button.
 
@@ -58,7 +58,7 @@ In the upper right, you will see ‘Your API Key’
 
 Please take note of this API Key, you will need it in a little bit.
 
-Helpdeskbuttons.com Setup 
+3) Helpdeskbuttons.com Setup 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The next step is to sign into your Helpdeskbuttons.com account and enter this information under Settings->Backend Information
