@@ -7,6 +7,14 @@ This guide will show you how to set up your new Helpdesk Buttons with 4me in as 
 Integration
 --------------------------
 
+4me integration requires three main parts:
+
+`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/4me/#unregistered-user>`_
+
+`2) create an access token. <https://docs.tier2tickets.com/content/integration/4me/#create-an-access-token>`_
+
+`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/4me/#helpdeskbuttons-com-settings>`_
+
 Video Walkthrough
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. raw:: html
