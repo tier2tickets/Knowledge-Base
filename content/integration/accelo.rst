@@ -6,6 +6,14 @@ This guide will show you how to set up your new Helpdesk Buttons with Accelo in 
 Integration
 --------------------------------------
 
+Accelo integration requires three main parts:
+
+`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/accelo/#unregistered-user>`_
+
+`2) set up an application user. <https://docs.tier2tickets.com/content/integration/accelo/#create-an-application-user>`_
+
+`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/accelo/#helpdeskbuttons-com-settings>`_
+
 Video Walkthrough
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
