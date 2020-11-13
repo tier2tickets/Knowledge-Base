@@ -6,7 +6,7 @@ This guide will show you how to set up your new Helpdesk Buttons with ERPNext in
 Integration
 --------------------------
 
-Zendesk integration requires three main parts:
+ERPNext integration requires three main parts:
 
 `1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/erpnext/#create-an-unregistered-user>`_
 
