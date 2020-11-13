@@ -45,6 +45,11 @@ Set up a Webhook or Callback in your ticket system
 
 Each ticket system will be a bit different for how this is done, so check the individual integration documentation pages for instructions specific to your PSA. 
  
+`Autotask Webhook <https://docs.tier2tickets.com/content/integration/autotask/#setting-up-webhooks>`_
+ 
+`Connectwise Manage Webhook <https://docs.tier2tickets.com/content/integration/connectwise/#setting-up-a-callback-webhook>`_
+ 
+`Repairshopr / Syncro Webhook <https://docs.tier2tickets.com/content/integration/repairshopr/#set-up-a-webhook>`_
 
 
 
