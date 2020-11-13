@@ -6,6 +6,14 @@ This guide will show you how to set up FreshDesk / FreshService to work with you
 Integration
 -------------------
 
+Freshdesk / Freshservice integration requires three main parts:
+
+`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/freshdesk/#unregistered-user>`_
+
+`2) set up the API integration. <https://docs.tier2tickets.com/content/integration/freshdesk/#getting-an-api-key>`_
+
+`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/freshdesk/#helpdeskbuttons-com-setup>`_
+
 Video Walkthrough
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
