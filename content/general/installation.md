@@ -88,7 +88,7 @@ The next popup confirms the remove and gives the option to run the uninstall com
 
 Since the package is an MSI, you can use WMI to uninstall it. Here is an example command to uninstall it silently: 
 
-`wmic product where (name="Helpdesk Button") call uninstall /nointeractive`
+`wmic product where (name="Tier2Tickets") call uninstall /nointeractive`
 
 NOTE: if you get back "ReturnValue = 1603;" from this command, then the removal failed because you are not in an elevated command prompt.
 
