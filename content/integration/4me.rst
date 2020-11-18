@@ -44,6 +44,8 @@ unregistered@helpdeskbuttons.com
 
 .. image:: images/4me_unregistered2.png
 
+The user you create does not need any roles or team memberships and the Timezone of the user (Preferences -> Timezone) will be the timezone default for tickets that don't match a customer.
+
 
 2) Create an Access Token
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -74,7 +76,7 @@ Now click generate. The final screen will show you the key needed for the integr
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
-*api.instancename.com*
+*eg: api.4me-demo.com or api.4me.com*
 
 The api key will be of this form:
 
