@@ -1,7 +1,8 @@
 Autotask Documentation
 =========================
 
-This guide will show you how to set up your new Helpdesk Buttons with Autotask in as few as 15 minutes. You will need an administrative login for Autotask. 
+This guide will show you how to set up your new Helpdesk Buttons with Autotask in as few as 15 minutes. 
+You will need an administrative login for Autotask. 
 
 Integration
 --------------------------
@@ -33,7 +34,9 @@ In the main Autotask menu, select Admin and then Resources.
 
 Click the ‘New’ button to open the new user window.
 
-Set up the account as normal. Make sure that the Security Level is set to 'API User (System)', and the Integration Vendor in the API Tracking Identifier section is set to 'Helpdesk Buttons - Tier2Tickets'. Also take note of the username and the password since you will need them later.
+Set up the account as normal. Make sure that the Security Level is set to 'API User (System)', and the 
+Integration Vendor in the API Tracking Identifier section is set to 'Helpdesk Buttons - Tier2Tickets'. 
+Also take note of the username and the password since you will need them later.
 
 .. image:: images/at-image-04.png
 
@@ -72,7 +75,8 @@ Enter your Ticket System API endpoint as shown (do not add add https:// or the p
 
 Your Ticket System API key is in the format of ‘username@domain:password’ 
 
-For instance in our example, the username for the API account we created earlier is tier2tickets@alexspcsandbox.com and we set the password to 1SuperSecurePassword@MG. 
+For instance in our example, the username for the API account we created earlier is tier2tickets@alexspcsandbox.com 
+and we set the password to 1SuperSecurePassword@MG. 
 
 This would result in the Ticket System API key being formatted like 
 
@@ -87,7 +91,8 @@ If you have trouble, give us a call and we can remote in and help you (833) 328-
 API Access Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For those of you who want to restrict the access the API user has, here is the security access we need: (a custom security level will need to be created and assigned to us with these permissions):
+For those of you who want to restrict the access the API user has, here is the security access we need: 
+(a custom security level will need to be created and assigned to us with these permissions):
 
 - CRM/Customer & Cancelations/Permission - All (For checking user and company data like address and email addresses)
 - Service Desk/Tickets/View 	- All 
@@ -97,13 +102,17 @@ For those of you who want to restrict the access the API user has, here is the s
 
 Anti-Virus and AntiMalware
 -----------------------------
-It is not always necessary, but we recommend whitelisting the tier2tickets installation folder (C:\\Program Files(x86)\\tier2tickets). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.  
+It is not always necessary, but we recommend whitelisting the tier2tickets installation folder 
+(C:\\Program Files(x86)\\tier2tickets). We regularly submit our code through VirusTotal to make sure we are not getting 
+flagged, but almost all AV/M interactions cause some sort of failure. 
+`Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.  
 
 
 Dispatcher Rules
 -----------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
+This is the list of variables that can be accessed when using the 
+:ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
 
 +----------------------------------------------------+-----------------------------------------------------+
 | Read/Write                                         | Read Only                                           |
@@ -249,59 +258,10 @@ Rule Field Definitions
 *other*
 """""""
 
-There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
+There are additional variables which are common to all integrations. Those are documented 
+:ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 Setting up Webhooks
 -----------------------------
 
-Autotask does not yet have webhooks for ticket events, but we can simulate this functionality (with a delay of 30 minutes or so) by integrating your Autotask instance with Zapier. This will require a premium Zapier account. Once webhooks are implemented by Autotask for ticket events, we will be able to use them instead of this workaround.
-
-These are Zaps you might need
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-- `New Ticket Event <https://zapier.com/app/editor/template/375374>`_
-
-- `Ticket Update Event <https://zapier.com/app/editor/template/375403>`_
-
-- `Ticket Note Event <https://zapier.com/app/editor/template/375427>`_
-
-For each of the Zaps you want to enable, you will have to perform simple steps. You will need access to our backend and Zapier.
-
-Step By Step Instructions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Connect Zapier to Autotask
-"""""""""""""""""""""""""""""""""""""""""
-- This is the first screen you should see once you are logged in. 
-
-.. image:: images/autotask_zapier/first_screen.png
-
-- If you already have a connection with your Autotask instance you can select it here. if not you will need to connect your Autotask instance to Zapier via a username and password.
-
-.. image:: images/autotask_zapier/add_credentials.png
-
-- This is an optional step but it is recommended: Once you have chosen your connection, you can test that connection by clicking the test button and following the instructions, in this case they want you to put in a new test ticket. 
-
-.. image:: images/autotask_zapier/test_connection.png
-
-Give Zapier Your Webhook URL
-""""""""""""""""""""""""""""""""""""""""""""
-
-- Next you want to go to our back end and get the URL for your webhooks to go to. This will be on the `Notification <https://account.helpdeskbuttons.com/notifications.php>`_ page under Automations. It should be listed at the top of the page:
-
-.. image:: images/autotask_zapier/sample_url.png
-
-- In Zapier, click on the second Action (Post), Copy and paste the URL into the URL field in the section called Customize Request, and make sure the Payload type is Json:
-
-.. image:: images/autotask_zapier/customize_request.gif
-
-- This is an optional step but it is recommended: The Sent data section can test your setup by sending a hook to your url. Once you have made sure the request if set up, try sending the request to your url by clicking the test button. Hopefully you see a message indicating a successful test.
-
-.. image:: images/autotask_zapier/webhook_test.png
-
-Turn on your Zap
-"""""""""""""""""""""""""""""""
-
-- Make sure to turn on your Zap by clicking either the toggle on the bottom of the screen or the one next to the share button at the top.
-
-.. image:: images/autotask_zapier/zap_on.png
+Autotask does not yet have webhooks for ticket events, but we can simulate this functionality by setting up an Extension Callout and a couple of Workflow Rules.

@@ -1,4 +1,4 @@
-4me Documentaion
+4me Documentation
 =========================================================
 
 This guide will show you how to set up your new Helpdesk Buttons with 4me in as few as 15 minutes.
