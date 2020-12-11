@@ -265,3 +265,40 @@ Setting up Webhooks
 -----------------------------
 
 Autotask does not yet have webhooks for ticket events, but we can simulate this functionality by setting up an Extension Callout and a couple of Workflow Rules.
+
+Extension Callout
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+First head to Admin -> Extension & Integrations -> Other Extensions & Tools -> Extensions Callout (Tickets)
+
+.. image:: images/autotask-callout1.png
+
+.. image:: images/autotask-callout2.png
+
+Click New Extension Callout
+
+.. image:: images/autotask-callout3.png
+
+- Name the callout and make sure it is set to active.
+- URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+- No Username or Password is needed for our API
+- HTTP Transport Method should be POST
+- Data Format should be Name Value Pair
+ 
+Workflow Rules
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+New Ticket/Ticket Updated
+"""""""""""""""""""""""""""""""""
+
+soon
+
+Note added to ticket
+"""""""""""""""""""""""""""""""""
+
+soon
+
+
+
+
+

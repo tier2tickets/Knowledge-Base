@@ -224,7 +224,32 @@ There are additional variables which are common to all integrations. Those are d
 
 The fields labeled input_* contain information typed by the user only in the event that they are not found in the PSA
 
-Webhook Walkthrough
---------------------------------------
+Webhook Walkthrough (Notifications)
+-----------------------------------------------
 
-.. image:: images/coming_soon.png
+In order to get Ticket Creation/Update Notifications set up for your Tier2Tickets integration, we need to know when tickets are created/updated. The way we do this is via webhooks from the ticket system. 
+
+To do this in Accelo, go to Settings-> API -> Webhooks
+
+.. image:: images/accelo-webhook1.png
+
+Ticket Create Webhook
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once here, you can setup webhooks to send on ticket creation. 
+
+ - Select the event "Ticket created"
+ - URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+ - Set Content-Type to "application/json"
+
+.. image:: images/accelo-webhook2.png
+
+Ticket Update Webhook
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Select the event "Ticket updated"
+ - URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+ - Set Content-Type to "application/json"
+ 
+ 
+.. image:: images/accelo-webhook3.png
