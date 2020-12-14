@@ -1,4 +1,4 @@
-Freshdesk / Freshservice Documentation
+Freshdesk Documentation
 =============================================
 
 This guide will show you how to set up FreshDesk / FreshService to work with your new Helpdesk Buttons in as few as 15 minutes.
@@ -6,7 +6,7 @@ This guide will show you how to set up FreshDesk / FreshService to work with you
 Integration
 -------------------
 
-Freshdesk / Freshservice integration requires three main parts:
+Freshdesk integration requires three main parts:
 
 `1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/freshdesk/#unregistered-user>`_
 
@@ -28,7 +28,7 @@ Video Walkthrough
 
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-By default, our software attempts to pair users with their contact information by checking with Freshdesk/Freshservice. If the user is not already found in the system
+By default, our software attempts to pair users with their contact information by checking with Freshdesk. If the user is not already found in the system
 a catch all account submits the ticket instead. This can be disabled for PSA's that allow users to create accounts on ticket submission. Look at the  :ref:`Integration Defaults <content/integration/freshdesk:Integration Defaults>` below.
 
 This guide assumes you want to use the catch all contact: 
@@ -116,37 +116,6 @@ FreshDesk
 | :ref:`content/automations/dispatcher:*append*`  |                                                    |
 +-------------------------------------------------+----------------------------------------------------+
 
-Freshservice
-
-+----------------------------------------------------------------------+----------------------------------------------------+
-| Read/Write                                                           | Read Only                                          |
-+======================================================================+====================================================+
-| :ref:`content/integration/freshdesk:*priority*`                      | :ref:`content/automations/dispatcher:*selections*` |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*status*`                        | :ref:`content/automations/dispatcher:*name*`       |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*department*`                    | :ref:`content/automations/dispatcher:*email*`      |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*agent*`                         | :ref:`content/automations/dispatcher:*ip*`         |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/automations/dispatcher:*message*`                      | :ref:`content/automations/dispatcher:*mac*`        |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/automations/dispatcher:*subject*`                      | :ref:`content/automations/dispatcher:*hostname*`   | 
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*source*`                        |                                                    | 
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`impact<content/integration/freshdesk:*impact & urgency*>`      |                                                    | 
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`urgency<content/integration/freshdesk:*impact & urgency*>`     |                                                    |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/automations/dispatcher:*append*`                       |                                                    |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*group*`                         |                                                    |
-+----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/freshdesk:*priv_append*`                   |                                                    |
-+----------------------------------------------------------------------+----------------------------------------------------+
-
-
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
@@ -156,41 +125,9 @@ Field Definitions
 
 	**The ticket priority level (Urgent, Low, ect):**
 
-FreshDesk:
-
 .. image:: images/fd-priority.png
    :target: https://docs.tier2tickets.com/_images/fd-priority.png
 
-|
-
-FreshService:
-
-.. image:: images/fs-priority.png
-   :target: https://docs.tier2tickets.com/_images/fs-priority.png
-
-|
-|
-
-*impact & urgency*
-""""""""""""""""""""""
-
-	**Can set priority via the SLA priority matrix:**
-
-FreshService:
-
-	Impact:
-
-.. image:: images/fs-impact.png
-   :target: https://docs.tier2tickets.com/_images/fs-impact.png
-
-|
-   
-	Urgency:
-
-.. image:: images/fs-urgency.png
-   :target: https://docs.tier2tickets.com/_images/fs-urgency.png
-
-|
 |
 
 *status*
@@ -198,19 +135,9 @@ FreshService:
 
 	**The ticket status (New, In Progress, etc):**
 
-FreshDesk:
-
 .. image:: images/fd-status.png
    :target: https://docs.tier2tickets.com/_images/fd-status.png
 
-|
-
-FreshService:
-
-.. image:: images/fs-status.png
-   :target: https://docs.tier2tickets.com/_images/fs-status.png
-
-|
 |
 
 *group*
@@ -218,43 +145,18 @@ FreshService:
 
 	**The group the ticket will be put in:**
 
-FreshDesk:
-
 .. image:: images/fd-group.png
    :target: https://docs.tier2tickets.com/_images/fd-group.png
 
-|
-   
-FreshService:
-
-.. image:: images/fs-group.png
-   :target: https://docs.tier2tickets.com/_images/fs-group.png
-
-|
 |
 
 *type*
 """"""
 
 	**Refers to the issue type (Service Request, Incident, Problem, Alert):**
-	
-FreshDesk:
 
 .. image:: images/fd-type.png
    :target: https://docs.tier2tickets.com/_images/fd-type.png
-
-|
-|
-
-*department*
-""""""""""""
-
-	**The department the ticket will be put in:**
-
-FreshService:
-
-.. image:: images/fs-department.png
-   :target: https://docs.tier2tickets.com/_images/fs-department.png
 
 |
 |
@@ -264,39 +166,19 @@ FreshService:
 
 	**The agent that will be assigned this ticket:**
 
-FreshDesk:
-
 .. image:: images/fd-agent.png
    :target: https://docs.tier2tickets.com/_images/fd-agent.png
 
-|
-   
-FreshService:
-
-.. image:: images/fs-agent.png
-   :target: https://docs.tier2tickets.com/_images/fs-agent.png
-
-|
 |
 
 *source*
 """"""""
 
 	**The ticket source (Web Portal, Etc):**
-
-FreshDesk:
-
+	
 .. image:: images/fd-source.png
    :target: https://docs.tier2tickets.com/_images/fd-source.png
 
-|
-   
-FreshService:
-
-.. image:: images/fs-source.png
-   :target: https://docs.tier2tickets.com/_images/fs-source.png
-
-|
 |
 
 *priv_append*
@@ -304,19 +186,9 @@ FreshService:
 
 	**Allows you to append information to the internal ticket note:**
 
-FreshDesk:
-
 .. image:: images/fd-priv_append.png
    :target: https://docs.tier2tickets.com/_images/fd-priv_append.png
 
-|
-
-FreshService:
-
-.. image:: images/fs-priv_append.png
-   :target: https://docs.tier2tickets.com/_images/fs-priv_append.png
-
-|
 |
 
 *other*
@@ -327,4 +199,49 @@ There are additional variables which are common to all integrations. Those are d
 Webhook Walkthrough
 ----------------------------------------------------------------------
 
-.. image:: images/coming_soon.png
+To add a webhook in FreshDesk navigate to: Admin -> Workflow(Automator). Create a new Workflow(Automator) and follow the instructions below for each automation. 
+
+New Tickets:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Set the conditions for when tickets should send the webhook:
+
+.. image:: images/freshdesk_webhook1.png
+
+
+
+- Select Trigger webhook as the action
+- Select POST as the request type
+- URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+- Add the code below:
+
+.. image:: images/freshdesk_webhook2.png
+
+.. code-block:: python
+
+	{
+		"ticket_id": "{{ticket.id}}",
+		"actor": "{{ticket.contact.name}}",
+		"assigned_to": "{{ticket.agent.name}}",
+		"action": "create"
+	}
+
+For Ticket Updates:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+	{
+		"ticket_id": "{{ticket.id}}",
+		"action": "update",
+		"assigned_to": "{{ticket.agent.name}}",
+		"last_comment": "{{ticket.latest_public_comment}}",
+		"subject": "{{ticket.subject}}",
+		"message": "{{ticket.description}}",
+		"phone": "{{ticket.contact.phone}}",
+		"address": "{{ticket.contact.address}}",
+		"mobile": "{{ticket.contact.mobile}}",
+		"email": "{{ticket.contact.email}}",
+		"name": "{{ticket.contact.firstname}} {{ticket.contact.lastname}}",
+		"status": "{{ticket.status}}",
+	}

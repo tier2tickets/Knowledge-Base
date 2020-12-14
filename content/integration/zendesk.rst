@@ -196,7 +196,57 @@ The fields labeled input_* contain information typed by the user only in the eve
 Webhook Walkthrough
 ----------------------------------------------------
 
-.. image:: images/coming_soon.png
+This will take 2 steps:
+
+1) Create a Target for the webhook:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Navigate to Admin -> Settings -> Extensions.
+
+Click add target and then HTTP Target
+
+- Name the Target
+- URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+- Select POST as the request type
+- Set Content type to JSON
+
+.. image:: images/zendesk-webhook3.png
+
+
+2)Setup a Trigger in Zendesk: 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Navigate to Admin -> Triggers.
+
+Click Add Trigger.
+
+- Name the Trigger
+- Set Ticket is Updated as the condition
+
+.. image:: images/zendesk-webhook1.png
+
+- Select the Action Notify Target
+- Select the webhook target created in the previous step
+- Add this code into the JSON body of the action
+	
+.. code-block:: python
+
+	{
+		"actor":"{{current_user.name}}",
+		"role":"{{current_user.role}}",
+		"assigned_to":"{{ticket.assignee.name}}",
+		"message":"{{ticket.verbatim_description}}",
+		"ticket_id":"{{ticket.id}}",
+		"name":"{{ticket.requester.name}}",
+		"company":"{{ticket.organization.name}}",
+		"status":"{{ticket.status}}",
+		"subject":"{{ticket.title}}",
+		"comment":"{{ticket.latest_public_comment_rich}}",
+		"email":"{{ticket.requester.email}}",
+		"phone":"{{ticket.requester.phone}}"
+	}
+
+.. image:: images/zendesk-webhook2.png
 
 
 

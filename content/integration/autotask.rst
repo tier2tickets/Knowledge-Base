@@ -288,15 +288,28 @@ Click New Extension Callout
 Workflow Rules
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Navigate to Admin -> Workflow Rules
+
+.. image:: images/autotask-callout4.png
+
+You will want to create two rules one for Ticket Creation and Update and another for Ticket Notes
+
 New Ticket/Ticket Updated
 """""""""""""""""""""""""""""""""
 
-soon
+Here is an example of a workflow that sends when a ticket is created/updated by anyone
+
+.. image:: images/autotask-callout5.png
+
+.. image:: images/autotask-callout6.png
+
 
 Note added to ticket
 """""""""""""""""""""""""""""""""
 
-soon
+Create another workflow rule but for the EVENT select Note Created by anyone 
+
+.. image:: images/autotask-callout7.png
 
 
 
