@@ -107,7 +107,7 @@ As another example, let's assume you want to always show an option for the user 
 	tier2assist.append({'msg': 'Sometimes a reboot alone will resolve issues, would you like to reboot now?', 'action': 'cmd /c title Preparing to reboot...^&color 4f^&echo. ^&echo Preparing to reboot. To cancel, close this window.^&ping -n 9 127.0.0.1^>nul^&shutdown -r -f -t 0'})
 
 
-Forms
+Google Forms
 """""""""""""""""""""""""""""""""""""
 
 Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
@@ -120,7 +120,23 @@ here is what that rule might look like:
 		if phrase in msg.lower():
 			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
-Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:link forms with helpdesk buttons>` to allow the information from a submission of such a form to the ticket that was just created. 
+Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Google Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
+
+
+Cognito Forms
+"""""""""""""""""""""""""""""""""""""
+
+Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
+here is what that rule might look like:
+
+
+.. code-block:: python
+
+	for phrase in ['hiring', 'hire', 'new employee']:
+		if phrase in msg.lower():
+			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+
+Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
 
 Password Reset

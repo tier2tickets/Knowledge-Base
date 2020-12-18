@@ -4,7 +4,7 @@
 Tier2Forms is a special integration we designed to allow user-defined forms to submit additional information into existing tickets
 in your ticket system. Once a form is connected to the Tier2Forms system, then any time that form is submitted, the data is posted
 to our API where we append it as a private note onto the existing ticket. If the submission does not include a valid ticket id, a new ticket will
-be created containing the submission data instead. Using the Tier2Assist automations, you can provide the Google Form
+be created containing the submission data instead. Using the Tier2Assist automations, you can provide the form
 to your end-user at the time of ticket creation to prompt for more details from the end-user.
 
 Google Forms
@@ -20,10 +20,10 @@ Google Form Video Walkthrough
     </div>
 
 
-Link Forms with Helpdesk Buttons
+Link Google Forms with Helpdesk Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Required in the form
+Required in the Google Form
 """"""""""""""""""""""""""""""""""""
 
 Form must have a short answer question with "Ticket ID" in the question for example "Ticket ID (Do Not Edit)" would be a good choice.
@@ -32,7 +32,7 @@ Form must have a short answer question with "Ticket ID" in the question for exam
 
 |
 
-Link form with your account
+Link Google Form with your account
 """""""""""""""""""""""""""""""""""""""""""
 
 In your HDB account navigate to "Tier2Forms", under "Automations"
@@ -58,8 +58,8 @@ The page should also display any currently linked forms.
 |
 |
 
-Generate a pre-filled link
-"""""""""""""""""""""""""""""""""""""""""""""
+Generate a pre-filled link for your Google Form
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 When editing a form you click the "More" option in the top right and select "Get pre-fill link"
 
@@ -80,8 +80,8 @@ Click "Get link" then click the "COPY LINK" that pops up at the bottom of the pa
 |
 |
 
-Setting up your script
-"""""""""""""""""""""""""""""""""
+Setting up your Google Form Tier2Assist
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 In your HDB account navigate to "Tier2Assist" under "Automations"
 
@@ -118,8 +118,6 @@ Click the Save Rules and test the HDB software to make sure it works as intended
 
 .. image:: images/SaveRule.png
 
-|
-|
 
 Cognito Forms
 ---------------------
@@ -130,6 +128,79 @@ Cognito Form Video Walkthrough
 .. image:: images/coming_soon.png
 
 
+
+Link Cognito Forms with Helpdesk Buttons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Cognito forms can be configured to send a webhook containing the information in the submission to a URL address. This is how we will connect Cognito Forms with Tier2Forms.
+
+
+Required in the Cognito form
+""""""""""""""""""""""""""""""""""""
+
+The form must have a text box to contain the Ticket ID. This can be a hidden field, but it needs to exist for the connection to function.
+
+You want the Field Name to be "TicketID"
+
+.. image:: images/cognito-ticketid.png
+
+
+Link Cognito form with your account
+"""""""""""""""""""""""""""""""""""""""""""
+
+Each Cognito Form can be configured to drop its data to a webhook. This is done on the Build Page of the form.
+
+Click on the Submit button at the end of the form. This should bring up a window allowing you to set up things that happen on submssion of the current form.
+
+The one we want is Post JSON Data to a Website.
+
+.. image:: images/cognito-webhook.png
+
+This is where you want to add a custom URL for your integration.
+
+You can find this on your HDB account by navigating to Automations -> Tier2Forms or Software Management -> Integration Settings.
+
+There should be a Cognito Form Webhook URL that can be copied and pasted into the form.
+
+
+
+
+Setting up your Cognito Form Tier2Assist
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+In your HDB account navigate to Automations -> Tier2Assist
+
+.. image:: images/NavToTier2Assist.png
+
+|
+
+To quickly add in the script you need you can use one of our Examples as the ground work. Add the "Cognito Forms" example.
+
+.. image:: images/FromExample.png
+
+|
+
+Adjust the "if" trigger to best suit your form.
+
+.. image:: images/FormTrigger.png
+
+|
+
+Adjust the message to best direct people to your form.
+
+.. image:: images/FormAssistMsg.png
+
+|
+
+The URL you want to add to this assist is the link that people use to fill out your form. This should be on the Publish page of the form.
+ 
+
+Click the Save Rules and test the HDB software to make sure it works as intended.
+
+.. image:: images/SaveRule.png
+
+|
+|
 
 
 Tier2Forms Limited Use Disclosure
