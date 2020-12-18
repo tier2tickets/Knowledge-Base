@@ -322,7 +322,7 @@ On this screen make sure to fillout the fields as described:
 
 - API Name: Service Ticket
 
-	- Callback URL: The URL on the Notification Page in the Helpdeskbutton portal.
+	- Callback URL: Listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
 
 	- Service Board: The board you want the Notifications to function on. 
 	

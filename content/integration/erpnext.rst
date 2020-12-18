@@ -207,4 +207,36 @@ There are additional variables which are common to all integrations. Those are d
 Webhook Walkthrough
 --------------------------
 
-.. image:: images/coming_soon.png
+To setup a webhook in ERPNext, click Administration -> Integrations -> Settings -> Webhook
+
+Click New to Create a new webhook. 
+
+Fill out the webhook as follows:
+
+- DocType to Issue (Support)
+- Doc Event to on_update.
+- Request URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+- Request Structure to Form URL-Encoded
+
+Click Save
+
+Doing this will lock some of the choices in and provide more options for the rest of the webhook. 
+
+.. image:: images/erpnext-webhook1.png
+
+
+- Set the webhook header to application/json
+
+- Add these fields to the webhook data area
+
+ - Name
+ - Customer
+ - Raised By
+ - Description
+ - Subject
+ - Contact
+ - Status
+
+Save Again and you should be all set
+
+.. image:: images/erpnext-webhook2.png
