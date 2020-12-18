@@ -15,7 +15,7 @@ Prior to -- or during -- setup, distribute [The How-to Guide](https://www.helpde
 ## 4) Edit your email responder
 If you accept tickets via e-mail currently, consider adding instructions to your autoresponder. Our MSP uses the following:  
 
-**Subject:** We recieved your Normal Priority Ticket.
+**Subject:** We received your Normal Priority Ticket.
 **Message:** “Thank you, we have received your request and your normal-priority ticket has been created.  *Do you have an urgent or high-priority request? For immediate diagnostics, triage, and dispatch, please submit a ticket via your Helpdesk Button.*“
 
 ## 5) Edit your phone messages
