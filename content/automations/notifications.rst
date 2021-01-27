@@ -47,8 +47,6 @@ Each ticket system will be a bit different for how this is done, so check the in
  
 `Accelo Webhook <https://docs.tier2tickets.com/content/integration/accelo/#webhook-walkthrough-notifications>`_
 
-`Autotask Webhook <https://docs.tier2tickets.com/content/integration/autotask/#setting-up-webhooks>`_
-
 `Connectwise Manage Webhook <https://docs.tier2tickets.com/content/integration/connectwise/#setting-up-a-callback-webhook>`_
 
 `ERPNext Webhooks <https://docs.tier2tickets.com/content/integration/erpnext/#webhook-walkthrough>`_

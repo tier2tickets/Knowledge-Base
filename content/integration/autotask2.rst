@@ -264,7 +264,53 @@ There are additional variables which are common to all integrations. Those are d
 Setting up Webhooks
 -----------------------------
 
-.. image:: images/coming_soon.png
+Autotask does not yet have webhooks for ticket events, but we can simulate this functionality by setting up an Extension Callout and a couple of Workflow Rules.
+
+Extension Callout
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+First head to Admin -> Extension & Integrations -> Other Extensions & Tools -> Extensions Callout (Tickets)
+
+.. image:: images/autotask-callout1.png
+
+.. image:: images/autotask-callout2.png
+
+Click New Extension Callout
+
+.. image:: images/autotask-callout3.png
+
+- Name the callout and make sure it is set to active.
+- URL should be listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
+- No Username or Password is needed for our API
+- HTTP Transport Method should be POST
+- Data Format should be Name Value Pair
+ 
+Workflow Rules
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Navigate to Admin -> Workflow Rules
+
+.. image:: images/autotask-callout4.png
+
+You will want to create two rules one for Ticket Creation and Update and another for Ticket Notes
+
+New Ticket/Ticket Updated
+"""""""""""""""""""""""""""""""""
+
+Here is an example of a workflow that sends when a ticket is created/updated by anyone
+
+.. image:: images/autotask-callout5.png
+
+.. image:: images/autotask-callout6.png
+
+
+Note added to ticket
+"""""""""""""""""""""""""""""""""
+
+Create another workflow rule but for the EVENT select Note Created by anyone 
+
+.. image:: images/autotask-callout7.png
+
 
 
 
