@@ -47,11 +47,11 @@ Each ticket system will be a bit different for how this is done, so check the in
  
 `Accelo Webhook <https://docs.tier2tickets.com/content/integration/accelo/#webhook-walkthrough-notifications>`_
 
-`Atera Webhook <https://docs.tier2tickets.com/content/integration/atera/#webhook-walkthrough>`_
-
 `Autotask Webhook <https://docs.tier2tickets.com/content/integration/autotask/#setting-up-webhooks>`_
 
 `Connectwise Manage Webhook <https://docs.tier2tickets.com/content/integration/connectwise/#setting-up-a-callback-webhook>`_
+
+`ERPNext Webhooks <https://docs.tier2tickets.com/content/integration/erpnext/#webhook-walkthrough>`_
 
 `FreshDesk Webhook <https://docs.tier2tickets.com/content/integration/freshdesk/#webhook-walkthrough>`_
   
@@ -59,7 +59,7 @@ Each ticket system will be a bit different for how this is done, so check the in
 
 `Zendesk Webhook <https://docs.tier2tickets.com/content/integration/zendesk/#webhook-walkthrough>`_
 
-4me, Autotask, ERPNext, Freshservice, and ServiceNow notifications will be added to the development schedule based on community interest. If you are interested in assistance, please contact our team at sales@tier2.tech and we'll get you sorted!
+4me, Autotask, Freshservice, and ServiceNow notifications will be added to the development schedule based on community interest. If you are interested in assistance, please contact our team at sales@tier2.tech and we'll get you sorted!
 
 Unfortunately, this feature is unavailable for systems that do not support webhooks, including Kaseya BMS, OSTicket, and the Email Connector. 
 
