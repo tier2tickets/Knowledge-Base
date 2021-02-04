@@ -58,6 +58,31 @@ Software
 
 
 
+
+
+
+.. raw:: html
+
+   <a name="1.1.14">&nbsp;</a>
+
+1.1.x.14
+~~~~~~~~
+
+* Fixed a bug in which the software would not launch if appdata is redirected and the end-user already has the software running on another computer sharing the same appdata folder.
+* Added support for automatically pinning the icon to the taskbar
+
+
+
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.12">&nbsp;</a>
