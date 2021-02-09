@@ -8,6 +8,32 @@ Website
 -------
 
 
+2020-12-21
+~~~~~~~~~~
+* :ref:`Notifications <content/automations/notifications:*beta* notifications>`
+* Tier2Forms now integrates with Cognito Forms
+* Expanded the report to include new diagnositcs
+
+
+2020-07-30
+~~~~~~~~~~
+* Added Automations Platform to site including
+    * :ref:`Visual Code Editor <content/automations/dispatcher:visual editor>`
+    * :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
+    * :ref:`Tier2Assist <content/automations/tier2assist:*BETA* Tier2Assist>`
+    * :ref:`Tier2Forms <content/automations/tier2forms:*BETA* Tier2Forms>`
+    * :ref:`Tier2Scipts <content/automations/tier2scripts:tier2scripts>`
+* Device Management improvements
+    * Filter and sort endpoints
+    * Send notifications to endpoints
+    * Remove and remotely uninstall endpoints
+* Updated the Navigation menu
+* Separated User interface, Account Administration, and Integration Settings pages
+* Updated Integration settings
+    * Opt in remote access tool
+    * Auto remove inactive endpoints checkbox
+* Updated subaccount permissions for automations and new navigation menu
+
 
 2020-02-07
 ~~~~~~~~~~
