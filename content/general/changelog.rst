@@ -60,6 +60,26 @@ Software
 
 
 
+.. raw:: html
+
+   <a name="1.1.15">&nbsp;</a>
+
+1.1.x.15
+~~~~~~~~
+
+* Added the ability to display tier2assist actions before ticket submission using is_before_ticket_submit variable
+* Fixed bug in which tier2assist actions were not displayed in the order in which they were added
+* Added support for json_post() and json_get() in tier2assist to gracefully handle non-json responses
+* Allowed custom fields in the GUI to support Unicode characters.
+
+
+
+
+
+
+
+
+
 
 .. raw:: html
 
