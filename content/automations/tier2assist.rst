@@ -196,11 +196,8 @@ This method requires that you have set up an app in slack with an Incoming Webho
 
 .. code-block:: python
 
-	try:
 		postURL = 'PUT_WEBHOOK_URL_HERE'
 		post_result = json_post(postURL, {'text': 'New ticket created. Ticket number: ' + ticketNumber})
-	except:
-		pass
 
 
 
