@@ -236,7 +236,7 @@ There are a few special fucntions written by our team to provide additional func
     tier2assist.append({'msg': 'ADD TIER2ASSIST MESSAGE HERE', 'action': 'ADD ACTION HERE'})
 
 
-**This is a really important one. It allows you to add A Tier2Assist. Combine this with if statements to show only the assists the end user may find helpful.**
+This is a really important one. It allows you to add A Tier2Assist. Combine this with if statements to show only the assists the end user may find helpful.
 
 
 *run*
@@ -246,7 +246,7 @@ There are a few special fucntions written by our team to provide additional func
     run('PUT COMMAND HERE')
 
 
-**This function allows you to run a command on the users machine. It works similarly to the RUN command in windows.**
+This function allows you to run a command on the users machine. It works similarly to the RUN command in windows.
 
 
 *json_get*
@@ -257,7 +257,7 @@ There are a few special fucntions written by our team to provide additional func
     json_get('PUT URL HERE')
 
 
-**This function allows you to access and external API or website using a GET.**
+This function allows you to access and external API or website using a GET.
     
 
 *json_post*
@@ -268,7 +268,7 @@ There are a few special fucntions written by our team to provide additional func
     json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'})
 
 
-**This function allows you to access and external API or website using a POST.**
+This function allows you to access and external API or website using a POST.
     
 
 *ai_categorize*
@@ -279,7 +279,7 @@ There are a few special fucntions written by our team to provide additional func
     ai_categorize('TEXT OR VARIABLE HERE', ['CATEGORY 1', 'CATEGORY 2', 'CATEGORY 3'])
 
 
-**This function gives you access to our Tier2AI**
+This function gives you access to our :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
 
 
 A deeper dive into Variables
