@@ -94,6 +94,19 @@ Examples
 
 To show how powerful this can be and give you an idea of how to use it, we came up with a few example rules here:
 
+Running Tier2Assists before ticket submission
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+    The variable "is_before_ticket_submit" allows you to schedule Tier2Assists before or after ticket subbmission. The variable is true when before the submission and false after. The default behavior is to always run after the ticket submisson. If you want to do somethings before ticket submission and others after you will need to use this variable to separate your code
+
+.. code-block:: python
+    
+    if is_before_ticket_submit:
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'ADD ACTION HERE'})
+    else:
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'ADD ACTION HERE'})
+
+
 Chat
 """""""""""""
 
@@ -221,6 +234,7 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 	if random.random() <= 0.5:
 		tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
 
+
 Each of these examples should be viewable in the Visual Editor.
 
 A deeper dive into Functions
@@ -287,6 +301,7 @@ A deeper dive into Variables
 
 When designing these custom rules, there are certain variables which will always be available to you because they correspond with input from
 our application and not from the ticket system integration being used. They are outlined as follows.
+
 
 *selections*
 """"""""""""
