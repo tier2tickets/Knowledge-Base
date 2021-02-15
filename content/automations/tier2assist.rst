@@ -64,17 +64,27 @@ Variables
 
 The first thing you need to know when writing a rule is which variables you have available to you. These variables are fixed and should be available to any integration. 
 
-You can see the variables available in the Visual Editor of the Tier2Assist but here they are for reference. There for more information take a look at the 
+You can see the variables available in the Visual Editor of the Tier2Assist but here they are for reference. For more information take a look at the 
 :ref:`A deeper dive into Variables <content/automations/tier2assist:A deeper dive into Variables>` section below
 
 .. image:: images/variables2.png
+
+Special Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The majority of the functions provided are built into python, but there are a few special functions we wrote that might be useful to you for bulding out your Tier2Assist Rules. 
+
+You can see this list in the Visual Editor of the Tier2Assist but here they are for reference. For more information take a look at the 
+:ref:`A deeper dive into Functions <content/automations/tier2assist:A deeper dive into Functions>` section below
+
+.. image:: images/functions.png
 
 What the user sees
 ^^^^^^^^^^^^^^^^^^^^^^
 
 This is what the user will see after submitting a ticket, if the rules determine a Tier2Assist should be shown.
 
-..image:: images/tier2assist.png
+.. image:: images/tier2assist.png
 
 A Tier2assist consists of a message (the text that shows up beside the button) and an action (the command run on the users machine if they click the button).
 
@@ -213,11 +223,69 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 
 Each of these examples should be viewable in the Visual Editor.
 
+A deeper dive into Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are a few special fucntions written by our team to provide additional functionality within Tier2Assist Rules.
+
+*tier2assist.append*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+    
+    tier2assist.append({'msg': 'ADD TIER2ASSIST MESSAGE HERE', 'action': 'ADD ACTION HERE'})
+
+
+**This is a really important one. It allows you to add A Tier2Assist. Combine this with if statements to show only the assists the end user may find helpful.**
+
+
+*run*
+""""""""""""""""""""""""""""""""""""""""
+.. code-block:: python
+
+    run('PUT COMMAND HERE')
+
+
+**This function allows you to run a command on the users machine. It works similarly to the RUN command in windows.**
+
+
+*json_get*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+
+    json_get('PUT URL HERE')
+
+
+**This function allows you to access and external API or website using a GET.**
+    
+
+*json_post*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+    
+    json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'})
+
+
+**This function allows you to access and external API or website using a POST.**
+    
+
+*ai_categorize*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+    
+    ai_categorize('TEXT OR VARIABLE HERE', ['CATEGORY 1', 'CATEGORY 2', 'CATEGORY 3'])
+
+
+**This function gives you access to our Tier2AI**
+
 
 A deeper dive into Variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When designing the custom rules, there are certain variables which will always be available to you because they correspond with input from
+When designing these custom rules, there are certain variables which will always be available to you because they correspond with input from
 our application and not from the ticket system integration being used. They are outlined as follows.
 
 *selections*
