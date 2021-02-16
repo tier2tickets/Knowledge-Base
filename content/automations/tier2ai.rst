@@ -5,6 +5,8 @@ Tier2AI uses artificial intelligence to determine how closely a phrase, sentence
 
 The way it works is you send the function "ai_categorize" some text to test (most likely the ticket message) and a set of categories to test it against.
 
+A larger practical example can found in the :ref:`Big Example <content/automations/tier2assist:Big example>` section of the Tier2Assist Documentation.
+
 .. code-block:: python
 
     categories = ["employee termination", "new hire", "password reset request", "broken computer", "broken printer"]

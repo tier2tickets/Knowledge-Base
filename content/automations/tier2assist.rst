@@ -225,14 +225,17 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 Big Example
 """""""""""""""""""""""""""""""""""""
 
-Each of these examples should be viewable in the Visual Editor, but if you would rather, you can copy and paste this set of examples and start playing around.
+Each of the previous examples should be viewable in the Visual Editor, but if you would rather, you can copy and paste this set of examples directly into the code editor and start playing around.
 
 
 .. code-block:: python
 
+     categories = ["new hire", "broken computer"]
+     result = ai_categorize(msg, categories)
 
+    #anything listed under here will only happen before the ticket subbmission process
     if is_before_ticket_submit:
-        #anything listed under here will only happen before the ticket subbmission process
+        
         tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=before'})
             
         #this will show a random article on wikipedia 50% of the time
@@ -242,9 +245,12 @@ Each of these examples should be viewable in the Visual Editor, but if you would
         #this will ask the user to click a button to reboot the machine
         tier2assist.append({'msg': 'Sometimes a reboot alone will resolve issues, would you like to reboot now?', 'action': 'cmd /c title Preparing to reboot...^&color 4f^&echo. ^&echo Preparing to reboot. To cancel, close this window.^&ping -n 9 127.0.0.1^>nul^&shutdown -r -f -t 0'})
         
+        #this will prompt the user to open a google search if the AI thinks the message is about a broken computer
+        if result['scores']['broken_computer'] >94:
+            tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
         
+    #anything listed under here will only happen after the ticket subbmission process    
     if not is_before_ticket_submit:
-        #anything listed under here will only happen after the ticket subbmission process
         tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=after'})
             
         #this will pull an activity from the boredapi and show the results for it in a google search
@@ -255,11 +261,10 @@ Each of these examples should be viewable in the Visual Editor, but if you would
         if 'schedule' in selections:
             tier2assist.append({'msg': 'You mentioned "schedule". Let\'s get that scheduled for you.', 'action': 'https://tier2tickets.syncromsp.com/bookings?calendar=101601'})
                 
-        #this will prompt the user to fill out a form if the AI thinks the message is about a new hire
-        categories = ["new hire", "broken computer"]
-        result = ai_categorize(msg, categories)
+        #this will prompt the user to fill out a form if the AI thinks the message is about a new hire and add the responses from the form to the ticket notes
         if result['best_match'] == 'new hire':
             tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+
         
 
 
