@@ -103,7 +103,7 @@ Running Tier2Assists before ticket submission
     
     if is_before_ticket_submit:
         tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'ADD ACTION HERE'})
-    else:
+    if not is_before_ticket_submit:
         tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'ADD ACTION HERE'})
 
 
