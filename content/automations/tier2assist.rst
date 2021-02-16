@@ -245,7 +245,7 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
         #this will ask the user to click a button to reboot the machine
         tier2assist.append({'msg': 'Sometimes a reboot alone will resolve issues, would you like to reboot now?', 'action': 'cmd /c title Preparing to reboot...^&color 4f^&echo. ^&echo Preparing to reboot. To cancel, close this window.^&ping -n 9 127.0.0.1^>nul^&shutdown -r -f -t 0'})
         
-        #this will prompt the user to open a google search if the AI is 94% sure the message is about a broken computer
+        #this will prompt the user to open a google search if the AI is more than 94% sure the message is about a broken computer
         if result['scores']['broken_computer'] >94:
             tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
         
