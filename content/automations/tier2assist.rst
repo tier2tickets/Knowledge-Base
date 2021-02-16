@@ -97,7 +97,7 @@ To show how powerful this can be and give you an idea of how to use it, we came 
 Running Tier2Assists before ticket submission
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-    The variable "is_before_ticket_submit" allows you to schedule Tier2Assists before or after ticket subbmission. The variable is true when before the submission and false after. The default behavior is to always run after the ticket submisson. If you want to do somethings before ticket submission and others after you will need to use this variable to separate your code
+The variable "is_before_ticket_submit" allows you to schedule Tier2Assists before or after ticket subbmission. The variable is true when before the submission and false after. The default behavior is to always run after the ticket submisson. If you want to do somethings before ticket submission and others after you will need to use this variable to separate your code
 
 .. code-block:: python
     
