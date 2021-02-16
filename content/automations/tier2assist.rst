@@ -102,9 +102,9 @@ The variable "is_before_ticket_submit" allows you to schedule Tier2Assists befor
 .. code-block:: python
     
     if is_before_ticket_submit:
-        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'ADD ACTION HERE'})
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=before'})
     if not is_before_ticket_submit:
-        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'ADD ACTION HERE'})
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=after'})
 
 
 Chat
@@ -139,9 +139,10 @@ here is what that rule might look like:
 
 .. code-block:: python
 
-	for phrase in ['hiring', 'hire', 'new employee']:
-		if phrase in msg.lower():
-			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
+	 categories = [{'new hire'}]
+     result = ai_categorize(msg, categories)
+     if result['best_match'] == 'new hire':
+        tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Google Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
@@ -155,8 +156,9 @@ here is what that rule might look like:
 
 .. code-block:: python
 
-	for phrase in ['hiring', 'hire', 'new employee']:
-		if phrase in msg.lower():
+	categories = [{'new hire'}]
+    result = ai_categorize(msg, categories)
+    if result['best_match'] == 'new hire':
 			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
@@ -220,7 +222,43 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 		tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
 
 
-Each of these examples should be viewable in the Visual Editor.
+Each of these examples should be viewable in the Visual Editor, but if you would rather, you can copy and paste this set of examples and start playing around.
+
+
+.. code-block:: python
+
+
+    if is_before_ticket_submit:
+        #anything listed under here will only happen before the ticket subbmission process
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=before'})
+            
+        #this will show a random article on wikipedia 50% of the time
+        if random.random() <= 0.5:
+            tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
+
+        #this will ask the user to click a button to reboot the machine
+        tier2assist.append({'msg': 'Sometimes a reboot alone will resolve issues, would you like to reboot now?', 'action': 'cmd /c title Preparing to reboot...^&color 4f^&echo. ^&echo Preparing to reboot. To cancel, close this window.^&ping -n 9 127.0.0.1^>nul^&shutdown -r -f -t 0'})
+        
+        
+    if not is_before_ticket_submit:
+        #anything listed under here will only happen after the ticket subbmission process
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=after'})
+            
+        #this will pull an activity from the boredapi and show the results for it in a google search
+        activity = json_get('https://www.boredapi.com/api/activity')
+        tier2assist.append({'msg': 'Activity of the day: ' + activity['activity'], 'action': 'https://google.com/search?q=' + activity['activity']})
+            
+        #this will prompt the user to schedule an appointment, if they click on anything that has the word schedule in it
+        if 'schedule' in selections:
+            tier2assist.append({'msg': 'You mentioned "schedule". Let\'s get that scheduled for you.', 'action': 'https://tier2tickets.syncromsp.com/bookings?calendar=101601'})
+                
+        #this will prompt the user to fill out a form if the AI thinks the message is about a new hire
+        categories = ["new hire", "broken computer"]
+        result = ai_categorize(msg, categories)
+        if result['best_match'] == 'new hire':
+            tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+        
+
 
 A deeper dive into Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
