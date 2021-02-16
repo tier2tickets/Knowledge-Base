@@ -197,21 +197,6 @@ We also allow connecting to external APIs. This is a fun API that suggests activ
 	tier2assist.append({'msg': 'Activity of the day: ' + activity['activity'], 'action': 'https://google.com/search?q=' + activity['activity']})
 
 
--deprecated- External API:  Example Slack
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-Suppose you would like to get a message to #general in slack whenever you get a new ticket.
-Here is what that rule looks like (Make sure to put in your Slack API Key in the spot provided):
-
-
-.. code-block:: python
-
-	post_result = json_post('https://slack.com/api/chat.postMessage', {'channel': '#general', 'text': 'New ticket created. Ticket number: ' + ticketNumber}, {'Authorization': 'Bearer YOUR_SLACK_API_KEY_HERE'})
-
-
-SLACK IS DISCONTINUING ITS DIRECT API IN FAVOR OF SLACK APPS
-
-
 External API:  Example Slack (Using Slack APPS)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
