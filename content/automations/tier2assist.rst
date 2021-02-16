@@ -222,6 +222,9 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 		tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
 
 
+Big Example
+"""""""""""""""""""""""""""""""""""""
+
 Each of these examples should be viewable in the Visual Editor, but if you would rather, you can copy and paste this set of examples and start playing around.
 
 
