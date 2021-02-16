@@ -230,8 +230,8 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
 
 .. code-block:: python
 
-     categories = ["new hire", "broken computer"]
-     result = ai_categorize(msg, categories)
+    categories = ["new hire", "broken computer"]
+    result = ai_categorize(msg, categories)
 
     #anything listed under here will only happen before the ticket subbmission process
     if is_before_ticket_submit:
