@@ -8,6 +8,14 @@ Website
 -------
 
 
+2021-02-17
+~~~~~~~~~~
+* Tier2AI support now available. :ref: `Check it out in our docs <content/automations/tier2ai:*BETA* Tier2AI
+>` or read up on some sample ideas in our `feature release notes.<https://www.tier2tickets.com/now-introducing-tier2ai-also-inside-pin-to-taskbar-and-autotask-toast-notifications/>`_
+* :ref:`Set Tier2Assists to occur before OR after ticket submission. <content/automations/tier2assist:Running Tier2Assists before ticket submission >`
+* :ref:`Autotask Toast Notifications available now. <content/integration/autotask:Setting up Webhooks
+>` 
+
 2020-12-21
 ~~~~~~~~~~
 * :ref:`Notifications <content/automations/notifications:*beta* notifications>`
