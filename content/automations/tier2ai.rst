@@ -27,7 +27,7 @@ The result of the test can be looked using three metrics:
 
 .. code-block:: python
 
-    if 'broken_computer' in result['matches']:
+    if 'broken computer' in result['matches']:
         tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
         
 
@@ -35,5 +35,5 @@ The result of the test can be looked using three metrics:
 
 .. code-block:: python
 
-    if result['scores']['broken_computer'] >94:
+    if result['scores']['broken computer'] >94:
         tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
