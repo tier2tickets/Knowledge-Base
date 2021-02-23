@@ -4,11 +4,13 @@
 
 
 
-The software is packaged as an MSI which you build on the custom builds page. It supports all the typical command line options of an MSI for example:
-
 ## Installing
 
 ### Using Command line Arguments
+
+The software is packaged as an MSI which you build on the custom builds page. It supports all the typical command line options of an MSI for example:
+
+#### passive
 
 The following command would install the software with minimal user interface visible to the user and no cancel button and then reboot the computer. 
 
@@ -16,7 +18,7 @@ The following command would install the software with minimal user interface vis
 msiexec /i buttonInst.msi /passive
 ```
 
-
+#### quiet and no restart
 
 The following would install the software with no user interface and would not reboot the computer.
 
@@ -24,15 +26,17 @@ The following would install the software with no user interface and would not re
 msiexec /i buttonInst.msi /quiet /norestart
 ```
 
+We have some command line options that would allow you to customize settings specific to our software. 
 
+#### F1 - F11 Launch Key
 
-We have some command line options that would allow you to customize settings specific to our software. If you install the software the GUI way, but just running it with no options you will see that we offer the ability to bind the software to a F-Key so that pressing that key launches the app. We also have command line options to allow the same. If you wanted to bind the program to F4, for example, you would use use the following command line param.
+If you install the software the GUI way, but just running it with no options you will see that we offer the ability to bind the software to a F-Key so that pressing that key launches the app. We also have command line options to allow the same. If you wanted to bind the program to F4, for example, you would use use the following command line param.
 
 ```
 WRAPPED_ARGUMENTS="/launchkey=4"
 ```
 
-
+#### Desktop Icon Name
 
 You can also customize the name of the desktop icon. By default, it is named "Helpdesk Button" but if you wanted to have the icon named "PC Solutions Support", this would get you there.
 
@@ -40,7 +44,7 @@ You can also customize the name of the desktop icon. By default, it is named "He
 WRAPPED_ARGUMENTS="/iconname=""PC Solutions Support"""
 ```
 
-
+#### Launch key with Icon Name
 
 Putting those things together, you would end up with a command like this:
 
@@ -48,7 +52,7 @@ Putting those things together, you would end up with a command like this:
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"""
 ```
 
-
+#### Pin to Taskbar
 
 As of version `1.1.x.14`, the installer supports automatically pinning the icon to the taskbar of every user in addition to, or in place of, a standard desktop icon. That is also broken out into the wrapped argument `icons` which can be a number `1`, `2`, or `3`. Setting it to `1` would create a desktop icon but no taskbar icon, setting it to `2` would make a taskbar icon but no desktop icon, and setting it to 3 will enable both icons.
 
@@ -60,7 +64,9 @@ msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solut
 
 
 
-**Note to powershell users**: powershell requires an extra single quote around the WRAPPED_ARGUMENTS value. So the powershell equivalent command looks like this:
+#### **Note to powershell users**: 
+
+powershell requires an extra single quote around the WRAPPED_ARGUMENTS value. So the powershell equivalent command looks like this:
 
 ```
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS='"/launchkey=4 /iconname=""PC Solutions Support"""'

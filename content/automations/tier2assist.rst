@@ -64,17 +64,27 @@ Variables
 
 The first thing you need to know when writing a rule is which variables you have available to you. These variables are fixed and should be available to any integration. 
 
-You can see the variables available in the Visual Editor of the Tier2Assist but here they are for reference. There for more information take a look at the 
+You can see the variables available in the Visual Editor of the Tier2Assist but here they are for reference. For more information take a look at the 
 :ref:`A deeper dive into Variables <content/automations/tier2assist:A deeper dive into Variables>` section below
 
 .. image:: images/variables2.png
+
+Special Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The majority of the functions provided are built into python, but there are a few special functions we wrote that might be useful to you for bulding out your Tier2Assist Rules. 
+
+You can see this list in the Visual Editor of the Tier2Assist but here they are for reference. For more information take a look at the 
+:ref:`A deeper dive into Functions <content/automations/tier2assist:A deeper dive into Functions>` section below
+
+.. image:: images/functions.png
 
 What the user sees
 ^^^^^^^^^^^^^^^^^^^^^^
 
 This is what the user will see after submitting a ticket, if the rules determine a Tier2Assist should be shown.
 
-..image:: images/tier2assist.png
+.. image:: images/tier2assist.png
 
 A Tier2assist consists of a message (the text that shows up beside the button) and an action (the command run on the users machine if they click the button).
 
@@ -83,6 +93,19 @@ Examples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To show how powerful this can be and give you an idea of how to use it, we came up with a few example rules here:
+
+Running Tier2Assists before ticket submission
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+The variable "is_before_ticket_submit" allows you to schedule Tier2Assists before or after ticket subbmission. The variable is true when before the submission and false after. The default behavior is to always run after the ticket submisson. If you want to do somethings before ticket submission and others after you will need to use this variable to separate your code
+
+.. code-block:: python
+    
+    if is_before_ticket_submit:
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=before'})
+    if not is_before_ticket_submit:
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=after'})
+
 
 Chat
 """""""""""""
@@ -116,9 +139,10 @@ here is what that rule might look like:
 
 .. code-block:: python
 
-	for phrase in ['hiring', 'hire', 'new employee']:
-		if phrase in msg.lower():
-			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
+	 categories = [{'new hire'}]
+     result = ai_categorize(msg, categories)
+     if result['best_match'] == 'new hire':
+        tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Google Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
@@ -132,8 +156,9 @@ here is what that rule might look like:
 
 .. code-block:: python
 
-	for phrase in ['hiring', 'hire', 'new employee']:
-		if phrase in msg.lower():
+	categories = [{'new hire'}]
+    result = ai_categorize(msg, categories)
+    if result['best_match'] == 'new hire':
 			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
@@ -174,21 +199,6 @@ We also allow connecting to external APIs. This is a fun API that suggests activ
 	tier2assist.append({'msg': 'Activity of the day: ' + activity['activity'], 'action': 'https://google.com/search?q=' + activity['activity']})
 
 
--deprecated- External API:  Example Slack
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-Suppose you would like to get a message to #general in slack whenever you get a new ticket.
-Here is what that rule looks like (Make sure to put in your Slack API Key in the spot provided):
-
-
-.. code-block:: python
-
-	post_result = json_post('https://slack.com/api/chat.postMessage', {'channel': '#general', 'text': 'New ticket created. Ticket number: ' + ticketNumber}, {'Authorization': 'Bearer YOUR_SLACK_API_KEY_HERE'})
-
-
-SLACK IS DISCONTINUING ITS DIRECT API IN FAVOR OF SLACK APPS
-
-
 External API:  Example Slack (Using Slack APPS)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -196,11 +206,8 @@ This method requires that you have set up an app in slack with an Incoming Webho
 
 .. code-block:: python
 
-	try:
 		postURL = 'PUT_WEBHOOK_URL_HERE'
 		post_result = json_post(postURL, {'text': 'New ticket created. Ticket number: ' + ticketNumber})
-	except:
-		pass
 
 
 
@@ -214,14 +221,118 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 	if random.random() <= 0.5:
 		tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
 
-Each of these examples should be viewable in the Visual Editor.
+
+Big Example
+"""""""""""""""""""""""""""""""""""""
+
+Each of the previous examples should be viewable in the Visual Editor, but if you would rather, you can copy and paste this set of examples directly into the code editor and start playing around.
+
+
+.. code-block:: python
+
+    categories = ["new hire", "broken computer"]
+    result = ai_categorize(msg, categories)
+
+    #anything listed under here will only happen before the ticket subbmission process
+    if is_before_ticket_submit:
+        
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=before'})
+            
+        #this will show a random article on wikipedia 50% of the time
+        if random.random() <= 0.5:
+            tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
+
+        #this will ask the user to click a button to reboot the machine
+        tier2assist.append({'msg': 'Sometimes a reboot alone will resolve issues, would you like to reboot now?', 'action': 'cmd /c title Preparing to reboot...^&color 4f^&echo. ^&echo Preparing to reboot. To cancel, close this window.^&ping -n 9 127.0.0.1^>nul^&shutdown -r -f -t 0'})
+        
+        #this will prompt the user to open a google search if the AI is more than 94% sure the message is about a broken computer
+        if result['scores']['broken computer'] >94:
+            tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
+        
+    #anything listed under here will only happen after the ticket subbmission process    
+    if not is_before_ticket_submit:
+        tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=after'})
+            
+        #this will pull an activity from the boredapi and show the results for it in a google search
+        activity = json_get('https://www.boredapi.com/api/activity')
+        tier2assist.append({'msg': 'Activity of the day: ' + activity['activity'], 'action': 'https://google.com/search?q=' + activity['activity']})
+            
+        #this will prompt the user to schedule an appointment, if they click on anything that has the word schedule in it
+        if 'schedule' in selections:
+            tier2assist.append({'msg': 'You mentioned "schedule". Let\'s get that scheduled for you.', 'action': 'https://tier2tickets.syncromsp.com/bookings?calendar=101601'})
+                
+        #this will prompt the user to fill out a form if the AI thinks the message is about a new hire and add the responses from the form to the ticket notes
+        if result['best_match'] == 'new hire':
+            tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+
+        
+
+
+A deeper dive into Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are a few special fucntions written by our team to provide additional functionality within Tier2Assist Rules.
+
+*tier2assist.append*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+    
+    tier2assist.append({'msg': 'ADD TIER2ASSIST MESSAGE HERE', 'action': 'ADD ACTION HERE'})
+
+
+This is a really important one. It allows you to add A Tier2Assist. Combine this with if statements to show only the assists the end user may find helpful.
+
+
+*run*
+""""""""""""""""""""""""""""""""""""""""
+.. code-block:: python
+
+    run('PUT COMMAND HERE')
+
+
+This function allows you to run a command on the users machine. It works similarly to the RUN command in windows.
+
+
+*json_get*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+
+    json_get('PUT URL HERE')
+
+
+This function allows you to access and external API or website using a GET.
+    
+
+*json_post*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+    
+    json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'})
+
+
+This function allows you to access and external API or website using a POST.
+    
+
+*ai_categorize*
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: python
+    
+    ai_categorize('TEXT OR VARIABLE HERE', ['CATEGORY 1', 'CATEGORY 2', 'CATEGORY 3'])
+
+
+This function gives you access to our :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
 
 
 A deeper dive into Variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When designing the custom rules, there are certain variables which will always be available to you because they correspond with input from
+When designing these custom rules, there are certain variables which will always be available to you because they correspond with input from
 our application and not from the ticket system integration being used. They are outlined as follows.
+
 
 *selections*
 """"""""""""

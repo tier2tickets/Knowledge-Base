@@ -63,7 +63,7 @@ Table Of Contents
 	content/automations/tier2assist
 	content/automations/tier2forms
 	content/automations/notifications
-	
+	content/automations/tier2ai
 	
 
 .. toctree::
