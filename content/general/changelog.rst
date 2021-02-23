@@ -60,6 +60,30 @@ Software
 
 
 
+
+.. raw:: html
+
+   <a name="1.1.16">&nbsp;</a>
+
+1.1.x.16
+~~~~~~~~
+
+* Added support for Tier2AI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.15">&nbsp;</a>
