@@ -167,7 +167,7 @@ Now lets say you have a form that needs to be filled out upon new employees bein
 	if result['best_match'] == 'new hire':
 		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
 
-Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
+Additionally we have some special integrations with Cognito forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
 
 Password Reset
