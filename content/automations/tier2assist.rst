@@ -136,13 +136,21 @@ Google Forms
 Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
 here is what that rule might look like:
 
+.. code-block:: python
+
+	for phrase in ['hiring', 'hire', 'new employee']:
+		if phrase in msg.lower():
+			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
+
+
+You can now use :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>` to perform the same thing without having to list keywords to match against
 
 .. code-block:: python
 
-	 categories = [{'new hire'}]
-     result = ai_categorize(msg, categories)
-     if result['best_match'] == 'new hire':
-        tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
+	categories = [{'new hire'}]
+	result = ai_categorize(msg, categories)
+	if result['best_match'] == 'new hire':
+		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Google Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
@@ -150,16 +158,14 @@ Additionally we have some special integrations with google forms :ref:`Tier2Form
 Cognito Forms
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
-here is what that rule might look like:
-
+Now lets say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
 
 .. code-block:: python
 
 	categories = [{'new hire'}]
-    result = ai_categorize(msg, categories)
-    if result['best_match'] == 'new hire':
-			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+	result = ai_categorize(msg, categories)
+	if result['best_match'] == 'new hire':
+		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
 
 Additionally we have some special integrations with google forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
@@ -172,6 +178,14 @@ If you wanted to show a password reset link if both office and password were inc
 .. code-block:: python
 
 	if 'password' in msg and 'office' in msg:
+		tier2assist.append({'msg': 'Click here to reset your office password.', 'action': 'https://account.live.com/password/reset'})
+
+
+If you wanted to show a password reset link if either office or password were included in the ticket message, a rule like this may be appropriate:
+		
+.. code-block:: python
+
+	if 'password' in msg or 'office' in msg:
 		tier2assist.append({'msg': 'Click here to reset your office password.', 'action': 'https://account.live.com/password/reset'})
 
 Shedule and appointment
