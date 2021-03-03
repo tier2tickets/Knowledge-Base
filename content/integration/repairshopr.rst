@@ -72,7 +72,8 @@ You will have to add the permissions of the key explicitly. The permissions the 
 
 API Access Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""
-
+- Assets - View Details : For scaning company asset data for automatically adding them to tickets
+- Assets - List/Search: For searching through company assets for automatically adding them to tickets
 - Customers List/Search: For gathering company data like street addresses from companies
 - Customers View Details: For gathering contact data like email addresses from contacts
 - Ticket Comments - New: For adding public notes to tickets
