@@ -1,23 +1,17 @@
-User Trust Factor
+Human-Factor Verification
 ==================
 
-This feature helps to deal with validation of tickets. Submission of a ticket is very simple in our system. So simple that it is pontentially easy for a person to impersonate another when submitting a ticket. 
+A major feature of Tier2Tickets is ease of use for end users, which includes allowing end users to submit tickets without requiring a password. With surpassing password-based authentication, Tier2Tickets automatically provides a number of user verification steps that make it difficult to submit tickets as a third party, especially if you have the AD Sync/Identity Provider features turned on.
 
-For example: Malory is a bad egg. She wants to look at some classified financial documents and decides submitting a ticket to her companies IT department is the way to get that access.
-She starts the software, puts in her manager's name and email along with a request to give Malory access to a departments financial documents folder.
+As Tier2Tickets provides the computer host name and the verified logged-in account with each ticket, it is very difficult for a user to impersonate a client. In fact, this means our system is as secure as the domain the tickets come from. However, if you prefer to use a third-party system for verification or you simply want to voice-verify clients, you can use our "Human-Factor verification" toggle to confirm that you are sure the user is who they say they are. 
 
-In this example, a ticket would be generated in your PSA that apppeared to be from the office manager requesting to give Malory access to financial documents.
+Our proprietary system links the email address, MAC address, IP address, and username/domain for your customers' ticket report submissions. Once you have verified through whatever process you think is necessary (call, viewing screenshots, etc.) you or a tech that has access to tickets can toggle this to true, reporting the user signature as "Trusted". From then on, every submission that comes matching that exact signature will also come in as trusted, so your techs can proceed with confidence. 
 
-To help combat this we developed the User Trust Factor system.
+If a user is not Human-Factor Verified as Trusted, it's a good flag for your technicians to verify a user's identity before executing the given request. 
 
-This system correlates the email address, MAC address, IP address, and username/domain for your customers ticket report submissions. Once you have verified through whatever process you think is necessary (call, viewing screenshots, etc) you or a tech that has access to tickets can toggle this to true. From then on every submission that comes matching that exact signature will also come in as trusted.
+Once the setting has been changed, a line giving details about who and when the setting was changed will be shown, regardless of the current state of the Human-Factor Verification status. The entire history of the changes to this setting is available on request.
 
-This is what the User Trust Factor looks like in the report.
+This is what the Human-Factor Verification looks like in the report.
 
 .. image:: images/not-trusted.png
 .. image:: images/trusted.png
-
-All users will start out as untrusted until they are toggled. Once they are toggled, all ticket reports with that signature will reflect the setting. Once the setting has been changed, a line giveing details about who and when the setting was changed will be shown, regardless of the current state of the User Trust Factor. The entire history of the changes to this setting is available at request.
- 
-We considered putting this information in the ticket itself, but we decided against it.  Without a means of updating this in real time, situations may emerge that are problematic or confusing. We also didn't think that spamming ticket systems/email addresses with notes as people toggle this settings was desirable either.
- 
