@@ -144,6 +144,11 @@ For those of you who want to restrict the access the API user has, here is the s
 *As of version v2020_4 of ConnectWise Manage*
 
 - System/Table Setup/Inquire Level - All (For checking values like prority, board, etc)
+- The specific things in the system table we need are: 
+    - Service/Priority
+    - Service/Service Board
+    - Service/Severity
+    - Service/Source
 
 
 The group is based on your company, but it can be tricky. We recommend leaving this as Admin as it the integration will require access to view contact information based on the clients input. To avoid errors, your staff would need to make sure that no one puts in an email address that corresponds to a contact that is not covered by the group to which this API user belongs. To be clear, the permissions don't need to be Admin, but the group does. This will allow us access to all of your customers, but only limited access to each.
@@ -322,9 +327,7 @@ On this screen make sure to fillout the fields as described:
 
 - API Name: Service Ticket
 
-	- Callback URL: Listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section.
-
-	- Service Board: The board you want the Notifications to function on. 
+	- Callback URL: Listed on your `Integration Settings Page. <https://dev.helpdeskbuttons.com/backend.php>`_ under the Ticket Notification section. 
 	
 Click Save and you are all done.
 

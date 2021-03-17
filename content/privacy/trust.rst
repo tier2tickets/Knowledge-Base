@@ -1,5 +1,5 @@
 Human-Factor Verification
-==================
+====================================
 
 A major feature of Tier2Tickets is ease of use for end users, which includes allowing end users to submit tickets without requiring a password. With surpassing password-based authentication, Tier2Tickets automatically provides a number of user verification steps that make it difficult to submit tickets as a third party, especially if you have the AD Sync/Identity Provider features turned on.
 
