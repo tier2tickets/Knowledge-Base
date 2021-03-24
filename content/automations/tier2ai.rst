@@ -13,9 +13,9 @@ A larger practical example can found in the :ref:`Big Example <content/automatio
     result = ai_categorize(msg, categories)
     
 
-The result of the test can be looked using three metrics:
+The result of the test can be looked using three metrics based on the confidence score from 0 - 100 that the msg is related to each category:
    
-* Best match: This will return the best match of the set.
+* Best match: This will return the best match of the set. (Best match will only return a value if a category scores above 80)
 
 .. code-block:: python
 
@@ -23,7 +23,7 @@ The result of the test can be looked using three metrics:
         tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
         
 
-* Matches: This will return a list of all categories that match reasonably well
+* Matches: This will return a list of all categories that match well (score greater than 94)
 
 .. code-block:: python
 
@@ -31,7 +31,7 @@ The result of the test can be looked using three metrics:
         tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
         
 
-* Individual scores: This will allow you to determine what to do based on how likely the AI thinks the message and each category matches (confidence out of 100%).
+* Individual scores: This will allow you to determine what to do based on how likely the AI thinks the message and each category matches.
 
 .. code-block:: python
 
