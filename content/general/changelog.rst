@@ -7,6 +7,9 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2021-03-25
+~~~~~~~~~~
+* Added support for Tier2AI to the dispatcher rules automations
 
 2021-02-17
 ~~~~~~~~~~
@@ -86,6 +89,21 @@ Website
 Software
 --------
 
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.17">&nbsp;</a>
+
+1.1.x.17
+~~~~~~~~
+
+* Tier2AI now supports a result['best_match'] for categories that are not necessarily close enough to include in result['matches']
+* Fixed a bug in which the loading spinner would not animate while processing "is_before_ticket_submit = True" tier2assist automation rules
 
 
 
