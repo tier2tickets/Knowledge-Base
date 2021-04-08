@@ -98,7 +98,7 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 +--------------------------------------------------+--------------------------------------------------+
 | :ref:`content/integration/kaseya:*ticketType*`   | :ref:`content/integration/advanced:*ip*`         |
 +--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*message*`    | :ref:`content/integration/kaseya:*openDate*`     |
+| :ref:`content/integration/advanced:*msg*`        | :ref:`content/integration/kaseya:*openDate*`     |
 +--------------------------------------------------+--------------------------------------------------+
 | :ref:`content/integration/kaseya:*title*`        | :ref:`content/integration/advanced:*hostname*`   | 
 +--------------------------------------------------+--------------------------------------------------+

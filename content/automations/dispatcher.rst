@@ -128,7 +128,7 @@ rule that increases the priority if there is an exclamation point in the message
 
 .. code-block:: python
 
-	if '!' in message: 
+	if '!' in msg: 
 		priority = priority - 1
 
 You need to be careful with rules like these, because you might end up where the priory moves into a negative number
@@ -198,7 +198,7 @@ letters.
 
 .. code-block:: python
 
-	if sum(1 for c in message if c.isupper())/len(message) > 0.75: 
+	if sum(1 for c in msg if c.isupper())/len(msg) > 0.75: 
 		priority = 0
 
 Each of these examples should be viewable in the Visual Editor.
@@ -348,7 +348,7 @@ our application and not from the ticket system integration being used. They are 
 |
 |
 
-*message*
+*msg*
 """""""""
 
 	**The message which the end-user typed to generate this ticket:**

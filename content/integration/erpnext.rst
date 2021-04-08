@@ -95,7 +95,7 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 +---------------------------------------------------+-------------------------------------------------------------+
 | :ref:`content/integration/ERPNext:*priv_append*`  | :ref:`content/automations/dispatcher:*email*`               |
 +---------------------------------------------------+-------------------------------------------------------------+
-| :ref:`content/automations/dispatcher:*message*`   | :ref:`content/automations/dispatcher:*ip*`                  |
+| :ref:`content/automations/dispatcher:*msg*`       | :ref:`content/automations/dispatcher:*ip*`                  |
 +---------------------------------------------------+-------------------------------------------------------------+
 | :ref:`content/automations/dispatcher:*subject*`   | :ref:`content/automations/dispatcher:*mac*`                 | 
 +---------------------------------------------------+-------------------------------------------------------------+
