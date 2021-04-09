@@ -30,7 +30,7 @@ Press enter and follow the prompts.
 
 Next Steps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Please provide our team your URL and Key using `privnote <https://privnote.com/>`_ or a secure method of information transfer of your preference. You can send this to `support@tier2.tech <mailto:support@tier2.tech?subject=Cloud_Compliance_Keys>`_. `support@tier2.tech <mailto:support@tier2.tech?subject="Cloud Compliance Keys">`_ `support@tier2.tech <mailto:support@tier2.tech?subject='Cloud Compliance Keys'>`_
+Please provide our team your URL and Key using `privnote <https://privnote.com/>`_ or a secure method of information transfer of your preference. You can send this to `support@tier2.tech <mailto:support@tier2.tech?subject=Cloud%20Compliance%20Keys>`_.
 
 Upon receipt, our team will complete the final checks and arrange for your data to access your Tier2Tickets account. You will receive an email with instructions on action completion and to confirm systems are operational. 
 
