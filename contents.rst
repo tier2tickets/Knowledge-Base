@@ -88,7 +88,6 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/marketing/collateral
-	content/marketing/how-to
 	content/marketing/image-library
 
 .. toctree::
