@@ -14,7 +14,7 @@ Branding Guidelines
 The fonts are Montserrat, which is a Google Font, available for free here: `fonts.google.com <https://fonts.google.com/specimen/Montserrat>`_
 
 
-Don't see what you're looking for? Contact us at sales@helpdeskbuttons.com
+Don't see what you're looking for? Contact us at sales@tier2.tech
 
 Documents updated 20210412
 
