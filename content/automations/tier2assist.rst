@@ -54,7 +54,7 @@ actions appearing on the clients side.
 Save Rules
 ^^^^^^^^^^^^^^
 
-Make sure to save the changes to your rules! The code will be tested to make sure there are no syntax errors, and you will get a message letting you know if it was successful.
+Make sure to save the changes to your rules! The code will be tested to make sure there are no syntax errors, and you will get a message letting you know if it was successful. Once you save your rules they will be implemented immediately for every endpoint connected to your account with an email connection. The next time a user starts the software these rules will apply. There is no need to rebuild the software.
 
  .. image:: images/save.png
 
