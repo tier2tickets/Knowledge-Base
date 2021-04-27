@@ -24,7 +24,7 @@ The layout and colors in the GUI can be modified by customizing the CSS. The CSS
 
 The classes and variables in that file can be overridden by your own settings by putting them in a file named "custom.css" and `uploading it the same way as a custom script <https://docs.tier2tickets.com/content/customization/tier2scripts/>`_. 
 
-GLOBAL COLORING
+Global Color Modification
 +++++++++++
 This section is for if you'd like to modify colors globally (like if you don't like our general greens, reds, or teal!) As an example, here is a custom.css file which would change colors globally. In this case, making the GUI completely lime-green and pink and terrible:
 
@@ -55,7 +55,7 @@ Original Color Key for reference:
 	color_09: #ffffff; hdb_white */
 
 
-SPECIFIC COLOR CHANGES
+Specific Element Modification
 +++++++++
 If you would like to modify specific items, here are a few labelled to help you ID them. In general, you will be changing `background-color`. Be sure to override our inline settings with `!important`. The following would make the success banner red instead of green. 
 
