@@ -2,7 +2,7 @@ Cloud Compliance Package Set-up
 ===============================
 
 Thank you for purchasing the Cloud Compliance package! Here's how to initiate the set-up:
---------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 Please find the steps below and let us know if you have any questions! Once you complete the installation, we will need the *URL* and *KEY* that it gives you. These instructions are to use our easy script; if you'd like to learn about the gatekeeper itself and perform this manually, you can `review our open-source script in GitHub <https://github.com/tier2tickets/s3_gatekeeper>`_. 
 

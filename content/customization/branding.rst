@@ -1,8 +1,8 @@
 Branding
-========
+=============
 
 Logos, Icons
-^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 .. image:: images/branding.png
 
@@ -13,19 +13,30 @@ If you don’t have your images in the right format or size, they will be automa
 Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MSI after uploading.
 
 Renaming Shortcuts
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 If you are looking for a way to change the name of the helpdesk button shortcut we reccomend the method in our documentation on 
 `installations <https://docs.tier2tickets.com/content/general/installation/>`_ this method is used in our 
 `deployment scripts <https://docs.tier2tickets.com/content/deployment/scripts/>`_.
 
+
+Pin to Taskbar
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/branding2.png
+
+One of the ways to launch the software is via a shortcut that can be pinned to the taskbar. The icon for this shortcut is also configurable in the same way as the standard icon/logo. 
+Take note: this icon is rendered significantly smaller than the standard icon while pinned. Using something easily recognizable such as our HELP logo is reccomended.   
+
+.. image:: images/taskbar.png
+
 GUI Layout and Colors
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The layout and colors in the GUI can be modified by customizing the CSS. The CSS which controls most of the look and feel of the GUI is located at "C:\\Program Files (x86)\\Tier2Tickets\\resources\\style.css" in most cases.
 
 The classes and variables in that file can be overridden by your own settings by putting them in a file named "custom.css" and `uploading it the same way as a custom script <https://docs.tier2tickets.com/content/customization/tier2scripts/>`_. 
 
 Global Color Modification
-+++++++++++
++++++++++++++++++++++++++++++
 This section is for if you'd like to modify colors globally (like if you don't like our general greens, reds, or teal!) As an example, here is a custom.css file which would change colors globally. In this case, making the GUI completely lime-green and pink and terrible:
 
 .. code-block:: css
@@ -56,7 +67,7 @@ Original Color Key for reference:
 
 
 Specific Element Modification
-+++++++++
+++++++++++++++++++++++++++++++++++++++++
 If you would like to modify specific items, here are a few labelled to help you ID them. In general, you will be changing `background-color`. Be sure to override our inline settings with `!important`. The following would make the success banner red instead of green. 
 
 .. code-block:: css 

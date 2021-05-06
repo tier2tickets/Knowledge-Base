@@ -1,4 +1,4 @@
-# Software Installation Guide
+# Software Installation and Configuration Guide
 
 **We recommend that you use one of our Custom-built-for-you  Batch files or Powershell files that you will find on your Software and deployment builds page or follow one of our RMM deployment guides.  But if you need to build a custom installation we have included this page for reference.** 
 
@@ -117,3 +117,11 @@ NOTE: if you get back "ReturnValue = 1603;" from this command, then the removal 
 There is a checkbox on the Device Management page that will filter the list of endpoints for duplicate hostnames. For the most part it is rare for a duplicate to appear, but fully uninstalling and reinstalling the software will create a duplicate endpoint. Replacing the hard drive or the motherboard in a PC running the software will also create a duplicate. Upgrading the software will not.
 
 ![](images/duplicate.png)
+
+
+
+## Additional Notes
+
+### Re-Pin to Taskbar
+
+The software can be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the desktop when the user logs in.  
