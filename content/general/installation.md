@@ -1,8 +1,6 @@
 # Software Installation and Configuration Guide
 
-**We recommend that you use one of our Custom-built-for-you  Batch files or Powershell files that you will find on your Software and deployment builds page or follow one of our RMM deployment guides.  But if you need to build a custom installation we have included this page for reference.** 
-
-
+**We recommend that you use one of our Custom-built-for-you Batch files or Powershell files that you will find on your Software and deployment builds page or follow one of our RMM deployment guides. But if you need to build a custom installation we have included this page for reference.**
 
 ## Installing
 
@@ -12,7 +10,7 @@ The software is packaged as an MSI which you build on the custom builds page. It
 
 #### passive
 
-The following command would install the software with minimal user interface visible to the user and no cancel button and then reboot the computer. 
+The following command would install the software with minimal user interface visible to the user and no cancel button and then reboot the computer.
 
 ```
 msiexec /i buttonInst.msi /passive
@@ -26,7 +24,7 @@ The following would install the software with no user interface and would not re
 msiexec /i buttonInst.msi /quiet /norestart
 ```
 
-We have some command line options that would allow you to customize settings specific to our software. 
+We have some command line options that would allow you to customize settings specific to our software.
 
 #### F1 - F11 Launch Key
 
@@ -62,9 +60,7 @@ The default is /icons=3 but if you just want a desktop icon and not a taskbar ic
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"" /icons=1"
 ```
 
-
-
-#### **Note to powershell users**: 
+#### **Note to powershell users**:
 
 powershell requires an extra single quote around the WRAPPED_ARGUMENTS value. So the powershell equivalent command looks like this:
 
@@ -78,15 +74,11 @@ Make sure you are aware that this reboots the computer! Don't push out that comm
 msiexec /i "buttonInst.msi" /norestart WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"""
 ```
 
-
-
 You would still need to reboot after hours though, the software does actually need a reboot most of the time.
 
-### Without Command line Arguments 
+### Without Command line Arguments
 
 If installing the software by starting the MSI without any command line options you will get a default shortcut name: "Helpdesk Button" and the MSI will allow you to select the launch key. You can use our Tier2Scripts system to change this icon on install by using the script listed [here.](https://docs.tier2tickets.com/content/customization/tier2scripts/#update-shortcut-icons-on-install)
-
-
 
 ## Uninstalling
 
@@ -94,7 +86,7 @@ If installing the software by starting the MSI without any command line options 
 
 To make this process a bit simpler we have added the ability to uninstall endpoints remotely this feature will only work on endpoints with version 0.6.x or newer.
 
-Select the endpoint(s) you wish to remove, select Remove Endpoints and click Apply. 
+Select the endpoint(s) you wish to remove, select Remove Endpoints and click Apply.
 
 ![](images/remove1.png)
 
@@ -104,13 +96,11 @@ The next popup confirms the remove and gives the option to run the uninstall com
 
 ### Manually
 
-Since the package is an MSI, you can use WMI to uninstall it. Here is an example command to uninstall it silently: 
+Since the package is an MSI, you can use WMI to uninstall it. Here is an example command to uninstall it silently:
 
 `wmic product where (name="Tier2Tickets") call uninstall /nointeractive`
 
 NOTE: if you get back "ReturnValue = 1603;" from this command, then the removal failed because you are not in an elevated command prompt.
-
-
 
 ## Duplicate Endpoints
 
@@ -118,10 +108,10 @@ There is a checkbox on the Device Management page that will filter the list of e
 
 ![](images/duplicate.png)
 
-
-
 ## Additional Notes
 
 ### Re-Pin to Taskbar
 
-The software can be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the desktop when the user logs in.  
+The software can be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the taskbar when the user logs in.
+
+Running `pttb.exe "Helpdesk Button"` as the logged-in user will also pin the icon to taskbar on demand.
