@@ -247,7 +247,7 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
     categories = ["new hire", "broken computer"]
     result = ai_categorize(msg, categories)
 
-    #anything listed under here will only happen before the ticket subbmission process
+    #anything listed under here will only happen before the ticket submission process
     if is_before_ticket_submit:
         
         tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP BEFORE THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=before'})
@@ -285,7 +285,7 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
 A deeper dive into Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are a few special fucntions written by our team to provide additional functionality within Tier2Assist Rules.
+There are a few special functions written by our team to provide additional functionality within Tier2Assist Rules.
 
 *tier2assist.append*
 """"""""""""""""""""""""""""""""""""""""
