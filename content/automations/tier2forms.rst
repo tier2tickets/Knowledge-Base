@@ -23,7 +23,7 @@ Google Form Video Walkthrough
 Link Google Forms with Helpdesk Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For a Library of Google Form Templates to adapt for your own uses: `Tier2Form Templates<https://drive.google.com/drive/folders/1Q8N8msOIrXjUXNJyZn__ByLFWSKmCrO8>`_
+For a Library of Google Form Templates to adapt for your own uses: `Tier2Form Templates <https://drive.google.com/drive/folders/1Q8N8msOIrXjUXNJyZn__ByLFWSKmCrO8>`_
 
 Required in the Google Form
 """"""""""""""""""""""""""""""""""""
