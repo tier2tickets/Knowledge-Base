@@ -23,6 +23,8 @@ Google Form Video Walkthrough
 Link Google Forms with Helpdesk Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+For a Library of Google Form Templates to adapt for your own uses: [Tier2Form Templates](https://drive.google.com/drive/folders/1Q8N8msOIrXjUXNJyZn__ByLFWSKmCrO8)
+
 Required in the Google Form
 """"""""""""""""""""""""""""""""""""
 
@@ -43,7 +45,7 @@ In your HDB account navigate to "Tier2Forms", under "Automations"
 
 Click the "Link A Form" button then copy/paste the URL from your form and click "OK"
 You will need to be logged into the google account in which the form was created.
-You will be prompted to allow accesss to edit forms which you will need to allow.
+You will be prompted to allow access to edit forms which you will need to allow.
 
 .. image:: images/LinkForm.png
 
