@@ -1,7 +1,7 @@
 Syncro RMM Instructions
 =======================
 
-This guide will show you how to set up deployment for a build of Helpdesk Button Software through Ninja RMM. You will need an administrative login for Ninja RMM.
+This guide will show you how to set up deployment of Tier2Tickets with Syncro.
 
 Add Helpdesk Buttons to your Syncro System Tray Icon
 -----------
