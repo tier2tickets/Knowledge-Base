@@ -118,7 +118,7 @@ Running `pttb.exe "Helpdesk Button"` as the logged-in user will also pin the ico
 
 ### Set Shortcut Function
 
-#### For a Single Device
+#### For a Single Device (Manual)
 
 If your predetermined shortcut key isn't working for a specific user, you can change that combination in the Desktop Shortcut Properties menu.
 
@@ -128,9 +128,9 @@ If your predetermined shortcut key isn't working for a specific user, you can ch
 
 ![](images/shortcut-change-final.png)
 
-#### For Multiple Devices
+#### For Multiple Devices (Powershell)
 
-The syntax for the function is simple: You just list the things you want to change about a shortcut after passing in the shortcut path, i.e. :
+The syntax for this PowerShell function is simple: You just list the things you want to change about a shortcut after passing in the shortcut path, i.e. :
 
 `Set-Shortcut linkPath hotkey location arguments targetPath`
 
