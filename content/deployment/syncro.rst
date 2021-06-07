@@ -4,7 +4,7 @@ Syncro RMM Instructions
 This guide will show you how to set up deployment of Tier2Tickets with Syncro.
 
 Add Helpdesk Buttons to your Syncro System Tray Icon
------------
+-----------------------------------------------------------------------------
 Navigate to the Policies area of Syncro's RMM settings.
 
 .. image:: images/Syncro-Policies.png

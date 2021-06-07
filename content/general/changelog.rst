@@ -104,6 +104,7 @@ Software
 
 * Tier2AI now supports a result['best_match'] for categories that are not necessarily close enough to include in result['matches']
 * Fixed a bug in which the loading spinner would not animate while processing "is_before_ticket_submit = True" tier2assist automation rules
+* Implemented a workaround for a Windows bug that prevented uninstalling the software because of the Windows Event Log Service
 
 
 
