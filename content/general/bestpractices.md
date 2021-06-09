@@ -2,7 +2,7 @@
 
 Many users will start using Helpdesk Buttons and Tier2Tickets easily with no instruction at all. However, you may have some users who are used to putting in tickets in certain ways (or not at all!). In order to maximize adoption and get the biggest benefit from the Tier2Tickets software, we recommend the following:
 
-_**<span style="font-size:1.25em;">Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process.The recommendations here are based on full deployment, and we offer a lot of specialty onboarding services to ensure a smooth launch.Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.</span>**_
+_**<span style="font-size:1.25em;">Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. The recommendations here are based on full deployment, and we offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.</span>**_
 
 ## 1) Use Tier2Tickets/Helpdesk Buttons for User Verification and Immediate Diagnostic submission.
 
@@ -14,11 +14,7 @@ Have an on-site tech take a minute to walk each person through submitting a tick
 
 Host a Lunch and Learn to cover any office-specific conversations you needed to have anyway. Walk them through the ticket submission process, how to submit a ticket, and even show them _parts of_ the report so they understand how much they're helping themselves when they submit a ticket versus calling or emailing you.
 
-## 3) Make Tier2Tickets/Helpdesk Buttons your end users' "one-stop-shop".
-
-If you use a ticketing portal link on end user desktops, consider removing it. You can specify your portal link and logo to show up on the first GUI page of the Tier2Tickets software itself and you'll find this is a much cleaner workflow. Removing these shortcuts will encourage the end users to use the software to submit tickets while still retaining the ability to use your portal directly when it is most appropriate and this will remove customer confusion as to which link to use.
-
-## 4) Incentivize using Tier2Tickets by making tickets submitted through it higher priority that emails and phone calls.
+## 3) Incentivize using Tier2Tickets by making tickets submitted through it higher priority that emails and phone calls.
 
 If you accept tickets via e-mail currently, consider adding instructions to your autoresponder. Our MSP uses the following:
 
@@ -26,6 +22,10 @@ If you accept tickets via e-mail currently, consider adding instructions to your
 **Message:** “Thank you, we have received your request and your normal-priority ticket has been created. _Do you have an urgent or high-priority request? For immediate diagnostics, triage, and dispatch, please submit a ticket via your Helpdesk Button._“
 
 You also may consider adding a recording in your phone system to the same effect as above. Our is: “Our first available technician will be with you shortly. For the fastest service, you can also submit a ticket via your Helpdesk Button or icon on your desktop computer. This gives our technicians a huge head start on your issues and is the fastest way to get them resolved."
+
+## 4) Make Tier2Tickets/Helpdesk Buttons your end users' "one-stop-shop".
+
+If you use a ticketing portal link on end user desktops, consider removing it. You can specify your portal link and logo to show up on the first GUI page of the Tier2Tickets software itself and you'll find this is a much cleaner workflow. Removing these shortcuts will encourage the end users to use the software to submit tickets while still retaining the ability to use your portal directly when it is most appropriate and this will remove customer confusion as to which link to use.
 
 ## 5) Hand out the How-to Guide
 
