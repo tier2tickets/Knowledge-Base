@@ -4,22 +4,40 @@ Many users will start using Helpdesk Buttons and Tier2Tickets easily with no ins
 
 _**<span style="font-size:1.25em;">Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. The recommendations here are based on full deployment, and we offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.</span>**_
 
-## 1) Use Tier2Tickets/Helpdesk Buttons for User Verification and Immediate Diagnostic submission.
+## 1) Make it obvious! Use the physical Helpdesk Button, pinned-to-taskbar icon, or a HELP decal on your keyboard hotkey of choice.
 
-While easy and requiring no training, the single best way to encourage user adoption is to give end users intentional practice using this new process. When a user calls to submit a ticket or attempts to grab a technician in the hallway, train your techs to guide the user to trigger the Tier2Tickets/Helpdesk Buttons software and walk them through the process. You will then have automatic documentation and diagnostics on the user's problem, and in the case of phone calls, it's a great way to affirm the user's identity and workstation.
+Humans are visual and highly suggestible. You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious, not just visually, but also in conversation! Other items on this list talk about the latter, but regarding visual methods, we recommend using some combination of the following to train your end users to trigger Tier2Tickets:
 
-## 2) Give them hands-on training or Host a Lunch and Learn
+- the [Helpdesk Button](https://www.helpdeskbuttons.com/), with your branding on it
+- the pinned-to-taskbar icon, edited if you'd like with your brand, but make sure it says "HELP" very clearly!, and/or
+- a [HELP decal](https://www.helpdeskbuttons.com/product/keyboard-decals/) on the keyboard hotkey of your choice
+
+## 2) Give them hands-on training, in the field or as a Lunch and Learn.
+
+### In the Field
+
+#### When users call in: Use Tier2Tickets for User Verification and Immediate Diagnostic submission.
+
+Encourage user adoption by giving end users intentional practice using this new process. When a user calls to submit a ticket or attempts to grab a technician in the hallway, train your techs to guide the user to trigger the Tier2Tickets software and walk them through the process. You will then have automatic documentation and diagnostics on the user's problem, and in the case of phone calls, it's a great way to affirm the user's identity and workstation with our [proprietary Human Trust Factor verification]().
+
+#### When a technician is on-site
 
 Have an on-site tech take a minute to walk each person through submitting a ticket and explain to your end users that doing this small action gives them the power to help resolve their problems faster.
+
+### Lunch and Learn
 
 Host a Lunch and Learn to cover any office-specific conversations you needed to have anyway. Walk them through the ticket submission process, how to submit a ticket, and even show them _parts of_ the report so they understand how much they're helping themselves when they submit a ticket versus calling or emailing you.
 
 ## 3) Incentivize using Tier2Tickets by making tickets submitted through it higher priority that emails and phone calls.
 
+### by Email
+
 If you accept tickets via e-mail currently, consider adding instructions to your autoresponder. Our MSP uses the following:
 
-**Subject:** We received your Normal Priority Ticket.
+**Subject:** We received your Normal Priority Ticket. </br>
 **Message:** “Thank you, we have received your request and your normal-priority ticket has been created. _Do you have an urgent or high-priority request? For immediate diagnostics, triage, and dispatch, please submit a ticket via your Helpdesk Button._“
+
+### by Phone
 
 You also may consider adding a recording in your phone system to the same effect as above. Our is: “Our first available technician will be with you shortly. For the fastest service, you can also submit a ticket via your Helpdesk Button or icon on your desktop computer. This gives our technicians a huge head start on your issues and is the fastest way to get them resolved."
 
