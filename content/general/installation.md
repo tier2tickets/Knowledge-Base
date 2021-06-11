@@ -116,6 +116,12 @@ The software can be forced to initiate a re-pin if this file: `%localappdata%\ti
 
 Running `pttb.exe "Helpdesk Button"` as the logged-in user will also pin the icon to taskbar on demand.
 
+![](images\pttb.gif)
+
+Keep in mind that your installation folder could be "Helpdesk Buttons." The software was formally renamed in [1.1.x.10](https://docs.tier2tickets.com/content/general/changelog/#x-10).
+
+
+
 ### Set Shortcut Function
 
 The syntax for the function is simple: You just list the things you want to change about a shortcut after passing in the shortcut path, i.e. :
