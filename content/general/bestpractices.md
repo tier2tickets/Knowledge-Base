@@ -4,13 +4,13 @@ Many users will start using Helpdesk Buttons and Tier2Tickets easily with no ins
 
 _**<span style="font-size:1.25em;">Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. The recommendations here are based on full deployment, and we offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.</span>**_
 
-## 1) Make it obvious! Use the physical Helpdesk Button, pinned-to-taskbar icon, or a HELP decal on your keyboard hotkey of choice.
+## 1) Make how to use Tier2Tickets easy and visually obvious.
 
-Humans are visual and highly suggestible. You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious, not just visually, but also in conversation! Other items on this list talk about the latter, but regarding visual methods, we recommend using some combination of the following to train your end users to trigger Tier2Tickets:
+Humans are visual and highly suggestible. You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious. We offer several methods of triggering our software in addition to the desktop icon, and we recommend using some combination of the following to train your end users to launch Tier2Tickets:
 
 - the [Helpdesk Button](https://www.helpdeskbuttons.com/), with your branding on it
 - the pinned-to-taskbar icon, edited if you'd like with your brand, but make sure it says "HELP" very clearly!, and/or
-- a [HELP decal](https://www.helpdeskbuttons.com/product/keyboard-decals/) on the keyboard hotkey of your choice
+- a [HELP decal](https://www.helpdeskbuttons.com/product/keyboard-decals/) on the keyboard hotkey of your choice.
 
 ## 2) Give them hands-on training, in the field or as a Lunch and Learn.
 
@@ -18,7 +18,7 @@ Humans are visual and highly suggestible. You'll get the best adoption by making
 
 #### When users call in: Use Tier2Tickets for User Verification and Immediate Diagnostic submission.
 
-Encourage user adoption by giving end users intentional practice using this new process. When a user calls to submit a ticket or attempts to grab a technician in the hallway, train your techs to guide the user to trigger the Tier2Tickets software and walk them through the process. You will then have automatic documentation and diagnostics on the user's problem, and in the case of phone calls, it's a great way to affirm the user's identity and workstation with our [proprietary Human Trust Factor verification]().
+Encourage user adoption by giving end users intentional practice using this new process. When a user calls to submit a ticket or attempts to grab a technician in the hallway, train your techs to guide the user to trigger the Tier2Tickets software and walk them through the process. You will then have automatic documentation and diagnostics on the user's problem, and in the case of phone calls, it's a great way to affirm the user's identity and workstation with our [proprietary Human Factor verification](https://docs.tier2tickets.com/content/privacy/trust/).
 
 #### When a technician is on-site
 
