@@ -124,7 +124,19 @@ Keep in mind that your installation folder could be "Helpdesk Buttons." The soft
 
 ### Set Shortcut Function
 
-The syntax for the function is simple: You just list the things you want to change about a shortcut after passing in the shortcut path, i.e. :
+#### For a Single Device (Manual)
+
+If your predetermined shortcut key isn't working for a specific user, you can change that combination in the Desktop Shortcut Properties menu.
+
+![](images/shortcut-change-menu.png)
+
+![](images/shortcut-change-initial.png)
+
+![](images/shortcut-change-final.png)
+
+#### For Multiple Devices (Powershell)
+
+The syntax for this PowerShell function is simple: You just list the things you want to change about a shortcut after passing in the shortcut path, i.e. :
 
 `Set-Shortcut linkPath hotkey location arguments targetPath`
 

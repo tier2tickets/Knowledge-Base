@@ -45,6 +45,7 @@ Table Of Contents
 	content/deployment/auto-update
 	content/deployment/ninjarmm
 	content/deployment/automate
+	content/deployment/syncro
 
 .. toctree::
 	:caption: Customization
