@@ -16,7 +16,7 @@ Humans are visual! You'll get the best adoption by making your ticketing process
 - the pinned-to-taskbar icon, edited if you'd like with your brand, but make sure it says "HELP" very clearly!, and/or
 - a [HELP decal](https://www.helpdeskbuttons.com/product/keyboard-decals/) on the keyboard hotkey of your choice.
 
-## 3) Provide customers with hands-on training that fits their schedules
+## 3) Provide customers with hands-on training that fits
 
 Encourage user adoption by giving end users intentional practice using this new process, whether on the fly in the field, during planned meetings/training sessions/Lunch-and-Learns, or sharing a How-To Sheet.
 
