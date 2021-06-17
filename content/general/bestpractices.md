@@ -1,12 +1,12 @@
 # Best Practices For Client Adoption
 
-Many users will start using Helpdesk Buttons and Tier2Tickets easily with no instruction at all. However, you may have some users who are used to putting in tickets in certain ways like email, phone or text, or not at all! In order to encourage users of all ability levels to submit the perfect ticket, every time, our most successful partners have implements some combination of at least the first (if not all six!) of the following best practices as they deploy our software.
+Many users will start using Helpdesk Buttons and Tier2Tickets easily with no instruction at all. However, you may have some users who are used to putting in tickets in certain ways like email, phone or text, or not at all! In order to encourage users of all ability levels to submit the perfect ticket, every time, our most successful partners have implements some combination of at least the first (if not all five!) of the following best practices as they deploy our software.
 
 We offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.
 
 ## 1) Deploy to all of your endpoints as a reliable part of your process and workflows.
 
-Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. Use Tier2Tickets as a tool for all of your clients, not just a select group of endpoints, and train your technicians to expect and review the report.
+Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. Use Tier2Tickets as a tool for all of your clients, not just a select group of endpoints, and train your technicians to expect and review the report. We've had partners report reductions in their time-to-diagnose and time-to-resolve by 20%, 40%, and even 60%. It won't save time on every single ticket, but the annoying, messy ones, having that baseline of reporting will save you time and frustration.
 
 ## 2) Make launching Tier2Tickets visually obvious for your customers.
 
