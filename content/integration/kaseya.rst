@@ -87,27 +87,27 @@ Dispatcher Rules
 This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
 
 
-+--------------------------------------------------+--------------------------------------------------+
-| Read/Write                                       | Read Only                                        |
-+==================================================+==================================================+
-| :ref:`content/integration/kaseya:*priority*`     | :ref:`content/integration/advanced:*selections*` |
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/kaseya:*ticketStatus*` | :ref:`content/integration/advanced:*name*`       |
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/kaseya:*queue*`        | :ref:`content/integration/advanced:*email*`      |
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/kaseya:*ticketType*`   | :ref:`content/integration/advanced:*ip*`         |
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*msg*`        | :ref:`content/integration/kaseya:*openDate*`     |
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/kaseya:*title*`        | :ref:`content/integration/advanced:*hostname*`   | 
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/kaseya:*ticketSource*` | :ref:`content/integration/advanced:*mac*`        | 
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/kaseya:*assignee*`     |                                                  | 
-+--------------------------------------------------+--------------------------------------------------+
-| :ref:`content/integration/advanced:*append*`     |                                                  | 
-+--------------------------------------------------+--------------------------------------------------+
++--------------------------------------------------+----------------------------------------------------+
+| Read/Write                                       | Read Only                                          |
++==================================================+====================================================+
+| :ref:`content/integration/kaseya:*priority*`     | :ref:`content/automations/dispatcher:*selections*` |
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketStatus*` | :ref:`content/automations/dispatcher:*name*`       |
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/kaseya:*queue*`        | :ref:`content/automations/dispatcher:*email*`      |
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketType*`   | :ref:`content/automations/dispatcher:*ip*`         |
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/automations/dispatcher:*msg*`      | :ref:`content/integration/kaseya:*openDate*`       |
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/kaseya:*title*`        | :ref:`content/automations/dispatcher:*hostname*`   | 
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/kaseya:*ticketSource*` | :ref:`content/automations/dispatcher:*mac*`        | 
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/kaseya:*assignee*`     |                                                    | 
++--------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/advanced:*append*`     |                                                    | 
++--------------------------------------------------+----------------------------------------------------+
 
 
 Field Definitions
