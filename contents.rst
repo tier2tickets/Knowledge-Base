@@ -31,10 +31,11 @@ Table Of Contents
 	content/integration/erpnext
 	content/integration/freshdesk
 	content/integration/freshservice
-	content/integration/repairshopr
 	content/integration/kaseya
 	content/integration/osticket
+	content/integration/repairshopr
 	content/integration/servicenow
+	content/integration/topdesk
 	content/integration/zendesk
 
 .. toctree::
