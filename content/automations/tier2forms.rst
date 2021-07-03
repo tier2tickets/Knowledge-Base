@@ -278,6 +278,7 @@ How customers can control their data.
 In accordance with GDPR regulations, other similar regulations, and good-faith, upon request by the owner of such data
 by email to support@helpdeskbuttons.com, we will purge private/identifiable data from our systems within 30 days.
 
+:ref:`Visit our Compliance documentation for further information on GDPR allowances<content/privacy/compliance:GDPR Compliance>`
  
 How we protect the data.
 ^^^^^^^^^^^^^^^^^^^^^^^^
