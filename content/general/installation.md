@@ -1,6 +1,6 @@
 # Software Installation and Configuration Guide
 
-**We recommend that you use one of our Custom-built-for-you Batch files or Powershell files that you will find on your Software and deployment builds page or follow one of our RMM deployment guides. But if you need to build a custom installation we have included this page for reference.**
+**We recommend that you use one of our Custom-built-for-you Batch files or Powershell files that you will find on your Software [Download and Deployment page](https://account.helpdeskbuttons.com/builds.php) or follow one of our RMM deployment guides. But if you need to build a custom installation we have included this page for reference.**
 
 ## Installing
 
@@ -120,8 +120,6 @@ Running `pttb.exe "Helpdesk Button"` as the logged-in user will also pin the ico
 
 Keep in mind that your installation folder could be "Helpdesk Buttons." The software was formally renamed in [1.1.x.10](https://docs.tier2tickets.com/content/general/changelog/#x-10).
 
-
-
 ### Set Shortcut Function
 
 #### For a Single Device (Manual)
@@ -172,10 +170,8 @@ function Set-Shortcut {
 
 #### Microsoft Remote Desktop
 
-In general the software and hardware work fine with most remote desktop software. For Microsoft's RDP make sure key combinations are set to propagate to the proper machine based on the configuration.  
+In general the software and hardware work fine with most remote desktop software. For Microsoft's RDP make sure key combinations are set to propagate to the proper machine based on the configuration.
 
 ![](images/rdp.png)
-
-
 
 If the software is installed locally and you simply want screenshots of the RDP, select on this computer. If the software is installed on the server, select on the remote computer.
