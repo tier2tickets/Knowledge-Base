@@ -11,7 +11,7 @@
 
 ## 2) Deploy with our Best Practices
 
-We have created a [Best Practices guide](https://docs.tier2tickets.com/content/general/bestpractices/) based on the adoption practices from some of our most successful partners. If you want additional assistance, we offer our service packages during which our development team can assist and complete all of this for you. [Email sales@tier2.tech if this interests you!](mailto:sales@tier2.tech).
+We have created a [Best Practices guide](https://docs.tier2tickets.com/content/general/bestpractices/) based on the adoption practices from some of our most successful partners, as well as [thorough documentation on how to customize and install with our custom deployment files](https://docs.tier2tickets.com/content/deployment/installation/). If you want additional assistance, we offer our service packages during which our development team can assist and complete all of this for you. [Email sales@tier2.tech if this interests you!](mailto:sales@tier2.tech).
 
 ## 3) Order physical Helpdesk Buttons or keyboard decals
 

@@ -6,14 +6,14 @@ You can customize and deploy by using one of our Custom-built-for-you Batch file
 
 More information on:
 
-- [Set Shortcut]()
-- [Uninstalling and Duplicates Handling]()
-- [Custom Batch and PowerShell Deployment files]()
-- [Auto-Updating]()
-- [Installing Tier2Tickets on Microsoft RDP]()
-- [ConnectWise Automate]()
-- [NinjaRMM]()
-- [Syncro]()
+- [Custom Batch and PowerShell Deployment files](https://docs.tier2tickets.com/content/deployment/scripts/)
+- [Auto-Updating](https://docs.tier2tickets.com/content/deployment/auto-update/)
+- [Set Shortcut](https://docs.tier2tickets.com/content/deployment/shortcut/)
+- [Installing Tier2Tickets on Microsoft RDP](https://docs.tier2tickets.com/content/deployment/rdp/)
+- [Uninstalling and Duplicates Handling](https://docs.tier2tickets.com/content/deployment/uninstall/)
+- [ConnectWise Automate](https://docs.tier2tickets.com/content/deployment/automate/)
+- [NinjaRMM](https://docs.tier2tickets.com/content/deployment/ninjarmm/)
+- [Syncro](https://docs.tier2tickets.com/content/deployment/syncro/)
 
 ## Customizing and Installing Without Command Line Arguments
 
@@ -65,7 +65,7 @@ Putting those things together, you would end up with a command like this:
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"""
 ```
 
-For more information on how to rename the shortcut after installation, [visit our documentation here]().
+For more information on how to rename the shortcut after installation, [visit our documentation here](https://docs.tier2tickets.com/content/deployment/shortcut).
 
 ### Pin to Taskbar
 
