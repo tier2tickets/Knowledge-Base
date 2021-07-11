@@ -27,7 +27,7 @@ Video Walkthrough
 1) Create an Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a Customer to recieve 'Catch All' tickets and add a Contact to that Customer with the email address 
+Create a Customer to receive 'Catch All' tickets and add a Contact to that Customer with the email address 
 
 *unregistered@helpdeskbuttons.com*
 
