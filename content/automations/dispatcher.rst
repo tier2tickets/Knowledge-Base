@@ -10,7 +10,7 @@
 The basic premise of the design is that before we submit the ticket to your PSA, we give you access to the information and 
 allow you to modify what actually gets submitted.
 
-These modifications are made through series of if statements which use Python syntax. The commands you write are literally
+These modifications are made through series of `if` statements which use Python syntax. The commands you write are literally
 interpreted by Python 3 inside of a sandbox, so you have a full fledged programming language at your disposal to
 make your rules.
 
@@ -27,9 +27,7 @@ Visual Editor
 .. image:: images/visual.png
 
 
-The Visual Editor has several features to make dealing with code a bit more friendly. The most useful functions and variables are already populated 
-and there is example code to play with by dragging and dropping  onto the sandbox area. Pieces snap together to make sure the code works properly, 
-and most of the variables and functions can be right-clicked for help about what they are and how they work.
+The Visual Editor has several features to make dealing with code a bit more friendly. The most useful functions and variables are already populated and there is example code to play with by dragging and dropping  onto the sandbox area. Pieces snap together to make sure the code works properly, and most of the variables and functions can be right-clicked for help about what they are and how they work.
 
 
 Code Editor
@@ -43,7 +41,8 @@ The Code Editor assumes you know what you are doing so all you see is the code a
 Test Rules
 ^^^^^^^^^^^^^^
 
-You can also test these rules by imputting test data and running the rules against that data. All variables will be outputted so you can see how the rules change them.
+You can also test these rules by inputting test data and running the rules against that data. All variables will be outputted so you can see how the rules change them.
+
 If there is a syntax error in the rules we will let you know where, you can also click the link to see the error in the Code Editor.
 
 .. image:: images/test.gif
@@ -61,8 +60,7 @@ Variables
 ^^^^^^^^^^^^^^
 
 The first thing you need to know when writing a rule is which variables you have available to you. This varies from
-from one ticket system to another, but for this example, we will be using Syncro. At the time of writing, we have the following variables
-available to Syncro rules. 
+from one ticket system to another, but for this example, we will be using Syncro. At the time of writing, we have the following variables available to Syncro rules. 
 
 You can see the variables available to your integration in the Visual Editor of the Dispatcher rules or in your 
 corresponding integration documentation on this site.
@@ -101,7 +99,7 @@ to the front of any emergency tickets. Here is what that rule would look like:
 VIP Client
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you have a VIP client named 'Contoso Ltd.' which sould always get a little bit more prioirty than the other 
+Now let's say you have a VIP client named 'Contoso Ltd.' which should always get a little bit more priority than the other 
 companies you support. Here is an example rule that increases the priority of any Contoso by one point:
 
 
@@ -123,7 +121,7 @@ Dan Jump is the CEO of Contoso, So we want to make sure all his tickets are high
 Exclamations
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you want to increase the priority if people are yelling in their message to you. Here is a
+Now let's say you want to increase the priority if people are yelling in their message to you. Here is a
 rule that increases the priority if there is an exclamation point in the message:
 
 
@@ -212,7 +210,8 @@ Here is a larger example that showcases some of the power of this system.
 
 This example will assume your PSA does not already have a functional impact/urgency correlation to priority.
 
-These choices represent a 3x3 matrix. This means we have 4-5 priority levels. In my example, I will use 5 levels  and number them like so
+These choices represent a 3x3 matrix. This means we have 4-5 priority levels. In my example, I will use 5 levels  and number them like so:
+
 Critical = 0, High = 1, Medium = 2, Low = 3 and Very Low = 4
 
 When the grid is filled out with these numbers it looks like this:

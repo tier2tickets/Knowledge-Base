@@ -27,7 +27,7 @@ Video Walkthrough
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To start you will need to set up a "Catch all" contact for users not aleady in your system.
+To start you will need to set up a "Catch all" contact for users not already in your system.
 
 Click on the Contacts Tab
 
@@ -46,7 +46,7 @@ unregistered@helpdeskbuttons.com
 2) Create an Application User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To do this click the Configuration Gear in the botton left corner: 
+To do this click the Configuration Gear in the bottom left corner: 
 
 .. image:: images/accelo1.png
 

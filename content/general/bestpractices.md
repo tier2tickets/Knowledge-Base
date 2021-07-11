@@ -38,7 +38,9 @@ Bring your customer coffee and donuts or host a Lunch and Learn to cover any off
 
 Another method of training your customers can be an email or printed handout of our [The How-to Guide](https://www.helpdeskbuttons.com/wp-content/uploads/2020/03/Introduction-to-HDB-20200311.pdf) to each user. [In our Marketing Collateral section](https://docs.tier2tickets.com/content/marketing/collateral/), we also provide an editable version as an INDD file that you can customize with your logo and standard function key setting. This one-page handout explains what Tier2Tickets/Helpdesk Buttons are and how to use them. You can also use the guide it in your marketing bundle! (Our MSP sister company actually includes a fully functional button that they give out in their [MSP marketing binder](https://imgur.com/a/TSeuoLU)). Let your end users know that they can use the buttons to put in tickets even if their computer is offline.
 
-## 4) Make tickets submitted via Tier2Tickets higher priority than tickets from email and telephone.
+## 4) Give your End Users a Carrot vs. a Stick.
+
+A common practice we've seen partners employ is to give your customers gentle incentives to encourage them to submit tickets by Tier2Tickets. Sometimes that looks like tickets submitted via Tier2Tickets higher priority than tickets from email and telephone. Other partners have a special tiered rate of service for customers who submit a pre-determined percentage of tickets through Tier2Tickets/Helpdesk Buttons.
 
 ### i. by Email
 

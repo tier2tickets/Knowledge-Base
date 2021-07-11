@@ -30,7 +30,7 @@ Video Walkthrough
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To start you will need to set up a "Catch all" contact for users not aleady in your system.
+To start you will need to set up a "Catch all" contact for users not already in your system.
 
 Click on the Third Icon and select People
 
@@ -65,7 +65,7 @@ Click New and add a name and permissions to the key as shown:
 
 -Account -> Read Only
 -Person -> Read Only
--Requeest -> Create, Read, Update
+-Request -> Create, Read, Update
 
 Now click generate. The final screen will show you the key needed for the integration. This cannot be recovered so keep it in a safe place
 

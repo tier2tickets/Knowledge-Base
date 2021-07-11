@@ -46,7 +46,7 @@ Navigate to the Employee window:
 
 It is probably best to create a new user, but an existing user with the correct permissions can work. This guide will assume you create a new user.
 
-Click New and create the user with whatever data you may like. The Security Role is the only important part of this process. To start out put it as Administrator. You will need the email address to be something that can recieve the password. Once that is complete an email will be sent to the address specified with the login credentials we need.
+Click New and create the user with whatever data you may like. The Security Role is the only important part of this process. To start out put it as Administrator. You will need the email address to be something that can receive the password. Once that is complete an email will be sent to the address specified with the login credentials we need.
 
 3) Helpdeskbutton.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -60,7 +60,7 @@ Once you click update you should be good to go.
 Integration Defaults
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Kaseya requires alot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. 
+Kaseya requires a lot of information to submit a ticket. We have chosen some defaults that will allow tickets to go into the system for most users. 
 
 Please note that either queue, assignee, or both must be set for this integration to work properly.
 
@@ -116,7 +116,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 .. image:: images/ka-priority.png
    :target: https://docs.tier2tickets.com/_images/ka-priority.png
@@ -149,7 +149,7 @@ Field Definitions
 *ticketType*
 """"""""""""
 
-	**The issue type  in RepairShopr (Helpdesk, Internal, etc):**
+	**The issue type in Kaseya (Helpdesk, Internal, etc):**
 
 .. image:: images/ka-ticketType.png
    :target: https://docs.tier2tickets.com/_images/ka-ticketType.png
@@ -182,7 +182,7 @@ Field Definitions
 *ticketSource*
 """"""""""""""
 
-	**Tthe source of the ticket (Client portal, Phone, Other):**
+	**The source of the ticket (Client portal, Phone, Other):**
 
 .. image:: images/ka-ticketSource.png
    :target: https://docs.tier2tickets.com/_images/ka-ticketSource.png

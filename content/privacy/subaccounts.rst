@@ -7,7 +7,7 @@ Sub-accounts
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7jQ1Od_BBCI?start=48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-The main user account is created when the customer logs in for the first time. Additional accounts can be centrally managed on the Subaccount page. The Sub-account option is under the Administraton tab. Once you add a new user to the list, they will receive an email notification with a link to set their password. Each subaccount has its own 2FA key and set of permissions allowing certain site functionality. If you have two factor authentication enabled on the account (as you should), then this will be enforced on all of the sub-accounts as well. Each account, the main and all sub-accounts will have thier own 2FA code.   
+The main user account is created when the customer logs in for the first time. Additional accounts can be centrally managed on the Subaccount page. The Sub-account option is under the Administraton tab. Once you add a new user to the list, they will receive an email notification with a link to set their password. Each subaccount has its own 2FA key and set of permissions allowing certain site functionality. If you have two factor authentication enabled on the account (as you should), then this will be enforced on all of the sub-accounts as well. Each account, the main and all sub-accounts will have their own 2FA code.   
 
 .. image:: images/bob.png
 
@@ -22,7 +22,7 @@ To enable a permission click on its text. You can hover over the choices to see 
 - TICKETS: Provides access to PressView Reports. 
 - TICKET DASH: Provides access to the Ticket Dashboard. 
 
-After changing permissions, sub-account users may need to log out and log back in to recieve the new access permissions.
+After changing permissions, sub-account users may need to log out and log back in to receive the new access permissions.
 
 By default sub-accounts can only access the *account overview*, the *help and support* page, and of course everyone is allowed to buy our buttons. 
 

@@ -63,7 +63,7 @@ Example install.ps1 Script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We recommend using inline parameters for customizing the name of the tier2tickets desktop shortcut, but if you want to 
-customize this shortcut for installs that come via helpdesk button extended press this would work.
+customize this shortcut for installs that come via Helpdesk Button extended press this would work.
 
 Update Shortcut Icons on Install
 """"""""""""""""""""""""""""""""""""""
@@ -97,7 +97,7 @@ Make sure to change the iconName to something more fitting than *My Helpdesk.lnk
 identity_provider.ps1
 ---------------------
 
-As of version 1.1.12_ the fields in the gui are automatically populated by pulling the information from the computer root LDAP provider
+As of version 1.1.12_ the fields in the GUI are automatically populated by pulling the information from the computer root LDAP provider
 (in the case of Microsoft Active Directory, Microsoft Exchange, or Novell Directory Services) or from Azure Active Directory.
 But this functionality can be extended or modified to make use of any data source by overriding the default identity provider with your own
 custom provider. To accomplish this, copy identity_provider.ps1 from the program installation directory

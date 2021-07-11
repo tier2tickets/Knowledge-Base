@@ -34,7 +34,7 @@ Save the script.
 Automate script based on Condition
 -----------------------------------
 
-Let's say we want to automate our script based on it not being installed on an enpoint. 
+Let's say we want to automate our script based on it not being installed on an endpoint. 
 
 To do this click Configuration -> Policies.
 

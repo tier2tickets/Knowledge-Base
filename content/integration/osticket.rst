@@ -91,7 +91,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 .. image:: images/os-priority.png
    :target: https://docs.tier2tickets.com/_images/os-priority.png

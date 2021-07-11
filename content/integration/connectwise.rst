@@ -116,7 +116,7 @@ Asdf38judj234 is the example private key for the API
 
 Make sure that there is a + between the company ID and a : between the public and private key.
 
-Once you have entered the correct information on the Helpdeskbutton page, make to click Update so it saves the changes.
+Once you have entered the correct information on the Helpdesk Buttons page, make to click Update so it saves the changes.
 
 Test by submitting a ticket using the button.
 
@@ -143,7 +143,7 @@ For those of you who want to restrict the access the API user has, here is the s
 
 *As of version v2020_4 of ConnectWise Manage*
 
-- System/Table Setup/Inquire Level - All (For checking values like prority, board, etc)
+- System/Table Setup/Inquire Level - All (For checking values like priority, board, etc)
 - The specific things in the system table we need are: 
     - Service/Priority
     - Service/Service Board
@@ -212,7 +212,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 .. image:: images/cw-priority.png
    :target: https://docs.tier2tickets.com/_images/cw-priority.png
@@ -319,9 +319,9 @@ Setting up a Callback (Webhook)
 
 To do this in Manage, go to System -> Setup Tables -> Integrator Login
 
-You will want to create a new one. We don't actualy need the credentials.
+You will want to create a new one. We don't actually need the credentials.
 
-On this screen make sure to fillout the fields as described: 
+On this screen make sure to fill out the fields as described: 
 
 - Access Level: All Records
 

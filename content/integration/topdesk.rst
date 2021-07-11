@@ -63,7 +63,7 @@ The api key will be of this form:
 
 account:generated_application_key
 
-Once you have entered the correct information on the Helpdeskbutton page, make to click Update so it saves the changes.
+Once you have entered the correct information on the Helpdesk Buttons page, make to click Update so it saves the changes.
 
 Test by submitting a ticket using the button.
 
@@ -121,7 +121,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 
 

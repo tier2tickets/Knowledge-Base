@@ -29,7 +29,7 @@ Video Walkthrough
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To start you will need to set up a "Catch all" contact for users not aleady in your system.
+To start you will need to set up a "Catch all" contact for users not already in your system.
 
 Hover over Add and click User
 
@@ -64,7 +64,7 @@ You can label it anything you want, but make sure to put that key somewhere safe
 
 Enter your Ticket System API endpoint as shown (do not add add https:// or the path after the url)
 
-Yout API key is formatted as shown 
+Your API key is formatted as shown 
 
 username:apikey
 
@@ -134,7 +134,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 .. image:: images/zd-priority.png
    :target: https://docs.tier2tickets.com/_images/zd-priority.png
