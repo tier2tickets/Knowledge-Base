@@ -12,6 +12,7 @@ Table Of Contents
 
 	content/general/get-started
 	content/general/bestpractices
+	content/general/troubleshooting
 	content/general/slides
 	content/general/billing
 	content/general/firewall

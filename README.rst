@@ -24,7 +24,7 @@ Support
 
 We have official support by email and phone:
 
-| You can email us at support@helpdeskbuttons.com
+| You can email us at support@tier2.tech
 
 Here is a list of our phone numbers by region where we can be reached 7AM_ - 9PM_ EST_:
 
@@ -49,6 +49,7 @@ Here is a list of our phone numbers by region where we can be reached 7AM_ - 9PM
 .. _7AM: https://www.google.com/search?q=7AM+local+time+in+EST
 
 .. _EST: https://www.google.com/search?q=EST+time+now
+
 
 Contributing
 ============
