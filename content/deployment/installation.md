@@ -77,6 +77,8 @@ The default is /icons=3 but if you just want a desktop icon and not a taskbar ic
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"" /icons=1"
 ```
 
+If the install is performed behind the scenes, a log out and log in may be required for the pin to take effect.
+
 #### Re-Pin to Taskbar
 
 The software can be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the taskbar when the user logs in.
