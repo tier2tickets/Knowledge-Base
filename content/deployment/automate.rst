@@ -81,7 +81,7 @@ Select the group to which you want to Deploy the software, right click and highl
 
 The group we chose for this example was Windows Desktops
 
-We recomend having the script run at least daily, but make sure to click Advanced Settings and Stagger the script. Automate will attempt to run them all simultaneously if not.
+We recommend having the script run at least daily, but make sure to click Advanced Settings and Stagger the script. Automate will attempt to run them all simultaneously if not.
 
 Click OK.
 

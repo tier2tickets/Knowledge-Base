@@ -36,7 +36,7 @@ This can be a customer or a contact under a customer.
 Multiple Contacts per client
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-Note: This is no longer strictly necessary, but users will have to put in the email address of the customer instead of thier own address.
+Note: This is no longer strictly necessary, but users will have to put in the email address of the customer instead of their own address.
 
 In case you don't have contacts enabled and you want individuals to be able to put in tickets, this is how you do it: 
 
@@ -72,7 +72,7 @@ You will have to add the permissions of the key explicitly. The permissions the 
 
 API Access Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""
-- Assets - View Details : For scaning company asset data for automatically adding them to tickets
+- Assets - View Details : For scanning company asset data for automatically adding them to tickets
 - Assets - List/Search: For searching through company assets for automatically adding them to tickets
 - Customers List/Search: For gathering company data like street addresses from companies
 - Customers View Details: For gathering contact data like email addresses from contacts
@@ -87,7 +87,7 @@ Once you have created the key copy it for the next step.
 3) Helpdeskbuttons.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have the API key, you will need to adjust your settings in the Helpdeskbutton website.
+Once you have the API key, you will need to adjust your settings in the Helpdesk Buttons website.
 
 http://www.helpdeskbuttons.com
 
@@ -147,7 +147,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 .. image:: images/rs-priority.png
    :target: https://docs.tier2tickets.com/_images/rs-priority.png
@@ -223,7 +223,7 @@ To do this in Syncro/RepairShopr, go to Admin -> Notification Center
 
 You will want to create a new Notification set.
 
-Name it whatever you like and set the URL to the one on the Notification Page in the Helpdeskbutton portal.
+Name it whatever you like and set the URL to the one on the Notification Page in the Helpdesk Buttons portal.
 
 Scroll through the list of events and enable webhooks for:
 	

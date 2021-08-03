@@ -30,7 +30,7 @@ In your HDB account navigate to "Integration Settings", under "Software Manageme
 
 Click the "Link A Form" button then copy/paste the URL from your form and click "OK"
 You will need to be logged into the google account in which the form was created.
-You will be prompted to allow accesss to edit forms which you will need to allow.
+You will be prompted to allow access to edit forms which you will need to allow.
 
 .. image:: images/LinkForm.png
 

@@ -78,7 +78,7 @@ As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 Integration Defaults
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The "auto_reg" flag allows users to be auto_registered by thier email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+The "auto_reg" flag allows users to be auto_registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
 
 Anti-Virus and AntiMalware
 --------------------------------------
@@ -127,7 +127,7 @@ Field Definitions
 *priority*
 """"""""""
 
-	**The ticket priority level (Urgent, Low, ect):**
+	**The ticket priority level (Urgent, Low, etc.):**
 
 
 .. image:: images/fs-priority.png

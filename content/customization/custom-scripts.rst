@@ -36,7 +36,7 @@ Uploads
 -------
 
 General file uploads are supported as well. Any file that is put into the upload folder will be added to the report as an
-attachment. For exmaple, give this a try.
+attachment. For example, give this a try.
 
 .. code-block:: powershell
 

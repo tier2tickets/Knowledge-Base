@@ -12,9 +12,9 @@ Table Of Contents
 
 	content/general/get-started
 	content/general/bestpractices
+	content/general/troubleshooting
 	content/general/slides
 	content/general/billing
-	content/general/installation
 	content/general/firewall
 	content/general/ordering-buttons
 	content/general/changelog
@@ -31,20 +31,25 @@ Table Of Contents
 	content/integration/erpnext
 	content/integration/freshdesk
 	content/integration/freshservice
-	content/integration/repairshopr
 	content/integration/kaseya
 	content/integration/osticket
+	content/integration/repairshopr
 	content/integration/servicenow
+	content/integration/topdesk
 	content/integration/zendesk
 
 .. toctree::
 	:caption: Deployment
 	:maxdepth: 0
 
+	content/deployment/installation
 	content/deployment/scripts
 	content/deployment/auto-update
-	content/deployment/ninjarmm
+	content/deployment/rdp
+	content/deployment/shortcut
+	content/deployment/uninstall
 	content/deployment/automate
+	content/deployment/ninjarmm
 	content/deployment/syncro
 
 .. toctree::

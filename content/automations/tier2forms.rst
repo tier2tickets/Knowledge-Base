@@ -3,8 +3,7 @@
 
 Tier2Forms is a special integration we designed to allow user-defined forms to submit additional information into existing tickets
 in your ticket system. Once a form is connected to the Tier2Forms system, then any time that form is submitted, the data is posted
-to our API where we append it as a private note onto the existing ticket. If the submission does not include a valid ticket id, a new ticket will
-be created containing the submission data instead. Using the Tier2Assist automations, you can provide the form
+to our API where we append it as a private note onto the existing ticket. If the submission does not include a valid ticket id, a new ticket will be created containing the submission data instead. Using the Tier2Assist automations, you can provide the form
 to your end-user at the time of ticket creation to prompt for more details from the end-user.
 
 Google Forms
@@ -154,7 +153,7 @@ Link Cognito form with your account
 
 Each Cognito Form can be configured to drop its data to a webhook. This is done on the Build Page of the form.
 
-Click on the Submit button at the end of the form. This should bring up a window allowing you to set up things that happen on submssion of the current form.
+Click on the Submit button at the end of the form. This should bring up a window allowing you to set up things that happen on submission of the current form.
 
 The one we want is Post JSON Data to a Website.
 
@@ -278,6 +277,7 @@ How customers can control their data.
 In accordance with GDPR regulations, other similar regulations, and good-faith, upon request by the owner of such data
 by email to support@helpdeskbuttons.com, we will purge private/identifiable data from our systems within 30 days.
 
+:ref:`Visit our Compliance documentation for further information on GDPR allowances<content/privacy/compliance:GDPR Compliance>`
  
 How we protect the data.
 ^^^^^^^^^^^^^^^^^^^^^^^^

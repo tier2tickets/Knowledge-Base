@@ -14,7 +14,7 @@ Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MS
 
 Renaming Shortcuts
 ^^^^^^^^^^^^^^^^^^^^^^^^
-If you are looking for a way to change the name of the helpdesk button shortcut we reccomend the method in our documentation on 
+If you are looking for a way to change the name of the Helpdesk Button shortcut we recommend the method in our documentation on 
 `installations <https://docs.tier2tickets.com/content/general/installation/>`_ this method is used in our 
 `deployment scripts <https://docs.tier2tickets.com/content/deployment/scripts/>`_.
 
@@ -25,7 +25,7 @@ Pin to Taskbar
 .. image:: images/branding2.png
 
 One of the ways to launch the software is via a shortcut that can be pinned to the taskbar. The icon for this shortcut is also configurable in the same way as the standard icon/logo. 
-Take note: this icon is rendered significantly smaller than the standard icon while pinned. Using something easily recognizable such as our HELP logo is reccomended.   
+Take note: this icon is rendered significantly smaller than the standard icon while pinned. Using something easily recognizable such as our HELP logo is recommended.   
 
 .. image:: images/taskbar.png
 

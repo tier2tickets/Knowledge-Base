@@ -13,4 +13,11 @@ To meet this requirement we are required to provide additional layers of protect
 GDPR Compliance
 -----------------
 
-Working on it…Did you know that you have to have an employee representative in Europe to pass compliance? Pretty rough for a US-based company.
+If you are in the European Union or the United Kingdom, you may address privacy-related inquiries to our EU or UK representative pursuant to Article 27 GDPR:
+
+EU: EU-REP.Global GmbH, Attn: Tier2Tech, Hopfenstr. 1d, 24114 Kiel, Germany
+
+UK: DP Data Protection Services UK Ltd., Attn: Tier2Tech, 16 Great Queen Street, Covent Garden, London, WC2B 5AH, United Kingdom
+
+tier2tech@eu-rep.global
+www.eu-rep.global

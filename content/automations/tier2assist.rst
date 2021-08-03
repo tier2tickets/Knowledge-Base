@@ -42,7 +42,7 @@ The Code Editor assumes you know what you are doing so all you see is the code a
 Test Rules
 ^^^^^^^^^^^^^^
 
-You can also test these rules by imputting test data and running the rules against that data. All variables will be outputted so you can see how the rules change them.
+You can also test these rules by inputting test data and running the rules against that data. All variables will be outputted so you can see how the rules change them.
 If there is a syntax error in the rules we will let you know where, you can also click the link to see the error in the Code Editor.
 
 The test shows everything in a raw format for people who want to know everything about what is happening.  You don't have to worry about things like repeating identical
@@ -72,7 +72,7 @@ You can see the variables available in the Visual Editor of the Tier2Assist but 
 Special Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The majority of the functions provided are built into python, but there are a few special functions we wrote that might be useful to you for bulding out your Tier2Assist Rules. 
+The majority of the functions provided are built into python, but there are a few special functions we wrote that might be useful to you for building out your Tier2Assist Rules. 
 
 You can see this list in the Visual Editor of the Tier2Assist but here they are for reference. For more information take a look at the 
 :ref:`A deeper dive into Functions <content/automations/tier2assist:A deeper dive into Functions>` section below
@@ -97,7 +97,7 @@ To show how powerful this can be and give you an idea of how to use it, we came 
 Running Tier2Assists before ticket submission
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-The variable "is_before_ticket_submit" allows you to schedule Tier2Assists before or after ticket subbmission. The variable is true when before the submission and false after. The default behavior is to always run after the ticket submisson. If you want to do somethings before ticket submission and others after you will need to use this variable to separate your code
+The variable "is_before_ticket_submit" allows you to schedule Tier2Assists before or after ticket submission. The variable is true when before the submission and false after. The default behavior is to always run after the ticket submission. If you want to do somethings before ticket submission and others after you will need to use this variable to separate your code
 
 .. code-block:: python
     
@@ -133,7 +133,7 @@ As another example, let's assume you want to always show an option for the user 
 Google Forms
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
+Now let's say you have a form that needs to be filled out upon new employees being hired.  If you want to show an option to fill out this form based on the keywords hiring, hire, and new employee appearing in the message,
 here is what that rule might look like:
 
 .. code-block:: python
@@ -158,7 +158,7 @@ Additionally we have some special integrations with google forms :ref:`Tier2Form
 Cognito Forms
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
+Now let's say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
 
 .. code-block:: python
 
@@ -191,7 +191,7 @@ If you wanted to show a password reset link if either office or password were in
 Shedule and appointment
 """""""""""""""""""""""""""""""""""""
 
-Now lets say you want to allow a user to schedule and appointment. Here is a
+Now let's say you want to allow a user to schedule and appointment. Here is a
 rule that does this if they select a checkbox that contains the word schedule:
 
 
@@ -263,7 +263,7 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
         if result['scores']['broken computer'] >94:
             tier2assist.append({'msg':'It looks like you are having a computer problem...', 'action':'http://google.com/search?q=how+to+fix+computer'})
         
-    #anything listed under here will only happen after the ticket subbmission process    
+    #anything listed under here will only happen after the ticket submission process    
     if not is_before_ticket_submit:
         tier2assist.append({'msg': 'THIS TIER2ASSIST WILL SHOW UP AFTER THE TICKET IS SUBMITTED', 'action': 'https://www.google.com/search?q=after'})
             
@@ -441,7 +441,7 @@ our application and not from the ticket system integration being used. They are 
 *ticketNumber*
 """"""""""""""""""""""""""""
 	
-	**The ticket number the uiser will most likely see to identify a ticket (often different from the ticket id)**
+	**The ticket number the user will most likely see to identify a ticket (often different from the ticket id)**
 	
 
 *username*

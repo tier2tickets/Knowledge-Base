@@ -30,7 +30,7 @@ Before you get the webhooks up and running you may want to customize your notifi
 +--------------------+------------------------------------------------------------------------------------------------------+
 | __ticket_fname__   | The first name of the contact associated with the ticket                                             |
 +--------------------+------------------------------------------------------------------------------------------------------+
-| __ticket_lname__   | The last name of the contact assocaited with the ticket                                              |
+| __ticket_lname__   | The last name of the contact associated with the ticket                                              |
 +--------------------+------------------------------------------------------------------------------------------------------+
 | __ticket_email__   | The email address of the contact who submitted the ticket                                            |
 +--------------------+------------------------------------------------------------------------------------------------------+
@@ -59,7 +59,7 @@ Each ticket system will be a bit different for how this is done, so check the in
 
 `Zendesk Webhook <https://docs.tier2tickets.com/content/integration/zendesk/#webhook-walkthrough>`_
 
-4me, Freshservice, and ServiceNow notifications will be added to the development schedule based on community interest. If you are interested in assistance, please contact our team at sales@tier2.tech and we'll get you sorted!
+4me, Freshservice, ServiceNow, and TOPDesk notifications will be added to the development schedule based on community interest. If you are interested in assistance, please contact our team at sales@tier2.tech and we'll get you sorted!
 
 Unfortunately, this feature is unavailable for systems that do not support webhooks, including Kaseya BMS, OSTicket, and the Email Connector. 
 

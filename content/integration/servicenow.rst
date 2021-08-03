@@ -38,7 +38,7 @@ The only really important part is the email address. Feel free to name it anythi
 
 2) Helpdeskbuttons.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-On the Settings page of helpdeskbuttons, put in the endpoint and a username:password combo as the API Key.
+On the Settings page of Helpdesk Buttons, put in the endpoint and a username:password combo as the API Key.
 
 Click update and the Integration Test button. 
 
