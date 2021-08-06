@@ -97,12 +97,7 @@ Make sure to change the iconName to something more fitting than *My Helpdesk.lnk
 identity_provider.ps1
 ---------------------
 
-As of version 1.1.12_ the fields in the GUI are automatically populated by pulling the information from the computer root LDAP provider
-(in the case of Microsoft Active Directory, Microsoft Exchange, or Novell Directory Services) or from Azure Active Directory.
-But this functionality can be extended or modified to make use of any data source by overriding the default identity provider with your own
-custom provider. To accomplish this, copy identity_provider.ps1 from the program installation directory
-(Typically "C:\\Program Files (x86)\\Tier2Tickets") and modify it to use your custom identity provider, and then upload it to the tier2scripts
-portion of our account portal. (make sure to maintain the filename: identity_provider.ps1). A typical use-case for overriding the default 
-identity-provider is for integrating with Enterprise Single Sign On applications or 3rd-party LDAP solutions such as OpenLDAP.
+You can customize the command that populates the name and email fields for each user. We have further documentation 
+explaining how this script works  :ref:`here <content/customization/identity-provider:Identity Provider>`
 
 .. _1.1.12: https://docs.tier2tickets.com/content/general/changelog/#1.1.12

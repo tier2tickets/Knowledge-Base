@@ -59,6 +59,7 @@ Table Of Contents
 	content/customization/assets	
 	content/customization/techconnect
 	content/customization/branding
+	content/customization/identity-provider
 	content/customization/version-numbers
 
 .. toctree::
