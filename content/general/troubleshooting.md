@@ -23,7 +23,7 @@ Here is a simple script that will bundle the most recent logs into a zip and dro
 ```powershell
 New-Item -Path "c:\temp" -Name "t2tlogs" -ItemType "directory"
 Copy-Item 'C:\Program Files (x86)\Tier2Tickets\*.log' 'C:\temp\t2tlogs'
-Compress-Archive -Update -Path 'C:\temp\t2tlogs\' -DestinationPath $env:USERPROFILE\Desktop\t2tlogs.zip
+Compress-Archive -Update -Path 'C:\temp\t2tlogs\' -DestinationPath 'C:\temp\t2tlogs.zip'
 Remove-Item C:\temp\t2tlogs\ -Recurse
 ```
 
