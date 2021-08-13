@@ -57,6 +57,7 @@ Table Of Contents
 	:caption: Customization
 	:maxdepth: 0
 
+	content/customization/assets	
 	content/customization/techconnect
 	content/customization/branding
 	content/customization/identity-provider
