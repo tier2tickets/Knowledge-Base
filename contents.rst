@@ -37,7 +37,8 @@ Table Of Contents
 	content/integration/servicenow
 	content/integration/topdesk
 	content/integration/zendesk
-
+	content/integration/email
+	
 .. toctree::
 	:caption: Deployment
 	:maxdepth: 0
