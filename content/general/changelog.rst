@@ -106,7 +106,7 @@ Software
 ~~~~~~~~
 
 * Automatic addition of Assets and Configurations for Syncro, ConnectWise, and Autotask `Check out our documentation <https://docs.tier2tickets.com/content/customization/assets/>`_ for more details
-* Pinned to Taskbar Icon Update: dded improvements to our PTTB feature, including a smarter install with icon-cache-clearing 
+* Pinned to Taskbar Icon Update: Added improvements to our PTTB feature, including a smarter install with icon-cache-clearing 
 * Warranty section of PressView Updated
 
 
