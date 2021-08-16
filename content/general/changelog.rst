@@ -10,8 +10,8 @@ Website
 2021-08-16
 ~~~~~~~~~~
 * Device Management, sort by Domain and Serial Number.
-* Email Disclaimer. `Check out our documentation <https://docs.tier2tickets.com/content/integration/email/#email-disclaimer>`_ for more details
-* Better Integration Field Validation. 
+* :ref:`Email Disclaimer. <content/integration/email:*email_disclaimer*>` for more details
+* :ref:`Integration Field Validation. <content/integration/errors:Submission Error>` for more details
 * Changed the naming conventions for our builds (“Alpha” “Beta” “Stable” to “Release Candidate” and “General Availability”.)
 
 
