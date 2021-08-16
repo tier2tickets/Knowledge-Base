@@ -81,7 +81,7 @@ Website
 
 2019-09-17
 ~~~~~~~~~~
-* Added support for :ref:`auto update <content/deployment/auto-update:Auto Update>`.
+* Added support for :ref:`auto update <content/deployment/updating:Updating your endpoints>`.
 
 
 
@@ -584,7 +584,7 @@ Software
 0.4.x.4
 ~~~~~~~
 
-* Added support for :ref:`auto update <content/deployment/auto-update:Auto Update>`.
+* Added support for :ref:`auto update <content/deployment/updating:Updating your endpoints>`.
 
 
 

@@ -45,7 +45,7 @@ Table Of Contents
 
 	content/deployment/installation
 	content/deployment/scripts
-	content/deployment/auto-update
+	content/deployment/updating
 	content/deployment/rdp
 	content/deployment/shortcut
 	content/deployment/uninstall
