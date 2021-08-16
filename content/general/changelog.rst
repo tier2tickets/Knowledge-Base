@@ -7,6 +7,14 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2021-08-16
+~~~~~~~~~~
+* Device Management, sort by Domain and Serial Number.
+* Email Disclaimer. `Check out our documentation <https://docs.tier2tickets.com/content/integration/email/#email-disclaimer>`_ for more details
+* Better Integration Field Validation. 
+* Changed the naming conventions for our builds (“Alpha” “Beta” “Stable” to “Release Candidate” and “General Availability”.)
+
+
 2021-03-25
 ~~~~~~~~~~
 * Added support for Tier2AI to the dispatcher rules automations
@@ -88,6 +96,18 @@ Website
 
 Software
 --------
+
+
+.. raw:: html
+
+   <a name="1.1.18">&nbsp;</a>
+
+1.1.x.18
+~~~~~~~~
+
+* Automatic addition of Assets and Configurations for Syncro, ConnectWise, and Autotask `Check out our documentation <https://docs.tier2tickets.com/content/customization/assets/>`_ for more details
+* Pinned to Taskbar Icon Update: dded improvements to our PTTB feature, including a smarter install with icon-cache-clearing 
+* Warranty section of PressView Updated
 
 
 
