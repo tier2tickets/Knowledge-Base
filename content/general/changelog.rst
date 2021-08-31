@@ -98,6 +98,34 @@ Software
 --------
 
 
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.19">&nbsp;</a>
+
+1.1.x.19
+~~~~~~~~
+
+* Running the software by clicking the icon now uses named-pipe based RPC rather than an emulated-HID so there are no longer conflicts with other software that may be running and it should work with all keyboard layouts now.
+* Fixed a bug in which hundreds of temp files get created over time and not cleaned up.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.18">&nbsp;</a>
