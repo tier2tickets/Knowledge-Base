@@ -83,11 +83,11 @@ If the install is performed behind the scenes, a log out and log in may be requi
 
 The software can be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the taskbar when the user logs in.
 
-Running `pttb.exe "Helpdesk Button"` as the logged-in user will also pin the icon to taskbar on demand.
+Running `pttb.exe "<shortcut name>" (Helpdesk Button is the default)` as the logged-in user will also pin the icon to taskbar on demand.
 
 ![](images/pttb.gif)
 
-Keep in mind that your installation folder could be "Helpdesk Buttons." The software was formally renamed in [1.1.x.10](https://docs.tier2tickets.com/content/general/changelog/#x-10).
+Keep in mind that your installation folder could be "Helpdesk Buttons." The software was formally renamed in [1.1.x.10](https://docs.tier2tickets.com/content/general/changelog/#x-10) so installs that predate this may have the older folder structure. 
 
 ## **Note to PowerShell users**:
 
