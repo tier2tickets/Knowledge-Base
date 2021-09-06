@@ -31,6 +31,7 @@ Table Of Contents
 	content/integration/erpnext
 	content/integration/freshdesk
 	content/integration/freshservice
+	content/integration/halo
 	content/integration/kaseya
 	content/integration/osticket
 	content/integration/repairshopr
