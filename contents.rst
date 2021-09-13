@@ -84,7 +84,7 @@ Table Of Contents
 	content/privacy/security-overview
 	content/privacy/general-components
 	content/privacy/customer-owned
-	content/privacy/to-your-techs
+	content/privacy/technician-access
 	content/privacy/bot-protection
 	content/privacy/passwords
 	content/privacy/suspicious-activity
