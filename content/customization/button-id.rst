@@ -13,7 +13,7 @@ In the event the software is detected but the button is MISSING the result will 
 
 In the event the software is NOT found but the button is DETECTED the result will return a "WARNING ". We used this to trigger an automatic install of the T2T software when a button is connected.
 
-.. code-block:: 
+.. code-block:: guess
 
 	%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -noprofile -command "& { $buttonStatus=if((gwmi win32_keyboard -ErrorAction SilentlyContinue)|?{$_.PNPDeviceID -like 'USB\VID_05AC&PID_020B*'}){\"Help Desk Button Detected\"}else{\"No Help Desk Button Detected\"};$applicationStatus=if(${env:ProgramFiles(x86)}){Get-Item \"${env:ProgramFiles(x86)}\Helpdesk Button\" -ErrorAction SilentlyContinue}else{Get-Item \"$env:ProgramFiles\Helpdesk Button\" -ErrorAction SilentlyContinue};if ($buttonStatus -eq 'Help Desk Button Detected' -and $null -eq $applicationStatus){\"WARNING\"} else {\"SUCCESS\"} }"```
 
@@ -21,6 +21,8 @@ Yes this could probably be made prettier and condensed into a single monitor/pow
 
 The specific part that's checking for the Help Desk USB Device being attached is 
 
-`gwmi win32_keyboard -ErrorAction SilentlyContinue)|?{$_.PNPDeviceID -like 'USB\VID_05AC&PID_020B*'}`
+.. code-block:: guess
+
+	gwmi win32_keyboard -ErrorAction SilentlyContinue)|?{$_.PNPDeviceID -like 'USB\VID_05AC&PID_020B*'}`
 
 You may have to change the PNPDeviceID which can be checked by querying a computer that has the model button you use primarily.
