@@ -1,13 +1,14 @@
 Is a Helpdesk Button Connected?
 =============
 
-Thanks to Mendy Green for sharing this script with the v-helpdeskbuttons-com channel on the `mspGeek slack community <https://join.slack.com/t/mspgeek/shared_invite/zt-lrsy70xt-ICcLYnavbDevoDzrqlMWKQ>`_!
+Thanks to Mendy Green for sharing this script with the v-helpdeskbuttons-com channel on the `MSPGeek slack community <https://join.slack.com/t/mspgeek/shared_invite/zt-lrsy70xt-ICcLYnavbDevoDzrqlMWKQ>`_!
 
 This PowerShell that will return SUCCESS, FAIL, or WARNING based on specific Tier 2 Tickets conditions.
 
 In the event the software is detected but the button is MISSING the result will return a "FAIL", in all other conditions (the software is not installed, or no button and no software is installed) it will return a SUCCESS
 
 .. code-block:: guess
+	:linenothreshold: 5
 
    %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -noprofile -command "& { $buttonStatus=if((gwmi win32_keyboard -ErrorAction SilentlyContinue)|?{$_.PNPDeviceID -like 'USB\VID_05AC&PID_020B*'}){\"Help Desk Button Detected\"}else{\"No Help Desk Button Detected\"};$applicationStatus=if(${env:ProgramFiles(x86)}){Get-Item \"${env:ProgramFiles(x86)}\Helpdesk Button\" -ErrorAction SilentlyContinue}else{Get-Item \"$env:ProgramFiles\Helpdesk Button\" -ErrorAction SilentlyContinue};if ($buttonStatus -eq 'No Help Desk Button Detected' -and $null -ne $applicationStatus){\"FAIL\"} else {\"SUCCESS\"} }"```
 
