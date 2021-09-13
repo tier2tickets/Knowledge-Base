@@ -60,7 +60,6 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/customization/assets	
-	content/customization/button-id	
 	content/customization/techconnect
 	content/customization/branding
 	content/customization/identity-provider
