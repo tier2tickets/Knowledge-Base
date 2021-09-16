@@ -101,6 +101,22 @@ Software
 
 
 
+.. raw:: html
+
+   <a name="1.1.20">&nbsp;</a>
+
+1.1.x.20
+~~~~~~~~
+
+* In cases where the software is being used on a terminal server, there was potential for CPU overload when several users were logged in. This version contains logic for the application to monitor all instances of itself and throttle itself by dropping screenshot frames or compressing those frames more slowly if needed in order to target <= 15% CPU usage.
+
+
+
+
+
+
+
+
 
 
 .. raw:: html
