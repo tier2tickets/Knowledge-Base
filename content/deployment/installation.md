@@ -57,6 +57,12 @@ By default, the desktop icon is named "Helpdesk Button"; however, can customize 
 WRAPPED_ARGUMENTS="/iconname=""PC Solutions Support"""
 ```
 
+#### Renaming your Desktop Icon Example
+
+```
+ren "C:\Users\Public\Desktop\Helpdesk Button.lnk" "My Name.lnk"
+```
+
 ### Launch key with Icon Name
 
 Putting those things together, you would end up with a command like this:
@@ -87,7 +93,7 @@ Running `pttb.exe "<shortcut name>" (Helpdesk Button is the default)` as the log
 
 ![](images/pttb.gif)
 
-Keep in mind that your installation folder could be "Helpdesk Buttons." The software was formally renamed in [1.1.x.10](https://docs.tier2tickets.com/content/general/changelog/#x-10) so installs that predate this may have the older folder structure. 
+Keep in mind that your installation folder could be "Helpdesk Buttons." The software was formally renamed in [1.1.x.10](https://docs.tier2tickets.com/content/general/changelog/#x-10) so installs that predate this may have the older folder structure.
 
 ## **Note to PowerShell users**:
 

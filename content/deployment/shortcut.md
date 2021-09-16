@@ -2,7 +2,7 @@
 
 You can set the shortcut via commandline as you install the Tier2Tickets/Helpdesk Buttons software. If you need to update after deployment, these are some methods for doing so.
 
-## Renaming a Single Device (Manual)
+## For a Single Device (Manual)
 
 If your predetermined shortcut key isn't working for a specific user, you can change that combination in the Desktop Shortcut Properties menu.
 
@@ -12,7 +12,7 @@ If your predetermined shortcut key isn't working for a specific user, you can ch
 
 ![](images/shortcut-change-final.png)
 
-## Renaming Multiple Devices (Powershell)
+## For Multiple Devices (Powershell)
 
 The syntax for this PowerShell function is simple: You just list the things you want to change about a shortcut after passing in the shortcut path, i.e. :
 
