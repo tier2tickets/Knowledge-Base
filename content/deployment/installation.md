@@ -59,6 +59,8 @@ WRAPPED_ARGUMENTS="/iconname=""PC Solutions Support"""
 
 #### Renaming your Desktop Icon Example
 
+If you'd like to rename your Helpdesk Button desktop icon to My Name, you can do so by running the following:
+
 ```
 ren "C:\Users\Public\Desktop\Helpdesk Button.lnk" "My Name.lnk"
 ```
