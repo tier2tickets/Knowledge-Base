@@ -98,6 +98,44 @@ Software
 --------
 
 
+.. raw:: html
+
+   <a name="1.1.22">&nbsp;</a>
+
+1.1.x.22
+~~~~~~~~
+
+* Fixed a bug in which the buttonhelper process would continue to use high resources after diagnostic submission.
+* Fixed a bug in which several buttonhelper process may spawn where there should only be one
+* Fixed an installer bug in which the install would fail if SOFTWARE\Microsoft\Windows\CurrentVersion\Run was not writable
+* Fixed an installer bug in which silent install would fail on terminal servers and computers where more than one user was logged in
+* Fixed a bug where buttonhelper could not start on terminal servers
+* Fixed a bug where the GUI would continue running in the background after closing it
+
+
+.. raw:: html
+
+   <a name="1.1.21">&nbsp;</a>
+
+1.1.x.21
+~~~~~~~~
+
+* The diagnostic-gathering logic has been completely rewritten and is now an order of magnitude faster.
+* The library responsible for handling TLS has been swapped-out with a more reliable one for systems with self-signed trusted root certificates
+* Debug logging has been improved
+* Added auto-close feature to prevent API errors from 60-minute timeout being surpassed.
+* Fixed a display bug where the wrong email address would sometimes be displayed on the submission-confirmation page.
+* Upgraded from python 3.6 to 3.8
+* Added more logic to terminal server screenshot handling to keep memory usage lower
+
+
+
+
+
+
+
+
+
 
 
 
