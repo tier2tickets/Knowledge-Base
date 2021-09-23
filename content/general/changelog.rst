@@ -107,7 +107,7 @@ Software
 
 * Fixed a bug in which the buttonhelper process would continue to use high resources after diagnostic submission.
 * Fixed a bug in which several buttonhelper process may spawn where there should only be one
-* Fixed an installer bug in which the install would fail if SOFTWARE\Microsoft\Windows\CurrentVersion\Run was not writable
+* Fixed an installer bug in which the install would fail if SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run was not writable
 * Fixed an installer bug in which silent install would fail on terminal servers and computers where more than one user was logged in
 * Fixed a bug where buttonhelper could not start on terminal servers
 * Fixed a bug where the GUI would continue running in the background after closing it
