@@ -100,6 +100,21 @@ Software
 
 .. raw:: html
 
+   <a name="1.1.23">&nbsp;</a>
+
+1.1.x.23
+~~~~~~~~
+
+* Fixed a bug in which the buttonhelper process would use ~5% CPU constantly on terminal servers in which more than one user was logged in
+* Fixed a bug in which the terminal server reports would show network data missing error unless "desktop experience" feature was installed
+* Fixed a bug in which computers with no printer would fail in gathering data about other hardware as well
+* Fixed a bug in which the Tier2Assists would fail to display if using the json_get or json_post functions anywhere
+
+
+
+
+.. raw:: html
+
    <a name="1.1.22">&nbsp;</a>
 
 1.1.x.22
@@ -111,6 +126,32 @@ Software
 * Fixed an installer bug in which silent install would fail on terminal servers and computers where more than one user was logged in
 * Fixed a bug where buttonhelper could not start on terminal servers
 * Fixed a bug where the GUI would continue running in the background after closing it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .. raw:: html
