@@ -5,7 +5,7 @@ This guide will show you how to set up deployment of Tier2Tickets with Syncro.
 
 Add a script in Syncro
 --------------------------
-Navigate to the New Script section of Syncro (Scripts > New Script).
+Navigate to the New Script section of Syncro.
 
 .. image:: images/Syncro-NewScript.png
 
