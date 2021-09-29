@@ -13,7 +13,7 @@ You can create a new policy or edit an existing one. Once you have the policy yo
 
 In that section, you want to create a new menu option of type Execute a CMD. The Menu Title is whatever you want the text of the option to be.
 
-Finally set the CMD to "C:\Program Files (x86)\Tier2Tickets\guiTrigger.exe".
+Finally set the CMD to "C:\\Program Files (x86)\\Tier2Tickets\\guiTrigger.exe".
 
 .. image:: images/Syncro-Execute-CMD.png
 
