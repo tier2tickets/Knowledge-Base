@@ -22,8 +22,6 @@ Schedule a script with Syncro
 -------------------------------
 Navigate to the Policies area of Syncro's RMM settings.
 
-.. image:: images/Syncro-Policies.png
-
 You can create a new policy or edit an existing one. Once you have the policy you wish to configure scroll down to the section entitled: Scrit Schedules
 
 In this sectio you want to create a schedule that will run the script we made in the previous step on a set schedule. We recommend daily in the early morning or late at night. 
@@ -36,8 +34,6 @@ Once you save those changes, the software should deploy itself to all endpoints 
 Add Helpdesk Buttons to your Syncro System Tray Icon
 -----------------------------------------------------------------------------
 Navigate to the Policies area of Syncro's RMM settings.
-
-.. image:: images/Syncro-Policies.png
 
 You can create a new policy or edit an existing one. Once you have the policy you wish to configure scroll down to the section entitled: Device System Tray Menu
 
