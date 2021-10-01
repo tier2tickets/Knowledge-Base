@@ -219,7 +219,25 @@ There are additional variables which are common to all integrations. Those are d
 Setting up a Webhook
 ----------------------------------------------------
 
-.. image:: images/coming_soon.png
+To configure the webhooks for Notifications, navigate to the webhook section of Halo. (Configuration > Integration > Webhooks)
+
+Create a new webhook and name it whatever you like. 
+
+Copy and paste the Ticket Notification url from your Tier2Tickets/Helpdeskbuttons Integration or Notification page into the Payload URL.
+
+The dropdown settings should be as follows:
+
+ - Webhook Type : Standard Webhook
+ - Method: POST
+ - Content Type: application/json
+ - Authentication: No authentication
+ - Enabled: Yes
+ 
+Finally add two events to trigger the hooks: New Ticket Logged and Ticket Updated. Neither of these events require conditions so just hit save after selecting the event. 
+
+Once you double check that all the settings are correct, click save and you should be all set. Here is an image of a webhook with all the settings filled in. 
+
+.. image:: images/halo-webhook.png
 
 
 
