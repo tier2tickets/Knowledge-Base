@@ -8,11 +8,11 @@ Integration
 
 Repairshopr / Syncro integration requires two main parts:
 
-`1) set up an unregistered user as a catchall account as a contact in your PSA <https://docs.tier2tickets.com/content/integration/repairshopr/#unregistered-user>`_
+`1) set up an unregistered user as a catchall account as a Contact in your PSA <https://docs.tier2tickets.com/content/integration/repairshopr/#unregistered-user>`_
 
 `2) set up the API integration. <https://docs.tier2tickets.com/content/integration/repairshopr/#get-your-api-key>`_
 
-`3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/repairshopr/#helpdeskbuttons-com-settings>`_
+`3) configure Helpdesk Buttons account. <https://docs.tier2tickets.com/content/integration/repairshopr/#helpdeskbuttons-com-settings>`_
 
 Video Walkthrough
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -27,18 +27,16 @@ Video Walkthrough
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To start you will need to set up a contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users. 
+To start you will need to set up a Contact that uses the email address of “unregistered@helpdeskbuttons.com” for the purposes of catching any unregistered users. 
 
 You can name the account whatever you want. In our system it’s “Mystery Human”.
 
-This can be a customer or a contact under a customer.
+This can be a Customer or a Contact under a Customer.
 
 Multiple Contacts per client
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-Note: This is no longer strictly necessary, but users will have to put in the email address of the customer instead of their own address.
-
-In case you don't have contacts enabled and you want individuals to be able to put in tickets, this is how you do it: 
+In case you don't have Contacts enabled and you want individuals to be able to put in tickets, this is how you do it: 
 
 Click Admin on the top bar
 
@@ -51,6 +49,13 @@ Click General Preferences on the left
 Click Customer Settings and check the box labeled, enable multiple contacts on customers.
 
 .. image:: images/rs-admin3.png
+
+Note: This is no longer strictly necessary, but users will have to put in the email address that matches the same Domain as the Customer.
+
+If Contact is not in Syncro
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+If a user is not a Contact for a Customer in Syncro, Tier2Tickets will attempt to match the Contact based on the domain of the email address used to submit the ticket. If the domain matches the domain for the email address assigned to a Customer, the ticket will be submitted underneath the Customer email address, but it will leave the Contact as Not Assigned.
 
 
 2) Get your API Key
