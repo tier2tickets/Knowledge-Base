@@ -57,6 +57,8 @@ If Contact is not in Syncro
 
 If a user is not a Contact for a Customer in Syncro, Tier2Tickets will attempt to match the Contact based on the domain of the email address used to submit the ticket. If the domain matches the domain for the email address assigned to a Customer, the ticket will be submitted underneath the Customer email address, but it will leave the Contact as Not Assigned.
 
+This feature will skip commonly used domains like google.com, yahoo.com etc. If a contact is being matched to a company erroniously let us know at support@tier2.tech.
+
 NOTE: Please make sure there is an email address for the Customer, otherwise the ticket will be submitted as our  Unregistered User/Catchall Account set up in step 1.
 
 
