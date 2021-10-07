@@ -73,7 +73,7 @@ Log into your Helpdeskbuttons.com account. Select Software Management> Integrati
 
 Select ‘HaloPSA/HaloITSM’ for the ticket system. Select if you are using an On prem or cloud hosted instance. 
 
-Provide the authentication server and api server information. Don't add https:// or anything after the domain.
+Provide the authentication server and api server information. Copy and paste them as they are shown in the API Details.
 
 Finally put in the api key in the following form depending on your instance type:
 
