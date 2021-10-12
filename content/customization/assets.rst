@@ -10,7 +10,7 @@ Autotask: Configuration Items
 The first configuration that is found matching these critera will be added to the account:
 
 - the configuration is part of the same company as the user who submitted the ticket
-- the configuration's name OR reference title match the computer hostname 
+- the configuration's reference title match the computer hostname 
 - the configuration is active
 
 
