@@ -60,6 +60,7 @@ Table Of Contents
 	:maxdepth: 0
 
 	content/customization/assets	
+	content/customization/user-portals
 	content/customization/techconnect
 	content/customization/branding
 	content/customization/identity-provider

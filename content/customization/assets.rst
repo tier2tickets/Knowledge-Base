@@ -7,7 +7,7 @@ Below is the list of such integrations as well as what the integration requires 
 Autotask: Configuration Items
 -------------------------------
 
-The first configuration that is found matching these critera will be added to the account:
+The first configuration that is found matching these criteria will be added to the account:
 
 - the configuration is part of the same company as the user who submitted the ticket
 - the configuration's reference title match the computer hostname 
@@ -19,7 +19,7 @@ The first configuration that is found matching these critera will be added to th
 Connectwise Manage: Configurations
 ------------------------------------
 
-The first configuration that is found matching these critera will be added to the account:
+The first configuration that is found matching these criteria will be added to the account:
 
 - the configuration is part of the same company as the user who submitted the ticket
 - the configuration's name OR device identifier match the computer hostname 
@@ -31,7 +31,7 @@ The first configuration that is found matching these critera will be added to th
 Syncro: Assets
 ------------------
 
-The first configuration that is found matching these critera will be added to the account:
+The first configuration that is found matching these criteria will be added to the account:
 
 - the asset is part of the same company as the user who submitted the ticket
 - the asset's name matches the computer hostname

@@ -1,12 +1,12 @@
 Repairshopr / Syncro Documentation
 =========================================
 
-Setting up Helpdesk Buttons with Repairshopr or Syncro is easy and can be done in as few as 15 minutes. 
+Setting up Helpdesk Buttons with RepairShopr or Syncro is easy and can be done in as few as 15 minutes. 
 
 Integration
 --------------------------
 
-Repairshopr / Syncro integration requires two main parts:
+RepairShopr / Syncro integration requires two main parts:
 
 `1) set up an unregistered user as a catchall account as a Contact in your PSA <https://docs.tier2tickets.com/content/integration/repairshopr/#unregistered-user>`_
 
@@ -57,7 +57,7 @@ If Contact is not in Syncro
 
 If a user is not a Contact for a Customer in Syncro, Tier2Tickets will attempt to match the Contact based on the domain of the email address used to submit the ticket. If the domain matches the domain for the email address assigned to a Customer, the ticket will be submitted underneath the Customer email address, but it will leave the Contact as Not Assigned.
 
-This feature will skip commonly used domains like google.com, yahoo.com etc. If a contact is being matched to a company erroniously let us know at support@tier2.tech.
+This feature will skip commonly used domains like google.com, yahoo.com etc. If a contact is being matched to a company erroneously let us know at support@tier2.tech.
 
 NOTE: Please make sure there is an email address for the Customer, otherwise the ticket will be submitted as our  Unregistered User/Catchall Account set up in step 1.
 
