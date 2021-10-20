@@ -75,6 +75,8 @@ Select ‘HaloPSA/HaloITSM’ for the ticket system. Select if you are using an 
 
 Provide the authentication server and api server information. Copy and paste them as they are shown in the API Details.
 
+The "Resource Server" should go in the Ticket System API endpoint slot and the "Authorisation Server" goes into the Ticket System Authorization Server slot.
+
 Finally put in the api key in the following form depending on your instance type:
 
 
