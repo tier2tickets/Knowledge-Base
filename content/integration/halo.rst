@@ -52,13 +52,13 @@ Now click Applications, then New at the top right corner. You can name the key w
 
 Make sure the key is set to be active.
 
-For permissions we will need at least:
+For permissions we will need at least the following five (5) selections:
 
-read:tickets
-edit:tickets
-read:customers
-read:crm
-read:assets
+* read:tickets
+* edit:tickets
+* read:customers
+* read:crm
+* read:assets
 
 The login Type should be Agent. and select an agent that the tickets will be put into the system as (if none is selected several lookups will fail preventing the integration from working properly)
 
