@@ -43,7 +43,7 @@ You are now done setting up your company and contact.
 
 Next step is to create an API key. Navigate to Configuration > Integrations > Halo(PSA/ITSM) API
 
-Here you can find most of the information you need as well as create a new applicaion key
+Here you can find most of the information you need as well as create a new application key
 You will need the tenant, resource server and authentication server from this first screen.
 
 .. image:: images/halo-api1.png
@@ -60,24 +60,24 @@ For permissions we will need at least the following five (5) selections:
 * read:crm
 * read:assets
 
-The login Type should be Agent. and select an agent that the tickets will be put into the system as (if none is selected several lookups will fail preventing the integration from working properly)
+The Login Type should be Agent. and select an Agent that the tickets will be put into the system as (if none is selected several lookups will fail preventing the integration from working properly)
 
-When you save, you should be given a client id and a client secret. Keep them in a safe place as the secret cannot be viewed again (a new one can be generated)
+When you save, you should be given a Client ID and a Client Secret. Keep them in a safe place as the secret cannot be viewed again (a new one can be generated)
 
 Once this has been set up, you will have all the information required.
 
 3) Helpdeskbuttons.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Log into your Helpdeskbuttons.com account. Select Software Management> Integration settings. 
+Log into your Helpdeskbuttons.com account. Select Software Management > Integration Settings. 
 
-Select ‘HaloPSA/HaloITSM’ for the ticket system. Select if you are using an On prem or cloud hosted instance. 
+Select ‘HaloPSA/HaloITSM’ for the ticket system. Select if you are using an On-Prem or Cloud Hosted instance. 
 
-Provide the authentication server and api server information. Copy and paste them as they are shown in the API Details.
+Provide the authentication server and API server information. Copy and paste them as they are shown in the API Details.
 
 The "Resource Server" should go in the Ticket System API endpoint slot and the "Authorisation Server" goes into the Ticket System Authorization Server slot.
 
-Finally put in the api key in the following form depending on your instance type:
+Finally put in the API key in the following form depending on your instance type whether `On-Prem <https://docs.tier2tickets.com/content/integration/halo/#on-prem>`_ or `Cloud Hosted <https://docs.tier2tickets.com/content/integration/halo/#cloud-hosted>`_:
 
 
 Cloud Hosted
