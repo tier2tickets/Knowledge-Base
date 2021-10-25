@@ -98,6 +98,24 @@ Software
 --------
 
 
+
+
+.. raw:: html
+
+   <a name="1.1.24">&nbsp;</a>
+
+1.1.x.24
+~~~~~~~~
+
+* Added support for generating a diagnostic report remotely
+* Fixed a bug in which the Tier2Assists would fail to display always
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.23">&nbsp;</a>
