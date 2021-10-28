@@ -104,8 +104,10 @@ Software
 
    <a name="1.1.24">&nbsp;</a>
 
-1.1.x.24
+1.1.x.24 
 ~~~~~~~~
+
+(2021-10-21)
 
 * Added support for generating a diagnostic report remotely
 * Fixed a bug in which the Tier2Assists would fail to display always
@@ -123,6 +125,8 @@ Software
 1.1.x.23
 ~~~~~~~~
 
+(2021-09-28)
+
 * Fixed a bug in which the buttonhelper process would use ~5% CPU constantly on terminal servers in which more than one user was logged in
 * Fixed a bug in which the terminal server reports would show network data missing error unless "desktop experience" feature was installed
 * Fixed a bug in which computers with no printer would fail in gathering data about other hardware as well
@@ -138,6 +142,8 @@ Software
 1.1.x.22
 ~~~~~~~~
 
+(2021-09-23)
+
 * Fixed a bug in which the buttonhelper process would continue to use high resources after diagnostic submission.
 * Fixed a bug in which several buttonhelper process may spawn where there should only be one
 * Fixed an installer bug in which the install would fail if SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run was not writable
@@ -147,37 +153,14 @@ Software
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .. raw:: html
 
    <a name="1.1.21">&nbsp;</a>
 
 1.1.x.21
 ~~~~~~~~
+
+(2021-09-22)
 
 * The diagnostic-gathering logic has been completely rewritten and is now an order of magnitude faster.
 * The library responsible for handling TLS has been swapped-out with a more reliable one for systems with self-signed trusted root certificates
@@ -189,21 +172,14 @@ Software
 
 
 
-
-
-
-
-
-
-
-
-
 .. raw:: html
 
    <a name="1.1.20">&nbsp;</a>
 
 1.1.x.20
 ~~~~~~~~
+
+(2021-09-16)
 
 * In cases where the software is being used on a terminal server, there was potential for CPU overload when several users were logged in. This version contains logic for the application to monitor all instances of itself and throttle itself by dropping screenshot frames or compressing those frames more slowly if needed in order to target <= 15% CPU usage.
 
@@ -223,17 +199,10 @@ Software
 1.1.x.19
 ~~~~~~~~
 
+(2021-08-31)
+
 * Running the software by clicking the icon now uses named-pipe based RPC rather than an emulated-HID so there are no longer conflicts with other software that may be running and it should work with all keyboard layouts now.
 * Fixed a bug in which hundreds of temp files get created over time and not cleaned up.
-
-
-
-
-
-
-
-
-
 
 
 
@@ -245,6 +214,8 @@ Software
 
 1.1.x.18
 ~~~~~~~~
+
+(2021-08-02)
 
 * Automatic addition of Assets and Configurations for Syncro, ConnectWise, and Autotask `Check out our documentation <https://docs.tier2tickets.com/content/customization/assets/>`_ for more details
 * Pinned to Taskbar Icon Update: Added improvements to our PTTB feature, including a smarter install with icon-cache-clearing 
@@ -263,6 +234,8 @@ Software
 1.1.x.17
 ~~~~~~~~
 
+(2021-03-24)
+
 * Tier2AI now supports a result['best_match'] for categories that are not necessarily close enough to include in result['matches']
 * Fixed a bug in which the loading spinner would not animate while processing "is_before_ticket_submit = True" tier2assist automation rules
 * Implemented a workaround for a Windows bug that prevented uninstalling the software because of the Windows Event Log Service
@@ -280,17 +253,9 @@ Software
 1.1.x.16
 ~~~~~~~~
 
+(2021-02-11)
+
 * Added support for Tier2AI
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -302,6 +267,8 @@ Software
 
 1.1.x.15
 ~~~~~~~~
+
+(2021-02-10)
 
 * Added the ability to display tier2assist actions before ticket submission using is_before_ticket_submit variable
 * Fixed bug in which tier2assist actions were not displayed in the order in which they were added
@@ -323,6 +290,8 @@ Software
 
 1.1.x.14
 ~~~~~~~~
+
+(2021-02-05)
 
 * Fixed a bug in which the software would not launch if appdata is redirected and the end-user already has the software running on another computer sharing the same appdata folder.
 * Added support for automatically pinning the icon to the taskbar
@@ -346,6 +315,8 @@ Software
 1.1.x.12
 ~~~~~~~~
 
+(2020-10-14)
+
 * Added integration with Microsoft Active Directory, Azure Active Directory, Novell Directory Services, Microsoft Exchange, and :ref:`Custom Identity Providers <content/automations/tier2scripts:identity_provider.ps1>`
 
 
@@ -362,6 +333,8 @@ Software
 
 1.1.x.11
 ~~~~~~~~
+
+(2020-10-09)
 
 * Phone number validation now supports the international number format so that all countries can use the software.
 
@@ -381,6 +354,8 @@ Software
 
 1.1.x.10
 ~~~~~~~~
+
+(2020-09-30)
 
 * Fixed the message on the last page "Thank you, {name}" where name would be incorrect in the case of unregistered user ticket submission
 * Fixed some formatting on the main landing page so that it better handles longer text.
@@ -408,6 +383,8 @@ Software
 1.1.x.9
 ~~~~~~~~
 
+(2020-08-26)
+
 * fixed an edge case where the submission would hang forever if the t2tservice has never in the past been able to contact the server.
 
 
@@ -431,6 +408,8 @@ Software
 
 1.1.x.8
 ~~~~~~~~
+
+(2020-08-19)
 
 * fixed an edge case where a well-timed mouse-scroll during software startup would cause memory corruption and the buttonhelper process would stop responding.
 
@@ -456,6 +435,8 @@ Software
 
 1.1.x.7
 ~~~~~~~~
+
+(2020-08-08)
 
 * improved the exponential backoff logic in the Tier2Service websocket connection
 * added support for the windows certificate store to all TLS requests so that security software whitelisting is not as necessary

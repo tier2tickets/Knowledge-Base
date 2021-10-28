@@ -13,7 +13,7 @@ On your GUI landing page, when users press the button, you can link users direct
 .. image:: https://beta.helpdeskbuttons.com/resources/GUI_General.png
 
 With Automations and Tier2Assists
---------------------------------
+------------------------------------
 
 With our `Tier2Assist actions <https://docs.tier2tickets.com/content/automations/tier2assist/>`_, our software can dynamically create actions before or after ticket creation, your choice, that link your user to an actionable item based on the request that they just entered. (We've also `built an AI that can determine what the user is asking for! <https://ai.tier2.tech/>`_) For example, if someone has a new hire onboarding they're asking about, you can link them to an associated form in your User Portal.
 
@@ -25,6 +25,6 @@ At the end of ticket submission, you can offer a link the user to your User Port
 .. image:: https://beta.helpdeskbuttons.com/resources/GUI_Final.png
 
 Coming Soon: Automatic Reports no matter ticket source
---------------------------------
+------------------------------------------------------------
 
 We're also adding a new feature that will automatically pull our self-diagnosing report (or can be done on demand) no matter the source of the ticket. So if a user puts in a ticket through the User Portal, if you have your `Asset Configurations set up in one of our supported Ticketing Systems <https://docs.tier2tickets.com/content/customization/assets/>`_, we'll be able to magically pull that report.

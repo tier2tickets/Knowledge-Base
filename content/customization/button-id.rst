@@ -1,5 +1,5 @@
 Is a Helpdesk Button Connected?
-=============
+=======================================
 
 Thanks to Mendy Green for sharing this script with the v-helpdeskbuttons-com channel on the `MSPGeek slack community <https://join.slack.com/t/mspgeek/shared_invite/zt-lrsy70xt-ICcLYnavbDevoDzrqlMWKQ>`_!
 
