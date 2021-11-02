@@ -26,3 +26,9 @@ Device Management vs Diagnostic Report
 --------------------------------------------
 There are two main access points for these remote features, Diagnostic Reports and the Device Management Page. 
 You can toggle adding each feature for each point of access.
+
+
+Remote Access API
+--------------------
+Most if not all of these features will be available via an API that will require the API KEY posted on the 
+Remote Access Options page. This will come with full API documentation.
