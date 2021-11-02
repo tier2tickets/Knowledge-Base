@@ -27,4 +27,4 @@ At the end of ticket submission, you can offer a link the user to your User Port
 Coming Soon: Automatic Reports no matter ticket source
 ------------------------------------------------------------
 
-We're also adding a new feature that will automatically pull our self-diagnosing report (or can be done on demand) no matter the source of the ticket. So if a user puts in a ticket through the User Portal, if you have your `Asset Configurations set up in one of our supported Ticketing Systems <https://docs.tier2tickets.com/content/customization/assets/>`_, we'll be able to magically pull that report.
+We're also adding a new feature that will automatically pull our self-diagnosing report (or can be done on demand) no matter the source of the ticket. So if a user puts in a ticket through the User Portal, if you have your `Asset Configurations set up in one of our supported Ticketing Systems <https://docs.tier2tickets.com/content/customization/assets/>`_, we'll be able to magically pull that report. The `Remote Access Page docs <https://docs.tier2tickets.com/content/customization/remote/>`_ discuss this further.
