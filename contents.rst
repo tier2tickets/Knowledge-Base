@@ -59,7 +59,8 @@ Table Of Contents
 	:caption: Customization
 	:maxdepth: 0
 
-	content/customization/assets	
+	content/customization/assets
+	content/customization/remote	
 	content/customization/user-portals
 	content/customization/techconnect
 	content/customization/branding
