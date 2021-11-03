@@ -16,16 +16,22 @@ Website
 * New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options*>`
     * Tier2Terminal
     * Remote Diagnostics
-* Profile Settings updated and reset password link fixed
-* Report loading changed: visiting a report before it has completed loading works better
+* Profile Settings 
+    * updated with new icons 
+    * reset password link fixed
+    * name sometimes not showing properly fixed
 * Subaccounts Page redesigned to be easier to understand
     * Permissions list for each user
     * Can be changed via CSV
-* Branding Page has beed updated with reset to default buttons and can scale to fit more screen sizes
+* Branding Page
+    * updated with reset to default buttons 
+    * can adjust to fit more screen sizes
 * Download and Deploy Page redesigned
     * allow deployment customization on the page instead of requiring script manipulation
     * only allow building of General Availability if Release Candidate is not ready for testing
     * additional information available about deployment status
+    * can adjust to fit more screen sizes
+* Diagnostic Report loading changed: visiting a report before it has completed loading works better
 
 
 
