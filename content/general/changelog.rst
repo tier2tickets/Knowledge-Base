@@ -3,15 +3,36 @@ Change Log
 Here is a running change-log of the website and the software.
 
 
-
 Website
 -------
+
+2021-11-02
+~~~~~~~~~~
+* Device management optimizations that make the page load faster
+* Device management tools list added to accomidate Remote Access Options
+* Device management last user field added
+* Device management online/offline indicators changed and checkboxes allowing only these to be shown
+* New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options*>`
+    * Tier2Terminal
+    * Remote Diagnostics
+* Profile Settings updated and reset password link fixed
+* Report loading changed: visiting a report before it has completed loading works better
+* Subaccounts Page redesigned to be easier to understand
+    * Permissions list for each user
+    * Can be changed via CSV
+* Branding Page has beed updated with reset to default buttons and can scale to fit more screen sizes
+* Download and Deploy Page redesigned
+    * allow deployment customization on the page instead of requiring script manipulation
+    * only allow building of General Availability if Release Candidate is not ready for testing
+    * additional information available about deployment status
+
+
 
 2021-08-16
 ~~~~~~~~~~
 * Device Management, sort by Domain and Serial Number.
-* :ref:`Email Disclaimer. <content/integration/email:*email_disclaimer*>` for more details
-* :ref:`Integration Field Validation. <content/integration/errors:Submission Error>` for more details
+* :ref:`Email Disclaimer. <content/integration/email:*email_disclaimer*>`
+* :ref:`Integration Field Validation. <content/integration/errors:Submission Error>`
 * Changed the naming conventions for our builds (“Alpha” “Beta” “Stable” to “Release Candidate” and “General Availability”.)
 
 
