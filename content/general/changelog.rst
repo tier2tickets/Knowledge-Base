@@ -8,10 +8,11 @@ Website
 
 2021-11-02
 ~~~~~~~~~~
-* Device management optimizations that make the page load faster
-* Device management tools list added to accomidate Remote Access Options
-* Device management last user field added
-* Device management online/offline indicators changed and checkboxes allowing only these to be shown
+* Device management 
+    * optimizations that make the page load faster
+    * tools list added to accomidate Remote Access Options
+    * last user field added
+    * online/offline indicators changed and checkboxes allowing only these to be shown
 * New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options*>`
     * Tier2Terminal
     * Remote Diagnostics
