@@ -13,7 +13,7 @@ Website
     * tools list added to accomidate Remote Access Options
     * last user field added
     * online/offline indicators changed and checkboxes allowing only these to be shown
-* New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options*>`
+* New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options>`
     * Tier2Terminal
     * Remote Diagnostics
 * Profile Settings 
