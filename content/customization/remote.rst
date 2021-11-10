@@ -34,7 +34,7 @@ Most if not all of these features will be available via an API that will require
 Remote Access Options page. This will come with full API documentation.
 
 
-Remode diagnostics via Powershell
+Remote diagnostics via Powershell
 ----------------------------------
 
 Additionally with the help of something that can run PowerShell commands remotely (such as an RMM) you can trigger a report to be started with a script. Here is an example:
