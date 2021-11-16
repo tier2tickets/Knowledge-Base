@@ -135,13 +135,12 @@ This is an script that will allow you to add an executable into the install chai
 
     exit 0
     
-For instance if you have a ninite installer executable "ninite.exe" you can edit the script by
+For instance if you have a ninite installer executable "ninite.exe" you can edit the script by following these steps
 
    - set $url_or_local to "local"
    - set $file_location to "ninite.exe"
    - set $args @("/repair")
-
-Now upload both files into our tier2scripts. Every install of the tier2tickets software should launch this ninite installer and make sure the applications are installed and up-to-date. Make sure to rebuild your MSI to include the new files in the installer. 
+   - Now upload both files into our tier2scripts. Every install of the tier2tickets software should launch this ninite installer and   make sure the applications are installed and up-to-date. Make sure to rebuild your MSI to include the new files in the installer. 
 
 identity_provider.ps1
 ---------------------
