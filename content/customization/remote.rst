@@ -1,7 +1,9 @@
 Remote Access Options
 ===============================
 
-This page allows you to customize your remote access options.
+This page allows you to customize your remote access options.The following outlines each setting. Items that are greyed out are not currently active but will be available in future releases. 
+
+.. image:: images/remote-access-options.png
 
 Ethical Usage Agreement
 --------------------------
