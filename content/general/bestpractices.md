@@ -8,6 +8,8 @@ We offer specialty onboarding services to ensure a smooth launch. Email us at sa
 
 Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. Use Tier2Tickets as a tool for all of your clients, not just a select group of endpoints, and train your technicians to expect and review the report. We've had partners report reductions in their time-to-diagnose and time-to-resolve by 20%, 40%, and even 60%. It won't save time on every single ticket, but the annoying, messy ones, having that baseline of reporting will save you time and frustration.
 
+Our deployment scripts ignore computers that already have functional installs of the Tier2Tickets software so we reccomend setting up these scripts to run on all your endpoints daily.
+
 ## 2) Make launching Tier2Tickets visually obvious for your customers.
 
 Humans are visual! You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious. We offer several methods of triggering our software in addition to the desktop icon, and we recommend using some combination of the following to train your end users to launch Tier2Tickets:
