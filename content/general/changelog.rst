@@ -128,6 +128,34 @@ Software
 
 
 
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.25">&nbsp;</a>
+
+1.1.x.25 
+~~~~~~~~
+
+(2021-12-08)
+
+* Fixed a bug in which the gui would hang when using the custom powershell script append feature
+* Added support for configurable ticket TTL in the remote ticket creation API.
+
+
+
+
+
+
+
+
+
+
+
+
+
 .. raw:: html
 
    <a name="1.1.24">&nbsp;</a>
