@@ -30,6 +30,7 @@ Launching Tier2Tickets *from* another user portal
 
 There is a custom protocol handler that is registered upon installation which allows you to create a link on a website which can launch the Tier2Tickets software. That link is `tier2tickets://run <tier2tickets://run>`_ . If you add that to any webpage as a link, then anyone who has the software installed can click that link to launch the software
 
+This feature was added to the installer builder on 2022-01-19. To use it, please rebuild and push out your custom software on your Download and Deploy page.
 
 
 Coming Soon: Automatic Reports no matter ticket source
