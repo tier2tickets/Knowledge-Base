@@ -24,6 +24,14 @@ At the end of ticket submission, you can offer a link the user to your User Port
 
 .. image:: https://beta.helpdeskbuttons.com/resources/GUI_Final.png
 
+
+Launching Tier2Tickets *from* another user portal
+------------------------------------------------------------
+
+There is a custom protocol handler that is registered upon installation which allows you to create a link on a website which can launch the Tier2Tickets software. That link is `tier2tickets://run <tier2tickets://run>`_ . If you add that to any webpage as a link, then anyone who has the software installed can click that link to launch the software
+
+
+
 Coming Soon: Automatic Reports no matter ticket source
 ------------------------------------------------------------
 
