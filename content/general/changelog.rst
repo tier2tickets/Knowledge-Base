@@ -131,6 +131,24 @@ Software
 
 
 
+.. raw:: html
+
+   <a name="1.1.26">&nbsp;</a>
+
+1.1.x.26
+~~~~~~~~
+
+(2022-01-26)
+
+* Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
+
+
+
+
+
+
+
+
 
 .. raw:: html
 
