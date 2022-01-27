@@ -18,6 +18,7 @@ Table Of Contents
 	content/general/firewall
 	content/general/ordering-buttons
 	content/general/changelog
+	content/general/known-issues
 
 .. toctree::
 	:caption: Integration
