@@ -4,21 +4,21 @@ Here is a running list of Known Issues regarding software, hardware, and process
 
 
 .. list-table:: Tier2Tickets GUI
-   :widths: 25 25 50
-   :header-rows: 1
+    :widths: 25 25 50
+    :header-rows: 1
    
-   * - Issue Number
-     - Description
-     - Work Around
-     - Projected Solution/ETR
-   * - T2T1001
-     - T2T1002
-     - T2T1003
-     - T2T1004 
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
-     - Row 2, column 4
+    * - Issue Number
+      - Description
+      - Work Around
+      - Projected Solution/ETR
+    * - T2T1001
+      - T2T1002
+      - T2T1003
+      - T2T1004 
+    * - Row 2, column 1
+      - Row 2, column 2
+      - Row 2, column 3
+      - Row 2, column 4
   
 
 .. list-table:: Tier2Tickets Account/Portal
