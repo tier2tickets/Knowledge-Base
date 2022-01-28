@@ -1,4 +1,4 @@
-*BETA* Notifications
+Notifications
 ========================
 
 This will eventually be a hub for controlling various types of communications between you, us and your end-users. Keep an eye out for future updates here.

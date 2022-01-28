@@ -1,4 +1,4 @@
-*BETA* Tier2Assist
+Tier2Assist
 =========================
 
 .. raw:: html

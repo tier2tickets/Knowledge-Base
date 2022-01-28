@@ -1,4 +1,4 @@
-*BETA* Tier2AI
+Tier2AI
 =========================
 
 Tier2AI uses artificial intelligence to determine how closely a phrase, sentence, or paragraph matches a set of categories. You can use this within our :ref:`Tier2Assist <content/automations/tier2assist:*BETA* tier2assist>` to determine what a user is talking about in a ticket and do things based on that knowledge. 

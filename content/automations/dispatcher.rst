@@ -1,4 +1,4 @@
-*BETA* Dispatcher Rules
+Dispatcher Rules
 =========================
 
 .. raw:: html

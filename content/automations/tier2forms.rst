@@ -1,4 +1,4 @@
-*BETA* Tier2Forms
+Tier2Forms
 ========================
 
 Tier2Forms is a special integration we designed to allow user-defined forms to submit additional information into existing tickets
