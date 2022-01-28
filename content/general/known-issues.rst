@@ -10,14 +10,14 @@ Projected Solution/ETR
 Tier2Tickets API/Backend
 >>>>>>>>>>>>
 
-* T2T-API.1001
-  * Description: Connectwise Manage Integration sometimes submits multiple duplicate tickets (1-2 typically, sometimes 5-10!). 
-  * Work-Around: This is a direct result of the CWM API; let support know you are experiencing duplicated we can extend the timeout for our service to minimize impact.
-  * Projected Solution/ETR: Async handling TBD
-* T2T-API.1002
-  * Description: Connectwise Manage Integration sometimes submits multiple duplicate tickets (1-2 typically, sometimes 5-10!). 
-  * Work-Around: This is a direct result of the CWM API; let support know you are experiencing duplicated we can extend the timeout for our service to minimize impact.
-  * Projected Solution/ETR: Async handling TBD
+#. T2T-API.1001
+   * Description: Connectwise Manage Integration sometimes submits multiple duplicate tickets (1-2 typically, sometimes 5-10!). 
+   * Work-Around: This is a direct result of the CWM API; let support know you are experiencing duplicated we can extend the timeout for our service to minimize impact.
+   * Projected Solution/ETR: Async handling TBD
+#. T2T-API.1002
+   * Description: Connectwise Manage Integration sometimes submits multiple duplicate tickets (1-2 typically, sometimes 5-10!). 
+   * Work-Around: This is a direct result of the CWM API; let support know you are experiencing duplicated we can extend the timeout for our service to minimize impact.
+   * Projected Solution/ETR: Async handling TBD
 
 
 Tier2Tickets GUI
