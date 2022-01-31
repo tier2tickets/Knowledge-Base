@@ -19,5 +19,5 @@ Tier2Tickets GUI
 Helpdesk Buttons
 >>>>>>>>>>>>
 #. **HDB.1001:** Only connection is USB 2.0. Requests for 3.0 and Bluetooth Options.
-  * Work-Around: Standardly, our partners use the Tier2Tickets launchkeys.  
+  * Work-Around: Plug the keyboard/mouse into the hub button. Now you have two extra USB3 ports available on your PC.
   * Projected Solution/ETR: Currently these options are generally cost-prohibitive. We wanted Helpdesk Buttons to be affordable and profitable and decided to not pursue these options. However, for partners that have a big budget for this, we are open to talking about one-off orders: email us at sales@tier2.tech. 
