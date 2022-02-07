@@ -6,11 +6,36 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2022-02-07
+~~~~~~~~~~
+* 2 Factor Authentication page 
+    * changed to not appear as a password
+* Account Information page
+    * Enable all reports and submission errors boxes
+* Integration Settings 
+    * added an override for the email connector
+* Branding 
+    * added a way to check transparency of the icons
+* Remote Access Page gets new settings
+    * Loginwith.me settings
+    * Disable 1 hour limitation on Remote Access tools
+    * Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
+* Device Management
+    * New tool related to Loginwith.me
+    * Remote Uninstall should also blacklist any online endpoints that cannot be accessed directly
+* Diagnostic Reports
+    * Added Loginwith.me integration
+    * Software version added to report
+* Subaccounts
+    * Remote Access permission added
+* More Action Logging on various pages
+
+
 2021-11-02
 ~~~~~~~~~~
 * Device management 
     * optimizations that make the page load faster
-    * tools list added to accomidate Remote Access Options
+    * tools list added to accommodate Remote Access Options
     * last user field added
     * online/offline indicators changed and checkboxes allowing only these to be shown
 * New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options>`
@@ -57,7 +82,7 @@ Website
 ~~~~~~~~~~
 * :ref:`Notifications <content/automations/notifications:*beta* notifications>`
 * Tier2Forms now integrates with Cognito Forms
-* Expanded the report to include new diagnositcs
+* Expanded the report to include new diagnostics
 
 
 2020-07-30
@@ -141,7 +166,8 @@ Software
 (2022-01-26)
 
 * Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
-
+* Loginwith.me integration
+* Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
 
 
 

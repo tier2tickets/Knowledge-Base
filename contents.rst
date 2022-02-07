@@ -63,7 +63,7 @@ Table Of Contents
 	content/customization/assets
 	content/customization/remote	
 	content/customization/user-portals
-	content/customization/techconnect
+	content/customization/loginwithme
 	content/customization/branding
 	content/customization/identity-provider
 	content/customization/version-numbers

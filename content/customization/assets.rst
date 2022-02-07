@@ -13,8 +13,10 @@ The first configuration that is found matching these criteria will be added to t
 - the configuration's reference title match the computer hostname 
 - the configuration is active
 
-
 .. image:: images/autotask.png
+
+Once the webhook setup has been done even tickets that don't come in via Tier2Tickets can get automatically generated diagnostic reports. Enable this on the Remote Access Page.
+
 
 Connectwise Manage: Configurations
 ------------------------------------
@@ -25,10 +27,11 @@ The first configuration that is found matching these criteria will be added to t
 - the configuration's name OR device identifier match the computer hostname 
 - the configuration is active
 
-
 .. image:: images/manage.png
 
-Syncro: Assets
+Once the webhook setup has been done even tickets that don't come in via Tier2Tickets can get automatically generated diagnostic reports. Enable this on the Remote Access Page.
+
+Syncro/RepairShopr: Assets
 ------------------
 
 The first configuration that is found matching these criteria will be added to the account:
@@ -37,3 +40,5 @@ The first configuration that is found matching these criteria will be added to t
 - the asset's name matches the computer hostname
 
 .. image:: images/syncro.png
+
+Once the webhook setup has been done even tickets that don't come in via Tier2Tickets can get automatically generated diagnostic reports. Enable this on the Remote Access Page.
