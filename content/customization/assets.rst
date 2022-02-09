@@ -32,7 +32,7 @@ The first configuration that is found matching these criteria will be added to t
 Once the webhook setup has been done even tickets that don't come in via Tier2Tickets can get automatically generated diagnostic reports. Enable this on the Remote Access Page.
 
 Syncro/RepairShopr: Assets
-------------------
+------------------------------------
 
 The first configuration that is found matching these criteria will be added to the account:
 

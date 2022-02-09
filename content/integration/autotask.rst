@@ -112,7 +112,7 @@ Dispatcher Rules
 -----------------------------------------------
 
 This is the list of variables that can be accessed when using the 
-:ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`.
+:ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`.
 
 +----------------------------------------------------+-----------------------------------------------------+
 | Read/Write                                         | Read Only                                           |

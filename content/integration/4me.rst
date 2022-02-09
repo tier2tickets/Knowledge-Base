@@ -101,7 +101,7 @@ It is not always necessary, but we recommend whitelisting the tier2tickets insta
 Dispatcher Rules
 ----------------------------------------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`. 
 
 .. image:: images/coming_soon.png
 

@@ -74,13 +74,13 @@ Website
 
 2021-02-17
 ~~~~~~~~~~
-* Tier2AI support now available. :ref:`Check it out in our docs <content/automations/tier2ai:*BETA* Tier2AI>` or read up on some sample ideas in our `feature release notes. <https://www.tier2tickets.com/now-introducing-tier2ai-also-inside-pin-to-taskbar-and-autotask-toast-notifications/>`_
+* Tier2AI support now available. :ref:`Check it out in our docs <content/automations/tier2ai:Tier2AI>` or read up on some sample ideas in our `feature release notes. <https://www.tier2tickets.com/now-introducing-tier2ai-also-inside-pin-to-taskbar-and-autotask-toast-notifications/>`_
 * :ref:`Set Tier2Assists to occur before OR after ticket submission. <content/automations/tier2assist:Running Tier2Assists before ticket submission>`
 * :ref:`Autotask Toast Notifications available now. <content/integration/autotask:Setting up Webhooks>` 
 
 2020-12-21
 ~~~~~~~~~~
-* :ref:`Notifications <content/automations/notifications:*beta* notifications>`
+* :ref:`Notifications <content/automations/notifications:notifications>`
 * Tier2Forms now integrates with Cognito Forms
 * Expanded the report to include new diagnostics
 
@@ -89,9 +89,9 @@ Website
 ~~~~~~~~~~
 * Added Automations Platform to site including
     * :ref:`Visual Code Editor <content/automations/dispatcher:visual editor>`
-    * :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
-    * :ref:`Tier2Assist <content/automations/tier2assist:*BETA* Tier2Assist>`
-    * :ref:`Tier2Forms <content/automations/tier2forms:*BETA* Tier2Forms>`
+    * :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`
+    * :ref:`Tier2Assist <content/automations/tier2assist:Tier2Assist>`
+    * :ref:`Tier2Forms <content/automations/tier2forms:Tier2Forms>`
     * :ref:`Tier2Scipts <content/automations/tier2scripts:tier2scripts>`
 * Device Management improvements
     * Filter and sort endpoints

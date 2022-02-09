@@ -14,6 +14,8 @@ These suggestions are made through series of if statements which use Python synt
 interpreted by Python 3 on the users computer, so you have a full fledged programming language at your disposal to
 make your rules.
 
+NOTE: Some browsers require url encoded strings to function so if you have issues with things like quotes, spaces, or slashes in your urls, replace them with the url encoded replacement. https://www.w3schools.com/tags/ref_urlencode.ASP 
+
 
 Edit Tier2Assist
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -143,7 +145,7 @@ here is what that rule might look like:
 			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
 
-You can now use :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>` to perform the same thing without having to list keywords to match against
+You can now use :ref:`Tier2AI <content/automations/tier2ai:tier2ai>` to perform the same thing without having to list keywords to match against
 
 .. code-block:: python
 
@@ -158,14 +160,14 @@ Additionally we have some special integrations with google forms :ref:`Tier2Form
 Cognito Forms
 """""""""""""""""""""""""""""""""""""
 
-Now let's say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
+Now let's say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:tier2ai>`
 
 .. code-block:: python
 
 	categories = [{'new hire'}]
 	result = ai_categorize(msg, categories)
 	if result['best_match'] == 'new hire':
-		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":') + ticketID) + '"}'})
 
 Additionally we have some special integrations with Cognito forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
@@ -324,10 +326,10 @@ This function allows you to access and external API or website using a GET.
 
 .. code-block:: python
     
-    json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'})
+    json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'}, {'HEADER TAG1': 'HEADER DATA1'})
 
 
-This function allows you to access and external API or website using a POST.
+This function allows you to access and external API or website using a POST. The headers are optional.
     
 
 *ai_categorize*
@@ -338,7 +340,7 @@ This function allows you to access and external API or website using a POST.
     ai_categorize('TEXT OR VARIABLE HERE', ['CATEGORY 1', 'CATEGORY 2', 'CATEGORY 3'])
 
 
-This function gives you access to our :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
+This function gives you access to our :ref:`Tier2AI <content/automations/tier2ai:tier2ai>`
 
 
 A deeper dive into Variables
