@@ -18,6 +18,12 @@ Tier2Tickets GUI
   * Projected Solution/ETR: To customize full multi-tenancy, T2T will first require a better RMM integration to capture and organize customers with granularity. Fully-customizable strings estimated 2022 Q3.
   
 
+Loginwith.me
+>>>>>>>>>>>>
+#. **LWM.1001:** Background doesn't match when initiating connection
+  * Work-Around: This is just a placeholder for Elizabeth to remember the thing she needs to style. 
+  * Projected Solution/ETR: Elizabeth will style it, in theory. 
+
 Helpdesk Buttons
 >>>>>>>>>>>>>>>>>>>>>>>>>>
 #. **HDB.1001:** Only connection is USB 2.0. Requests for 3.0 and Bluetooth Options.

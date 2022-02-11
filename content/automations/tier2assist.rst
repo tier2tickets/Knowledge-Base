@@ -283,6 +283,31 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
 
         
 
+Create Actions Based on Email Domain
+"""""""""""""""""""""""""""""""""""""
+If you'd like to create actions based on the email address your customer used, copy and paste the following examples:
+
+.. code-block:: python
+
+   #for a list of domains to perform the same action
+   
+   #create list
+   domain_list = ['example.com', 'example.org', 'example.net', 'example.io']
+   
+   for domain_item in domain_list:
+        if domain_item in email.lower():
+            # add if action here i.e queue, technician, type/subtype, example on next line
+            # queue = ‘match-all-characters-even-spaces’
+            tier2assist.append({'msg': 'It sounds like Example_Domain has hired a new teammate! Click “Go” to fill out the new employee form.', 'action': 'Google Tier2Form Link' + ticketID})
+            
+   #For a single domain to do a single thing
+   if 'example.xyz' in email.lower():
+      # add if action here i.e queue, technician, type/subtype, example on next line
+      # queue = ‘match-all-characters-even-spaces’
+      tier2assist.append({'msg': 'It sounds like Example.xyz has hired a new teammate! Click “Go” to fill out the new employee form.', 'action': 'Google Tier2Form Link' + ticketID})
+   
+
+
 
 A deeper dive into Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
