@@ -55,6 +55,8 @@ Once we have that email, plug the info into the Settings page after selecting Ka
 
 Company+username:password
 
+Note: keep spaces in the company name and some punctuation may need to be replaced by spaces.
+
 Once you click update you should be good to go. 
 
 Integration Defaults
