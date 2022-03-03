@@ -1,6 +1,6 @@
-# How does Billing of Tier2Tickets work?
+# How does Billing work?
 
-Your rate is based on your number of licenses (displayed in the chart below), tiered based on the total number you purchase. You can purchase directly through Tier2Technologies, or through our distribution partner, [Pax8]().
+Your rate is based on your number of licenses (displayed in the chart below), tiered based on the total number you purchase. You can purchase directly through Tier2Technologies, or through our distribution partner, [Pax8](https://app.pax8.com/#/catalog). Your licensing includes fully-featured use of our product, including [Login With Me](https://loginwith.me), even for the free tier of 25 endpoints or less.
 
 When you install the software on a new computer, it will periodically check into our platform. You can see all the active software installations for which you are being billed on the [Device Management page](https://account.helpdeskbuttons.com/select_endpoints).
 
