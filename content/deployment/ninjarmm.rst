@@ -58,4 +58,4 @@ Click Save to save the configuration.
 
 
 Thanks to David Bell at `preemptIT <https://www.preemptit.com>`_ for his great assistance creating this deployment document.
-Thanks to 'Gaispace <https://giaspace.com>'_ for help updating the docs. 
+Thanks to `Gaispace <https://giaspace.com>`_ for help updating the docs. 
