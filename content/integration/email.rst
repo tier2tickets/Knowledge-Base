@@ -83,7 +83,7 @@ Field Definitions
 .. image:: images/email-disclaimer.png
 
 
-*prepend_subject*`*
+*prepend_subject*
 """"""""""""""""""""""""
 
 	**This is True by default. It controls whether or not the email subject is prepended with Fwd: <Ticket number>**
