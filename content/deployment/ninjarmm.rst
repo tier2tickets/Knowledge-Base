@@ -24,7 +24,7 @@ The script need only be a single line like this:
 
 	msiexec /i "http://example.com/downloads/buttonInst.msi" /passive /norestart WRAPPED_ARGUMENTS='"/launchkey=4 /iconname=""PC Solutions Support"""'
 	
-Put in your own url in place of buttonInst.msi, in addition to a custom launchkey, and iconname. Remember that your `Download and Deploy  <https://account.helpdeskbuttons.com>/builds>`_ page has a magic link for you. 
+Put in your own url in place of buttonInst.msi, in addition to a custom launchkey, and iconname. Remember that your `Download and Deploy  <https://account.helpdeskbuttons.com/builds>`_ page has a magic link for you. 
 
 For more information about the parameters, check out our `Installation Guide <https://docs.tier2tickets.com/content/general/installation/>`_
 
