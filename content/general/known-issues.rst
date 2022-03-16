@@ -21,6 +21,7 @@ Tier2Tickets GUI
 Loginwith.me
 >>>>>>>>>>>>
 #. **LWM.1001:** Background doesn't match when initiating connection
+
   * Work-Around: This is just a placeholder for Elizabeth to remember the thing she needs to style. 
   * Projected Solution/ETR: Elizabeth will style it, in theory. 
 

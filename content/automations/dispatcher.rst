@@ -203,7 +203,7 @@ letters.
 Each of these examples should be viewable in the Visual Editor.
 
 Practical Example: Create Actions Based on Email Domain
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you'd like to create Dispatcher Rules based on the email address your customer used, copy and paste the following examples:
 

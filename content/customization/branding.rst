@@ -12,6 +12,25 @@ If you don’t have your images in the right format or size, they will be automa
 
 Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MSI after uploading.
 
+Clear Icon Cache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have uploaded your icons, rebuilt your MSI, and updated your endpoints and your icons appear as the stock helpdesk buttons icon you may need to reset the windows icon cache. This can be accomplished with a few steps. (These steps should work for Windows 10 and 11)
+
+Stop Windows Explorer via the Task Manager. 
+
+Then in an elevated Command Prompt put in these commands:
+
+cd /d <Path-to-User-Profile>\AppData\Local\Microsoft\Windows\Explorer
+attrib –h iconcache_*.db 
+del iconcache_*.db 
+start explorer
+
+Note: Make sure to replace <Path-to-User-Profile> with the path to the user profile you wish to reset. (Normally C:\Users\<username>)
+
+This will either delete the cached icons or flag them to be removed on the next log in. Either way you will need to log back in with that user to see the changes. 
+
+
 Renaming Shortcuts
 ^^^^^^^^^^^^^^^^^^^^^^^^
 If you are looking for a way to change the name of the Helpdesk Button shortcut we recommend the method in our documentation on 
