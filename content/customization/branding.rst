@@ -21,10 +21,12 @@ Stop Windows Explorer via the Task Manager.
 
 Then in an elevated Command Prompt put in these commands:
 
-cd /d <Path-to-User-Profile>\AppData\Local\Microsoft\Windows\Explorer
-attrib –h iconcache_*.db 
-del iconcache_*.db 
-start explorer
+.. code-block:: console
+
+    cd /d <Path-to-User-Profile>\AppData\Local\Microsoft\Windows\Explorer
+    attrib –h iconcache_*.db 
+    del iconcache_*.db 
+    start explorer
 
 Note: Make sure to replace <Path-to-User-Profile> with the path to the user profile you wish to reset. (Normally C:\Users\<username>)
 
