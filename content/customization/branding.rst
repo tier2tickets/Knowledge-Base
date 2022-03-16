@@ -10,7 +10,7 @@ You can customize the appearance of the software by uploading a logo (400 x 125 
 
 If you don’t have your images in the right format or size, they will be automatically converted, but may be distorted. We recommend using transparent backgrounds for best appearance.
 
-Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MSI after uploading.
+Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MSI after uploading. Rebuilding the MSI will make sure to package the branding into the installer so we can register the application with your newly updated branded icon.
 
 Clear Icon Cache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
