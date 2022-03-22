@@ -129,7 +129,7 @@ This is the list of variables that can be accessed when using the
 +----------------------------------------------------+-----------------------------------------------------+
 | :ref:`content/automations/dispatcher:*subject*`    | :ref:`content/automations/dispatcher:*hostname*`    | 
 +----------------------------------------------------+-----------------------------------------------------+
-| :ref:`content/automations/dispatcher:*append*`     |                                                     | 
+| :ref:`content/automations/dispatcher:*append*`     | :ref:`content/integration/autotask:*businessName*   | 
 +----------------------------------------------------+-----------------------------------------------------+
 | :ref:`content/integration/autotask:*priv_append*`  |                                                     | 
 +----------------------------------------------------+-----------------------------------------------------+
@@ -152,6 +152,16 @@ Rule Field Definitions
 
 .. image:: images/autotask-priority.png
    :target: https://docs.tier2tickets.com/_images/autotask-priority.png
+
+|
+|
+
+*businessName*
+""""""""""""""""""""""
+
+	**The name of the company the contact belongs to:**
+
+.. image:: images/autotask-business.png
 
 |
 |
