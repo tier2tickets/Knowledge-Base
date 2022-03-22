@@ -1,7 +1,7 @@
 -Deprecated- Advanced Options
 =====================================
 
-This system has been replaced by :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
+This system has been replaced by :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`
 
 If you want finer control over integrations you can use the advanced options button on the Settings page beside your integration dropdown.
 

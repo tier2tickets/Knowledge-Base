@@ -24,7 +24,16 @@ At the end of ticket submission, you can offer a link the user to your User Port
 
 .. image:: https://beta.helpdeskbuttons.com/resources/GUI_Final.png
 
-Coming Soon: Automatic Reports no matter ticket source
+
+Launching Tier2Tickets *from* another user portal
 ------------------------------------------------------------
 
-We're also adding a new feature that will automatically pull our self-diagnosing report (or can be done on demand) no matter the source of the ticket. So if a user puts in a ticket through the User Portal, if you have your `Asset Configurations set up in one of our supported Ticketing Systems <https://docs.tier2tickets.com/content/customization/assets/>`_, we'll be able to magically pull that report. The `Remote Access Page docs <https://docs.tier2tickets.com/content/customization/remote/>`_ discuss this further.
+There is a custom protocol handler that is registered upon installation which allows you to create a link on a website which can launch the Tier2Tickets software. That link is `tier2tickets://run <tier2tickets://run>`_ . If you add that to any webpage as a link, then anyone who has the software installed can click that link to launch the software
+
+This feature was added to the installer builder on 2022-01-19. To use it, please rebuild and push out your custom software on your Download and Deploy page.
+
+
+Automatic Reports no matter ticket source
+------------------------------------------------------------
+
+You can also automatically pull our self-diagnosing report (or can be done on demand) no matter the source of the ticket. So if a user puts in a ticket through a User Portal, if you have your `Asset Configurations set up in one of our supported Ticketing Systems <https://docs.tier2tickets.com/content/customization/assets/>`_, we'll be able to magically pull that report. The `Remote Access Page docs <https://docs.tier2tickets.com/content/customization/remote/>`_ discuss this further.

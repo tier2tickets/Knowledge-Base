@@ -10,7 +10,28 @@ You can customize the appearance of the software by uploading a logo (400 x 125 
 
 If you don’t have your images in the right format or size, they will be automatically converted, but may be distorted. We recommend using transparent backgrounds for best appearance.
 
-Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MSI after uploading.
+Make sure to `rebuild <https://account.helpdeskbuttons.com/builds.php>`_ your MSI after uploading. Rebuilding the MSI will make sure to package the branding into the installer so we can register the application with your newly updated branded icon. After your MSI has been rebuilt you can deploy freely via our `deployment scripts <https://docs.tier2tickets.com/content/deployment/scripts/>`_ or `push out updates to your existing endpoints <http://docs.tier2tickets.com/content/deployment/updating/>`_. 
+
+Clear Icon Cache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have uploaded your icons, rebuilt your MSI, and updated your endpoints and your icons appear as the stock helpdesk buttons icon you may need to reset the windows icon cache. This can be accomplished with a few steps. (These steps should work for Windows 10 and 11)
+
+Stop Windows Explorer via the Task Manager. 
+
+Then in an elevated Command Prompt put in these commands:
+
+.. code-block:: console
+
+    cd /d <Path-to-User-Profile>\AppData\Local\Microsoft\Windows\Explorer
+    attrib –h iconcache_*.db 
+    del iconcache_*.db 
+    start explorer
+
+Note: Make sure to replace <Path-to-User-Profile> with the path to the user profile you wish to reset. (Normally C:\Users\<username>)
+
+This will either delete the cached icons or flag them to be removed on the next log in. Either way you will need to log back in with that user to see the changes. 
+
 
 Renaming Shortcuts
 ^^^^^^^^^^^^^^^^^^^^^^^^

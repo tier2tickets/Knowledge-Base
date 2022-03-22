@@ -1,4 +1,4 @@
-*BETA* Tier2Assist
+Tier2Assist
 =========================
 
 .. raw:: html
@@ -13,6 +13,8 @@ allow you to suggest additional steps to the user.
 These suggestions are made through series of if statements which use Python syntax. The commands you write are literally
 interpreted by Python 3 on the users computer, so you have a full fledged programming language at your disposal to
 make your rules.
+
+NOTE: Some browsers require url encoded strings to function so if you have issues with things like quotes, spaces, or slashes in your urls, replace them with the url encoded replacement. https://www.w3schools.com/tags/ref_urlencode.ASP 
 
 
 Edit Tier2Assist
@@ -143,7 +145,7 @@ here is what that rule might look like:
 			tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
 
 
-You can now use :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>` to perform the same thing without having to list keywords to match against
+You can now use :ref:`Tier2AI <content/automations/tier2ai:tier2ai>` to perform the same thing without having to list keywords to match against
 
 .. code-block:: python
 
@@ -158,14 +160,14 @@ Additionally we have some special integrations with google forms :ref:`Tier2Form
 Cognito Forms
 """""""""""""""""""""""""""""""""""""
 
-Now let's say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
+Now let's say you have a form that needs to be filled out upon new employees being hired.  This example uses :ref:`Tier2AI <content/automations/tier2ai:tier2ai>`
 
 .. code-block:: python
 
 	categories = [{'new hire'}]
 	result = ai_categorize(msg, categories)
 	if result['best_match'] == 'new hire':
-		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":"') + ticketID) + '"}'})
+		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":') + ticketID) + '"}'})
 
 Additionally we have some special integrations with Cognito forms :ref:`Tier2Forms <content/automations/tier2forms:Link Cognito Forms with Helpdesk Buttons>` to allow the information from a submission of such a form to the ticket that was just created.
 
@@ -281,6 +283,31 @@ Each of the previous examples should be viewable in the Visual Editor, but if yo
 
         
 
+Create Actions Based on Email Domain
+"""""""""""""""""""""""""""""""""""""
+If you'd like to create actions based on the email address your customer used, copy and paste the following examples:
+
+.. code-block:: python
+
+   #for a list of domains to perform the same action
+   
+   #create list
+   domain_list = ['example.com', 'example.org', 'example.net', 'example.io']
+   
+   for domain_item in domain_list:
+        if domain_item in email.lower():
+            # add if action here i.e queue, technician, type/subtype, example on next line
+            # queue = ‘match-all-characters-even-spaces’
+            tier2assist.append({'msg': 'It sounds like Example_Domain has hired a new teammate! Click “Go” to fill out the new employee form.', 'action': 'Google Tier2Form Link' + ticketID})
+            
+   #For a single domain to do a single thing
+   if 'example.xyz' in email.lower():
+      # add if action here i.e queue, technician, type/subtype, example on next line
+      # queue = ‘match-all-characters-even-spaces’
+      tier2assist.append({'msg': 'It sounds like Example.xyz has hired a new teammate! Click “Go” to fill out the new employee form.', 'action': 'Google Tier2Form Link' + ticketID})
+   
+
+
 
 A deeper dive into Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -324,10 +351,10 @@ This function allows you to access and external API or website using a GET.
 
 .. code-block:: python
     
-    json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'})
+    json_post('URL TO POST TO', {'FIELD NAME 1': 'DATA FOR FIELD NAME 1', 'FIELD NAME 2': 'DATA FOR FIELD NAME 2', 'FIELD NAME 3': 'DATA FOR FIELD NAME 3'}, {'HEADER TAG1': 'HEADER DATA1'})
 
 
-This function allows you to access and external API or website using a POST.
+This function allows you to access and external API or website using a POST. The headers are optional.
     
 
 *ai_categorize*
@@ -338,7 +365,7 @@ This function allows you to access and external API or website using a POST.
     ai_categorize('TEXT OR VARIABLE HERE', ['CATEGORY 1', 'CATEGORY 2', 'CATEGORY 3'])
 
 
-This function gives you access to our :ref:`Tier2AI <content/automations/tier2ai:*BETA* tier2ai>`
+This function gives you access to our :ref:`Tier2AI <content/automations/tier2ai:tier2ai>`
 
 
 A deeper dive into Variables

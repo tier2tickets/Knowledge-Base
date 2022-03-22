@@ -6,14 +6,39 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2022-02-07
+~~~~~~~~~~
+* 2 Factor Authentication page 
+    * changed to not appear as a password
+* Account Information page
+    * Enable all reports and submission errors boxes
+* Integration Settings 
+    * added an override for the email connector
+* Branding 
+    * added a way to check transparency of the icons
+* Remote Access Page gets new settings
+    * Loginwith.me settings
+    * Disable 1 hour limitation on Remote Access tools
+    * Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
+* Device Management
+    * New tool related to Loginwith.me
+    * Remote Uninstall should also blacklist any online endpoints that cannot be accessed directly
+* Diagnostic Reports
+    * Added Loginwith.me integration
+    * Software version added to report
+* Subaccounts
+    * Remote Access permission added
+* More Action Logging on various pages
+
+
 2021-11-02
 ~~~~~~~~~~
 * Device management 
     * optimizations that make the page load faster
-    * tools list added to accomidate Remote Access Options
+    * tools list added to accommodate Remote Access Options
     * last user field added
     * online/offline indicators changed and checkboxes allowing only these to be shown
-* New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options*>`
+* New :ref:`Remote Access Page. <content/customization/remote:Remote Access Options>`
     * Tier2Terminal
     * Remote Diagnostics
 * Profile Settings 
@@ -49,24 +74,24 @@ Website
 
 2021-02-17
 ~~~~~~~~~~
-* Tier2AI support now available. :ref:`Check it out in our docs <content/automations/tier2ai:*BETA* Tier2AI>` or read up on some sample ideas in our `feature release notes. <https://www.tier2tickets.com/now-introducing-tier2ai-also-inside-pin-to-taskbar-and-autotask-toast-notifications/>`_
+* Tier2AI support now available. :ref:`Check it out in our docs <content/automations/tier2ai:Tier2AI>` or read up on some sample ideas in our `feature release notes. <https://www.tier2tickets.com/now-introducing-tier2ai-also-inside-pin-to-taskbar-and-autotask-toast-notifications/>`_
 * :ref:`Set Tier2Assists to occur before OR after ticket submission. <content/automations/tier2assist:Running Tier2Assists before ticket submission>`
 * :ref:`Autotask Toast Notifications available now. <content/integration/autotask:Setting up Webhooks>` 
 
 2020-12-21
 ~~~~~~~~~~
-* :ref:`Notifications <content/automations/notifications:*beta* notifications>`
+* :ref:`Notifications <content/automations/notifications:notifications>`
 * Tier2Forms now integrates with Cognito Forms
-* Expanded the report to include new diagnositcs
+* Expanded the report to include new diagnostics
 
 
 2020-07-30
 ~~~~~~~~~~
 * Added Automations Platform to site including
     * :ref:`Visual Code Editor <content/automations/dispatcher:visual editor>`
-    * :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`
-    * :ref:`Tier2Assist <content/automations/tier2assist:*BETA* Tier2Assist>`
-    * :ref:`Tier2Forms <content/automations/tier2forms:*BETA* Tier2Forms>`
+    * :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`
+    * :ref:`Tier2Assist <content/automations/tier2assist:Tier2Assist>`
+    * :ref:`Tier2Forms <content/automations/tier2forms:Tier2Forms>`
     * :ref:`Tier2Scipts <content/automations/tier2scripts:tier2scripts>`
 * Device Management improvements
     * Filter and sort endpoints
@@ -124,6 +149,83 @@ Website
 
 Software
 --------
+
+
+
+.. raw:: html
+
+   <a name="1.1.26">&nbsp;</a>
+
+1.1.x.26
+~~~~~~~~
+
+(2022-01-26)
+
+* Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
+* Loginwith.me integration
+* Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.28">&nbsp;</a>
+
+1.1.x.28
+~~~~~~~~
+
+(2022-03-22)
+
+* Worked around an edge case in which sometimes no screenshots would be submitted if buttonhelper.exe is not running
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.27">&nbsp;</a>
+
+1.1.x.27
+~~~~~~~~
+
+(2022-02-26)
+
+* Bumped up some timeout values
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.25">&nbsp;</a>
+
+1.1.x.25 
+~~~~~~~~
+
+(2021-12-08)
+
+* Fixed a bug in which the gui would hang when using the custom powershell script append feature
+* Added support for configurable ticket TTL in the remote ticket creation API.
+
+
+
+
+
+
+
+
+
 
 
 

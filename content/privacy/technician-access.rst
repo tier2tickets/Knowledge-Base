@@ -16,3 +16,9 @@ Viewing a ticket report generated via Tier 2 Tickets™ requires that you have t
 
 Of course our site is protected with Multi-Factor Authentication using the same `TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm>`_ standard everything else does. It will work with any Multi-Factor App or generator you want to use.
 
+To set up 2FA 
+++++++++++++++
+1. Enable 2FA on the main Account through the `Account Administration Page <https://account.helpdeskbuttons.com/account_info>`_.
+2. Create `Subaccounts <https://account.helpdeskbuttons.com/subaccounts>`_ for each user and securely deliver the generated OTP to each user.
+3. Users will then set up their own 2FA via QR Code upon signing in with provided OTP in step 2.
+

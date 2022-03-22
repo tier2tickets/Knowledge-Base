@@ -1,4 +1,4 @@
-Kaseya Documentation
+Kaseya BMS Documentation
 ================================
 
 This guide will show you how to set up your new Helpdesk Buttons with Kaseya BMS in as few as 15 minutes.
@@ -55,6 +55,8 @@ Once we have that email, plug the info into the Settings page after selecting Ka
 
 Company+username:password
 
+Note: keep spaces in the company name and some punctuation may need to be replaced by spaces.
+
 Once you click update you should be good to go. 
 
 Integration Defaults
@@ -84,7 +86,7 @@ It is not always necessary, but we recommend whitelisting the tier2tickets insta
 Dispatcher Rules
 ----------------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`. 
 
 
 +--------------------------------------------------+----------------------------------------------------+

@@ -10,6 +10,8 @@ Select the endpoint(s) you wish to remove, select Remove Endpoints and click App
 
 The next popup confirms the remove and gives the option to run the uninstall command on the endpoints chosen.
 
+Uninstalling using this method will ignore the endpoint from then on. In the event that the uninstall fails, the endpoint will no longer be able to check in.  
+
 ![](images/remove2.png)
 
 ## Uninstalling Manually

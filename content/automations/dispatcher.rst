@@ -1,4 +1,4 @@
-*BETA* Dispatcher Rules
+Dispatcher Rules
 =========================
 
 .. raw:: html
@@ -202,6 +202,30 @@ letters.
 
 Each of these examples should be viewable in the Visual Editor.
 
+Practical Example: Create Actions Based on Email Domain
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you'd like to create Dispatcher Rules based on the email address your customer used, copy and paste the following examples:
+
+.. code-block:: python
+
+   #for a list of domains doing the same thing
+   
+   domain_list = ['example.com', 'example.org', 'example.net', 'example.io']
+   
+   for domain_item in domain_list:
+	   if domain_item in email.lower():
+		   # add if action here i.e queue, technician, type/subtype, example on next line
+		   # queue = ‘match-all-characters-even-spaces’
+		   type = 'Reactive'
+   
+   #For a single domain to do a single thing
+   
+   if 'example.xyz' in email.lower():
+	   # add if action here i.e queue, technician, type/subtype, example on next line
+	   # queue = ‘match-all-characters-even-spaces’
+	   board = 'Test test'
+   
 
 Practical Example: Impact/Urgency Priority Matrix
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -59,7 +59,7 @@ NOTE: make sure that the script returns! If your script gets stuck, waiting on u
 will never complete.
 
 
-Example install.ps1 Script
+Example install.ps1 Scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We recommend using inline parameters for customizing the name of the tier2tickets desktop shortcut, but if you want to 
@@ -68,7 +68,7 @@ customize this shortcut for installs that come via Helpdesk Button extended pres
 Update Shortcut Icons on Install
 """"""""""""""""""""""""""""""""""""""
 
-.. code-block:: powershell
+.. code-block:: shell
 
 	#########################install.ps1############################################
 	#
@@ -91,8 +91,81 @@ Update Shortcut Icons on Install
 	}
 
 	exit 0
-	
+
 Make sure to change the iconName to something more fitting than *My Helpdesk.lnk*
+
+Run Software on Install
+""""""""""""""""""""""""""""""""""""""
+
+This is an script that will allow you to add an executable into the install chain of HDB. It should work with any exe file. You can use this script for either a url or local file (including a file packaged with the scripts)
+
+.. code-block:: shell
+
+    #########################install.ps1############################################
+    #
+    # This is an script that will allow you to add an executable into the install 
+    # chain of HDB. This script can either run a local executable file or download 
+    # and run a file via URL.
+    #
+    #  - For a file hosted on the web: set $url_or_local = "url" and put the url in
+    #    the file location variable
+    #
+    #  - For a local file: add the executable to the zip along with this ps1 file,
+    #    set $url_or_local = "local" and set the $file_location as the path to the 
+    #    executable
+    #
+    ################################################################################
+    ############################ EDIT YOUR SETTINGS HERE ###########################
+
+    $url_or_local = "url"
+    $file_location = "PUT_URL_HERE"
+    $args = @("/s")
+
+    ########################### DO NOT EDIT BELOW THIS LINE ########################
+
+    if($url_or_local -eq "local") {
+       Start-Process -Filepath $file_location -ArgumentList $args -Verb RunAs
+    }
+    else {
+      $outpath = "$PSScriptRoot/myexe.exe"
+      $wc = New-Object System.Net.WebClient
+      $wc.DownloadFile($file_location, $outpath)
+      Start-Process -Filepath $PSScriptRoot/myexe.exe -ArgumentList $args -Verb RunAs
+    }
+
+    exit 0
+    
+For instance if you have a ninite installer executable "ninite.exe" you can edit the script by following these steps
+
+   - set $url_or_local to "local"
+   - set $file_location to "ninite.exe"
+   - set $args @("/repair")
+   - Now upload both files into our tier2scripts. Every install of the tier2tickets software should launch this ninite installer and   make sure the applications are installed and up-to-date. Make sure to rebuild your MSI to include the new files in the installer. 
+   
+   if you want to instead install using an MSI you can change the script a bit to look like this:
+   
+.. code-block:: shell
+
+    ############################ EDIT YOUR SETTINGS HERE ###########################
+
+    $url_or_local = "url"
+    $file_location = "PUT_URL_HERE"
+    $args = "/s"
+
+    ########################### DO NOT EDIT BELOW THIS LINE ########################
+
+    if($url_or_local -eq "local") {
+       $inst_cmd = "msiexec /i $file_location $args"  
+    }
+    else {
+      $outpath = "$PSScriptRoot/myexe.msi"
+      $wc = New-Object System.Net.WebClient
+      $wc.DownloadFile($file_location, $outpath)
+      $inst_cmd = "msiexec /i $outpath $args"
+    }
+
+    powershell.exe -encodedCommand ([Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($inst_cmd)))
+   
 
 identity_provider.ps1
 ---------------------

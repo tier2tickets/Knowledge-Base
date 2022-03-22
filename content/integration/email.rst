@@ -14,7 +14,7 @@ It is not always necessary, but we recommend whitelisting the tier2tickets insta
 Dispatcher Rules
 ----------------------------------------------------
 
-This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:*BETA* Dispatcher Rules>`. 
+This is the list of variables that can be accessed when using the :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`. 
 
 +--------------------------------------------------------------+-------------------------------------------------------------+
 | Read/Write                                                   | Read Only                                                   |
@@ -25,7 +25,7 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 +--------------------------------------------------------------+-------------------------------------------------------------+
 | :ref:`content/integration/email:*email_disclaimer*`          | :ref:`content/automations/dispatcher:*name*`                |
 +--------------------------------------------------------------+-------------------------------------------------------------+
-|                                                              | :ref:`content/automations/dispatcher:*email*`               |
+| :ref:`content/integration/email:*prepend_subject*`           | :ref:`content/automations/dispatcher:*email*`               |
 +--------------------------------------------------------------+-------------------------------------------------------------+
 |                                                              | :ref:`content/automations/dispatcher:*ip*`                  |
 +--------------------------------------------------------------+-------------------------------------------------------------+
@@ -81,6 +81,12 @@ Field Definitions
 	**Append something to the top of the body of the email message**
 	
 .. image:: images/email-disclaimer.png
+
+
+*prepend_subject*
+""""""""""""""""""""""""
+
+	**This is True by default. It controls whether or not the email subject is prepended with Fwd: <Ticket number>**
 
 
 *input_**

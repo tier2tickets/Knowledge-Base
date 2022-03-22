@@ -47,3 +47,8 @@ function Set-Shortcut {
 }
 
 ```
+
+
+## From the Device Management Page
+
+You can find a tool that will send a command to change your shortcuts on the users desktop on our Device Management page.

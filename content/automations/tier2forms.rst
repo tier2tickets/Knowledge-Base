@@ -1,4 +1,4 @@
-*BETA* Tier2Forms
+Tier2Forms
 ========================
 
 Tier2Forms is a special integration we designed to allow user-defined forms to submit additional information into existing tickets
@@ -18,11 +18,14 @@ Google Form Video Walkthrough
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PYqzBX2YuzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
+Google Forms Templates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For a Library of Google Form Templates to adapt for your own uses: `Tier2Form Google Form Templates <https://drive.google.com/drive/folders/1Q8N8msOIrXjUXNJyZn__ByLFWSKmCrO8>`_
+
 
 Link Google Forms with Helpdesk Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For a Library of Google Form Templates to adapt for your own uses: `Tier2Form Google Form Templates <https://drive.google.com/drive/folders/1Q8N8msOIrXjUXNJyZn__ByLFWSKmCrO8>`_
 
 Required in the Google Form
 """"""""""""""""""""""""""""""""""""
@@ -123,17 +126,20 @@ Click the Save Rules and test the HDB software to make sure it works as intended
 Cognito Forms
 ---------------------
 
-For a Library of Cognito Form Templates to adapt for your own uses: `Tier2Form Cognito Form Templates <https://www.cognitoforms.com/templates/shared/Tier2Tickets1>`_
-
 Cognito Form Video Walkthrough
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: images/coming_soon.png
 
+Cognito Forms Templates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For a Library of Cognito Form Templates to adapt for your own uses: `Tier2Form Cognito Form Templates <https://www.cognitoforms.com/templates/shared/Tier2Tickets1>`_
 
 
 Link Cognito Forms with Helpdesk Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 Cognito forms can be configured to send a webhook containing the information in the submission to a URL address. This is how we will connect Cognito Forms with Tier2Forms.
 
