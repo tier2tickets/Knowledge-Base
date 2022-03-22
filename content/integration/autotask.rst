@@ -129,7 +129,7 @@ This is the list of variables that can be accessed when using the
 +----------------------------------------------------+-----------------------------------------------------+
 | :ref:`content/automations/dispatcher:*subject*`    | :ref:`content/automations/dispatcher:*hostname*`    | 
 +----------------------------------------------------+-----------------------------------------------------+
-| :ref:`content/automations/dispatcher:*append*`     | :ref:`content/integration/autotask:*businessName*   | 
+| :ref:`content/automations/dispatcher:*append*`     | :ref:`content/integration/autotask:*businessName*`  | 
 +----------------------------------------------------+-----------------------------------------------------+
 | :ref:`content/integration/autotask:*priv_append*`  |                                                     | 
 +----------------------------------------------------+-----------------------------------------------------+
