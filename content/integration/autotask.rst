@@ -266,7 +266,7 @@ Rule Field Definitions
    :target: https://docs.tier2tickets.com/_images/autotask-worktype.png
    
    
-Worktype does not have an endpoint in the API yet, so customizing this needs to be based on the allocationCodeID. This id can be found when editing a work type in the URL. 
+Worktype does not have an endpoint in the API yet, so customizing this needs to be based on the allocationCodeID. This id can be found in the URL when editing the work type. 
    
 .. image:: images/autotask-worktype2.png
 
