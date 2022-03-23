@@ -48,6 +48,11 @@ function Set-Shortcut {
 
 ```
 
+### To Remove a Hotkey
+
+To remove a Hotkey from use, follow the above process and instead of setting a function key, set the key to null, as following:
+
+`Set-Shortcut C:\Users\Public\Desktop\"Helpdesk Button.lnk" ""`
 
 ## From the Device Management Page
 
