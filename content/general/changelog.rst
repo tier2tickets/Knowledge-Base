@@ -152,10 +152,6 @@ Software
 
 
 
-
-
-
-
 .. raw:: html
 
    <a name="1.1.26">&nbsp;</a>
@@ -170,6 +166,40 @@ Software
 * Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
 
 
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.28">&nbsp;</a>
+
+1.1.x.28
+~~~~~~~~
+
+(2022-03-22)
+
+* Worked around an edge case in which sometimes no screenshots would be submitted if buttonhelper.exe is not running
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.27">&nbsp;</a>
+
+1.1.x.27
+~~~~~~~~
+
+(2022-02-26)
+
+* Bumped up some timeout values
 
 
 
