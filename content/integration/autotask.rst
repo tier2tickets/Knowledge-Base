@@ -143,6 +143,8 @@ Unless otherwise stated, using the plain text exactly as it appears on the ticke
 +----------------------------------------------------+-----------------------------------------------------+ 
 | :ref:`content/integration/autotask:*worktype*`     |                                                     |
 +----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*category*`     |                                                     |
++----------------------------------------------------+-----------------------------------------------------+
 
 
 Rule Field Definitions
@@ -168,6 +170,14 @@ Rule Field Definitions
 
 |
 |
+
+*category*
+""""""""""""""""""""""
+
+	**The category the ticket belongs to:**
+
+.. image:: images/autotask-category.png
+
 
 *ticketStatus*
 """"""""""""""""
