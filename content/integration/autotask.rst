@@ -114,6 +114,8 @@ Dispatcher Rules
 This is the list of variables that can be accessed when using the 
 :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`.
 
+Unless otherwise stated, using the plain text exactly as it appears on the ticket should work for setting the variables in the dispatcher rules. 
+
 +----------------------------------------------------+-----------------------------------------------------+
 | Read/Write                                         | Read Only                                           |
 +====================================================+=====================================================+
@@ -251,6 +253,12 @@ Rule Field Definitions
 
 .. image:: images/autotask-worktype.png
    :target: https://docs.tier2tickets.com/_images/autotask-worktype.png
+   
+   
+Worktype does not have an endpoint in the API yet, so customizing this needs to be based on the allocationCodeID. This id can be found when editing a work type in the URL. 
+   
+.. image:: images/autotask-worktype2.png
+
 
 |
 |
