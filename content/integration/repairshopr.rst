@@ -244,3 +244,7 @@ Scroll through the list of events and enable webhooks for:
 Make sure you save your changes.
 
 .. image:: images/repairshopr_webhooks.gif
+
+UPDATE: If you want to get Automatic Reports on all tickets you will need to add another trigger:
+    
+    -Ticket : created (for anyone) 
