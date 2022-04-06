@@ -152,22 +152,6 @@ Software
 
 
 
-.. raw:: html
-
-   <a name="1.1.26">&nbsp;</a>
-
-1.1.x.26
-~~~~~~~~
-
-(2022-01-26)
-
-* Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
-* Loginwith.me integration
-* Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
-
-
-
-
 
 
 .. raw:: html
@@ -183,13 +167,6 @@ Software
 
 
 
-
-
-
-
-
-
-
 .. raw:: html
 
    <a name="1.1.27">&nbsp;</a>
@@ -200,6 +177,24 @@ Software
 (2022-02-26)
 
 * Bumped up some timeout values
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.26">&nbsp;</a>
+
+1.1.x.26
+~~~~~~~~
+
+(2022-01-26)
+
+* Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
+* Loginwith.me integration
+* Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
+
+
 
 
 
