@@ -22,7 +22,7 @@ Website
     * tags can help you filter your endpoints
     * a "default" tag of No Custom Tag is added to endpoints for convenience
     * can invert tag and search values for convenience
-* Popup Notifications
+* Popup Notifications (NEW FEATURE)
     * Simple popup messages can be sent to computers in addition to the toast notifications via the device management page
 * Update/Add Desktop Shortcut (NEW FEATURE)
     * Ability to change/add the desktop icon remotely
