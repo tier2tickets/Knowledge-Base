@@ -4,21 +4,32 @@ Many users will start using Helpdesk Buttons and Tier2Tickets easily with no ins
 
 We offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.
 
-## 1) Deploy to all of your endpoints as a reliable part of your process and workflows.
+## 1) Win over your Techs with our toolset.
 
-Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. Use Tier2Tickets as a tool for all of your clients, not just a select group of endpoints, and train your technicians to expect and review the report. We've had partners report reductions in their time-to-diagnose and time-to-resolve by 20%, 40%, and even 60%. It won't save time on every single ticket, but the annoying, messy ones, having that baseline of reporting will save you time and frustration.
+Tier2Tickets is a workflow improvement tool: you'll see big wins when it is a part of your standard process. How you may choose to implement may vary with your culture or set up, but many of our partners do the following:
 
-Our deployment scripts ignore computers that already have functional installs of the Tier2Tickets software so we reccomend setting up these scripts to run on all your endpoints daily.
+### a. Make sure your Technicians can access their account and tools consistently.
 
-## 2) Make launching Tier2Tickets visually obvious for your customers.
+Use Tier2Tickets as a tool for all of your clients, not just a select group of endpoints, and train your technicians to expect and review the report, instant replay, and other tools. Get them [set up with their own Sub-Account and permissions so they can get started](https://docs.tier2tickets.com/content/privacy/subaccounts/). (Most techs benefit from having access to ticket-report, ticket-dashboard, and device-management.)
 
-Humans are visual! You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious. We offer several methods of triggering our software in addition to the desktop icon, and we recommend using some combination of the following to train your end users to launch Tier2Tickets:
+Make sure they know how to [view Assets for supported ticketing systems](https://docs.tier2tickets.com/content/customization/assets/) and [pull a report or create a ticket on demand](https://docs.tier2tickets.com/content/customization/remote/) and can use our [Remote access tool, Loginwith.me](https://docs.tier2tickets.com/content/customization/loginwithme/)! You can also share our [training video](https://www.youtube.com/watch?v=8HKb-gV_Mso) for a general overview of the tools available to your team.
+
+### b. Deploy on all endpoints, so your techs consistently have everything they need.
+
+[Our custom deployment scripts](https://docs.tier2tickets.com/content/deployment/scripts/) ignore computers that already have functional installs of the Tier2Tickets software so we recommend setting up these scripts to run on all your endpoints daily.
+
+## 2) Make it easy for your customers, YOUR way.
+
+Humans are visual! You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious. We offer several methods of triggering our software, and we recommend using some combination of the following to train your end users to launch Tier2Tickets:
 
 - the [Helpdesk Button](https://www.helpdeskbuttons.com/), with your branding on it
+- a desktop icon, edited if you'd like with your brand,
 - the pinned-to-taskbar icon, edited if you'd like with your brand, but make sure it says "HELP" very clearly!, and/or
 - a [HELP decal](https://www.helpdeskbuttons.com/product/keyboard-decals/) on the keyboard hotkey of your choice.
 
-## 3) Provide customers with hands-on training that fits
+## 3) Provide customers with marketing and hands-on training that fits
+
+Let your users know that you're implementing a new tool that is going to help them get impossibly easy and efficient service. Many customers are proud to know that they can now help their technicians solve problems faster and with less frustration. This is a team effort, after all!
 
 Encourage user adoption by giving end users intentional practice using this new process, whether on the fly in the field, during planned meetings/training sessions/Lunch-and-Learns, or sharing a How-To Sheet.
 
@@ -40,18 +51,18 @@ Bring your customer coffee and donuts or host a Lunch and Learn to cover any off
 
 Another method of training your customers can be an email or printed handout of our [The How-to Guide](https://www.helpdeskbuttons.com/wp-content/uploads/2020/03/Introduction-to-HDB-20200311.pdf) to each user. [In our Marketing Collateral section](https://docs.tier2tickets.com/content/marketing/collateral/), we also provide an editable version as an INDD file that you can customize with your logo and standard function key setting. This one-page handout explains what Tier2Tickets/Helpdesk Buttons are and how to use them. You can also use the guide it in your marketing bundle! (Our MSP sister company actually includes a fully functional button that they give out in their [MSP marketing binder](https://imgur.com/a/TSeuoLU)). Let your end users know that they can use the buttons to put in tickets even if their computer is offline.
 
-## 4) Give your End Users a Carrot vs. a Stick.
+### iv. Give your End Users a Carrot vs. a Stick.
 
 A common practice we've seen partners employ is to give your customers gentle incentives to encourage them to submit tickets by Tier2Tickets. Sometimes that looks like tickets submitted via Tier2Tickets higher priority than tickets from email and telephone. Other partners have a special tiered rate of service for customers who submit a pre-determined percentage of tickets through Tier2Tickets/Helpdesk Buttons.
 
-### i. by Email
+#### by Email
 
 If you accept tickets via e-mail currently, consider adding instructions to your autoresponder. Our MSP uses the following:
 
 **Subject:** We received your Normal Priority Ticket. </br>
 **Message:** “Thank you, we have received your request and your normal-priority ticket has been created. _Do you have an urgent or high-priority request? For immediate diagnostics, triage, and dispatch, please submit a ticket via your Helpdesk Button._“
 
-### ii. by Phone
+#### by Phone
 
 You also may consider adding a recording in your phone system to the same effect as above. Our is: “Our first available technician will be with you shortly. For the fastest service, you can also submit a ticket via your Helpdesk Button or icon on your desktop computer. This gives our technicians a huge head start on your issues and is the fastest way to get them resolved."
 
@@ -59,7 +70,7 @@ You also may consider adding a recording in your phone system to the same effect
 
 ### Make Tier2Tickets your end users' "single pane of glass".
 
-If you use a ticketing portal link on end user desktops, consider removing it. You can specify your portal link and logo to show up on the first GUI page of the Tier2Tickets software itself and you'll find this is a much cleaner workflow. Removing these shortcuts will encourage the end users to use the software to submit tickets while still retaining the ability to use your portal directly when it is most appropriate and this will remove customer confusion as to which link to use.
+If you use a ticketing portal link on end user desktops, consider removing it. You can specify your portal link and logo to show up on the first GUI page of the Tier2Tickets software itself and you'll find this is a much cleaner workflow. Removing these shortcuts will encourage the end users to use the software to submit tickets while still retaining the ability to use your portal directly when it is most appropriate and this will remove customer confusion as to which link to use. We have also added the ability to [auto-add our report to tickets created, regardless of the source, if Assets are linked](https://docs.tier2tickets.com/content/customization/assets/). Use us side-by-side with [your portal of choice!](https://docs.tier2tickets.com/content/customization/user-portals/)
 
 ### Add Tier2Tickets to your RMM tray icon
 
