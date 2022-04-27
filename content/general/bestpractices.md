@@ -76,4 +76,4 @@ If you use a ticketing portal link on end user desktops, consider removing it. Y
 
 Many RMM tools have their own system tray icon. We find that very few of our end users have ever used it, but a few select ones do. If your RMM supports it, we recommending adding an option to this menu for "submit a support ticket" that will launch the Tier2Tickets software. We have guides available on how to do this for a few RMM's already in the deployment section of our knowledge base.
 
-We can just do all of this for you and a whole lot more if you want. Talk to your account manager about a Premium Whiteglove Onboarding.
+We can just do all of this for you and a whole lot more if you want. Shoot us an email at support@tier2.tech.
