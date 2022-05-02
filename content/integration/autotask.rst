@@ -65,8 +65,7 @@ With that finished, now you will need to configure your information on the Helpd
 3) Helpdeskbuttons.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/settings.php 
-
+Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/backend
 Under the Ticket System dropdown, select Autotask 
 
 .. image:: images/at-image-13.png
