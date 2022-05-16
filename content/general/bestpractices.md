@@ -4,10 +4,10 @@ Many users will start using Helpdesk Buttons and Tier2Tickets easily with no ins
 
 We offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.
 
-    #. [Win over your Techs]
-    #. [Make it easy for your customers, your way]
-    #. [Communicate with your Customers]
-    #. [Use Tier2Tickets with your other customer-facing processes]
+[1. Win over your Techs]
+[2. Make it easy for your customers, your way]
+[3. Communicate with your Customers]
+[4. Use Tier2Tickets with your other customer-facing processes]
 
 ## 1) Win over your Techs with our toolset.
 
@@ -27,9 +27,9 @@ Make sure they know how to [view Assets for supported ticketing systems](https:/
 
 We get that you want to test out Tier2 Tickets and make sure that everything is operating as expected. While you will see anecdotal evidence of a good fit in your system, we recommend as a best practice that our Partners take a few steps in fairly rapid succession, with a week maximum in between steps:
 
-    - Test internally/Introduce Tier2Tickets to Technicians
-    - (Optional) Deploy to a few customers as proof of concept and technician training
-    - Deploy widely to all customers
+- Test internally/Introduce Tier2Tickets to Technicians
+- (Optional) Deploy to a few customers as proof of concept and technician training
+- Deploy widely to all customers
 
 We offer Onboarding support and Complimentary service when onboarding. If you haven't claimed your free service yet, email us at sales@tier2.tech.
 
