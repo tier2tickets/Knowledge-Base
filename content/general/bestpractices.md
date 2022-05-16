@@ -4,10 +4,10 @@ Many users will start using Helpdesk Buttons and Tier2Tickets easily with no ins
 
 We offer specialty onboarding services to ensure a smooth launch. Email us at sales@tier2.tech if you'd like to talk to our Onboarding team.
 
-[1. Win over your Techs]
-[2. Make it easy for your customers, your way]
-[3. Communicate with your Customers]
-[4. Use Tier2Tickets with your other customer-facing processes]
+1. [Win over your Techs]
+2. [Make it easy for your customers, your way]
+3. [Communicate with your Customers]
+4. [Use Tier2Tickets with your other customer-facing processes]
 
 ## 1) Win over your Techs with our toolset.
 
