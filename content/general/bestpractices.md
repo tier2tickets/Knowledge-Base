@@ -20,7 +20,7 @@ Make sure they know how to [view Assets for supported ticketing systems](https:/
 
 ## 2) Make it easy for your customers, YOUR way.
 
-Humans are visual! You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious. We offer several methods of triggering our software, and we recommend using some combination of the following to train your end users to launch Tier2Tickets:
+Humans are visual! You'll get the best adoption by making your ticketing process through Tier2Tickets blatant and obvious. We offer several methods of triggering our software, and we recommend using some combination of the following to train your customers to launch Tier2Tickets:
 
 - the [Helpdesk Button](https://www.helpdeskbuttons.com/), with your branding on it
 - a desktop icon, edited if you'd like with your brand,
@@ -29,9 +29,9 @@ Humans are visual! You'll get the best adoption by making your ticketing process
 
 ## 3) Provide customers with marketing and hands-on training that fits
 
-Let your users know that you're implementing a new tool that is going to help them get impossibly easy and efficient service. Many customers are proud to know that they can now help their technicians solve problems faster and with less frustration. This is a team effort, after all!
+Let your users know that you're implementing a new tool that is going to help them get impossibly easy and efficient service. Many customers are proud to know that they can now help their technicians solve problems faster and with less frustration. This is a team effort, after all! We even have a sample email we've written that you can send out to your customers to announce your adoption of Helpdesk Buttons! [Sample Email linked here](https://docs.tier2tickets.com/content/general/customer-letter/)
 
-Encourage user adoption by giving end users intentional practice using this new process, whether on the fly in the field, during planned meetings/training sessions/Lunch-and-Learns, or sharing a How-To Sheet.
+Encourage user adoption by giving your customers intentional practice using this new process, whether on-the-fly in the field, during planned meetings/training sessions/Lunch-and-Learns, or sharing a How-To Sheet.
 
 ### i. In the Field
 
@@ -41,7 +41,7 @@ When a user calls to submit a ticket or attempts to grab a technician in the hal
 
 #### When a technician is on-site
 
-Have an on-site tech take a minute to walk each person through submitting a ticket and explain to your end users that doing this small action gives them the power to help resolve their problems faster.
+Have an on-site tech take a minute to walk each person through submitting a ticket and explain to your customers that doing this small action gives them the power to help resolve their problems faster.
 
 ### ii. Planned Meetings/Training/Lunch and Learns
 
@@ -49,9 +49,9 @@ Bring your customer coffee and donuts or host a Lunch and Learn to cover any off
 
 ### iii. Provide users you can't train with a custom How-to Guide
 
-Another method of training your customers can be an email or printed handout of our [The How-to Guide](https://www.helpdeskbuttons.com/wp-content/uploads/2020/03/Introduction-to-HDB-20200311.pdf) to each user. [In our Marketing Collateral section](https://docs.tier2tickets.com/content/marketing/collateral/), we also provide an editable version as an INDD file that you can customize with your logo and standard function key setting. This one-page handout explains what Tier2Tickets/Helpdesk Buttons are and how to use them. You can also use the guide it in your marketing bundle! (Our MSP sister company actually includes a fully functional button that they give out in their [MSP marketing binder](https://imgur.com/a/TSeuoLU)). Let your end users know that they can use the buttons to put in tickets even if their computer is offline.
+Another method of training your customers can be an email or printed handout of our [The How-to Guide](https://www.helpdeskbuttons.com/wp-content/uploads/2020/03/Introduction-to-HDB-20200311.pdf) to each user. [In our Marketing Collateral section](https://docs.tier2tickets.com/content/marketing/collateral/), we also provide an editable version as an INDD file that you can customize with your logo and standard function key setting. This one-page handout explains what Tier2Tickets/Helpdesk Buttons are and how to use them. You can also use the guide it in your marketing bundle! (Our MSP sister company actually includes a fully functional button that they give out in their [MSP marketing binder](https://imgur.com/a/TSeuoLU)). Let your customers know that they can use the buttons to put in tickets even if their computer is offline.
 
-### iv. Give your End Users a Carrot vs. a Stick.
+### iv. Give your Customers a Carrot vs. a Stick.
 
 A common practice we've seen partners employ is to give your customers gentle incentives to encourage them to submit tickets by Tier2Tickets. Sometimes that looks like tickets submitted via Tier2Tickets higher priority than tickets from email and telephone. Other partners have a special tiered rate of service for customers who submit a pre-determined percentage of tickets through Tier2Tickets/Helpdesk Buttons.
 
@@ -68,12 +68,12 @@ You also may consider adding a recording in your phone system to the same effect
 
 ## 5) Work Tier2Tickets into your other customer-facing processes
 
-### Make Tier2Tickets your end users' "single pane of glass".
+### Make Tier2Tickets your Customers' "single pane of glass".
 
-If you use a ticketing portal link on end user desktops, consider removing it. You can specify your portal link and logo to show up on the first GUI page of the Tier2Tickets software itself and you'll find this is a much cleaner workflow. Removing these shortcuts will encourage the end users to use the software to submit tickets while still retaining the ability to use your portal directly when it is most appropriate and this will remove customer confusion as to which link to use. We have also added the ability to [auto-add our report to tickets created, regardless of the source, if Assets are linked](https://docs.tier2tickets.com/content/customization/assets/). Use us side-by-side with [your portal of choice!](https://docs.tier2tickets.com/content/customization/user-portals/)
+If you use a ticketing portal link on customer desktops, consider removing it. You can specify your portal link and logo to show up on the first GUI page of the Tier2Tickets software itself and you'll find this is a much cleaner workflow. Removing these shortcuts will encourage the customers to use the software to submit tickets while still retaining the ability to use your portal directly when it is most appropriate and this will remove customer confusion as to which link to use. We have also added the ability to [auto-add our report to tickets created, regardless of the source, if Assets are linked](https://docs.tier2tickets.com/content/customization/assets/). Use us side-by-side with [your portal of choice!](https://docs.tier2tickets.com/content/customization/user-portals/)
 
 ### Add Tier2Tickets to your RMM tray icon
 
-Many RMM tools have their own system tray icon. We find that very few of our end users have ever used it, but a few select ones do. If your RMM supports it, we recommending adding an option to this menu for "submit a support ticket" that will launch the Tier2Tickets software. We have guides available on how to do this for a few RMM's already in the deployment section of our knowledge base.
+Many RMM tools have their own system tray icon. We find that very few of our customers have ever used it, but a few select ones do. If your RMM supports it, we recommending adding an option to this menu for "submit a support ticket" that will launch the Tier2Tickets software. We have guides available on how to do this for a few RMM's already in the deployment section of our knowledge base.
 
 We can just do all of this for you and a whole lot more if you want. Shoot us an email at support@tier2.tech.
