@@ -243,5 +243,5 @@ For Ticket Updates:
 		"mobile": "{{ticket.contact.mobile}}",
 		"email": "{{ticket.contact.email}}",
 		"name": "{{ticket.contact.firstname}} {{ticket.contact.lastname}}",
-		"status": "{{ticket.status}}",
+		"status": "{{ticket.status}}"
 	}
