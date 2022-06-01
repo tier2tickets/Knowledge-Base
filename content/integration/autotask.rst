@@ -339,6 +339,9 @@ Create another workflow rule but for the EVENT select Note Created by anyone
 
 .. image:: images/autotask-callout7.png
 
+Make sure to set the action to the same callout as the first. 
+
+.. image:: images/autotask-callout6.png
 
 
 
