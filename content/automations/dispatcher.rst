@@ -392,7 +392,9 @@ our application and not from the ticket system integration being used. They are 
    :target: https://docs.tier2tickets.com/_images/advanced-subject.png
 
 To modify the length of your subject line, you can use this code to modify the number of characters. Remember that it tries to stop at word boundaries. 
+
 .. code-block:: python
+	
 	import textwrap
 	subject = msg
 	# convert all whitespace to spaces
