@@ -3,7 +3,7 @@
 Tier2Tickets Official Documentation
 ************************************
 
-This_ is the official knowledge base of tier2tickets_ and helpdeskbuttons_. We are building it out as we go and we may not have the information you are looking for here yet. If you are having problems figuring something out, and you can't find it here, let us know and we will get get it figured out together.
+This_ is the official knowledge base of tier2tickets_ and helpdeskbuttons_. We are building it out as we go and we may not have the information you are looking for here yet. If you are having problems figuring something out, and you can't find it here, let us know and we will get it figured out together.
 
 
 .. _This: http://docs.tier2tickets.com

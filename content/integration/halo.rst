@@ -116,6 +116,12 @@ Make sure that there is a : between the client id and client secret.
 Once you have entered the correct information on the Helpdesk Buttons page, make to click Update so it saves the changes.
 
 
+Integration Defaults
+"""""""""""""""""""""""""""""""""""""""""""
+
+For most integrations you can leave these blank and the PSA/Ticket System will fill in some defaults. For HALO specifically setting the agent to Unassigned will stop the agent set in the integration from being assigned every ticket by default.
+
+
 Anti-Virus and AntiMalware
 ----------------------------------------------------
 It is not always necessary, but we recommend whitelisting the tier2tickets installation folder (C:\\Program Files(x86)\\tier2tickets). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
@@ -146,6 +152,9 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 +----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`content/automations/dispatcher:*append*`                       |                                                    | 
 +----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`content/integration/halo:*category*`                           |                                                    | 
++----------------------------------------------------------------------+----------------------------------------------------+
+
 
 
 Field Definitions
@@ -211,6 +220,11 @@ Field Definitions
 
 |
 |
+
+*category*
+""""""""""
+
+	**Halo has 4 categories that can be customized to be required that are not "custom fields"**
 
 *other*
 """""""
