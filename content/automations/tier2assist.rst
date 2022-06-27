@@ -190,10 +190,10 @@ If you wanted to show a password reset link if either office or password were in
 	if 'password' in msg or 'office' in msg:
 		tier2assist.append({'msg': 'Click here to reset your office password.', 'action': 'https://account.live.com/password/reset'})
 
-Shedule and appointment
+Schedule an appointment
 """""""""""""""""""""""""""""""""""""
 
-Now let's say you want to allow a user to schedule and appointment. Here is a
+Now let's say you want to allow a user to schedule an appointment. Here is a
 rule that does this if they select a checkbox that contains the word schedule:
 
 
