@@ -2,6 +2,12 @@
 
 You can set the shortcut via commandline as you install the Tier2Tickets/Helpdesk Buttons software. If you need to update after deployment, these are some methods for doing so.
 
+## From the Device Management Page
+
+You can find a tool that will send a command to change your shortcuts on the users desktop on our Device Management page.
+
+If the icon is on the desktop and the icon's name matches with the deployment, it will be replaced. Otherwise a new icon will be added to the desktop.
+
 ## For a Single Device (Manual)
 
 If your predetermined shortcut key isn't working for a specific user, you can change that combination in the Desktop Shortcut Properties menu.
@@ -53,9 +59,3 @@ function Set-Shortcut {
 To remove a Hotkey from use, follow the above process and instead of setting a function key, set the key to null, as following:
 
 `Set-Shortcut C:\Users\Public\Desktop\"Helpdesk Button.lnk" ""`
-
-## From the Device Management Page
-
-You can find a tool that will send a command to change your shortcuts on the users desktop on our Device Management page.
-
-If the icon is on the desktop and the icon's name matches with the deployment, it will be replaced. Otherwise a new icon will be added to the desktop. 
