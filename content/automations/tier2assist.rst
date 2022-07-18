@@ -149,7 +149,7 @@ You can now use :ref:`Tier2AI <content/automations/tier2ai:tier2ai>` to perform 
 
 .. code-block:: python
 
-	categories = [{'new hire'}]
+	categories = ['new hire']
 	result = ai_categorize(msg, categories)
 	if result['best_match'] == 'new hire':
 		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': 'YOUR_FORM_URL_HERE' + ticketID})
@@ -164,7 +164,7 @@ Now let's say you have a form that needs to be filled out upon new employees bei
 
 .. code-block:: python
 
-	categories = [{'new hire'}]
+	categories = ['new hire']
 	result = ai_categorize(msg, categories)
 	if result['best_match'] == 'new hire':
 		tier2assist.append({'msg': 'If you are looking to add a new employee please fill out this form.', 'action': (('https://www.cognitoforms.com/Tier2Technologies1/SimpleForm' + '?entry={"TicketID":') + ticketID) + '"}'})
