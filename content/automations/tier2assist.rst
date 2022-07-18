@@ -238,6 +238,17 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 		tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
 
 
+Survey
+"""""""""""""""""""""""""""""""""""""
+
+What if you wanted to get feedback from your users about your service? You could use a simple form (Cognito in this case)
+
+.. code-block:: python
+
+    tier2assist.append({'msg': 'How has your experience been with us? We would like to know more with this simple 1 question survey', 'action': "https://www.cognitoforms.com/Tier2Tech/HelpDeskButtons?entry={%22Name%22:%22"+name+"%22,%22Email%22:%22"+email+"%22}"})
+
+
+
 Big Example
 """""""""""""""""""""""""""""""""""""
 
