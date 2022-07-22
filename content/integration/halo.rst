@@ -152,7 +152,7 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 +----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`content/automations/dispatcher:*append*`                       |                                                    | 
 +----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`content/integration/halo:*category*`                           |                                                    | 
+| :ref:`content/integration/halo:*category_#*`                         |                                                    | 
 +----------------------------------------------------------------------+----------------------------------------------------+
 
 
@@ -221,7 +221,7 @@ Field Definitions
 |
 |
 
-*category*
+*category_#*
 """"""""""
 
 	**Halo has 4 categories that can be customized to be required that are not "custom fields"**
