@@ -190,6 +190,37 @@ Software
 
 
 
+.. raw:: html
+
+   <a name="1.1.30">&nbsp;</a>
+
+1.1.x.30
+~~~~~~~~
+
+(2022-09-09)
+
+* Added support for account-wide screenshot collection disabling
+
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.29">&nbsp;</a>
+
+1.1.x.29
+~~~~~~~~
+
+(2022-08-22)
+
+* Added additional processor info diagnostic collection
+* Reworked diagnostic module into more modular form to allow code sharing with loginwith.me
+
+
+
+
 
 .. raw:: html
 
