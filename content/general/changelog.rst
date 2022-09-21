@@ -6,6 +6,43 @@ Here is a running change-log of the website and the software.
 Website
 -------
 
+2022-04-11
+~~~~~~~~~~
+
+* Getting Started Wizard (NEW FEATURE)
+    * A wizard has been added that can be accessed via the main navigation menu (it also shows up the first time you log in).
+    * It guides you through what we think are the minimum necessary steps to get your integration up and running
+    * The entire process can be done in just a few minutes
+* Set default subdomain (NEW FEATURE)
+    * The config icon in the top right corner now gives each user the ability to see the beta version of the website
+    * as we are working on things we put things up on beta to be tested for major bugs before they go to the live (account) site
+    * if you are not on the live site a blue banner across the top will remind you
+* Custom Tags (NEW FEATURE)
+    * These new tags can be added to endpoints via the device management page
+    * tags can help you filter your endpoints
+    * a "default" tag of No Custom Tag is added to endpoints for convenience
+    * can invert tag and search values for convenience
+* Popup Notifications (NEW FEATURE)
+    * Simple popup messages can be sent to computers in addition to the toast notifications via the device management page
+* Update/Add Desktop Shortcut (NEW FEATURE)
+    * Ability to change/add the desktop icon remotely
+        * Change name, refresh icon, change shortcut on one or multiple machines
+* GUI customization
+    * blank QR Code redirect is now branded with the partner's logo 
+* Billing Emails
+    * Fixed error where billing invoices or notification emails did not get properly delivered
+* Failover Email overrides
+    * Added QR Code/Ticket Email override to all integrations so failure tickets can be routed properly
+* Integration Test Button
+    * Fixed error where the Integration Test Button would not be locked when changing some fields.
+* Deployment Page Clarification     
+    * Made it more clear that the deployment options are related to the scripts not the MSI
+* Navigation Bug fix
+    * Navigation sometimes caused automation alert windows to not display
+* Auto Reporting bug fix
+    * ttl caused automatic reports to only last a few hours
+* More Action Logging based on the new features 
+
 2022-02-07
 ~~~~~~~~~~
 * 2 Factor Authentication page 
@@ -152,19 +189,34 @@ Software
 
 
 
+
 .. raw:: html
 
-   <a name="1.1.26">&nbsp;</a>
+   <a name="1.1.30">&nbsp;</a>
 
-1.1.x.26
+1.1.x.30
 ~~~~~~~~
 
-(2022-01-26)
+(2022-09-09)
 
-* Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
-* Loginwith.me integration
-* Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
+* Added support for account-wide screenshot collection disabling
 
+
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.29">&nbsp;</a>
+
+1.1.x.29
+~~~~~~~~
+
+(2022-08-22)
+
+* Added additional processor info diagnostic collection
+* Reworked diagnostic module into more modular form to allow code sharing with loginwith.me
 
 
 
@@ -183,13 +235,6 @@ Software
 
 
 
-
-
-
-
-
-
-
 .. raw:: html
 
    <a name="1.1.27">&nbsp;</a>
@@ -200,6 +245,24 @@ Software
 (2022-02-26)
 
 * Bumped up some timeout values
+
+
+
+
+.. raw:: html
+
+   <a name="1.1.26">&nbsp;</a>
+
+1.1.x.26
+~~~~~~~~
+
+(2022-01-26)
+
+* Created a 5 second timeout on both the custom and built-in :ref:`Identity Provider <content/customization/identity-provider:Identity Provider>`. This will prevent anyone waiting more than 10 seconds for the first screen
+* Loginwith.me integration
+* Auto magically add reports for tickets that are not put in via tier2tickets software for Autotask, Syncro, and ConnectWise Manage (requires webhooks)
+
+
 
 
 

@@ -38,7 +38,7 @@ Set up the account as normal. Make sure that the Security Level is set to 'API U
 Integration Vendor in the API Tracking Identifier section is set to 'Helpdesk Buttons - Tier2Tickets'. 
 Also take note of the username and the password since you will need them later.
 
-.. image:: images/at-image-04.png
+.. image:: images/at-image-05.png
 
 2) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -65,8 +65,7 @@ With that finished, now you will need to configure your information on the Helpd
 3) Helpdeskbuttons.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/settings.php 
-
+Log into your account and browse to Settings or go to https://account.helpdeskbuttons.com/backend
 Under the Ticket System dropdown, select Autotask 
 
 .. image:: images/at-image-13.png
@@ -114,6 +113,8 @@ Dispatcher Rules
 This is the list of variables that can be accessed when using the 
 :ref:`Dispatcher Rules <content/automations/dispatcher:Dispatcher Rules>`.
 
+Unless otherwise stated, using the plain text exactly as it appears on the ticket should work for setting the variables in the dispatcher rules. 
+
 +----------------------------------------------------+-----------------------------------------------------+
 | Read/Write                                         | Read Only                                           |
 +====================================================+=====================================================+
@@ -141,6 +142,8 @@ This is the list of variables that can be accessed when using the
 +----------------------------------------------------+-----------------------------------------------------+ 
 | :ref:`content/integration/autotask:*worktype*`     |                                                     |
 +----------------------------------------------------+-----------------------------------------------------+
+| :ref:`content/integration/autotask:*category*`     |                                                     |
++----------------------------------------------------+-----------------------------------------------------+
 
 
 Rule Field Definitions
@@ -166,6 +169,14 @@ Rule Field Definitions
 
 |
 |
+
+*category*
+""""""""""""""""""""""
+
+	**The category the ticket belongs to:**
+
+.. image:: images/autotask-category.png
+
 
 *ticketStatus*
 """"""""""""""""
@@ -262,6 +273,12 @@ Rule Field Definitions
 
 .. image:: images/autotask-worktype.png
    :target: https://docs.tier2tickets.com/_images/autotask-worktype.png
+   
+   
+Worktype does not have an endpoint in the API yet, so customizing this needs to be based on the allocationCodeID. This id can be found in the URL when editing the work type. 
+   
+.. image:: images/autotask-worktype2.png
+
 
 |
 |
@@ -322,6 +339,9 @@ Create another workflow rule but for the EVENT select Note Created by anyone
 
 .. image:: images/autotask-callout7.png
 
+Make sure to set the action to the same callout as the first. 
+
+.. image:: images/autotask-callout6.png
 
 
 

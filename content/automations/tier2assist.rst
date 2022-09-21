@@ -190,10 +190,10 @@ If you wanted to show a password reset link if either office or password were in
 	if 'password' in msg or 'office' in msg:
 		tier2assist.append({'msg': 'Click here to reset your office password.', 'action': 'https://account.live.com/password/reset'})
 
-Shedule and appointment
+Schedule an appointment
 """""""""""""""""""""""""""""""""""""
 
-Now let's say you want to allow a user to schedule and appointment. Here is a
+Now let's say you want to allow a user to schedule an appointment. Here is a
 rule that does this if they select a checkbox that contains the word schedule:
 
 
@@ -236,6 +236,17 @@ Sometimes it is best to have an option show up randomly (Customer Satisfaction s
 
 	if random.random() <= 0.5:
 		tier2assist.append({'msg': 'this is something random', 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
+
+
+Survey
+"""""""""""""""""""""""""""""""""""""
+
+What if you wanted to get feedback from your users about your service? You could use a simple form (Cognito in this case)
+
+.. code-block:: python
+
+    tier2assist.append({'msg': 'How has your experience been with us? We would like to know more with this simple 1 question survey', 'action': "https://www.cognitoforms.com/Tier2Tech/HelpDeskButtons?entry={%22Name%22:%22"+name+"%22,%22Email%22:%22"+email+"%22}"})
+
 
 
 Big Example

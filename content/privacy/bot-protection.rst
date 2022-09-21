@@ -6,5 +6,3 @@ Another type of protection, that is much more recognizable but deserves a mentio
 .. image:: images/recaptcha.png
 
 This is because reCaptcha offers an `invisible option <https://developers.google.com/recaptcha/docs/invisible>`_, which stays completely out of the way unless there is reasonable suspicion that the user might not be human, then it springs into action asking you to click stop signs and traffic lights. The only sign that it is there protecting your account is this little symbol at the bottom right of the page.
-
-.. image:: images/bot-protection.png 

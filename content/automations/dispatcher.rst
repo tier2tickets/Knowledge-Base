@@ -386,10 +386,23 @@ our application and not from the ticket system integration being used. They are 
 *subject*
 """""""""
 
-	**Refers to what will become the ticket title. Since the GUI does not prompt for a subject, it generates one from the first few words of the message:**
+	**Refers to what will become the ticket title. Since the GUI does not prompt for a subject, it generates one from the first few words of the message, specifically the first 50 characters of the message, stopping at word boundaries. :**
 
 .. image:: images/advanced-subject.png
    :target: https://docs.tier2tickets.com/_images/advanced-subject.png
+
+To modify the length of your subject line, you can use this code to modify the number of characters. Remember that it tries to stop at word boundaries. 
+
+.. code-block:: python
+	
+	import textwrap
+	subject = msg
+	# convert all whitespace to spaces
+	subject = subject.split()
+	subject = ' '.join(subject)
+	# keep the subject under ## char -- it will do this number or less, it tries to stop at word boundaries
+	subject = textwrap.wrap(subject, ##) 
+	subject = subject[0]
 
 |
 |

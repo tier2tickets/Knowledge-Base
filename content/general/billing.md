@@ -11,3 +11,13 @@ To help manage your licenses, we do offer auto-trimming of endpoints that haven'
 Please note: We bill in increments of 25 licenses, so if you're in need of 27 licenses, you'll automatically be billed for 50. If you're in need of 476 licenses, you will be prompted to order 500.
 
 ![](images/pricing.png "Pricing")
+
+## A Note on Pricing
+
+Our team decided early on that we would specifically avoid things that most vendors in the space do, such as long contract lock-ins or license minimums. We want billing to be simple and we want to earn the long-term relationship we hope to have with you. We won't play games, we're earnest, helpful people, and not only do games make us uncomfy, we would much rather be building a good product for you or having an interesting conversation.
+
+We're in this for the long haul and we want to see you succeed. Haggling just isn't in our vocabulary, we did everything we could to optimize our product for cost savings and we passed it on to you.
+
+We don't have custom billing plans, everyone pays us the same rate depending on when they signed up and the number of endpoints they have.
+
+So, this is the promise we make with our transparent, tiered, upfront pricing: you will be paying the exact same rate as everyone else who signs up at the same time as you and with the same number of clients. We will honor the rate that you signed up with us at and not raise prices for added features or lock them behind a paywall. We may at some point increase these rates to reflect inflation, but our goal is always to provide you a very good product at a no-brainer price point.

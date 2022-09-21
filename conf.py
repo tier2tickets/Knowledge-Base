@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'tier2tickets'
-copyright = '2019, tier2tickets'
+copyright = '2022, tier2tickets'
 author = 'Alex Permenter, Chris Wheeler, Elizabeth Copeland, Eric Rodighiero, Daryl Ebanks, Sam Schoen'
 
 # The full version, including alpha/beta/rc tags
-release = '0.3'
+release = '1.1.x.28'
 
 
 # -- General configuration ---------------------------------------------------

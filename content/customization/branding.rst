@@ -6,7 +6,10 @@ Logos, Icons
 
 .. image:: images/branding.png
 
-You can customize the appearance of the software by uploading a logo (400 x 125 pixel PNG) and/or an icon (256 x 256 pixel PNG).
+You can customize the appearance of the software by uploading three files: 
+	* landscape logo (400 x 125 pixel PNG) - for splash screen and landing page
+	* square icon (256 x 256 pixel PNG) - for desktop icon, active software icon in taskbar, title bar icon, and toast alerts
+	* square icon with HELP (256 x 256 pixel PNG) - for your automatically pinned to taskbar icon.
 
 If you don’t have your images in the right format or size, they will be automatically converted, but may be distorted. We recommend using transparent backgrounds for best appearance.
 

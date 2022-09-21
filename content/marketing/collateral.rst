@@ -9,6 +9,8 @@ Looking for some materials to help sell Helpdesk Buttons to clients (or your own
 
 - `How-to Page (ZIP File with INDD, PDFs, Images, and Fonts) <https://helpdeskbuttons.com/wp-content/uploads/2020/09/Introduction-to-HDB-20200925_Folder.zip>`_: While end-users are typically very intrigued by the Helpdesk Button and require very little training, we understand that at some points it's nice to have an announcement or documentation on how to use a new tool. These basic sheets explain to end users how to use the software and hardware.
 
+- `Sample Email for explaining Tier2Tickets/Helpdesk Buttons to Customers <https://docs.tier2tickets.com/content/general/customer-letter/>`_: Customize and send out to your customers to announce your adoption of Helpdesk Buttons/Tier2Tickets. Explains very simply the value prop and how your company using this helps them get tickets solved faster and with less effort! 
+
 Branding Guidelines
 ^^^^^^^^^^^^^^^^^^^^
 The fonts are Montserrat, which is a Google Font, available for free here: `fonts.google.com <https://fonts.google.com/specimen/Montserrat>`_
