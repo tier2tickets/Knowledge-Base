@@ -3,7 +3,7 @@ Customer Controlled Amazon S3
 
 Our platform runs on Amazon Web Services (AWS). The data that gets submitted to create the reports, which our system builds for you, is stored on AWS’s Simple Storage Service (S3). We have the option for that data to be stored on your own S3 bucket rather than ours. All of the requests for that data then must pass through the "S3 Gatekeeper".
 
-The information is securely transmitted (HTTPS/TLS) and stored encrypted (AES256) in the cloud on the Amazon Web Services (AWS) storage platform: Amazon S3 (S3). By default, the data is stored on a set of S3 buckets that are controlled by Tier 2 Tickets. Upon request, we can change this hosting to an AWS instance that is owned and controlled by the customer.
+The information is securely transmitted (HTTPS/TLS) and stored encrypted (AES256) in the cloud on the Amazon Web Services (AWS) storage platform: Amazon S3 (S3). By default, the data is stored on a set of S3 buckets that are controlled by Tier 2 Tickets in the United States. Upon request, we can change this hosting to an AWS instance that is owned and controlled by the customer.
 
 For the software to function, we want the ability to access these files so ticket reports have the data they need, but we also want to bar any unauthorized access. In comes the Gatekeeper.
 
