@@ -76,11 +76,6 @@ Access Restrictions
 
 As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 
-Integration Defaults
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The "auto_reg" flag allows users to be auto_registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
-
 Anti-Virus and AntiMalware
 --------------------------------------
 
@@ -119,6 +114,7 @@ FreshDesk
 
 Field Definitions
 ^^^^^^^^^^^^^^^^^
+
 
 *priority*
 """"""""""
@@ -193,6 +189,8 @@ Field Definitions
 
 *other*
 """""""
+
+The "auto_reg" flag allows users to be auto_registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
