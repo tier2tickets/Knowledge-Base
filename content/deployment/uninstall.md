@@ -22,6 +22,11 @@ Since the package is an MSI, you can use WMI to uninstall it. Here is an example
 
 NOTE: if you get back "ReturnValue = 1603;" from this command, then the removal failed because you are not in an elevated command prompt.
 
+
+An equivalent PowerShell command would be:
+
+`(Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -eq "Tier2Tickets"}).uninstall()`
+
 ## Managing Duplicate Endpoints
 
 There is a checkbox on the Device Management page that will filter the list of endpoints for duplicate hostnames. For the most part it is rare for a duplicate to appear, but fully uninstalling and reinstalling the software will create a duplicate endpoint. Replacing the hard drive or the motherboard in a PC running the software will also create a duplicate. Upgrading the software will not.
