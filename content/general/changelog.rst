@@ -4,18 +4,21 @@ Here is a running change-log of the website and the software.
 
 
 Website
--------
+---------
+
+
 2022-11-22
 ~~~~~~~~~~
 
 * Integration Settings
-	* 
-	* mouseover api-key to reveal
+	* Diasble screenshots globally via checkbox
+	* Mouseover api-key to reveal
 
 * Device Management
 	* CSV Report now has tags, domain, and serial
 	* Fix issue with tags having issues with specific special characters
 	* New/Updated Tools
+		* Sorted in alphabetical order
 		* Pin Icon to taskbar
 		* New Remote Report Form
 			- has (nearly) all the fields the user gets but it should still be quick to fillout
@@ -24,6 +27,7 @@ Website
 	* Fixed issues with autorefresh and sounds playing properly
 	
 * Billing
+	* added override for billing email address 
 	* fixed login issue with subaccounts when accounts were suspended
 
 * Registration Page - Redesigned Page
@@ -34,10 +38,23 @@ Website
 	* software processes are now sortable
 	* added used/total memory usage
 	* added CPU information
+	* Now viewable on MacOs and IOs Devices
 	
 * Setup Wizard
 	* Dragable
 	* Floating Open Wizard button for easy access
+	
+* Multifactor
+	* removeed captcha for people who like to browse without cookies
+
+* Subaccounts
+	* changed admin to administration for clarity
+
+* Logs
+	* sortable and searchable
+
+*Coming soon:
+	*Gui 2.0
 
 
 2022-04-11
