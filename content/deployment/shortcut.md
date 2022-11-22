@@ -6,6 +6,10 @@ You can set the shortcut via commandline as you install the Tier2Tickets/Helpdes
 
 You can find a tool that will send a command to change your shortcuts on the users desktop on our Device Management page.
 
+![](images/update-shortcut1.png)
+
+![](images/update-shortcut2.png)
+
 If the icon is on the desktop and the icon's name matches with the deployment, it will be replaced. Otherwise a new icon will be added to the desktop.
 
 ## For a Single Device (Manual)

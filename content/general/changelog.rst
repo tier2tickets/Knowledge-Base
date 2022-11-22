@@ -5,6 +5,40 @@ Here is a running change-log of the website and the software.
 
 Website
 -------
+2022-11-22
+~~~~~~~~~~
+
+* Integration Settings
+	* 
+	* mouseover api-key to reveal
+
+* Device Management
+	* CSV Report now has tags, domain, and serial
+	* Fix issue with tags having issues with specific special characters
+	* New/Updated Tools
+		* Pin Icon to taskbar
+		* New Remote Report Form
+			- has (nearly) all the fields the user gets but it should still be quick to fillout
+
+* Ticket Dashboard is now Diagnostic Report History
+	* Fixed issues with autorefresh and sounds playing properly
+	
+* Billing
+	* fixed login issue with subaccounts when accounts were suspended
+
+* Registration Page - Redesigned Page
+
+* Remote Settings - fixed some coloring issues
+
+* Report
+	* software processes are now sortable
+	* added used/total memory usage
+	* added CPU information
+	
+* Setup Wizard
+	* Dragable
+	* Floating Open Wizard button for easy access
+
 
 2022-04-11
 ~~~~~~~~~~
