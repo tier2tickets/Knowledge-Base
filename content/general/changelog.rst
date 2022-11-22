@@ -30,9 +30,11 @@ Website
 	* added override for billing email address 
 	* fixed login issue with subaccounts when accounts were suspended
 
-* Registration Page - Redesigned Page
+* Registration Page
+	* Redesigned Page
 
-* Remote Settings - fixed some coloring issues
+* Remote Settings
+	* fixed some coloring issues
 
 * Report
 	* software processes are now sortable
