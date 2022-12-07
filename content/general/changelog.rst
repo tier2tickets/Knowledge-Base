@@ -5,7 +5,18 @@ Here is a running change-log of the website and the software.
 
 Website
 ---------
+2022-12-07
+~~~~~~~~~~
 
+* User Interface (on the beta site)
+	*GUI 2.0 is here! (First Pass)
+		- The layout is simpler and easier to understand
+		- The functionality is the same as the original GUI page
+		- Future plans are:
+			- to finish out all the text fields
+			- add some limited customization options (adding / removing fields)
+			- (maybe) add a way to store multiple versions of the form and tie them to custom fields
+			- let us know if you have any other suggestions
 
 2022-11-22
 ~~~~~~~~~~
@@ -56,7 +67,7 @@ Website
 	* sortable and searchable
 
 *Coming soon:
-	*Gui 2.0
+	* Gui 2.0
 
 
 2022-04-11
