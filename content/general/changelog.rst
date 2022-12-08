@@ -8,7 +8,7 @@ Website
 2022-12-07
 ~~~~~~~~~~
 
-* User Interface (on the beta site)
+* User Interface (on the beta site) 
 	*GUI 2.0 is here! (First Pass)
 		- The layout is simpler and easier to understand
 		- The functionality is the same as the original GUI page
