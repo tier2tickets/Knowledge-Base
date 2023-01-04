@@ -267,15 +267,15 @@ What if you wanted to send users to a link during business or after hours.
 	starttime = start.strftime("%H:%M %p")
 	endtime = end.strftime("%H:%M %p")
 
-	#remember to change the msg and action of the assist
-	if in_between(timenow, start, end):
-		tier2assist.append({'msg': 'Please note the time is between {starttime} and {endtime}!'.format(starttime=starttime, endtime=endtime), 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
-
 	def in_between(now, start, end):
 		if start <= end:
 			return start <= now < end
 		else:
 			return start <= now or now < end
+
+	#remember to change the msg and action of the assist
+	if in_between(timenow, start, end):
+		tier2assist.append({'msg': 'Please note the time is between {starttime} and {endtime}!'.format(starttime=starttime, endtime=endtime), 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
 
 
 
