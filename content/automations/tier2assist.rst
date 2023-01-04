@@ -248,6 +248,36 @@ What if you wanted to get feedback from your users about your service? You could
     tier2assist.append({'msg': 'How has your experience been with us? We would like to know more with this simple 1 question survey', 'action': "https://www.cognitoforms.com/Tier2Tech/HelpDeskButtons?entry={%22Name%22:%22"+name+"%22,%22Email%22:%22"+email+"%22}"})
 
 
+Time Based Actions
+""""""""""""""""""""""""""""""""""""""
+
+What if you wanted to send users to a link during business or after hours. 
+
+.. code-block:: python
+
+	import datetime
+
+	#start and end times should be given in 24 hour format
+	start = datetime.time(17,0) #1700 is 5:00 PM
+	end = datetime.time(7,50)	#0750 is 7:50 AM
+
+	timenow = datetime.datetime.now(datetime.timezone.utc).time()
+	
+	#start time and end time are optional. they are only used to create the text demonstrating how the assist works.
+	starttime = start.strftime("%H:%M %p")
+	endtime = end.strftime("%H:%M %p")
+
+	#remember to change the msg and action of the assist
+	if in_between(timenow, start, end):
+		tier2assist.append({'msg': 'Please note the time is between {starttime} and {endtime}!'.format(starttime=starttime, endtime=endtime), 'action': 'https://en.wikipedia.org/wiki/Wikipedia:Random'})
+
+	def in_between(now, start, end):
+		if start <= end:
+			return start <= now < end
+		else:
+			return start <= now or now < end
+
+
 
 Big Example
 """""""""""""""""""""""""""""""""""""
