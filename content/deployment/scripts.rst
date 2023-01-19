@@ -13,3 +13,4 @@ If the script sees that the software is not installed, then it downloads the lat
 This means that the same script that you used to deploy version 1.2.3.4 of the software will also deploy 2.3.4.5 without modification.
 To see which version of the software will be deployed, just look at which version you currently have built on the `builds page <https://account.helpdeskbuttons.com/builds.php>`_.
 
+.. image:: images/deployment.png
