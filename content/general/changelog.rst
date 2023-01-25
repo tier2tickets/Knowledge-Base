@@ -5,6 +5,19 @@ Here is a running change-log of the website and the software.
 
 Website
 ---------
+
+2023-01-25
+~~~~~~~~~~
+
+* Integration Settings 
+	* Added toggle to view your api key in case you mistype it
+* Tier2Assists
+	* Added more examples for tier2assists to match the examples in the documentation
+		* Time Based - if you want to do something based on the time of day
+		* Big Example (Tier2AI) - an example for doing multple things using the Tier2AI
+		* Based on Domain - doing an operation based on the email domain of the enduser
+
+
 2022-12-07
 ~~~~~~~~~~
 
@@ -260,6 +273,12 @@ Software
 
 1.1.x.30
 ~~~~~~~~
+(2023-01-25)
+* Halo
+  * fixed a display bug that occurs when there is a very long message (word wrap)
+  * fixed a display bug that occurs when using halo in dark mode
+
+
 
 (2022-09-09)
 
