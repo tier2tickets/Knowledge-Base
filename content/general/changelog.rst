@@ -276,6 +276,7 @@ Software
 (2023-01-25)
 
 * Halo Integration
+
   * fixed a display bug that occurs when there is a very long message (word wrap)
   * fixed a display bug that occurs when using halo in dark mode
 
