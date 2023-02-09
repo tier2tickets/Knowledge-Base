@@ -41,7 +41,9 @@ In order for the client software to function, it makes outbound TCP connections 
 
 Anti-Virus and AntiMalware Compatibility
 -----------------------------------------
-It is not always necessary, but we recommend whitelisting the Tier2Tickets installation folder (C:\\Program Files(x86)\\Tier2Tickets). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
+We collect a ton of in depth information that might be suspicious to a good security product.  Additionally, we dynamically compile the executable for every client which makes it a little bit difficult to proactively whitelist.  Having said that most antiviruses will not flag us and if you do find the software being flagged we can provide you with instructions on how to exempt it from your AV policy
+
+It is not always necessary, but if you run into issues we recommend whitelisting the Tier2Tickets installation folder (C:\\Program Files(x86)\\Tier2Tickets). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
 
 
 AdGuard
