@@ -89,8 +89,16 @@ If the install is performed behind the scenes, a log out and log in may be requi
 
 #### Re-Pin to Taskbar
 
-The software can be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the taskbar when the user logs in.
+##### Via Device Management
+We can try to repin the icon to the taskbar on one or more online endpoints via the Device management page.
+![](images/pin.png)
 
+![](images/pin2.png)
+
+##### Repin on reboot
+The software can also be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the taskbar when the user logs in.
+
+##### Manually pinning via PTTB.exe
 Running `pttb.exe "<shortcut name>" (Helpdesk Button is the default)` as the logged-in user will also pin the icon to taskbar on demand.
 
 ![](images/pttb.gif)
