@@ -91,6 +91,7 @@ If the install is performed behind the scenes, a log out and log in may be requi
 
 #### Via Device Management
 We can try to repin the icon to the taskbar on one or more online endpoints via the Device management page.
+
 ![](images/pin.png)
 
 ![](images/pin2.png)
