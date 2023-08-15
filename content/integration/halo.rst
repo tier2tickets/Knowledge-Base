@@ -120,6 +120,8 @@ Integration Defaults
 """""""""""""""""""""""""""""""""""""""""""
 
 For most integrations you can leave these blank and the PSA/Ticket System will fill in some defaults. For HALO specifically setting the agent to Unassigned will stop the agent set in the integration from being assigned every ticket by default.
+Newer Halo instances have impact and urgency fields that are mandatory. Set these to an integer that increases in severity the lower it is. By default setting both these to 3 will default to LOW. If your instance also needs the Category set, you fill this out
+in category_1. You can type out the name of a category in the first entry in the Categorization section: Hardware>Desktop is normally a good default.
 
 
 Anti-Virus and AntiMalware
