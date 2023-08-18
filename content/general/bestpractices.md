@@ -91,3 +91,5 @@ If you accept tickets via e-mail currently, consider adding instructions to your
 
 You also may consider adding a recording in your phone system to the same effect as above. Our is: “Our first available technician will be with you shortly. For the fastest service, you can also submit a ticket via your Helpdesk Button or icon on your desktop computer. This gives our technicians a huge head start on your issues and is the fastest way to get them resolved."
 We can just do all of this for you and a whole lot more if you want. Shoot us an email at support@tier2.tech.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oGXB7-ZVLyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
