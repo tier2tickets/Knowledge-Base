@@ -21,7 +21,7 @@ in the root folder of the zip. You should see the scripts and any other files yo
 
 You can also download your current set of scripts from the same page.
 
-.. image:: images/tier2Scripts.gif
+.. image:: images/tier2scripts.gif
 
 
 _append.txt
