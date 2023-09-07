@@ -13,11 +13,28 @@ files or script output into that upload folder and it will get sent in to be ava
 Be advised: The upload folder is cleared as the software is started to make sure the data pertains to the current submission.
 
 
-Managing Scripts
+Managing Files
 ------------------
+
+Uploads
+^^^^^^^^
 
 You can upload your scripts as a single zip file. If you want them to be automatically run by our software make sure they are 
 in the root folder of the zip. You should see the scripts and any other files you put in the zip in the Tier2scripts interface.
+
+General file uploads are supported as well. Any file that is put into the upload folder will be added to the report as an
+attachment. For example, give this a try.
+
+.. code-block:: powershell
+
+   echo "Hello World!" > $Env:_uploadDir\example.txt
+
+This attaches the file 'example.txt' to the report for download. In this case we created the file with the script,
+but you could, of course, use the script to copy a file that was already on the computer into
+the uploads folder for attachment.
+
+Downloads
+^^^^^^^^^^^
 
 You can also download your current set of scripts from the same page.
 
@@ -42,20 +59,6 @@ Putting all that together, give this a try. Add a file named _exec_test.ps1 to y
 
 You should find that this appends the "Hello World" text to your report.
 Now replace the "Hello World" with whatever data you want to collect and you should be good to go.
-
-Uploads
--------
-
-General file uploads are supported as well. Any file that is put into the upload folder will be added to the report as an
-attachment. For example, give this a try.
-
-.. code-block:: powershell
-
-   echo "Hello World!" > $Env:_uploadDir\example.txt
-
-This attaches the file 'example.txt' to the report for download. In this case we created the file with the script,
-but you could, of course, use the script to copy a file that was already on the computer into
-the uploads folder for attachment.
 
 install.ps1
 -----------
