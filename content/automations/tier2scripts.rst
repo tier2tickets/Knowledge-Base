@@ -12,6 +12,18 @@ files or script output into that upload folder and it will get sent in to be ava
 
 Be advised: The upload folder is cleared as the software is started to make sure the data pertains to the current submission.
 
+
+Managing Scripts
+------------------
+
+You can upload your scripts as a single zip file. If you want them to be automatically run by our software make sure they are 
+in the root folder of the zip. You should see the scripts and any other files you put in the zip in the Tier2scripts interface.
+
+You can also download your current set of scripts from the same page.
+
+.. image:: images/tier2Scripts.gif
+
+
 _append.txt
 -----------
 
