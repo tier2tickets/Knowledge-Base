@@ -11,7 +11,6 @@ Website
 * New Grouping Options
     * Deployment scripts now have the ability to set endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#changing-an-endpoints-group)
     * Device Management Has now has the ability to update endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#via-device-management)
-    * New GuiTrigger Funtion for changing endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#via-command-line)
     * Check ConnectWise Automate documentation for a new way to deploy to take advantage of the grouping by using Automates %clientname% variable 
     
 Coming soon:
@@ -279,12 +278,15 @@ Coming soon:
 Software
 --------
 
-
-
-
+1.1.x.35
+~~~~~~~~
 .. raw:: html
 
-   <a name="1.1.30">&nbsp;</a>
+   <a name="1.1.35">&nbsp;</a>
+* Grouping
+	* New GuiTrigger Funtion for changing endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#via-command-line)
+	* New Installation options for adding groups to endpoints
+
 
 1.1.x.30
 ~~~~~~~~
