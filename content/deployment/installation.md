@@ -100,8 +100,6 @@ msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solut
 
 ### Updating group
 
-You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately. 
-
 #### Via Device Management
 We can try to change the group of an online Endpoint via the Device Management Page.
 
@@ -111,6 +109,8 @@ We can try to change the group of an online Endpoint via the Device Management P
 
 
 #### Via Command Line
+You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately. 
+
 ```
 & 'C:\Program Files (x86)\Tier2Tickets\guiTrigger.exe' group="Group Name Here"
 net stop t2tservice

@@ -6,6 +6,21 @@ Here is a running change-log of the website and the software.
 Website
 ---------
 
+2023-11-21
+~~~~~~~~~~~
+* New Grouping Options
+    * Deployment scripts now have the ability to set endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#changing-an-endpoints-group)
+    * Device Management Has now has the ability to update endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#via-device-management)
+    * New GuiTrigger Funtion for changing endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#via-command-line)
+    * Check ConnectWise Automate documentation for a new way to deploy to take advantage of the grouping by using Automates %clientname% variable 
+    
+Coming soon:
+    * GUI 2.5 (Second Pass)
+        - All text fields editable
+        - Ability to hide checkboxes, radio buttons, or both
+        - Ablilty to skip consent page
+        - Ability to make additional information page mandatory (phone number page)
+
 2023-01-25
 ~~~~~~~~~~
 
