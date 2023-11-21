@@ -280,13 +280,20 @@ Software
 
 1.1.x.35
 ~~~~~~~~
+(2023-11-21)
+
 .. raw:: html
 
    <a name="1.1.35">&nbsp;</a>
+
 * Grouping
 	* New GuiTrigger Funtion for changing endpoint groups (https://docs.tier2tickets.com/content/deployment/installation/#via-command-line)
 	* New Installation options for adding groups to endpoints
 
+
+.. raw:: html
+
+   <a name="1.1.30">&nbsp;</a>
 
 1.1.x.30
 ~~~~~~~~
