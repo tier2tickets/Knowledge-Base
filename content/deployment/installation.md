@@ -96,7 +96,9 @@ For example:
 msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"" /icons=1 /group=""Group Name Here"" " 
 ```
 
-### Updating group after install
+## Customization After Installation
+
+### Updating group
 
 You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately. 
 
