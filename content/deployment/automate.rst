@@ -86,6 +86,12 @@ Select Execute Script as the function and select Powershell Bypass as the script
 
 .. image:: images/CW11-Execute.png
 
+Copy and paste the powershell script generated on the Download and Deploy page.
+
+If you want to automatically set the T2T group to be the client name in Automate, make sure to change the groupline to match this:
+
+.. image:: images/CW12-Script.png
+
 We add like to check on these from time to time so we have the script log its actions.
 
 .. code-block:: bash
@@ -105,13 +111,6 @@ To enable the log you need to add this Global Variable
 Finally Save the Script and you are done! Here is what it looks like completed.
 
 .. image:: images/CW13-Done.png
-
-Copy and paste the powershell script generated on the Download and Deploy page.
-
-If you want to automatically set the T2T group to be the client name in Automate, make sure to change the groupline to match this:
-
-.. image:: images/CW12-Script.png
-
 
 
 
