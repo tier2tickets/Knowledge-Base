@@ -87,6 +87,34 @@ msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solut
 
 If the install is performed behind the scenes, a log out and log in may be required for the pin to take effect.
 
+### Changing an Endpoints Group
+
+As of version `1.1.x.35`, the installer supports automatically adding a group to the endpont. Hou can do this by adding a group argument to the Wrapped Arguments
+
+For example:
+```
+msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"" /icons=1 /group=""Group Name Here"" " 
+```
+
+###Updating group after install
+
+You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately. 
+
+#### Via Device Management
+We can try to change the group of an online Endpoint via the Device Management Page.
+
+![](images/group1.png)
+
+![](images/group2.png)
+
+
+#### Via Command Line
+```
+& 'C:\Program Files (x86)\Tier2Tickets\guiTrigger.exe' group="Group Name Here"
+net stop t2tservice
+net start t2tservice
+```
+
 ### Re-Pin to Taskbar
 
 #### Via Device Management
