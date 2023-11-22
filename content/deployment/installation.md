@@ -89,7 +89,7 @@ If the install is performed behind the scenes, a log out and log in may be requi
 
 ### Changing an Endpoints Group
 
-As of version `1.1.x.35`, the installer supports automatically adding a group to the endpont. Hou can do this by adding a group argument to the Wrapped Arguments
+As of version `1.1.x.35`, the installer supports automatically adding a group to the endpont. You can do this by adding a group argument to the Wrapped Arguments
 
 For example:
 ```
