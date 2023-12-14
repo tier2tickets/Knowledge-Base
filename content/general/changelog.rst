@@ -6,6 +6,22 @@ Here is a running change-log of the website and the software.
 Website
 ---------
 
+2023-12-14
+~~~~~~~~~~~
+
+* Gui 2.5 (Second Pass): To make sure we get it out before the years end I prioritized the simpler changes
+    * All text fields editable (Almost)
+    * Ability to hide checkboxes, radio buttons, or both
+    * Ablilty to auto submit consent page
+    * Ability to skip phonnumber validation on contact page
+
+Coming Soon:
+    - Ability to make additional information page mandatory (phone number page) 
+        - The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
+    - Dialog Error messages able to be edited    
+    
+
+
 2023-11-21
 ~~~~~~~~~~~
 * New Grouping Options
@@ -277,6 +293,22 @@ Coming soon:
 
 Software
 --------
+
+1.1.x.37
+~~~~~~~~
+(2023-11-21)
+
+.. raw:: html
+
+   <a name="1.1.37">&nbsp;</a>
+   
+* Gui 2.5 Update
+    * All text fields editable (Almost)
+        * Error Dialogs are not editable yet
+    * Ability to hide checkboxes, radio buttons, or both
+    * Ablilty to auto submit consent page
+    * Ability to skip phonnumber validation on contact page
+
 
 1.1.x.35
 ~~~~~~~~
