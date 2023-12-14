@@ -10,10 +10,17 @@ Website
 ~~~~~~~~~~~
 
 * Gui 2.5 (Second Pass): To make sure we get it out before the years end I prioritized the simpler changes
+    * On the beta subdomain
+    * requires version 1.1.37 or greater
     * All text fields editable (Almost)
     * Ability to hide checkboxes, radio buttons, or both
     * Ablilty to auto submit consent page
     * Ability to skip phone number validation on contact page
+    * Updated look and feel a bit 
+        * required fields are red
+        * appropriate pages are shown on submit if a required field is blank
+        * pages can be linked to specifically using the "page" parameter (http://beta.helpdeskbuttons.com/gui2?page=2)
+        * added variables to some fields and added reminders for fields that allow variables
 
 Coming Soon:
     - Ability to make additional information page mandatory (phone number page) 
@@ -302,7 +309,7 @@ Software
 
    <a name="1.1.37">&nbsp;</a>
    
-* Gui 2.5 Update
+* Gui 2.5 Update 
     * All text fields editable (Almost)
         * Error Dialogs are not editable yet
     * Ability to hide checkboxes, radio buttons, or both
