@@ -13,7 +13,7 @@ Website
     * All text fields editable (Almost)
     * Ability to hide checkboxes, radio buttons, or both
     * Ablilty to auto submit consent page
-    * Ability to skip phonnumber validation on contact page
+    * Ability to skip phone number validation on contact page
 
 Coming Soon:
     - Ability to make additional information page mandatory (phone number page) 
@@ -307,7 +307,7 @@ Software
         * Error Dialogs are not editable yet
     * Ability to hide checkboxes, radio buttons, or both
     * Ablilty to auto submit consent page
-    * Ability to skip phonnumber validation on contact page
+    * Ability to skip phone number validation on contact page
 
 
 1.1.x.35
