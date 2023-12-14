@@ -9,7 +9,7 @@ Website
 2023-12-14
 ~~~~~~~~~~~
 
-* Gui 2.5 (Second Pass): To make sure we get it out before the years end I prioritized the simpler changes
+* Gui 2.48 (Second Pass): To make sure we get it out before the years end I prioritized the simpler changes
     * On the beta subdomain
     * requires version 1.1.37 or greater
     * All text fields editable (Almost)
@@ -23,9 +23,10 @@ Website
         * added variables to some fields and added reminders for fields that allow variables
 
 Coming Soon:
-    - Ability to make additional information page mandatory (phone number page) 
-        - The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
-    - Dialog Error messages able to be edited    
+    * Gui 2.5 (Third Pass)
+        - Ability to make additional information page mandatory (phone number page) 
+            - The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
+        - Dialog Error messages able to be edited    
     
 
 
