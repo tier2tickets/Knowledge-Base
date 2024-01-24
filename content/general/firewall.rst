@@ -71,7 +71,7 @@ It may be necessary to allow applications to take screenshots without confirmati
 ThreatLocker
 ^^^^^^^^^^^^
 
-Here is the documentation from threatlocker on `setting a policy<https://threatlocker.kb.help/the-difference-between-an-application-and-a-policy/>`_. 
+Here is the documentation from threatlocker on `setting a policy <https://threatlocker.kb.help/the-difference-between-an-application-and-a-policy/>`_. 
 
 
 Issues and Explanations
