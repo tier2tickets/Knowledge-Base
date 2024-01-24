@@ -52,6 +52,12 @@ AdGuard
 AdGuard seems to block the JavaScript that populates the Press View Reports. 
 
 
+ThreatLocker
+^^^^^^^^^^^^
+
+Here is the documentation from threatlocker on `setting a policy <https://threatlocker.kb.help/the-difference-between-an-application-and-a-policy/>`_. 
+
+
 Webroot
 ^^^^^^^
 
@@ -67,11 +73,6 @@ It may be necessary to allow applications to take screenshots without confirmati
 
 .. image:: images/3-webroot.png
 
-
-ThreatLocker
-^^^^^^^^^^^^
-
-Here is the documentation from threatlocker on `setting a policy <https://threatlocker.kb.help/the-difference-between-an-application-and-a-policy/>`_. 
 
 
 Issues and Explanations
