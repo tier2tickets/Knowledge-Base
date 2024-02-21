@@ -14,7 +14,7 @@ If the icon is on the desktop and the icon's name matches with the deployment, i
 
 
 <div style="position: relative; padding-bottom: 5%; height: 0; max-width: 100%; height: auto;">
-	<video controls> 
+	<video width="560" height="315" controls> 
 		<source src="https://s3.amazonaws.com/img0.recordit.co/pWX0Dp3N23.mp4?AWSAccessKeyId=AKIAUQ5RURZ7ND2T2B6I&Expires=1708529017&Signature=zG%2FubjF6myQvyknvTHvhpS7KSpo%3D">
 	</video>
 </div>
