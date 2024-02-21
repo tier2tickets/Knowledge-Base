@@ -15,7 +15,7 @@ If the icon is on the desktop and the icon's name matches with the deployment, i
 
 <div style="position: relative; padding-bottom: 5%; height: 0; max-width: 100%; height: auto;">
 	<video controls> 
-		<source src="https://docs.tier2tickets.com/_images/pWX0Dp3N23.mp4">
+		<source src="https://recordit.co/pWX0Dp3N23">
 	</video>
 </div>
 
