@@ -13,12 +13,10 @@ You can find a tool that will send a command to change your shortcuts on the use
 If the icon is on the desktop and the icon's name matches with the deployment, it will be replaced. Otherwise a new icon will be added to the desktop.
 
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 5%; height: 0; max-width: 100%; height: auto;" controls>
-        <video width="560" height="315"> <source src="images/pWX0Dp3N23.mp4" frameborder="0">
-		</video>
-    </div>
+<div style="position: relative; padding-bottom: 5%; height: 0; max-width: 100%; height: auto;" controls>
+	<video width="560" height="315"> <source src="images/pWX0Dp3N23.mp4" frameborder="0">
+	</video>
+</div>
 
 ## For a Single Device (Manual)
 
