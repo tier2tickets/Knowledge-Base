@@ -13,8 +13,9 @@ You can find a tool that will send a command to change your shortcuts on the use
 If the icon is on the desktop and the icon's name matches with the deployment, it will be replaced. Otherwise a new icon will be added to the desktop.
 
 
-<div style="position: relative; padding-bottom: 5%; height: 0; max-width: 100%; height: auto;" controls>
-	<video width="560" height="315"> <source src="images/pWX0Dp3N23.mp4" frameborder="0">
+<div style="position: relative; padding-bottom: 5%; height: 0; max-width: 100%; height: auto;">
+	<video controls> 
+		<source src="images/pWX0Dp3N23.mp4">
 	</video>
 </div>
 
