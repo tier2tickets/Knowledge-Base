@@ -45,10 +45,10 @@ Get-WmiObject -Class Win32_ComputerSystem
 
 This should always return a short list of computer information for the local machine. If you get any type of error, you will likely need to repair WMI on that machine. Normally it can be done in a few simple commands:
 
-1) winmgmt /verifyrepository
+winmgmt /verifyrepository
 will tell you if the repository is consistent. (I have had people need to rebuild it even when it says its consistent)
 
-2) winmgmt /salvagerepository
+winmgmt /salvagerepository
 this command attempts to repair the repository (this is the safest way to go about it)
 if the repair fails, a reset may be necessary.
 
