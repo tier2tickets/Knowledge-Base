@@ -27,7 +27,9 @@ Compress-Archive -Update -Path 'C:\temp\t2tlogs\' -DestinationPath 'C:\temp\t2tl
 Remove-Item C:\temp\t2tlogs\ -Recurse
 ```
 
-### Common Issues
+## Common Issues
+
+### Windows Management Instrumentation (WMI)
 
 If you are seeing a 404 message on a report, the issue may be the functionality in windows that provides us with the data.
 
@@ -46,16 +48,21 @@ This should always return a short list of computer information for the local mac
 1) winmgmt /verifyrepository
 will tell you if the repository is consistent. (I have had people need to rebuild it even when it says its consistent)
 
-2a) winmgmt /salvagerepository
+2) winmgmt /salvagerepository
 this command attempts to repair the repository (this is the safest way to go about it)
 if the repair fails, a reset may be necessary.
 
-2b) winmgmt /resetrepository
+or
+
+winmgmt /resetrepository
 If either of those methods that worked out you should be able to run the first test again:
 
 Get-WmiObject -Class Win32_ComputerSystem
 
 and get the system information.
+
+
+### Performance Monitor
 
 We have also seen on rare occasions that the Performance Monitor stops running which generates some of the data we use to make the report. You can check to see if this works by opening the Performance Monitor Application from the start menu. If there are any errors on loading, try running this command in an elevated PowerShell window:
 
