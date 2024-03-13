@@ -76,6 +76,24 @@ Access Restrictions
 
 As of 0.5.x: The agent needs to have Administrator and Agent Roles.
 
+Integration Defaults
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+*auto_reg*
+""""""""""
+
+The "auto_reg" flag allows users to be auto_registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+
+If you want to set auto_reg as an integration default, you can add it as a custom field:
+
+.. image:: images/freshdesk_auto1.png
+   :target: https://docs.tier2tickets.com/_images/freshdesk_auto1.png
+   
+Now hit update to save the changes. It should then look like this:
+
+.. image:: images/freshdesk_auto2.png
+   :target: https://docs.tier2tickets.com/_images/freshdesk_auto2.png
+
 Anti-Virus and AntiMalware
 --------------------------------------
 
@@ -189,19 +207,6 @@ Field Definitions
 
 *other*
 """""""
-
-The "auto_reg" flag allows users to be automatically registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a new user.
-
-If you want to set auto_reg as an integration default, you can add it as a custom field:
-
-.. image:: images/freshdesk_auto1.png
-   :target: https://docs.tier2tickets.com/_images/freshdesk_auto1.png
-   
-Now hit update to save the changes. It should then look like this:
-
-.. image:: images/freshdesk_auto2.png
-   :target: https://docs.tier2tickets.com/_images/freshdesk_auto2.png
-   
 
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
