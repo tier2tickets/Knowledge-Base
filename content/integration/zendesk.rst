@@ -72,6 +72,11 @@ Click update and the Integration Test button.
 
 Let us know how to get in touch with your development team for feature requests and additional customizations! We are happy to get you set up with customized software.
 
+Integration Defaults
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The "auto_reg" flag allows users to be auto_registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+
 Anti-Virus and AntiMalware
 ----------------------------------------------------
 It is not always necessary, but we recommend whitelisting the tier2tickets installation folder (C:\\Program Files(x86)\\tier2tickets). We regularly submit our code through VirusTotal to make sure we are not getting flagged, but almost all AV/M interactions cause some sort of failure. `Webroot <https://docs.tier2tickets.com/content/general/firewall/#webroot>`_ in particular can cause issues with screenshots.
