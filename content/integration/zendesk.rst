@@ -75,7 +75,21 @@ Let us know how to get in touch with your development team for feature requests 
 Integration Defaults
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+*auto_reg*
+""""""""""
+
 The "auto_reg" flag allows users to be auto_registered by their email address instead of added to an unregistered/catch all user. Keep in mind that if a user mistypes their email they will create a user.
+
+If you want to set auto_reg as an integration default, you can add it as a custom field:
+
+.. image:: images/freshdesk_auto1.png
+   :target: https://docs.tier2tickets.com/_images/freshdesk_auto1.png
+   
+Now hit update to save the changes. It should then look like this:
+
+.. image:: images/freshdesk_auto2.png
+   :target: https://docs.tier2tickets.com/_images/freshdesk_auto2.png
+
 
 Anti-Virus and AntiMalware
 ----------------------------------------------------
