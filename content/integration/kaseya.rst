@@ -55,7 +55,15 @@ Once we have that email, plug the info into the Settings page after selecting Ka
 
 Company+username:password
 
-Note: keep spaces in the company name and some punctuation may need to be replaced by spaces.
+The company name we need is the one used to identify your account. 
+
+.. image:: images/ka-image3.png
+
+Note: keep spaces in the company name and some punctuation may need to be replaced by spaces. Some people have needed to remove capitalization.
+
+Here is what our apikey looks like for our test instance:
+
+.. image:: images/ka-image4.png
 
 Once you click update you should be good to go. 
 
