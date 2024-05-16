@@ -123,6 +123,10 @@ For most integrations you can leave these blank and the PSA/Ticket System will f
 Newer Halo instances have impact and urgency fields that are mandatory. Set these to an integer that increases in severity the lower it is. By default setting both these to 3 will default to LOW. If your instance also needs the Category set, you fill this out
 in category_1. You can type out the name of a category in the first entry in the Categorization section: Hardware>Desktop is normally a good default.
 
+Note Permission Issues
+"""""""""""""""""""""""""""""""""""""""""""
+If you are getting an error message about Note Permissions or your tickets are coming in without the private note with a report attachced check this setting: "Tickets with the default Client/Site must be moved before working on the Ticket". This setting under New Ticket settings will most likely need to be unchecked to allow us to edit unregistered user tickets.
+
 
 Anti-Virus and AntiMalware
 ----------------------------------------------------
