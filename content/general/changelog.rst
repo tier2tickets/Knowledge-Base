@@ -2,9 +2,43 @@ Change Log
 ==========
 Here is a running change-log of the website and the software.
 
+Integrations
+---------------------------
+
+.. list-table:: Title
+   :widths: 25 25
+   :header-rows: 1
+   
+	* - Integration
+	  - Status
+	* - 4me 
+	  - Working
+	* - Accelo 
+	  - Working
+	* - Atera 
+	  - Working
+	* - Autotask 
+	  - Working
+	* - Connectwise Manage 
+	  - Working
+	* - Email 
+	  - Working
+
+
+
+
+
 
 Website
 ---------
+2024-05-17
+~~~~~~~~~~~
+
+* Gui 2.5 (Third Pass)
+        - Ability to make additional information page mandatory (phone number page) 
+            - The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
+        - Dialog Error messages able to be edited
+
 
 2023-12-14
 ~~~~~~~~~~~
@@ -22,12 +56,6 @@ Website
         * pages can be linked to specifically using the "page" parameter (http://beta.helpdeskbuttons.com/gui2?page=2)
         * added variables to some fields and added reminders for fields that allow variables
 
-Coming Soon:
-    * Gui 2.5 (Third Pass)
-        - Ability to make additional information page mandatory (phone number page) 
-            - The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
-        - Dialog Error messages able to be edited    
-    
 
 
 2023-11-21
@@ -301,6 +329,19 @@ Coming soon:
 
 Software
 --------
+
+1.1.x.37
+~~~~~~~~
+
+.. raw:: html
+
+   <a name="1.1.40">&nbsp;</a>
+   
+* Gui 2.5
+	* Ability to make additional information page mandatory (phone number page) 
+		* The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
+    * Dialog Error messages able to be edited
+
 
 1.1.x.37
 ~~~~~~~~
