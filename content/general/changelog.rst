@@ -5,25 +5,45 @@ Here is a running change-log of the website and the software.
 Integrations
 ---------------------------
 
-.. list-table:: Title
-   :widths: 25 25
-   :header-rows: 1
-   
-	* - Integration
-	  - Status
-	* - 4me 
-	  - Working
-	* - Accelo 
-	  - Working
-	* - Atera 
-	  - Working
-	* - Autotask 
-	  - Working
-	* - Connectwise Manage 
-	  - Working
-	* - Email 
-	  - Working
-
+	+------------------------+--------------+
+	| Integration            | Status       |
+	+------------------------+--------------+
+	| 4me                    | Functional   |
+	+------------------------+--------------+
+	| Accelo                 | Functional   |
+	+------------------------+--------------+
+	| Atera                  | Functional   |
+	+------------------------+--------------+
+	| Autotask               | Functional   |
+	+------------------------+--------------+
+	| ConnectWise Manage     | Functional   |
+	+------------------------+--------------+
+	| ERPNext                | Functional   |
+	+------------------------+--------------+
+	| Freshdesk              | Functional   |
+	+------------------------+--------------+
+	| Freshservice           | Functional   |
+	+------------------------+--------------+
+	| HaloPSA/ITSM           | Functional   |
+	+------------------------+--------------+
+	| Kaseya BMS             | Functional   |
+	+------------------------+--------------+
+	| osTicket               | Functional   |
+	+------------------------+--------------+
+	| RepairShopr            | Functional   |
+	+------------------------+--------------+
+	| Syncro                 | Functional   |
+	+------------------------+--------------+
+	| Service Now            | Functional   |
+	+------------------------+--------------+
+	| Topdesk                | Functional   |
+	+------------------------+--------------+
+	| Zendesk                | Functional   |
+	+------------------------+--------------+
+	| SuperOps               | Incompatible |
+	+------------------------+--------------+
+	| Ninja One              | Incompatible |
+	+------------------------+--------------+
 
 
 
