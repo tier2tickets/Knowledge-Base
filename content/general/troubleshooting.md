@@ -72,3 +72,16 @@ We have also seen on rare occasions that the Performance Monitor stops running w
 lodctr /R
 
 It may create a backup on the first run and reload the service on the second execution.
+
+### Self-Hosted Gatekeeper S3 Issues
+
+Some of our partners are seeing an error submitting tickets when they are using the Self-Hosted Gatekeeper. This is due to endpoints timing out when delivering the data to our servers. This can be fixed by increasing the timeout for the Gatekeeper. Here is a video showing how to do it along with the steps written below. 
+
+<video src="https:\\dev.helpdeskbuttons.com\resources\gatekeeper timeout.mp4" width="320" height="240" controls></video>
+
+1) Log into your AWS account.
+2) Select the Lambda service.
+3) Select the function that has the description "Tier2.tech s3 gatekeeper".
+4) Select the configuration tab. 
+5) Click Edit.
+6) Set the timeout to something higher than a few seconds (we recommend 10-30 seconds).
