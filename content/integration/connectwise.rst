@@ -71,7 +71,7 @@ Click on the ‘New’ button and set up the new API member
 
 Enter a member ID and name which fits your organization. Select the appropriate System options according to how your ConnectWise Manage system is configured.
 
-**Take note of the Service Defaults as they can effect the way tickets come into the system.**
+**Take note of the Service Defaults as they can effect the way tickets come into the system. The default board is self explanatory, but the Restrict Board Access is a blacklist**
 
 Be sure to click ‘Save’ when everything looks correct.
 
