@@ -37,6 +37,7 @@ Table Of Contents
 	content/integration/osticket
 	content/integration/repairshopr
 	content/integration/servicenow
+	content/integration/superops
 	content/integration/topdesk
 	content/integration/zendesk
 	content/integration/email
