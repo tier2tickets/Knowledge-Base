@@ -40,7 +40,7 @@ Integrations
 	+------------------------+--------------+
 	| Zendesk                | Functional   |
 	+------------------------+--------------+
-	| SuperOps               | Incompatible |
+	| SuperOps               | Functional   |
 	+------------------------+--------------+
 	| Ninja One              | Incompatible |
 	+------------------------+--------------+
