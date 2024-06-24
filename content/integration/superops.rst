@@ -66,7 +66,7 @@ Companyid:apikey
 
 For example
 
-Comp_a+:api-asdf38judj234...
+Comp_a:api-asdf38judj234...
 
 Comp_a is the company ID we got from the MSP information
 
