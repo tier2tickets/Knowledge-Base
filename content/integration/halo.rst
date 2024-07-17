@@ -127,6 +127,10 @@ If you have custom fields, you can set them in the customfield section. Just mak
 
 id : value
 
+All fields are tied to Ticket Types so if you are having issues setting a field (including custom fields) double check that you are setting the correct ticket type containing that field. 
+
+.. image:: images/halo-tickettype.png
+
 You can also ignore validation of fields by setting _novalidate to true
 
 
