@@ -54,7 +54,7 @@ Website
 2024-05-17
 ~~~~~~~~~~~
 
-* Gui 2.5 (Third Pass)
+* Gui 3.0 (Third Pass)
         - Ability to make additional information page mandatory (phone number page) 
             - The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
         - Dialog Error messages able to be edited
@@ -350,14 +350,14 @@ Coming soon:
 Software
 --------
 
-1.1.x.37
+1.1.x.40
 ~~~~~~~~
 
 .. raw:: html
 
    <a name="1.1.40">&nbsp;</a>
    
-* Gui 2.5
+* Gui 3.0
 	* Ability to make additional information page mandatory (phone number page) 
 		* The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
     * Dialog Error messages able to be edited
