@@ -51,6 +51,18 @@ Integrations
 
 Website
 ---------
+2024-07-28
+~~~~~~~~~~~
+
+* Grouping V1
+	- Added grouping permissions for subaccounts based on the domains/groups on the Device Management page
+	- Each user can be given a list of groups and/or ALL (the default)
+		- The user will only be able to interact with endpoints and reports that belong to the groups they are assigned
+
+* Gui 3.1
+	- Updated grouping to match the new fields available for the 1.1.x.40 version of the software
+
+
 2024-05-17
 ~~~~~~~~~~~
 
@@ -352,12 +364,13 @@ Software
 
 1.1.x.40
 ~~~~~~~~
+(2024-5-17)
 
 .. raw:: html
 
    <a name="1.1.40">&nbsp;</a>
    
-* Gui 3.0
+* Gui 3.0+
 	* Ability to make additional information page mandatory (phone number page) 
 		* The way ticket submissions are handled on our side needs some tweeking on both the UI and Backend for this to work
     * Dialog Error messages able to be edited
