@@ -66,6 +66,8 @@ When you save, you should be given a Client ID and a Client Secret. Keep them in
 
 Once this has been set up, you will have all the information required.
 
+If you want to create a new user type, make sure that you set the role to one that can read and submit tickets
+
 3) Helpdeskbuttons.com Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
