@@ -3,6 +3,8 @@ SSO Documentation
 
 This guide will explain and demonstrate how to set up SSO (using Microsofts SAML implementation)
 
+This is an optional step, but once it is enabled all subaccounts will be expected to use SSO for logging in. The superuser account will always have the option of using the standard username/password authentication method just in case there is some issue with the identity provider. 
+
 Introduction to Permissions, Groups, and Claims 
 ----------------------------------------------------
 
@@ -35,32 +37,15 @@ You can set up your permission structure however you chose, but most best practi
 Here’s an example of how such a system could work using permissions defined by our system: 
 
 Standard User Group: 
-
- 
-Permissions: Read reports and view endpoint data related to report submissions.
-
 Nearly everyone in the system belongs to this group, as these are basic permissions. 
 
 Technicians Group: 
-
- 
-Permissions: Editing scripts and editing endpoint data.
-
 Technicians get more advanced capabilities. 
 
 Admins Group: 
-
- 
-Permissions: Editing business-wide data.
-
 Admins have access to the most restricted areas of the system. 
 
-Billing Only Group: 
-
- 
-Permissions: Receive billing messages and view bills.
-
-
+Billing Only Group Permissions: 
 The permissions you would want to create for this system might look like this:
 
 Standard:   ticket-reports
