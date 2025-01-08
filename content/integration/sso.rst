@@ -3,7 +3,7 @@ SSO Documentation
 
 This guide will explain and demonstrate how to set up SSO (using Microsofts SAML implementation)
 
-This is an optional step, but once it is enabled all subaccounts will be expected to use SSO for logging in. The superuser account will always have the option of using the standard username/password authentication method just in case there is some issue with the identity provider. 
+*This is an optional step, but once it is enabled all subaccounts will be expected to use SSO for logging in. The superuser account will always have the option of using the standard username/password authentication method just in case there is some issue with the identity provider.* 
 
 Introduction to Permissions, Groups, and Claims 
 ----------------------------------------------------
@@ -154,3 +154,8 @@ b) Upload to your account at the bottom of the Administration > SAML page
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: images/sso/Picture14.png
+
+
+Your SSO should be functional once the upload is complete. You can test it by using a login connected to the groups for which you set permissions. If you created new groups you can create a new user and assign the groups you want to test with to that user account in your identity provider. Just make sure you log out from your Tier2Tickets login before you test it out!
+
+*Remember: Once SAML SSO is enabled, all subaccounts will be expected to use SSO for logging in. The superuser account will always have the option of using the standard username/password authentication method just in case there is some issue with the identity provider.*   
