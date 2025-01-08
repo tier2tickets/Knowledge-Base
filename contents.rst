@@ -42,6 +42,7 @@ Table Of Contents
 	content/integration/zendesk
 	content/integration/email
 	content/integration/errors
+	content/integration/sso
 	
 .. toctree::
 	:caption: Deployment
