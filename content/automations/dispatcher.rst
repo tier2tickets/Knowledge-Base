@@ -202,6 +202,33 @@ letters.
 
 Each of these examples should be viewable in the Visual Editor.
 
+Practical Example: Impact and Urgency
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If your PSA can automatically set priority based on impact and urgency, you can use the dispatcher rules to set the these based on things your end-users select. If you want to use a similar method but your PSA does not have an impact/urgency or it does not automatically set the priority, check the `Practical Example: Impact/Urgency Priority Matrix <https://docs.tier2tickets.com/content/automations/dispatcher/#practical-example-impact-urgency-priority-matrix>`_.
+
+This example uses superOps's default Low Medium and High for impact and urgency.
+
+For a user interface that looks like this:
+
+.. image:: images/GUI1.png
+
+You can set the impact and urgency based on the selected radio button selection with this code:
+
+.. code-block:: python
+
+	impact = "Low"
+	urgency = "Low"
+	if 'This affects multiple people' in selections:
+		impact = "Medium"
+	if 'This affects everyone here' in selections:
+		impact = "High"
+	if 'Medium' in selections:
+		urgency = "Medium"
+	if 'High' in selections:
+		urgency = "High"
+  
+
 Practical Example: Create Actions Based on Email Domain
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
