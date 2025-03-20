@@ -225,6 +225,53 @@ Field Definitions
 There are additional variables which are common to all integrations. Those are documented :ref:`here <content/automations/dispatcher:Universally Available Variables>`
 
 
+Ticket Type
+^^^^^^^^^^^^^
+
+The ticket type field is special in Syncro, it is treated as both a custom field and a standard field depending on how you use it. These docs will show how a simple and 1 step more complex assignment works with this field.
+
+Simple
+""""""""""""""
+
+This example is for a simple implementation in which the ticket type is a label and has no data within it. 
+
+
+.. image:: images/ticket_type1.png
+
+
+In this case all you need to do is define the id of the ticket type you want to select. You can find this by editing the ticket type and copying it from the URL.
+
+
+.. image:: images/ticket_type2-1.png
+
+
+.. image:: images/ticket_type2.png
+
+
+The type needs to go in the default field or you can set it in your dispatcher rules. 
+
+.. image:: images/ticket_type3.png
+
+More Complex (in this case text data)
+""""""""""""""""""""""""""""""""""""""""
+
+If your ticket type requires some data, not just a label, you will need to pass that information into the custom field section of the integraion settings. 
+
+Make sure to follow the steps in the simple example, then add these next steps. 
+
+Our custom type has a field in it that requires text data. The name of the field is "The field" and whatever text we put in populates that field. 
+
+Our setup looks like this:
+
+.. image:: images/ticket_type4.png
+
+The result in Syncro is this:
+
+.. image:: images/ticket_type5.png
+
+Make sure to click update to save your settings. 
+
+
 Set Up a Webhook
 -----------------------------------
 
