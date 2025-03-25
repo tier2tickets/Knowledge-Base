@@ -51,6 +51,25 @@ Integrations
 
 Website
 ---------
+
+Next UP
+~~~~~~~~~~~
+
+* Report
+    - Group is a new field in the User Submitted Data section of the ticket report. 
+        - It is responsive to immediate group changes
+    - GPU % added to report in the Hardware Section
+        - Requires version 1.1.x.41
+        - Does not work with VMs
+
+* Logs
+    - Audit and Action logs can be downloaded in CSV form
+    - Provided warning about logs that span too long causing errors (90 days +)
+    
+* Colors
+    - New system allowing for easier color cusomizations
+    - Requires version 1.1.x.41
+
 2024-07-28
 ~~~~~~~~~~~
 
@@ -361,6 +380,18 @@ Coming soon:
 
 Software
 --------
+
+1.1.x.41
+~~~~~~~~
+(2025-4-2)
+
+.. raw:: html
+
+   <a name="1.1.41">&nbsp;</a>
+   
+* Suppport for Color changes via website
+
+* Syncro "friendly name" fixes
 
 1.1.x.40
 ~~~~~~~~
