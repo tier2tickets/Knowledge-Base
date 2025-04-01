@@ -11,14 +11,6 @@ This_ is the official knowledge base of tier2tickets_ and helpdeskbuttons_. We a
 .. _helpdeskbuttons: http://helpdeskbuttons.com
 
 
-Community
-=============
-
-We have an official Support Forum_ where we hope to engage with community and share and learn together.
-
-.. _Forum: https://community.tier2tickets.com/
-
-
 Support
 =============
 
@@ -52,9 +44,6 @@ Here is a list of our phone numbers by region where we can be reached 7AM_ - 9PM
 Contributing
 ============
 
-If you would like to help improve our products by submitting a bug report, please
-file them on our official github page_. For feature requests, please post here_.
+If you would like to help improve our products by submitting reporting a bug or suggesting
+a feature, reach out to us at `support@tier2.tech <support@tier2.tech>`_ or join our `Discord <http://www.tier2tickets.com/discord>`_
 
-.. _here: https://community.tier2tickets.com/
-
-.. _page: https://github.com/tier2tickets/feedback/issues
