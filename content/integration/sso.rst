@@ -48,21 +48,21 @@ Admins have access to the most restricted areas of the system.
 Billing Only Group Permissions: 
 The permissions you would want to create for this system might look like this:
 
-Standard:   
+- Standard:
 	- ticket-reports
-    - ticket-dashboard
+	- ticket-dashboard
 
-Technicians:  
+- Technicians:  
 	- software-core
 	- software-adv
 	- remote-access
 	- device-management
 	- automations
 
-Admins:     
+- Admins:     
 	- administration
 
-Billing:    
+- Billing:    
 	- billing
 
 A technician in this structure is an extension of the standard user so they are in both the standard and technician groups thereby getting all those permissions.
@@ -77,15 +77,15 @@ Permission List
 
 Here is the full list of permissions given to subaccounts in alphabetical order:
 
-administration 		-  Administration pages other than billing 
-automations			-  Most Automations (Tier2Assists, Dispatcher Rules, Tier2Forms)
-billing				-  Billing Pages
-device-management	-  Device Management page and attached functions
-software-adv		-  Integration Settings and Tier2Script Automations
-software-core		-  Download and Deploy, Branding, User Interface settings
-ticket-dashboard	-  Ticket Dashboard
-ticket-reports		-  Reports and Instant Replay
-remote-access		-  Remote Access pages (Loginwith.me, Command Line tools, Remote Diganostics)
+- administration :  Administration pages other than billing 
+- automations :  Most Automations (Tier2Assists, Dispatcher Rules, Tier2Forms)
+- billing :  Billing Pages
+- device-management	:  Device Management page and attached functions
+- software-adv		:  Integration Settings and Tier2Script Automations
+- software-core		:  Download and Deploy, Branding, User Interface settings
+- ticket-dashboard	:  Ticket Dashboard
+- ticket-reports :  Reports and Instant Replay
+- remote-access : Remote Access pages (Loginwith.me, Command Line tools, Remote Diganostics)
 
 Setting up your SSO 
 ----------------------------------------------------
