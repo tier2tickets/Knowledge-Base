@@ -48,24 +48,44 @@ Admins have access to the most restricted areas of the system.
 Billing Only Group Permissions: 
 The permissions you would want to create for this system might look like this:
 
-Standard:   ticket-reports
-            ticket-dashboard
+Standard:   
+	- ticket-reports
+    - ticket-dashboard
 
-Technicians: software-core
-             software-adv
-             remote-access
-             device-management
-             automations
+Technicians:  
+	- software-core
+	- software-adv
+	- remote-access
+	- device-management
+	- automations
 
-Admins:     administration
+Admins:     
+	- administration
 
-Billing:    billing
+Billing:    
+	- billing
 
 A technician in this structure is an extension of the standard user so they are in both the standard and technician groups thereby getting all those permissions.
 Similarly admins are an extension of technicians so they are in standard user, technician, billing, and admin groups getting all permissions.
 The billing group would be in either only the billing group or the billing and standard group so they dont get the administration or technician permissions.
 
-You dont necessarially need to have this permission mapping on paper before hand, but you will want to know which permissions should go to which groups based on how users are grouped in your identity provider. 
+You dont necessarially need to have this permission mapping on paper before hand, but you will want to know which permissions should go to which groups based on how users are grouped in your identity provider.
+
+
+Permission List
+^^^^^^^^^^^^^^^^^^^^^^
+
+Here is the full list of permissions given to subaccounts in alphabetical order:
+
+administration 		-  Administration pages other than billing 
+automations			-  Most Automations (Tier2Assists, Dispatcher Rules, Tier2Forms)
+billing				-  Billing Pages
+device-management	-  Device Management page and attached functions
+software-adv		-  Integration Settings and Tier2Script Automations
+software-core		-  Download and Deploy, Branding, User Interface settings
+ticket-dashboard	-  Ticket Dashboard
+ticket-reports		-  Reports and Instant Replay
+remote-access		-  Remote Access pages (Loginwith.me, Command Line tools, Remote Diganostics)
 
 Setting up your SSO 
 ----------------------------------------------------
@@ -121,6 +141,8 @@ b)	Create a claim
  
 c)	Make the name of the claim perm:permission and paste the ObjectId from the group to link them. 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Each perm:permission mapping should be added one at a time to the group to which they apply 
 
 .. image:: images/sso/Picture10.png
 
