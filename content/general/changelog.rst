@@ -52,23 +52,31 @@ Integrations
 Website
 ---------
 
-Next UP
+2025-04-20
 ~~~~~~~~~~~
 
 * Report
     - Group is a new field in the User Submitted Data section of the ticket report. 
         - It is responsive to immediate group changes
-    - GPU % added to report in the Hardware Section
-        - Requires version 1.1.x.41
-        - Does not work with VMs
 
 * Logs
     - Audit and Action logs can be downloaded in CSV form
     - Provided warning about logs that span too long causing errors (90 days +)
+
+* Device Management
+    - Export bug fixed that excluded endpoints that did not properly send MAC addresses
+    - Shows MAC not available instead of 00:00:00:00:00:00 for MAC addresses that are not reported properly by the service
     
-* Colors
-    - New system allowing for easier color cusomizations
-    - Requires version 1.1.x.41
+* Diagnostic Report History
+    - Can Hide (and unhide) reports
+    
+
+2025-02-10
+~~~~~~~~~~~~~
+
+* SSO
+    - The site now functions with SAML SSO check our guide (https://docs.tier2tickets.com/content/integration/sso/) for how to set this up. 
+
 
 2024-07-28
 ~~~~~~~~~~~
