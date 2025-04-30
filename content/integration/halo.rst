@@ -28,27 +28,31 @@ Video Walkthrough
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You will start off by logging into your HaloPSA/ITSM instance. 
+Start off by logging into your HaloPSA/ITSM instance and navigating to the customers > users page. Select "New User" from the "New" dropdown menu.
 
-Create an ‘Unregistered’ contact This must have the email address unregistered@helpdeskbuttons.com. You can add this contact to the default Unknown Company/Site
+.. image:: images/halo-new.png
+
+Create an ‘Unregistered’ user. This *must* have the email address unregistered@helpdeskbuttons.com. You can add this user to the default Unknown Company/Site
 
 .. image:: images/halo-user.png
 
 This is the user which any Button Press tickets appear to come from if the user is unregistered. Remember to click save.
 
-You are now done setting up your company and contact.
+You are now done setting up your company and user.
 
 2) Get an API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Next step is to create an API key. Navigate to Configuration > Integrations > Halo(PSA/ITSM) API
 
-Here you can find most of the information you need as well as create a new application key
+.. image:: images/halo-api0.png
+
+Here you can find most of the information you need as well as create a new application key.
 You will need the tenant, resource server and authentication server from this first screen.
 
 .. image:: images/halo-api1.png
 
-Now click Applications, then New at the top right corner. You can name the key whatever you like, but make sure to collect Client ID and Secret as the Method.
+Now click "View Applications", then New at the top right corner. You can name the key whatever you like, but make sure to collect Client ID and Secret as the Method.
 
 Make sure the key is set to be active.
 
@@ -125,7 +129,7 @@ For most integrations you can leave these blank and the PSA/Ticket System will f
 Newer Halo instances have impact and urgency fields that are mandatory. Set these to an integer that increases in severity the lower it is. By default setting both these to 3 will default to LOW. If your instance also needs the Category set, you fill this out
 in category_1. You can type out the name of a category in the first entry in the Categorization section: Hardware>Desktop is normally a good default.
 
-If you have custom fields, you can set them in the customfield section. Just make sure to use this form 
+If you have custom fields, you can set them in the customfield section. Just make sure to use the form 
 
 id : value
 
