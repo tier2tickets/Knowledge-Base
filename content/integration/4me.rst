@@ -15,17 +15,6 @@ Integration
 
 `3) configure helpdeskbuttons account. <https://docs.tier2tickets.com/content/integration/4me/#helpdeskbuttons-com-settings>`_
 
-Video Walkthrough
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. raw:: html
-
-    <!--<div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/n7gDwhauMbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>-->
-
-.. image:: images/coming_soon.png
-
-
 
 1) Unregistered User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
