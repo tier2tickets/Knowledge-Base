@@ -96,6 +96,7 @@ This is not technically part of the process, but it helps by linking our service
 JIT (Just-In-Time) Provisioning makes the account management easier, so that you don't have to create the account on both Microsoft and HDB, it can just be done entirely in Microsoft
 
 .. image:: images/sso/Picture1.png
+    :target: _images/Picture1.png
 
 Once that is saved you can test it is working by doing an nslookup on _tier2tech.yourdomain in a command prompt
 
