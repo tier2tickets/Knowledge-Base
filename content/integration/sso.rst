@@ -101,22 +101,25 @@ JIT (Just-In-Time) Provisioning makes the account management easier, so that you
 Once that is saved you can test it is working by doing an nslookup on _tier2tech.yourdomain in a command prompt
 
 .. image:: images/sso/Picture2.png
-
+    :target: /_images/Picture2.png
  
 1) Log into your Identity Provider and create and Application (Microsoft in this case):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: images/sso/Picture3.png
+    :target: /_images/Picture3.png
  
 2) Select your application, single sign on and select SAML as your method.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: images/sso/Picture4.png 
+.. image:: images/sso/Picture4.png
+    :target: /_images/Picture4.png
 
 3) Download the metadata file from our SAML page and upload it into your SSO application.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: images/sso/Picture5.png
+    :target: /_images/Picture5.png
 
 4) Set up the Configuration. 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -124,8 +127,10 @@ Once that is saved you can test it is working by doing an nslookup on _tier2tech
 a) Edit the Attributes and Claims section and add a new group claim.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 .. image:: images/sso/Picture6.png
+    :target: /_images/Picture6.png
 
 .. image:: images/sso/Picture7.png
+    :target: /_images/Picture7.png
 
 5) Find/Create the groups you want.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
@@ -134,11 +139,13 @@ a)	For each group you will need to add the permissions that apply to each group.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: images/sso/Picture8.png
+    :target: /_images/Picture8.png
 
 b)	Create a claim
 """""""""""""""""""
 
 .. image:: images/sso/Picture9.png
+    :target: /_images/Picture9.png
  
 c)	Make the name of the claim perm:permission and paste the ObjectId from the group to link them. 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -146,6 +153,7 @@ c)	Make the name of the claim perm:permission and paste the ObjectId from the gr
 Each perm:permission mapping should be added one at a time to the group to which they apply 
 
 .. image:: images/sso/Picture10.png
+    :target: /_images/Picture10.png
 
 d)	Repeat until you have all the permissions matched to the groups you need. 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -157,6 +165,7 @@ Set the cert to sign SAML response and assertion
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
  
 .. image:: images/sso/Picture11.png
+    :target: /_images/Picture11.png
  
 7) SAML Properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -165,6 +174,7 @@ Navigate to Enterprise Applications> Tier2Tickets> Properties. Set assignment re
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: images/sso/Picture12.png
+    :target: /_images/Picture12.png
  
 8) Upload the Federation XML file to complete setup (Enterprise applications> Tier2Tickets> Single Sign-on). 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -172,6 +182,7 @@ Navigate to Enterprise Applications> Tier2Tickets> Properties. Set assignment re
 a) Download from the Identity Provider
 """""""""""""""""""""""""""""""""""""""""""""""
 .. image:: images/sso/Picture13.png
+    :target: /_images/Picture13.png
 
 b) Upload to your account at the bottom of the Administration > SAML page
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
