@@ -112,8 +112,8 @@ We can try to change the group of an online Endpoint via the Device Management P
 You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately. 
 
 ```
-& 'C:\Program Files (x86)\Tier2Tickets\guiTrigger.exe' group="Group Name Here"
 net stop t2tservice
+& 'C:\Program Files (x86)\Tier2Tickets\guiTrigger.exe' group="Group Name Here"
 net start t2tservice
 ```
 
