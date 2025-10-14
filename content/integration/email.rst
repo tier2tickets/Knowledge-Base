@@ -35,32 +35,20 @@ This is the list of variables that can be accessed when using the :ref:`Dispatch
 |                                                              |                                                             |
 |                                                              |    <i>                                                      |
 |                                                              |                                                             |
-|                                                              | :ref:`input_cell<content/integration/email:*input_**>`      | 
+|                                                              | :ref:`cell<content/integration/email:*input_**>`            | 
 +--------------------------------------------------------------+-------------------------------------------------------------+
 |                                                              | .. raw:: html                                               |
 |                                                              |                                                             |
 |                                                              |    <i>                                                      |
 |                                                              |                                                             |
-|                                                              | :ref:`input_phone<content/integration/email:*input_**>`     | 
+|                                                              | :ref:`phone<content/integration/email:*input_**>`           | 
 |                                                              |                                                             |
 +--------------------------------------------------------------+-------------------------------------------------------------+
 |                                                              | .. raw:: html                                               |
 |                                                              |                                                             |
 |                                                              |    <i>                                                      |
 |                                                              |                                                             |
-|                                                              | :ref:`input_company<content/integration/email:*input_**>`   | 
-+--------------------------------------------------------------+-------------------------------------------------------------+
-|                                                              | .. raw:: html                                               |
-|                                                              |                                                             |
-|                                                              |    <i>                                                      |
-|                                                              |                                                             |
-|                                                              | :ref:`input_email<content/integration/email:*input_**>`     | 
-+--------------------------------------------------------------+-------------------------------------------------------------+
-|                                                              | .. raw:: html                                               |
-|                                                              |                                                             |
-|                                                              |    <i>                                                      |
-|                                                              |                                                             |
-|                                                              | :ref:`input_name<content/integration/email:*input_**>`      | 
+|                                                              | :ref:`business_name<content/integration/email:*input_**>`   | 
 +--------------------------------------------------------------+-------------------------------------------------------------+
 
 
