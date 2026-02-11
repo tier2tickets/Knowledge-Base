@@ -52,6 +52,25 @@ Integrations
 Website
 ---------
 
+2025-11-12
+~~~~~~~~~~~
+
+* Report
+	- Added GPU utilization (in-progress)
+	- Added Bit locker information (in-progress)
+	- Added drive status
+
+* Endpoint Management
+	- Endpoints now display OS
+	- Endpoint actions work regardless of v1/v2 status of endpoints, even in multi-select mode
+	- Unsupported MacOS endpoint actions have appropriate tooltips
+
+* Software Management
+	- MacOS and Windows builds are displayed
+	- Version number synchronization will occur in the event of a version lag at build time
+	- MacOS builds are throttled (once 8 hours per account)
+
+
 2025-04-20
 ~~~~~~~~~~~
 
@@ -389,6 +408,69 @@ Coming soon:
 Software
 --------
 
+V2 Client in Early Beta
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We are in the early developmental stages of v2.0 of the software which includes the Mac client. `Join our Discord <https://tier2tickets.com/discord>`_ and request access to the beta test if you want to try it out!
+
+2.0.x.10
+~~~~~~~~
+(2025-11-12)
+
+.. raw:: html
+
+	<a name="2.0.10">&nbsp;</a>
+
+* Finished removing encoded PowerShell from site-side (loginwith.me was last)
+* Added admin diagnostic framework
+* Added bit locker information to data collection
+* Added drive status to data collection
+* Improved utilization data collection (more accurate CPU and GPU usage numbers)
+* Optimized network diagnostics
+* Optimized general diagnostic process
+
+
+
+2.0.x.8
+~~~~~~~~
+(2025-11-12)
+
+.. raw:: html
+
+   <a name="2.0.8">&nbsp;</a>
+
+* Removed encoded PowerShell commands sent from site-side (causing windows defender alerts)
+* Implemented all core features of MacOS client
+* Stripped out all permissions that require user input (except for one, which is not obstructive if denied)
+* Abstracted away a multi-permission-level job runner to allow for clean and reliable system/admin/user process spawning
+* Resolved longstanding issues with mac address collection
+* Resolved longstanding issues with group selection on deploy
+* Implemented MacOS-specific styling for UI
+* Re-designed and implemented mutex/semaphore logic for MacOS
+
+
+2.0.x.6
+~~~~~~~~
+(2025-11-12)
+
+.. raw:: html
+
+   <a name="2.0.6">&nbsp;</a>
+   
+   
+* Engine change (Sciter -> PyWebview)
+* Screenshot compression optimization
+* Migrated color schema to something maintainable
+* Implemented custom colors
+* Split Windows and MacOS logic
+* Implemented Apple/MacOS client
+* Moved all variable files to a user-modifiable /var folder
+* Increased memory limit on background process since 2gb hard limit for 32bit processes is no longer applicable
+* Implemented new mutex/semaphore logic for button and helper processes to handle previously unhandled states
+* Added GPU utilization data collection
+
+
+
 1.1.x.41
 ~~~~~~~~
 (2025-4-2)
@@ -542,17 +624,6 @@ Software
 
 * Fixed a bug in which the gui would hang when using the custom powershell script append feature
 * Added support for configurable ticket TTL in the remote ticket creation API.
-
-
-
-
-
-
-
-
-
-
-
 
 
 .. raw:: html
