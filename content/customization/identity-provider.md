@@ -66,3 +66,46 @@ $output | ConvertTo-JSON
 
 Each portion has a comment describing what it does. As it is written, the code that runs first has a higher priority. So you could, for instance, move the Azure AD portion below the Outlook check if you have more confidence that Outlook will provide the correct email than Azure AD.
 
+
+### Test script
+
+Here is another script that will help you find what email addresses are on a particular machine and where it was found. 
+
+```powershell
+$results = @()
+
+# 1. LDAP
+try {
+    # Simulate pulling from LDAP
+    $ldap_email = ([ADSI]"LDAP://<SID=$([System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value)>").mail
+    if ($ldap_email) {
+        $results += [PSCustomObject]@{Source='LDAP'; Email=$ldap_email}
+    }
+} catch {}
+
+# 2. ADAL
+try {
+    $ADAL = Get-ItemProperty -Path "HKCU:\Software\Microsoft\Office\*\Common\ServicesManagerCache\Identities\*_ADAL\*" -ErrorAction SilentlyContinue | Select -First 1
+    $adal_email = $ADAL.ConnectionUserUpn
+    if ($adal_email) {
+        $results += [PSCustomObject]@{Source='ADAL'; Email=$adal_email}
+    }
+} catch {}
+
+# 3. Outlook
+try {
+    $outlook = Get-ItemProperty -Path  "hkcu:\Software\Microsoft\Office\*\Outlook\Profiles\Outlook\9375CFF0413111d3B88A00104B2A6676\*" -ErrorAction SilentlyContinue
+    $outlook_email = ($outlook | Where-Object { $_."Email" }) | Select-Object -ExpandProperty "Email" -First 1
+    if ($outlook_email) {
+        $results += [PSCustomObject]@{Source='Outlook'; Email=$outlook_email}
+    } else {
+        $alt_email = ($outlook | Where-Object { $_."Account Name" -like "*@*.*" }) | Select-Object -ExpandProperty "Account Name" -First 1
+        if ($alt_email) {
+            $results += [PSCustomObject]@{Source='Outlook'; Email=$alt_email}
+        }
+    }
+} catch {}
+
+# Output all found sources with emails
+$results | Format-Table -AutoSize
+```
