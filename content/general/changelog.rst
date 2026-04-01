@@ -52,6 +52,15 @@ Integrations
 Website
 ---------
 
+2026-03-30
+~~~~~~~~~~~
+
+* Testing out support for allowing dropdowns for defaults for integrations.
+* Opened the alpha subdomain for anyone interested in testing our software before it hits release candidate. Join our Discord (http://tier2tickets.com/discord) for more information. 
+* We are also starting a rewrite of our website using Cylinder (https://plasmacan.github.io/cylinder/).
+
+
+
 2025-11-12
 ~~~~~~~~~~~
 
@@ -407,6 +416,41 @@ Coming soon:
 
 Software
 --------
+
+2.0.x.17
+~~~~~~~~
+(2025-11-12)
+
+.. raw:: html
+
+	<a name="2.0.17">&nbsp;</a>
+
+The macOS client received a major change to help smooth out future updates. A rework of the application architecture and placement on-disk requires an uninstall + reinstall to work properly. The result is a more reliable service, agent, and gui that make upgrade-breaking changes like this far less likely in the future. This breaking upgrade change also heralds Intel + macOS support.
+
+
+* Bugfixes
+ - Fixed issue where ctrl + clicking assists opened button client in default browser
+ - Fixed issue with button client lock not being held properly, rarely resulting in double-launch
+ - Fixed issue causing windows Smart App Control to flag some client files as potentially malicious
+ - Fixed memory leak in initial transparency display (logo fade-in/fade-out)
+ - Fixed memory handling issue occasionally resulting in only one screenshot being collected.
+ - Fixed issue causing Firefox to refuse loading instant replay
+ - Fixed issue causing endpoints upgrading from v1 -> v2 to fail backend connection/auth
+
+
+* macOS Specific Bugfixes
+ - Fixed various issues with application docking
+ - Fixed issue causing occasional launch failure
+
+* Features
+ - Added admin assist framework
+ - Added first admin assist (restart print spooler)
+
+
+* Other
+ - Reworked macOS application architecture to improve support for future features
+ - Added Intel macOS support
+
 
 V2 Client in Early Beta
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

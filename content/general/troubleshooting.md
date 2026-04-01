@@ -2,13 +2,13 @@
 
 Our team is available at [support@tier2.tech](mailto:support@tier2.tech) and +1-833-328-8866 ([International Numbers here](https://docs.tier2tickets.com/#support))
 
-## Log Files
+## Log Files 
 
 When requesting support, our team may ask you for log files.
 
 You can find these files in the `C:\Program Files (x86)\Tier2Tickets\` folder.
 
-We typically request:
+Depending on the version, we typically request:
 
 - `button.log`,
 - `button_gui.log`,
@@ -16,7 +16,7 @@ We typically request:
 - `splash.log` and
 - `t2tservice.log`
 
-
+### Windows
 
 Here is a simple script that will bundle the most recent logs into a zip and drop that zip into C:\temp.
 
@@ -26,6 +26,31 @@ Copy-Item 'C:\Program Files (x86)\Tier2Tickets\*.log' 'C:\temp\t2tlogs'
 Compress-Archive -Update -Path 'C:\temp\t2tlogs\' -DestinationPath 'C:\temp\t2tlogs.zip'
 Remove-Item C:\temp\t2tlogs\ -Recurse
 ```
+
+### Mac
+
+This script will drop the files in a zip on the desktop if it can, otherwise it will land in /tmp.
+
+```shell
+#!/bin/bash
+LOG_SRC="/var/Tier2Tickets/logs"
+USER_DESKTOP="$HOME/Desktop"
+ZIPNAME="Tier2Tickets_Logs.zip"
+
+if [ -d "$USER_DESKTOP" ] && [ -w "$USER_DESKTOP" ]; then
+  DEST="$USER_DESKTOP/$ZIPNAME"
+else
+  DEST="/tmp/$ZIPNAME"
+fi
+
+if [ -d "$LOG_SRC" ]; then
+  zip -j "$DEST" "$LOG_SRC"/*
+  echo "Logs have been zipped to $DEST."
+else
+  echo "Source logs directory does not exist: $LOG_SRC"
+fi
+```
+
 
 ## Common Issues
 
