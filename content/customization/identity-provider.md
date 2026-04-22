@@ -109,3 +109,10 @@ try {
 # Output all found sources with emails
 $results | Format-Table -AutoSize
 ```
+
+## Identity JSON
+
+We save the information from the last ticket submission per user in a file located at ```%Appdata%\Tier2tickets\tier2tickets.json```. 
+
+It is in a similar format to the information in the script. If you need to clear or set the prepopulated data or when loading the software, this is where you do it. If you remove the file, the Identity Provider will run to gather information until the next time a successful ticket is submitted.
+
