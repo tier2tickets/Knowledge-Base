@@ -14,11 +14,13 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from datetime import datetime
+
 
 # -- Project information -----------------------------------------------------
 
 project = 'tier2tickets'
-copyright = '2022, tier2tickets'
+copyright = datetime.now().strftime("%Y") + ", tier2tickets"
 author = 'Alex Permenter, Chris Wheeler, Elizabeth Copeland, Eric Rodighiero, Daryl Ebanks, Sam Schoen'
 
 # The full version, including alpha/beta/rc tags

@@ -52,6 +52,19 @@ Integrations
 Website
 ---------
 
+2026-04-28
+~~~~~~~~~~~
+
+* The MacOs and v2 Windows versions have been made available to everyone as a Release Candidate.
+* Various updates to the website to accomidate the new v2 features and MacOs Features.
+
+* Integration Settings
+- Dropdown functionality for integrations working for Autotask, Connectwise Manage, HaloPSA/ITSM
+- Testing next on RepairShopr and SuperOps
+
+
+
+
 2026-03-30
 ~~~~~~~~~~~
 
@@ -417,9 +430,53 @@ Coming soon:
 Software
 --------
 
+2.0.x.19
+~~~~~~~~
+(2026-04-28)
+
+.. raw:: html
+
+	<a name="2.0.19">&nbsp;</a>
+
+
+* Features
+ - Added keyboard controls to instant replay
+ - Added timestamp to instant replay frames
+ - Added ISP to report
+
+* Bugfixes
+ - Fixed issue with mac builds causing notarization to hang forever if a windows build was initiated after mac build finished but before notarization began.
+ - Fixed issue with assists repeatedly adding internal-access variables on save.
+ - Fixed issue with gui requiring user portal link even if user portal message was not present.
+ - Fixed issue with report/uploads sometimes being overwritten on unhandled potential double-launch.
+ - Improved macOS mac address collection to handle more edge cases and improve reliability.
+ - Reduced instant replay action description font size to cut down on instances of x-overflow due to large window titles.
+
+2.0.x.18
+~~~~~~~~
+(2026-04-14)
+
+
+.. raw:: html
+
+	<a name="2.0.18">&nbsp;</a>
+
+
+* Features
+- Added "group" variable to assists for group-based routing, etc.,
+- Reworked the OS Version in the Windows report to show more useful information (it now shows if the OS version is past EOL),
+
+
+* Bugfixes
+- Fixed issue with the macos build server sometimes causing build failure for first-time mac version builds,
+- Fixed various issues with v2 device management actions causing them to be slow or unresponsive,
+- Fixed issue with mass update on builds page causing defender to flag v2 clients
+
+
+
 2.0.x.17
 ~~~~~~~~
-(2025-11-12)
+(2026-03-30)
 
 .. raw:: html
 
