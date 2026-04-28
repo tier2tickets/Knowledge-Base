@@ -55,7 +55,7 @@ Website
 2026-04-28
 ~~~~~~~~~~~
 
-* The MacOs and v2 Windows versions have been made available to everyone as a Release Candidate.
+The MacOs and v2 Windows versions have been made available to everyone as a Release Candidate.
 
 * Instant Replay
 	- Added keyboard controls to instant replay
@@ -64,8 +64,9 @@ Website
 * Report
 	- Added ISP to report
 
-*Building
+* Builds
 	- Fixed issue with mac builds causing notarization to hang forever if a windows build was initiated after mac build finished but before notarization began.
+	
 * Tier2Assitst
 	- Fixed issue with assists repeatedly adding internal-access variables on save.
 * GUI
@@ -81,9 +82,9 @@ Website
 2026-03-30
 ~~~~~~~~~~~
 
-* Testing out support for allowing dropdowns for defaults for integrations.
-* Opened the alpha subdomain for anyone interested in testing our software before it hits release candidate. Join our Discord (http://tier2tickets.com/discord) for more information. 
-* We are also starting a rewrite of our website using Cylinder (https://plasmacan.github.io/cylinder/).
+ Testing out support for allowing dropdowns for defaults for integrations.
+ Opened the alpha subdomain for anyone interested in testing our software before it hits release candidate. Join our Discord (http://tier2tickets.com/discord) for more information. 
+ We are also starting a rewrite of our website using Cylinder (https://plasmacan.github.io/cylinder/).
 
 * Tier2Assists
 	- Added "group" variable to assists for group-based routing, etc.
