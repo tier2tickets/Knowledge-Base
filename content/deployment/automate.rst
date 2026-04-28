@@ -24,7 +24,7 @@ Name the script, add a note if you like, make sure the target is Computer, set t
 There are two methods that can be used for this: Saving the script in a file in Automate or Running the script directly. We recommend the latter ince you have more control over the script later.
 
 Save the script in Automate (Old Method)
----------------------------------
+-------------------------------------------------
 
 This guide assumes it has beed downloaded and placed somewhere in the LTShare\Transfer directory.
 
@@ -78,7 +78,7 @@ Finally Save the Script and you are done! Here is what it looks like completed.
 
 
 Execute script directly in Automate (New Method)
--------------------------------------
+-------------------------------------------------------------
 
 This method that direct control of the Powershell within the Automate script. This is necessary for grouping and the script can be more easily manupulated in the future. 
 
@@ -115,7 +115,7 @@ Finally Save the Script and you are done! Here is what it looks like completed.
 
 
 Deployment of the script
-------------------------
+--------------------------------
 
 Select Browse from the main bar on the left, then the Groups tab.
 

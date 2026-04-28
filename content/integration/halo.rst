@@ -245,7 +245,7 @@ Field Definitions
 |
 
 *category_#*
-""""""""""
+""""""""""""""""""
 
 	**Halo has 4 categories that can be customized to be required that are not "custom fields"**
 

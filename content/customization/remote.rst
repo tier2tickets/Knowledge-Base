@@ -44,7 +44,7 @@ Additionally with the help of something that can run PowerShell commands remotel
 Here are some examples:
 
 Generate a report without submitting a ticket
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ticket id and ticket number are randomly generated here so they should not collide with tickets you already have. Including the ticket number and ticket id will signal that the report is does not need to submit a ticket.
 
@@ -93,7 +93,7 @@ The ticket id and ticket number are randomly generated here so they should not c
     }
 
 Generating a report while submitting a ticket
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The only difference between the example above and this one is that no ticket id and number are generated. Set these to empty to tell the software to submit a ticket.
 
