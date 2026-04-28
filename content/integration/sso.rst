@@ -142,13 +142,13 @@ a)	For each group you will need to add the permissions that apply to each group.
     :target: /_images/Picture8.png
 
 b)	Create a claim
-"""""""""""""""""""
+""""""""""""""""""""""""""""
 
 .. image:: images/sso/Picture9.png
     :target: /_images/Picture9.png
  
 c)	Make the name of the claim perm:permission and paste the ObjectId from the group to link them. 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Each perm:permission mapping should be added one at a time to the group to which they apply 
 
@@ -156,7 +156,7 @@ Each perm:permission mapping should be added one at a time to the group to which
     :target: /_images/Picture10.png
 
 d)	Repeat until you have all the permissions matched to the groups you need. 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 6) SAML Signing Certificate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -171,7 +171,7 @@ Set the cert to sign SAML response and assertion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Navigate to Enterprise Applications> Tier2Tickets> Properties. Set assignment required to "No"
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: images/sso/Picture12.png
     :target: /_images/Picture12.png
@@ -185,7 +185,7 @@ a) Download from the Identity Provider
     :target: /_images/Picture13.png
 
 b) Upload to your account at the bottom of the Administration > SAML page
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: images/sso/Picture14.png
 
