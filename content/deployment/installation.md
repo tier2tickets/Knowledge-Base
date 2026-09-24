@@ -92,24 +92,64 @@ If the install is performed behind the scenes, a log out and log in may be requi
 As of version `1.1.x.35`, the installer supports automatically adding a group to the endpont. You can do this by adding a group argument to the Wrapped Arguments
 
 For example:
+
 ```
-msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"" /icons=1 /group=""Group Name Here"" " 
+msiexec /i "buttonInst.msi" WRAPPED_ARGUMENTS="/launchkey=4 /iconname=""PC Solutions Support"" /icons=1 /group=""Group Name Here"" "
 ```
+
+## Enabling Screenshots on macOS Endpoints
+
+Screenshots and instant replay are now supported on macOS. macOS screenshot settings can be configured account-wide [here](https://account.helpdeskbuttons.com/remote) or per machine using the `MacOS Screen Capture Settings Override` tool on the [device management page](https://account.helpdeskbuttons.com/select_endpoints).
+
+Permission grants are required for screenshots to be captured. To grant `.Tier2SVC.app` permission to collect screenshots:
+
+1. Navigate to **System Settings → Privacy & Security → Screen & System Audio Recording**.
+2. Click the **+** icon to add an application.
+3. Click the **Applications** folder.
+4. Use **⌘ + Shift + G** to open the **Go** menu.
+5. Type `.Tier2SVC` and press **Enter** to select it.
+6. Click **Open**.
+
+If screen recording permissions are not granted, users will not be presented with an **Include Screenshots** checkbox, and tickets will have no attached screenshots.
+
+Input Monitoring permissions are required to enable event-based monitoring similar to that found in the Windows version of the client. To grant `.Tier2SVC.app` Input Monitoring permission:
+
+1. Navigate to **System Settings → Privacy & Security → Input Monitoring**.
+2. Click the **+** icon to add an application.
+3. Click the **Applications** folder.
+4. Use **⌘ + Shift + G** to open the **Go** menu.
+5. Type `.Tier2SVC` and press **Enter** to select it.
+6. Click **Open**.
+
+If Input Monitoring permissions are not granted, Tier2Tickets will fall back to interval-based smart capture with algorithmic frame filtering to capture as much useful user action as possible in the time immediately preceding a ticket submission.
+
+## Customizing macOS Screen Recording Notifications
+
+macOS does not allow screen captures without some form of user notification. The default configuration provides the most macOS-native experience. A purple icon indicating that `.Tier2SVC` is recording the screen will be present in the menu bar.
+
+There are two alternatives that can be selected for account-wide configuration [here](https://beta.helpdeskbuttons.com/remote), under the **macOS Screen Capture Notification Mode** setting:
+
+1. **Capture Indicator** — Displays a small purple dot in the notification area of the menu bar on every capture. This behaves differently across different architectures and macOS versions, but is generally distracting because it appears and disappears repeatedly.
+
+2. **Quiet Mode** — An experimental notification-noise suppression mode that prevents the most distracting forms of the capture indicator in all currently known cases. This behaves differently across different architectures and macOS versions, but usually results in a persistent purple dot in the notification section of the menu bar or a persistent blank space where the purple dot would appear.
+
+If Quiet Mode is found to be incompatible with a given machine, but you wish to continue using it for other machines on your account, the [device management page](https://beta.helpdeskbuttons.com/select_endpoints) can be used to override the Capture Notification Mode for that machine without affecting other machines on your account.
 
 ## Customization After Installation
 
 ### Updating group
 
 #### Via Device Management
+
 We can try to change the group of an online Endpoint via the Device Management Page.
 
 ![](images/group1.png)
 
 ![](images/group2.png)
 
-
 #### Via Command Line
-You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately. 
+
+You can also update the group after installing by using this group argument on guiTrigger. You will want to restart the t2tservice to see the results immediately.
 
 ```
 net stop t2tservice
@@ -120,6 +160,7 @@ net start t2tservice
 ### Re-Pin to Taskbar
 
 #### Via Device Management
+
 We can try to repin the icon to the taskbar on one or more online endpoints via the Device management page.
 
 ![](images/pin.png)
@@ -127,9 +168,11 @@ We can try to repin the icon to the taskbar on one or more online endpoints via 
 ![](images/pin2.png)
 
 #### Repin on reboot
+
 The software can also be forced to initiate a re-pin if this file: `%localappdata%\tier2tickets\pttb.pref` is deleted. Doing this will cause the software to re-pin itself to the taskbar when the user logs in.
 
 #### Manually pinning via PTTB.exe
+
 Running `pttb.exe "<shortcut name>" (Helpdesk Button is the default)` as the logged-in user will also pin the icon to taskbar on demand.
 
 ![](images/pttb.gif)
