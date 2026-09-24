@@ -1,7 +1,8 @@
 Deployment Scripts
 =======================
 
-For deploying the software en-mass, we offer two flavors of deployment script: a `Powershell script <https://account.helpdeskbuttons.com/deploy.php?type=ps1>`_ and a `batch file <https://account.helpdeskbuttons.com/deploy.php?type=cmd>`_.
+For deploying the software en-mass, we offer two flavors of deployment script for Windows: a `Powershell script <https://account.helpdeskbuttons.com/deploy.php?type=ps1>`_ and a `batch file <https://account.helpdeskbuttons.com/deploy.php?type=cmd>`_.
+As well as a `bash script <https://account.helpdeskbuttons.com/deploy.php?type=sh>`_ for MacOS.
 Each script is custom made for your account. You can get to them any time from your `builds page <https://account.helpdeskbuttons.com/builds.php>`_
 
 Each time the script is run, it first checks to see if the software is already installed and exits if it is.
@@ -14,7 +15,7 @@ This means that the same script that you used to deploy version 1.2.3.4 of the s
 To see which version of the software will be deployed, just look at which version you currently have built on the `builds page <https://account.helpdeskbuttons.com/builds.php>`_.
 
 
-Both scripts have a section at the top that allows for easy editing just in case you need multiple copies.
+All three scripts have a section at the top that allows for easy editing just in case you need multiple copies.
 
 
 .. image:: images/deployment.png
