@@ -24,7 +24,6 @@ Table Of Contents
 	:caption: PSA Integrations
 	:maxdepth: 0
 
-	content/integration/4me
 	content/integration/accelo
 	content/integration/atera
 	content/integration/autotask
@@ -40,6 +39,8 @@ Table Of Contents
 	content/integration/superops
 	content/integration/topdesk
 	content/integration/zendesk
+	
+	
 	content/integration/email
 	content/integration/errors
 	
