@@ -86,6 +86,7 @@ Here is the full list of permissions given to subaccounts in alphabetical order:
 - ticket-dashboard	:  Ticket Dashboard
 - ticket-reports :  Reports and Instant Replay
 - remote-access : Remote Access pages (Loginwith.me, Command Line tools, Remote Diganostics)
+- api-credentials: ability to create and revoke api credentials
 
 Setting up your SSO 
 ----------------------------------------------------
