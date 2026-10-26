@@ -1,4 +1,4 @@
-BETA Loginwith.me
+-BETA- Loginwith.me
 ============================
 
 To help fill in the gaps in modern RMM/PSA stacks, Tier2Technologies created an optional, lightning-fast Remote Access and Remote Terminal tool, Loginwith.me

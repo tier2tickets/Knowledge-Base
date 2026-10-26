@@ -21,7 +21,7 @@ Table Of Contents
 	content/general/known-issues
 
 .. toctree::
-	:caption: Integration
+	:caption: PSA Integrations
 	:maxdepth: 0
 
 	content/integration/4me
@@ -42,7 +42,13 @@ Table Of Contents
 	content/integration/zendesk
 	content/integration/email
 	content/integration/errors
+	
+.. toctree::
+	:caption: External Integrations
+	:maxdepth: 0
+	
 	content/integration/sso
+	content/integration/api
 	
 .. toctree::
 	:caption: Deployment

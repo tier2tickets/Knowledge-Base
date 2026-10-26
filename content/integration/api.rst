@@ -1,7 +1,7 @@
 .. _api:
 
-API
-===
+-BETA- API Documentation
+===========================
 
 The Tier2Tickets API lets you connect your own applications, scripts, and integrations to your account. You can use it to find endpoints, read diagnostic reports, retrieve Instant Replay images, and request supported endpoint actions.
 
