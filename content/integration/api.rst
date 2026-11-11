@@ -277,3 +277,19 @@ API errors normally include a code and message:
 Limits can apply to the API key and request source. Avoid tight polling loops, paginate large reads, and do not automatically retry failed action submissions. Upstream or network error responses may differ from the API's normal JSON format.
 
 When contacting support about a request, include its ``X-Request-ID`` response header, the operation, HTTP status, and error code. Do not send your API key or sensitive report data.
+
+
+Customer-Controlled Amazon S3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you use the Compliance Package with a customer-controlled Amazon S3 Gatekeeper, check whether your Gatekeeper restricts report reads by source IP. The API retrieves report data from the Cylinder server. If your allowlist does not already cover Cylinder’s outbound IP, add 52.2.181.161/32.
+
+In the AWS Lambda console, open your Gatekeeper function.
+
+Choose Configuration, then Environment variables, then Edit.
+
+Append 52.2.181.161/32 to the comma-separated value of allowed_subnets, keeping the existing entries. If the list already includes 0.0.0.0/0, it covers this IPv4 address.
+
+Check that no entry in blocked_subnets covers 52.2.181.161. Blocked ranges take precedence over allowed ranges. Choose Save after making any changes.
+
+If your S3 bucket policy also restricts report reads by source IP, it must allow the same Cylinder address. S3 applies its policy even when the API downloads the report using a presigned URL.
