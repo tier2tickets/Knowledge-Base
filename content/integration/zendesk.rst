@@ -6,16 +6,16 @@ This guide will show you how to set up your new Helpdesk Buttons with Zendesk in
 Integration
 -----------
 
-The Zendesk integration requires three main parts:
+Set up the Zendesk integration in three steps.
 
-#. Set up an unregistered user as a catchall contact.
-#. Configure authentication using OAuth or an existing API token.
+#. Optionally create a catchall contact if you will not use ``auto_reg``.
+#. Create an OAuth client, or use the alternate instructions for an existing API token.
 #. Configure your Helpdesk Buttons account.
 
 .. important::
 
    New integrations should use OAuth. Existing API Token integrations must
-   move to OAuth before **April 30, 2027**. See the OAuth setup section below.
+   move to OAuth before **April 30, 2027**. Follow Step 2 below to set up OAuth.
 
 Video Walkthrough
 ^^^^^^^^^^^^^^^^^
@@ -26,10 +26,15 @@ Video Walkthrough
         <iframe width="560" height="315" src="https://www.youtube.com/embed/rRK2_tzN4y8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-1) Unregistered User
-^^^^^^^^^^^^^^^^^^^^
+1) Unregistered Contact (Optional)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a catchall contact for users who are not already in your Zendesk account.
+This step is only needed if you will not use ``auto_reg``. The catchall contact
+receives tickets from users who are not already in your Zendesk account.
+
+If you use ``auto_reg``, skip this step. The integration can automatically
+create Zendesk users using their email addresses. Enable ``auto_reg`` under
+Integration Defaults when completing Step 3.
 
 Hover over **Add** and click **User**.
 
@@ -39,80 +44,8 @@ Set the email address to ``unregistered@helpdeskbuttons.com``. You can choose an
 
 .. image:: images/zd-image4.png
 
-.. _enable-api-access-and-create-a-new-key:
-
-2) API Token Authentication (Existing Integrations)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-API Token authentication is available for existing integrations with an
-active token. Zendesk has stopped issuing new API tokens. Use the OAuth
-setup section below for new integrations.
-
-The screenshots below show the older API settings interface.
-
-.. image:: images/zd-image1.png
-
-.. image:: images/zd-image2.png
-
-.. image:: images/zd-image5.png
-
-Keep your existing token available if you need to update your integration
-before moving to OAuth.
-
-3) Helpdeskbuttons.com Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Open **Integration Settings** in your Helpdesk Buttons account.
-
-#. Select **Zendesk** as the ticket system.
-
-#. Enter your Zendesk hostname in **Ticket System API endpoint**, such as
-   ``yourcompany.zendesk.com``. Omit ``https://`` and any path.
-
-#. Select **API Token** or **OAuth** under **Zendesk Authentication**.
-
-#. Enter the credentials for your selected authentication method.
-
-   **API Token**
-
-   .. code-block:: text
-
-      username:apikey
-
-   **OAuth**
-
-   .. code-block:: text
-
-      tier2tickets:YOUR_CLIENT_SECRET
-
-   For OAuth, replace ``tier2tickets`` with the Identifier you chose when
-   creating the OAuth client. See the OAuth setup section below.
-
-#. Click **Update** to save your settings.
-
-#. Review the Priority, Status, and Type choices loaded from Zendesk.
-   Save any changes, then click **Integration Test**. Confirm that the
-   ticket appears in Zendesk and includes the private report comment.
-
-Contact us for feature requests and additional integration customizations.
-
-Zendesk OAuth Setup and API Token Retirement
---------------------------------------------
-
-The Tier2Tickets Zendesk integration now supports OAuth authentication.
-Existing integrations using API Token authentication should move to OAuth
-**before April 30, 2027**.
-
-Zendesk will permanently deactivate all remaining API tokens on that date.
-Existing tokens can also stop working earlier because of inactivity.
-New integrations should use OAuth.
-
-See `Zendesk's migration timeline
-<https://developer.zendesk.com/documentation/authentication/oauth-migration/>`_
-for details.
-
-Create an OAuth client in Zendesk
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2) Create an OAuth Client
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sign in to Zendesk as an administrator and open
 **Admin Center > Apps and integrations > APIs > OAuth clients**.
@@ -147,6 +80,67 @@ comments.
 See `Zendesk's OAuth setup documentation
 <https://developer.zendesk.com/documentation/authentication/oauth-migration/#setting-up-an-oauth-client>`_
 for details.
+
+Keep the Identifier and Secret available, then continue to Step 3.
+
+.. _enable-api-access-and-create-a-new-key:
+
+2) Alternate: Use an Existing API Token
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+API Token authentication is available for existing integrations with an
+active token. Zendesk has stopped issuing new API tokens. Use the OAuth
+setup instructions above for new integrations.
+
+The screenshots below show the older API settings interface.
+
+.. image:: images/zd-image1.png
+
+.. image:: images/zd-image2.png
+
+.. image:: images/zd-image5.png
+
+Keep your existing token available if you need to update your integration
+before moving to OAuth. Continue to Step 3 with your existing token.
+
+3) Connect Helpdesk Buttons / Tier2Tickets
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open **Integration Settings** in your Helpdesk Buttons account.
+
+#. Select **Zendesk** as the ticket system.
+
+#. Enter your Zendesk hostname in **Ticket System API endpoint**, such as
+   ``yourcompany.zendesk.com``. Omit ``https://`` and any path.
+
+#. Select **API Token** or **OAuth** under **Zendesk Authentication**.
+
+#. Enter the credentials for your selected authentication method.
+
+   **OAuth**
+
+   .. code-block:: text
+
+      tier2tickets:YOUR_CLIENT_SECRET
+
+   Replace ``tier2tickets`` with the Identifier you chose in Step 2.
+
+   **API Token (legacy)**
+
+   .. code-block:: text
+
+      username:apikey
+
+#. If you skipped Step 1, enable ``auto_reg`` under Integration Defaults.
+   See the ``auto_reg`` instructions below.
+
+#. Click **Update** to save your settings.
+
+#. Review the Priority, Status, and Type choices loaded from Zendesk.
+   Save any changes, then click **Integration Test**. Confirm that the
+   ticket appears in Zendesk and includes the private report comment.
+
+Contact us for feature requests and additional integration customizations.
 
 Integration Defaults
 --------------------
